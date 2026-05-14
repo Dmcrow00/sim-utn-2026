@@ -55,7 +55,7 @@ NUMEROS_ROJOS: frozenset[int] = frozenset(
 APUESTA_BASE: int = 1
 FR_ESPERADA_COLOR: float = 18 / 37   # ≈ 0.4865
 FR_ESPERADA_NUMERO: float = 1 / 37   # ≈ 0.0270
-DIRECTORIO_BASE_GRAFICOS: str = "tp1.2/graficos"
+DIRECTORIO_BASE_GRAFICOS: str = "tp1_2/graficos"
 
 NOMBRES_ESTRATEGIA: dict[str, str] = {
     "m": "Martingala",

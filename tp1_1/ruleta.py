@@ -1,11 +1,6 @@
 """
-Simulación de una ruleta europea (números 0 a 36, total 37 posiciones).
 
-Ejecuta múltiples corridas de la ruleta y grafica cómo las estadísticas
-acumuladas convergen hacia los valores teóricos esperados a medida que
-aumenta el número de tiradas.
-
-Uso:
+Para ejecutar:
     python tp1_1/ruleta.py -c <corridas> -n <tiradas> -e <numero_elegido>
 
 Argumentos:
@@ -66,7 +61,9 @@ def girar_ruleta() -> int:
 def simular_corrida(n_tiradas: int) -> list[int]:
     """Devuelve una lista con los resultados de n_tiradas giros de la ruleta."""
     tiradas = []
+    """ Realiza tiradas cuantas veces se indique en el parametro """
     for _ in range(n_tiradas):
+        """ Agrega tirada a lista """
         tiradas.append(girar_ruleta())
     return tiradas
 
@@ -82,8 +79,10 @@ def calcular_frecuencia_relativa_acumulada(
     """Devuelve la frecuencia relativa acumulada del numero_elegido en cada tirada."""
     aciertos = 0
     frecuencias = []
+    """ Recorre el array de tiradas comparando uno a uno el valor elegido con el que se encuentra en la posicion del array """
     for i, numero in enumerate(tiradas):
         if numero == numero_elegido:
+            """ Bandera de coincidencias """
             aciertos += 1
         frecuencias.append(aciertos / (i + 1))
     return frecuencias
@@ -100,7 +99,7 @@ def calcular_promedio_acumulado(tiradas: list[int]) -> list[float]:
 
 
 def calcular_varianza_acumulada(tiradas: list[int]) -> list[float]:
-    """Devuelve la varianza poblacional acumulada en cada tirada usando la fórmula online."""
+    """Devuelve la varianza poblacional acumulada en cada tirada."""
     suma = 0.0
     suma_cuadrados = 0.0
     varianzas = []
