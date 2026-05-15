@@ -31,11 +31,7 @@ DESVIO_ESPERADO: float = 114.0**0.5
 
 DIRECTORIO_GRAFICOS: str = "tp1_1/graficos"
 
-
-# ---------------------------------------------------------------------------
 # Estructura de datos
-# ---------------------------------------------------------------------------
-
 
 @dataclass
 class ResultadoCorrida:
@@ -47,11 +43,7 @@ class ResultadoCorrida:
     varianzas: list[float]
     desvios: list[float]
 
-
-# ---------------------------------------------------------------------------
 # Simulación
-# ---------------------------------------------------------------------------
-
 
 def girar_ruleta() -> int:
     """Devuelve un número aleatorio entero entre 0 y 36 inclusive."""
@@ -61,17 +53,11 @@ def girar_ruleta() -> int:
 def simular_corrida(n_tiradas: int) -> list[int]:
     """Devuelve una lista con los resultados de n_tiradas giros de la ruleta."""
     tiradas = []
-    """ Realiza tiradas cuantas veces se indique en el parametro """
     for _ in range(n_tiradas):
-        """ Agrega tirada a lista """
         tiradas.append(girar_ruleta())
     return tiradas
 
-
-# ---------------------------------------------------------------------------
 # Estadísticas acumuladas
-# ---------------------------------------------------------------------------
-
 
 def calcular_frecuencia_relativa_acumulada(
     tiradas: list[int], numero_elegido: int
@@ -79,10 +65,8 @@ def calcular_frecuencia_relativa_acumulada(
     """Devuelve la frecuencia relativa acumulada del numero_elegido en cada tirada."""
     aciertos = 0
     frecuencias = []
-    """ Recorre el array de tiradas comparando uno a uno el valor elegido con el que se encuentra en la posicion del array """
     for i, numero in enumerate(tiradas):
         if numero == numero_elegido:
-            """ Bandera de coincidencias """
             aciertos += 1
         frecuencias.append(aciertos / (i + 1))
     return frecuencias
@@ -117,11 +101,7 @@ def calcular_desvio_acumulado(varianzas: list[float]) -> list[float]:
     """Devuelve el desvío estándar acumulado como raíz cuadrada de cada varianza."""
     return [v**0.5 for v in varianzas]
 
-
-# ---------------------------------------------------------------------------
 # Orquestación
-# ---------------------------------------------------------------------------
-
 
 def ejecutar_corrida(n_tiradas: int, numero_elegido: int) -> ResultadoCorrida:
     """Simula una corrida completa y calcula todas sus estadísticas acumuladas."""
@@ -142,11 +122,7 @@ def ejecutar_simulacion(
         resultados.append(ejecutar_corrida(n_tiradas, numero_elegido))
     return resultados
 
-
-# ---------------------------------------------------------------------------
 # Gráficos
-# ---------------------------------------------------------------------------
-
 
 def crear_directorio_graficos(directorio: str) -> None:
     """Crea el directorio de destino para los gráficos si no existe."""
@@ -277,11 +253,7 @@ def graficar_todas_las_corridas(
     fig.savefig(ruta, dpi=120)
     plt.close(fig)
 
-
-# ---------------------------------------------------------------------------
 # CLI
-# ---------------------------------------------------------------------------
-
 
 def construir_parser() -> argparse.ArgumentParser:
     """Devuelve el parser configurado con los argumentos -c, -n y -e."""
