@@ -6,7 +6,7 @@ acumuladas convergen hacia los valores teóricos esperados a medida que
 aumenta el número de tiradas.
 
 Uso:
-    python tp1/ruleta.py -c <corridas> -n <tiradas> -e <numero_elegido>
+    python tp1.1/ruleta.py -c <corridas> -n <tiradas> -e <numero_elegido>
 
 Argumentos:
     -c, --corridas        Cantidad de experimentos independientes a realizar.
@@ -14,12 +14,12 @@ Argumentos:
     -e, --numero_elegido  Número apostado (entero entre 0 y 36 inclusive).
 
 Salida:
-    Archivos PNG en tp1/graficos/:
+    Archivos PNG en tp1.1/graficos/:
         corrida_01.png ... corrida_<c>.png   Una figura por corrida con 4 gráficas.
         todas_las_corridas.png               Las <c> corridas superpuestas en 4 gráficas.
 
 Ejemplo:
-    python tp1/ruleta.py -c 5 -n 1000 -e 7
+    python tp1.1/ruleta.py -c 5 -n 1000 -e 7
 """
 
 import argparse
@@ -34,7 +34,7 @@ VALOR_PROMEDIO_ESPERADO: float = 18.0
 VARIANZA_ESPERADA: float = 114.0
 DESVIO_ESPERADO: float = 114.0**0.5
 
-DIRECTORIO_GRAFICOS: str = "tp1/graficos"
+DIRECTORIO_GRAFICOS: str = "tp1.1/graficos"
 
 
 # ---------------------------------------------------------------------------
@@ -289,7 +289,7 @@ def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Simulación de una ruleta europea (0–36).",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="Ejemplo: python tp1/ruleta.py -c 5 -n 1000 -e 7",
+        epilog="Ejemplo: python tp1.1/ruleta.py -c 5 -n 1000 -e 7",
     )
     parser.add_argument(
         "-c", "--corridas",
