@@ -29,7 +29,7 @@ VALOR_PROMEDIO_ESPERADO: float = 18.0
 VARIANZA_ESPERADA: float = 114.0
 DESVIO_ESPERADO: float = 114.0**0.5
 
-DIRECTORIO_GRAFICOS: str = "tp1_1/graficos"
+DIRECTORIO_GRAFICOS: Path = Path(__file__).parent / "graficos"
 
 # Estructura de datos
 
@@ -124,7 +124,7 @@ def ejecutar_simulacion(
 
 # Gráficos
 
-def crear_directorio_graficos(directorio: str) -> None:
+def crear_directorio_graficos(directorio: Path) -> None:
     """Crea el directorio de destino para los gráficos si no existe."""
     Path(directorio).mkdir(parents=True, exist_ok=True)
 
@@ -159,7 +159,7 @@ def graficar_corrida(
     resultado: ResultadoCorrida,
     numero_corrida: int,
     numero_elegido: int,
-    directorio: str,
+    directorio: Path,
 ) -> None:
     """Guarda una figura con 4 subplots para los resultados de una corrida individual."""
     eje_x = list(range(1, len(resultado.tiradas) + 1))
@@ -211,7 +211,7 @@ def graficar_corrida(
 def graficar_todas_las_corridas(
     resultados: list[ResultadoCorrida],
     numero_elegido: int,
-    directorio: str,
+    directorio: Path,
 ) -> None:
     """Guarda una figura con las 4 métricas de todas las corridas superpuestas."""
     fig, axes = plt.subplots(2, 2, figsize=(12, 8))
