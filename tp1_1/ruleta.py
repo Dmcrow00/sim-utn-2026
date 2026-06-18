@@ -1,16 +1,11 @@
 """
 
-<<<<<<<< HEAD:tp1.1/ruleta.py
 Ejecuta múltiples corridas de la ruleta y grafica cómo las estadísticas
 acumuladas convergen hacia los valores teóricos esperados a medida que
 aumenta el número de tiradas.
 
 Uso:
-    python tp1.1/ruleta.py -c <corridas> -n <tiradas> -e <numero_elegido>
-========
-Para ejecutar:
     python tp1_1/ruleta.py -c <corridas> -n <tiradas> -e <numero_elegido>
->>>>>>>> c44f70a38ba2ae5a28a52e174f64663477f59506:tp1_1/ruleta.py
 
 Argumentos:
     -c, --corridas        Cantidad de experimentos independientes a realizar.
@@ -18,20 +13,12 @@ Argumentos:
     -e, --numero_elegido  Número apostado (entero entre 0 y 36 inclusive).
 
 Salida:
-<<<<<<<< HEAD:tp1.1/ruleta.py
-    Archivos PNG en tp1.1/graficos/:
-========
     Archivos PNG en tp1_1/graficos/:
->>>>>>>> c44f70a38ba2ae5a28a52e174f64663477f59506:tp1_1/ruleta.py
         corrida_01.png ... corrida_<c>.png   Una figura por corrida con 4 gráficas.
         todas_las_corridas.png               Las <c> corridas superpuestas en 4 gráficas.
 
 Ejemplo:
-<<<<<<<< HEAD:tp1.1/ruleta.py
-    python tp1.1/ruleta.py -c 5 -n 1000 -e 7
-========
     python tp1_1/ruleta.py -c 5 -n 1000 -e 7
->>>>>>>> c44f70a38ba2ae5a28a52e174f64663477f59506:tp1_1/ruleta.py
 """
 
 import argparse
@@ -46,11 +33,7 @@ VALOR_PROMEDIO_ESPERADO: float = 18.0
 VARIANZA_ESPERADA: float = 114.0
 DESVIO_ESPERADO: float = 114.0**0.5
 
-<<<<<<<< HEAD:tp1.1/ruleta.py
-DIRECTORIO_GRAFICOS: str = "tp1.1/graficos"
-========
 DIRECTORIO_GRAFICOS: str = "tp1_1/graficos"
->>>>>>>> c44f70a38ba2ae5a28a52e174f64663477f59506:tp1_1/ruleta.py
 
 # Estructura de datos
 
@@ -281,11 +264,7 @@ def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Simulación de una ruleta europea (0–36).",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-<<<<<<<< HEAD:tp1.1/ruleta.py
-        epilog="Ejemplo: python tp1.1/ruleta.py -c 5 -n 1000 -e 7",
-========
         epilog="Ejemplo: python tp1_1/ruleta.py -c 5 -n 1000 -e 7",
->>>>>>>> c44f70a38ba2ae5a28a52e174f64663477f59506:tp1_1/ruleta.py
     )
     parser.add_argument(
         "-c", "--corridas",
