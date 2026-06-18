@@ -55,7 +55,7 @@ NUMEROS_ROJOS: frozenset[int] = frozenset(
 APUESTA_BASE: int = 1
 FR_ESPERADA_COLOR: float = 18 / 37   # ≈ 0.4865
 FR_ESPERADA_NUMERO: float = 1 / 37   # ≈ 0.0270
-DIRECTORIO_BASE_GRAFICOS: str = "tp1_2/graficos"
+DIRECTORIO_BASE_GRAFICOS: Path = Path(__file__).parent / "graficos"
 
 NOMBRES_ESTRATEGIA: dict[str, str] = {
     "m": "Martingala",
@@ -298,7 +298,7 @@ def graficar_corrida(
     nombre_estrategia: str,
     capital_infinito: bool,
     fr_esperada: float,
-    directorio: str,
+    directorio: Path,
 ) -> None:
     """Guarda una figura con dos subplots (frsa y flujo de caja) para una corrida."""
     eje_x = _eje_x(resultado)
@@ -338,7 +338,7 @@ def graficar_todas_las_corridas(
     nombre_estrategia: str,
     capital_infinito: bool,
     fr_esperada: float,
-    directorio: str,
+    directorio: Path,
 ) -> None:
     """Guarda una figura con frsa y flujo de caja de todas las corridas superpuestas."""
     modo = "capital infinito" if capital_infinito else "capital finito"
@@ -407,8 +407,8 @@ def main() -> None:
     fr_esperada = FR_ESPERADA_NUMERO if args.numero_elegido is not None else FR_ESPERADA_COLOR
     nombre = NOMBRES_ESTRATEGIA[args.estrategia]
     modo_str = "inf" if capital_infinito else "fin"
-    directorio = f"{DIRECTORIO_BASE_GRAFICOS}/{args.estrategia}_{modo_str}"
-    Path(directorio).mkdir(parents=True, exist_ok=True)
+    directorio = DIRECTORIO_BASE_GRAFICOS / f"{args.estrategia}_{modo_str}"
+    directorio.mkdir(parents=True, exist_ok=True)
 
     print(
         f"Simulando {args.corridas} corrida(s) | estrategia: {nombre} | "
