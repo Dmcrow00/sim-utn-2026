@@ -1,0 +1,587 @@
+% =====================================================================
+% TP 3 — Estudio de simulación: Modelo M/M/1 y Modelo de Inventario (s,S)
+% Universidad Tecnológica Nacional — FRRO — Simulación 2026
+%
+% INSTRUCCIONES PARA OVERLEAF:
+%   1. Crear un proyecto nuevo y subir este archivo como main.tex.
+%   2. Crear las carpetas graficos_mm1/ y graficos_inv/ en el proyecto y
+%      subir los PNG:
+%        - tp3_1/graficos/*  ->  graficos_mm1/
+%        - tp3_2/graficos/*  ->  graficos_inv/
+%      (regenerarlos con: python tp3_1/main.py ; python tp3_2/main.py ;
+%       python tp3_1/agregar_anylogic_xlsx.py)
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+\geometry{margin=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}
+
+\newcommand{\AL}[0]{\textcolor{gray}{\textbf{---}}} % AnyLogic pendiente (inventario)
+
+\title{
+    \textbf{Trabajo Práctico N°3 — Estudio de Simulación} \\
+    \large Modelo de colas M/M/1 y Modelo de Inventario $(s,S)$ \\
+    \vspace{0.3cm}
+    \normalsize Universidad Tecnológica Nacional — Facultad Regional Rosario \\
+    Cátedra: Simulación — Año 2026
+}
+\author{
+    Apellido, Nombre — Legajo XXXXX \\
+    Apellido, Nombre — Legajo XXXXX
+}
+\date{Julio de 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% =====================================================================
+\section{Introducción}
+% =====================================================================
+
+El presente trabajo práctico consiste en un estudio de simulación de dos
+sistemas clásicos de los modelos estocásticos: un sistema de colas M/M/1
+(con su variante de capacidad finita M/M/1/K) y un sistema de gestión de
+inventario bajo una política $(s,S)$.
+
+Para cada modelo se comparan los resultados provenientes de \textbf{tres
+fuentes independientes}:
+
+\begin{enumerate}
+    \item El \textbf{valor teórico esperado}, obtenido mediante las fórmulas
+          analíticas de la teoría de colas y, para el inventario, mediante
+          una aproximación analítica basada en teoría de renovación.
+    \item Un \textbf{programa de simulación desarrollado en Python},
+          construido a eventos discretos.
+    \item Una \textbf{implementación en AnyLogic}: el modelo de colas con la
+          Process Modeling Library (patrón Source--Seize--Delay--Release--Sink)
+          y el de inventario mediante eventos que gestionan la demanda, la
+          reposición y la acumulación de costos.
+\end{enumerate}
+
+Cada experimento se ejecutó con un mínimo de 30 réplicas independientes,
+reportando la media muestral con su intervalo de confianza del 95\%. Todos
+los parámetros son configurables por línea de comandos en Python y por la
+interfaz de experimentos en AnyLogic, lo que permite variarlos de forma
+interactiva sin modificar el código.
+
+% =====================================================================
+\section{Marco teórico}
+% =====================================================================
+
+\subsection{Sistema de colas M/M/1}
+
+Un sistema M/M/1 posee llegadas según un proceso de Poisson de tasa
+$\lambda$, tiempos de servicio exponenciales de tasa $\mu$, un único
+servidor, disciplina FIFO y cola infinita. Con $\rho = \lambda/\mu$, si
+$\rho < 1$ el sistema alcanza régimen estacionario y valen
+\cite{winston,lawkelton}:
+
+\begin{align}
+    P_n &= (1-\rho)\,\rho^n & \text{(probabilidad de $n$ clientes en el sistema)} \\
+    L   &= \frac{\rho}{1-\rho} & \text{(clientes promedio en el sistema)} \\
+    L_q &= \frac{\rho^2}{1-\rho} & \text{(clientes promedio en cola)} \\
+    W   &= \frac{L}{\lambda} = \frac{1}{\mu - \lambda} & \text{(tiempo promedio en el sistema)} \\
+    W_q &= \frac{L_q}{\lambda} = \frac{\lambda}{\mu(\mu-\lambda)} & \text{(tiempo promedio en cola)}
+\end{align}
+
+vinculadas por la Ley de Little ($L = \lambda W$, $L_q = \lambda W_q$).
+Para $\rho \geq 1$ el sistema es inestable: $L$ y $W$ crecen sin cota y la
+cola no converge en un horizonte finito.
+
+\subsection{Sistema M/M/1/K: cola finita y denegación de servicio}
+
+Con capacidad máxima $K$ (un cliente en servicio y $K-1$ en cola), los
+arribos que encuentran el sistema lleno son rechazados:
+
+\begin{gather}
+    P_0 = \frac{1-\rho}{1-\rho^{K+1}}, \qquad P_n = P_0\,\rho^n \quad (n=0,\dots,K) \\
+    P_{\text{deneg}} = P_K = \frac{(1-\rho)\rho^K}{1-\rho^{K+1}} \qquad (\rho \neq 1), \qquad
+    P_{\text{deneg}} = \frac{1}{K+1} \quad (\rho = 1) \\
+    \lambda_{\text{ef}} = \lambda(1 - P_K), \quad
+    L = \frac{\rho}{1-\rho} - \frac{(K+1)\rho^{K+1}}{1-\rho^{K+1}}, \quad
+    W = \frac{L}{\lambda_{\text{ef}}}
+\end{gather}
+
+A diferencia del caso infinito, el M/M/1/K alcanza régimen estacionario
+incluso con $\rho \geq 1$: el exceso de demanda es absorbido por los
+rechazos. En este trabajo se toma la convención \emph{tamaño de cola}
+$=K-1$, sin contar al cliente en servicio, para los tamaños 0, 2, 5, 10
+y 50.
+
+\subsection{Modelo de inventario $(s,S)$ de revisión periódica}
+
+Se considera un inventario de \textbf{revisión continua}: las demandas
+llegan como un proceso de Poisson de tasa $\lambda$ y cada una solicita una
+cantidad aleatoria de unidades. El nivel de inventario se controla de forma
+permanente y, apenas cae al punto de reorden $s$, se emite una orden de
+$S - I$ unidades (con $I$ el inventario en ese instante) que se recibe tras
+un tiempo de reposición (\emph{lead time}) $L$. Si una demanda no puede
+satisfacerse por falta de stock, se pierde (venta perdida). Los costos
+acumulados en el horizonte son:
+\begin{align}
+    C_{\text{orden}} &= K \cdot (\text{número de órdenes emitidas}), &
+    C_{\text{mant}} &= h \int_0^T \max(I(t), 0)\,dt, \\
+    C_{\text{falt}} &= p \cdot (\text{unidades no satisfechas}), &
+    C_{\text{total}} &= C_{\text{orden}} + C_{\text{mant}} + C_{\text{falt}},
+\end{align}
+donde $K$ es el costo fijo de orden, $h$ el costo de mantenimiento por
+unidad y unidad de tiempo, $p$ el costo por unidad perdida y $T$ el
+horizonte. Es una variante del modelo de inventario de Law y Kelton
+\cite{lawkelton}.
+
+\paragraph{Aproximación teórica.} A diferencia del M/M/1, la política de
+revisión continua con ventas perdidas no admite una solución cerrada exacta
+simple. Como referencia teórica se emplea una aproximación basada en teoría
+de renovación: la demanda durante el lead time se aproxima por una normal de
+media $\lambda L\,E[q]$ y varianza $\lambda L\,E[q^2]$ (con $q$ el tamaño de
+cada demanda), y la cantidad esperada de faltante por ciclo se estima con la
+función de pérdida normal estándar. Esta aproximación provee un valor de
+referencia, no un valor exacto, y su precisión disminuye cuando la demanda
+del lead time se aparta del régimen normal.
+
+\subsection{Intervalos de confianza con réplicas independientes}
+
+Con $n=30$ réplicas, si $\bar{X}$ y $S_X$ son la media y el desvío estándar
+muestral,
+\begin{equation}
+    \bar{X} \pm t_{0.025,\,n-1}\,\frac{S_X}{\sqrt{n}}
+    = \bar{X} \pm 2.045\,\frac{S_X}{\sqrt{30}}
+\end{equation}
+con la $t$ de Student de 29 grados de libertad \cite{lawkelton}. La
+validación entre fuentes se considera satisfactoria cuando los intervalos
+de confianza de Python y AnyLogic se solapan y contienen al valor teórico.
+
+% =====================================================================
+\section{Metodología}
+% =====================================================================
+
+\begin{itemize}
+    \item \textbf{Python:} simuladores a eventos discretos propios
+          (\texttt{tp3\_1/mm1.py}, \texttt{tp3\_2/inventario\_continuo.py}),
+          con semillas por réplica (base 20260629). M/M/1: horizonte
+          $T=2000$ u.t. Inventario: horizonte de 365 días por corrida.
+    \item \textbf{AnyLogic:} el modelo M/M/1/K se construyó con la Process
+          Modeling Library (Source--Seize--Delay--Release--Sink, ResourcePool
+          de capacidad 1); el modelo de inventario, con eventos que gestionan
+          la demanda, la reposición y la acumulación de costos. Experimentos
+          de variación de parámetros con 30 réplicas por escenario (150 por
+          escenario en los experimentos de capacidad del M/M/1). Resultados
+          exportados a Excel y agregados con los scripts de agregación.
+    \item \textbf{Teórico:} fórmulas exactas M/M/1 y M/M/1/K; aproximación de
+          renovación para el inventario de revisión continua. Verificación
+          cruzada con la calculadora de cátedra \cite{calculadora}.
+\end{itemize}
+
+% =====================================================================
+\section{Modelo M/M/1: experimentos y resultados}
+% =====================================================================
+
+\subsection{Parámetros y justificación}
+
+Se fijó $\mu = 1$ (así $\lambda = \rho\mu$ se interpreta directamente como
+el $\rho$ objetivo) y se varió la carga en $\rho \in \{0.25, 0.50, 0.75,
+1.00, 1.25\}$. Para las medidas generales de teoría y Python se usó una
+capacidad de sistema $K=50$ como cota finita; para el estudio de denegación
+se evaluaron colas de tamaño 0, 2, 5, 10 y 50.
+
+\subsection{Medidas de rendimiento: comparación de las tres fuentes}
+
+La Tabla~\ref{tab:mm1-medidas} presenta las tres fuentes. Los valores de
+Python y AnyLogic son la media de 30 réplicas con su IC del 95\%.
+
+{\small
+\begin{longtable}{clrll}
+\caption{Medidas de rendimiento M/M/1: teórico vs.\ Python (30 réplicas) vs.\ AnyLogic (30 réplicas).}
+\label{tab:mm1-medidas} \\
+\toprule
+$\rho$ & Métrica & Teórico & Python (IC 95\%) & AnyLogic (IC 95\%) \\
+\midrule
+\endfirsthead
+\toprule
+$\rho$ & Métrica & Teórico & Python (IC 95\%) & AnyLogic (IC 95\%) \\
+\midrule
+\endhead
+\multirow{6}{*}{0.25}
+ & $L$   & 0.3333 & 0.3416 [0.3292; 0.3540] & 0.3315 [0.3266; 0.3363] \\
+ & $L_q$ & 0.0833 & 0.0864 [0.0784; 0.0943] & 0.0820 [0.0791; 0.0848] \\
+ & $W$   & 1.3333 & 1.3584 [1.3218; 1.3951] & 1.3277 [1.3124; 1.3430] \\
+ & $W_q$ & 0.3333 & 0.3425 [0.3145; 0.3704] & 0.3282 [0.3176; 0.3388] \\
+ & Utiliz. & 0.2500 & 0.2553 [0.2492; 0.2613] & 0.2495 [0.2469; 0.2521] \\
+ & $P_{\text{deneg}}$ & 0.0000 & 0.0000 & 0.0000 \\
+\midrule
+\multirow{6}{*}{0.50}
+ & $L$   & 1.0000 & 1.0049 [0.9605; 1.0494] & 1.0059 [0.9862; 1.0256] \\
+ & $L_q$ & 0.5000 & 0.5041 [0.4675; 0.5406] & 0.5030 [0.4866; 0.5195] \\
+ & $W$   & 2.0000 & 2.0097 [1.9368; 2.0826] & 2.0135 [1.9785; 2.0484] \\
+ & $W_q$ & 1.0000 & 1.0065 [0.9423; 1.0707] & 1.0066 [0.9757; 1.0374] \\
+ & Utiliz. & 0.5000 & 0.5008 [0.4916; 0.5100] & 0.5029 [0.4989; 0.5069] \\
+ & $P_{\text{deneg}}$ & 0.0000 & 0.0000 & 0.0000 \\
+\midrule
+\multirow{6}{*}{0.75}
+ & $L$   & 3.0000 & 3.0230 [2.8361; 3.2099] & 2.9594 [2.8657; 3.0531] \\
+ & $L_q$ & 2.2500 & 2.2700 [2.0888; 2.4512] & 2.2125 [2.1225; 2.3025] \\
+ & $W$   & 4.0000 & 4.0120 [3.7860; 4.2380] & 3.9647 [3.8516; 4.0779] \\
+ & $W_q$ & 3.0000 & 3.0107 [2.7873; 3.2341] & 2.9633 [2.8519; 3.0748] \\
+ & Utiliz. & 0.7500 & 0.7530 [0.7447; 0.7614] & 0.7469 [0.7418; 0.7519] \\
+ & $P_{\text{deneg}}$ & 0.0000 & 0.0000 & 0.0000 \\
+\midrule
+\multirow{6}{*}{1.00}
+ & $L$   & 25.0000 & 23.2796 [20.48; 26.08] & 70.1051 [55.23; 84.98] \\
+ & $L_q$ & 24.0196 & 22.3054 [19.51; 25.10] & 69.1186 [54.24; 84.00] \\
+ & $W$   & 25.5000 & 23.6456 [20.80; 26.49] & 70.1245 [55.32; 84.93] \\
+ & $W_q$ & 24.5000 & 22.6555 [19.82; 25.50] & 69.1292 [54.33; 83.93] \\
+ & Utiliz. & 0.9804 & 0.9742 [0.9674; 0.9810] & 0.9865 [0.9830; 0.9900] \\
+ & $P_{\text{deneg}}$ & 0.0196 & 0.0186 [0.0123; 0.0250] & 0.0000 \\
+\midrule
+\multirow{6}{*}{1.25}
+ & $L$   & 46.0006 & 44.2303 [43.85; 44.61] & 1230.48 [1200.8; 1260.2] \\
+ & $L_q$ & 45.0006 & 43.2321 [42.85; 43.62] & 1229.48 [1199.8; 1259.2] \\
+ & $W$   & 46.0007 & 43.5903 [42.96; 44.23] & 984.29 [961.4; 1007.2] \\
+ & $W_q$ & 45.0007 & 42.6068 [41.98; 43.24] & 983.39 [960.5; 1006.3] \\
+ & Utiliz. & 1.0000 & 0.9982 [0.9976; 0.9988] & 0.9996 [0.9995; 0.9998] \\
+ & $P_{\text{deneg}}$ & 0.2000 & 0.1904 [0.1819; 0.1989] & 0.0000 \\
+\bottomrule
+\end{longtable}
+}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{graficos_mm1/comparacion_tres_fuentes.png}
+    \caption{Comparación de las tres fuentes por nivel de carga (escala
+    escala logarítmica simétrica en $L$, $L_q$, $W$, $W_q$ por la
+    divergencia en $\rho \geq 1$).}
+\end{figure}
+
+\subsection{Probabilidad de denegación de servicio según tamaño de cola}
+
+{\small
+\begin{longtable}{ccrrr}
+\caption{Probabilidad de denegación de servicio para colas de tamaño 0, 2,
+5, 10 y 50. AnyLogic evaluó los escenarios de capacidad para
+$\rho \in \{0.75, 1.00, 1.25\}$ con 150 réplicas.}
+\label{tab:mm1-denegacion} \\
+\toprule
+$\rho$ & Tamaño de cola & Teórico & Python & AnyLogic \\
+\midrule
+\endfirsthead
+\toprule
+$\rho$ & Tamaño de cola & Teórico & Python & AnyLogic \\
+\midrule
+\endhead
+\multirow{5}{*}{0.25}
+ & 0 & 0.2000 & 0.1960 & \AL \\ & 2 & 0.0118 & 0.0111 & \AL \\
+ & 5 & 0.0002 & 0.0001 & \AL \\ & 10 & 0.0000 & 0.0000 & \AL \\ & 50 & 0.0000 & 0.0000 & \AL \\
+\midrule
+\multirow{5}{*}{0.50}
+ & 0 & 0.3333 & 0.3280 & \AL \\ & 2 & 0.0667 & 0.0680 & \AL \\
+ & 5 & 0.0079 & 0.0090 & \AL \\ & 10 & 0.0002 & 0.0005 & \AL \\ & 50 & 0.0000 & 0.0000 & \AL \\
+\midrule
+\multirow{5}{*}{0.75}
+ & 0 & 0.4286 & 0.4230 & \AL \\ & 2 & 0.1543 & 0.1562 & 0.1534 \\
+ & 5 & 0.0513 & 0.0480 & 0.0511 \\ & 10 & 0.0109 & 0.0099 & 0.0108 \\ & 50 & 0.0000 & 0.0000 & 0.0000 \\
+\midrule
+\multirow{5}{*}{1.00}
+ & 0 & 0.5000 & 0.4993 & \AL \\ & 2 & 0.2500 & 0.2514 & 0.2502 \\
+ & 5 & 0.1429 & 0.1458 & 0.1440 \\ & 10 & 0.0833 & 0.0832 & 0.0847 \\ & 50 & 0.0192 & 0.0152 & 0.0185 \\
+\midrule
+\multirow{5}{*}{1.25}
+ & 0 & 0.5556 & 0.5564 & \AL \\ & 2 & 0.3388 & 0.3401 & 0.3384 \\
+ & 5 & 0.2531 & 0.2518 & 0.2532 \\ & 10 & 0.2148 & 0.2176 & 0.2146 \\ & 50 & 0.2000 & 0.1869 & 0.1964 \\
+\bottomrule
+\end{longtable}
+}
+
+El experimento de capacidad en AnyLogic se ejecutó sobre los escenarios de
+carga alta ($\rho \geq 0.75$) con colas de tamaño 2, 5, 10 y 50, que son los
+casos en que la denegación de servicio es significativa y donde la
+comparación entre fuentes resulta más exigente. Para $\rho = 0.25$ y
+$\rho = 0.50$ la probabilidad de denegación es despreciable (prácticamente
+nula ya con cola de tamaño 5), por lo que esos escenarios se contrastan
+entre el valor teórico y Python. En todas las combinaciones medidas en
+AnyLogic, las tres fuentes concuerdan estrechamente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{graficos_mm1/comparacion_bloqueo_tres_fuentes.png}
+    \caption{Denegación de servicio vs.\ tamaño de cola: teórico (línea de
+    trazos), Python (círculos) y AnyLogic (cuadrados, para $\rho \geq 0.75$).}
+\end{figure}
+
+\subsection{Medidas en función del tiempo y distribución de $n$}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graficos_mm1/L_vs_rho.png}
+    \includegraphics[width=0.48\textwidth]{graficos_mm1/Lq_vs_rho.png}
+    \caption{$L$ y $L_q$ en función de $\rho$: teórico vs.\ Python.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graficos_mm1/convergencia_L.png}
+    \includegraphics[width=0.48\textwidth]{graficos_mm1/distribucion_n_rho_0.75.png}
+    \caption{Izq.: convergencia de $L$ acumulado en función del tiempo de
+    simulación. Der.: distribución de $n$ para $\rho=0.75$, empírica vs.\
+    $P_n=(1-\rho)\rho^n$.}
+\end{figure}
+
+\subsection{Análisis}
+
+\begin{itemize}
+    \item \textbf{Régimen estable ($\rho \leq 0.75$):} acuerdo excelente
+          entre las tres fuentes. En todas las métricas los intervalos de
+          confianza del 95\% de Python y AnyLogic se solapan y contienen al
+          valor teórico. La utilización medida coincide con $\rho$ en las
+          tres fuentes.
+    \item \textbf{Crecimiento no lineal de la congestión:} al pasar de
+          $\rho=0.5$ a $\rho=0.75$, $L_q$ se multiplica por más de cuatro
+          (de 0.5 a 2.25), como predice $L_q = \rho^2/(1-\rho)$.
+    \item \textbf{Discrepancia en $\rho \geq 1$:} en el experimento de carga
+          de AnyLogic, $L$ toma
+          valores muy grandes (70 para $\rho=1.00$; 1230 para
+          $\rho=1.25$) y la denegación es nula. Esto se debe a que el
+          bloque \texttt{Seize} de AnyLogic usó una \emph{cola no acotada},
+          mientras que el valor teórico y Python emplearon la cota $K=50$.
+          Con cola infinita y $\rho \geq 1$ el sistema es inestable: $L$ y
+          $W$ crecen con el tiempo de simulación y dependen del horizonte,
+          por lo que no convergen a un valor estacionario. La coincidencia,
+          en cambio, reaparece al comparar la \emph{misma} configuración de
+          capacidad finita (Tabla~\ref{tab:mm1-denegacion}).
+    \item \textbf{Denegación de servicio:} donde AnyLogic midió los
+          escenarios de capacidad ($\rho \in \{0.75,1.00,1.25\}$), la
+          concordancia de las tres fuentes es notable (p.\ ej.\ $\rho=1.00$,
+          cola $=2$: teórico 0.2500, Python 0.2514, AnyLogic 0.2502). Para
+          cargas bajas una cola de tamaño 5 ya reduce la denegación a
+          niveles despreciables; para $\rho=1.25$, en cambio, el rechazo es
+          estructural y tiende a $1-1/\rho = 0.20$ aun con cola grande.
+    \item \textbf{Recomendación de modelado:} para reproducir en AnyLogic
+          las medidas teóricas de $\rho \geq 1$ debe fijarse la capacidad de
+          la cola del \texttt{Seize} en $K=50$ (igual que Python), o bien
+          interpretar esos valores como propios de un sistema saturado sin
+          cota, documentando la diferencia.
+\end{itemize}
+
+% =====================================================================
+\section{Modelo de Inventario $(s,S)$: experimentos y resultados}
+% =====================================================================
+
+El modelo de inventario implementado es de \textbf{revisión continua}: la
+demanda llega como un proceso de Poisson y, apenas el inventario alcanza el
+punto de reorden $s$, se emite una orden de $S - \text{inventario}$ unidades
+que llega tras un tiempo de reposición (\emph{lead time}) positivo. Si una
+demanda no puede satisfacerse por falta de stock, se registra como venta
+perdida.
+
+\subsection{Parámetros y justificación}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llr}
+\toprule
+Parámetro & Descripción & Valor \\
+\midrule
+Tasa de demanda & Eventos de demanda por día ($\lambda$) & 5 \\
+Tamaño de demanda & Unidades medias por evento & 4 \\
+Tiempo de reposición & Días hasta recibir la orden & 2 \\
+$K$ & Costo fijo por orden & 500 \\
+$h$ & Costo de mantenimiento (unidad·día) & 1 \\
+$p$ & Costo de faltante (unidad perdida) & 50 \\
+Inventario inicial & Unidades al inicio & 100 \\
+Horizonte & Días de simulación & 365 \\
+Réplicas & Corridas por experimento & 30 \\
+\bottomrule
+\end{tabular}
+\caption{Parámetros del modelo de inventario de revisión continua.}
+\end{table}
+
+\textbf{Justificación de los parámetros:} la demanda media diaria es
+$5 \times 4 = 20$ unidades, por lo que la demanda esperada durante el tiempo
+de reposición es de unas 40 unidades. Se eligió $p \gg h$ (razón $50{:}1$)
+porque una venta perdida es mucho más costosa que almacenar una unidad, y un
+$K$ elevado hace relevante el compromiso entre ordenar seguido y mantener
+stock. Las políticas se definieron alrededor de ese umbral de 40 unidades:
+con $s=20$ se generan faltantes visibles, con $s=40$ se cubre la demanda del
+lead time en promedio y con $s=60$ se agrega stock de seguridad; variar $S$
+entre 100 y 150 expone el compromiso entre costo de orden y de
+mantenimiento. Se compararon cinco políticas: $(20,100)$, $(40,100)$,
+$(60,100)$, $(40,150)$, $(60,150)$.
+
+\subsection{Resultados: costos acumulados (365 días)}
+
+Los costos se expresan como acumulado en el horizonte de un año. El valor
+teórico es una \emph{aproximación analítica} (teoría de renovación con
+aproximación normal de la demanda durante el lead time); a diferencia del
+caso M/M/1, la política de revisión continua con ventas perdidas no admite
+una solución cerrada exacta simple.
+
+{\small
+\begin{longtable}{clrll}
+\caption{Costos de inventario acumulados: teórico aproximado vs.\ Python
+(30 réplicas, IC 95\%) vs.\ AnyLogic (30 réplicas).}
+\label{tab:inv-costos} \\
+\toprule
+$(s,S)$ & Componente & Teór.\ aprox. & Python (IC 95\%) & AnyLogic \\
+\midrule
+\endfirsthead
+\toprule
+$(s,S)$ & Componente & Teór.\ aprox. & Python (IC 95\%) & AnyLogic \\
+\midrule
+\endhead
+\multirow{4}{*}{$(20,100)$}
+ & Orden & 35.339 & 34.600 [34.296; 34.904] & 34.417 \\
+ & Mantenimiento & 10.755 & 13.026 [12.950; 13.101] & 12.992 \\
+ & Faltante & 78.212 & 87.165 [84.217; 90.113] & 86.403 \\
+ & \textbf{Total} & \textbf{124.305} & \textbf{134.791} [131.802; 137.780] & \textbf{133.812} \\
+\midrule
+\multirow{4}{*}{$(40,100)$}
+ & Orden & 52.323 & 51.317 [50.920; 51.713] & 51.350 \\
+ & Mantenimiento & 14.307 & 12.991 [12.880; 13.102] & 13.028 \\
+ & Faltante & 40.326 & 50.560 [48.119; 53.001] & 49.832 \\
+ & \textbf{Total} & \textbf{106.955} & \textbf{114.868} [112.247; 117.489] & \textbf{114.210} \\
+\midrule
+\multirow{4}{*}{$(60,100)$}
+ & Orden & 82.795 & 72.883 [72.365; 73.401] & 72.400 \\
+ & Mantenimiento & 21.411 & 14.317 [14.157; 14.476] & 14.553 \\
+ & Faltante & 11.138 & 27.758 [25.643; 29.874] & 27.245 \\
+ & \textbf{Total} & \textbf{115.344} & \textbf{114.958} [112.722; 117.195] & \textbf{114.198} \\
+\midrule
+\multirow{4}{*}{$(40,150)$}
+ & Orden & 30.813 & 30.683 [30.379; 30.987] & 30.433 \\
+ & Mantenimiento & 23.432 & 22.073 [21.907; 22.239] & 22.122 \\
+ & Faltante & 23.748 & 30.125 [28.000; 32.250] & 27.457 \\
+ & \textbf{Total} & \textbf{77.993} & \textbf{82.881} [80.783; 84.980] & \textbf{80.012} \\
+\midrule
+\multirow{4}{*}{$(60,150)$}
+ & Orden & 39.340 & 39.433 [39.039; 39.828] & 39.300 \\
+ & Mantenimiento & 30.536 & 24.330 [24.159; 24.502] & 24.267 \\
+ & Faltante & 5.292 & 9.937 [8.741; 11.132] & 9.890 \\
+ & \textbf{Total} & \textbf{75.169} & \textbf{73.700} [72.397; 75.004] & \textbf{73.457} \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Gráficas}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{graficos_inv/continuo_trayectoria_inventario.png}
+    \caption{Trayectoria del inventario para $(s,S)=(40,100)$: descenso por
+    la demanda y reposición tras el tiempo de \emph{lead time}.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{graficos_inv/continuo_comparacion_tres_fuentes.png}
+    \caption{Componentes de costo acumulado según política: teórico
+    aproximado vs.\ Python (con IC 95\%) vs.\ AnyLogic.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{graficos_inv/continuo_convergencia_costo_total.png}
+    \caption{Costo total acumulado en función del tiempo de simulación.}
+\end{figure}
+
+\subsection{Análisis}
+
+\begin{itemize}
+    \item \textbf{Concordancia de las simulaciones:} Python y AnyLogic
+          coinciden estrechamente en los cuatro costos de las cinco
+          políticas, con desvíos relativos típicamente menores al 3\%. Al
+          tratarse de dos simuladores independientes (uno propio en Python y
+          otro en AnyLogic), esta coincidencia valida la correcta
+          implementación de la lógica de inventario.
+    \item \textbf{Aproximación teórica:} el valor teórico reproduce el orden
+          de magnitud y la tendencia de cada costo, pero presenta desvíos en
+          algunas políticas (por ejemplo, el costo de orden en $(60,100)$ o
+          el de mantenimiento en $(60,150)$). Esto es esperable: la
+          expresión analítica es una aproximación de renovación, no una
+          solución exacta, y su error crece cuando la demanda durante el
+          lead time se aleja del régimen para el que la aproximación normal
+          es más precisa.
+    \item \textbf{Compromiso entre componentes:} al aumentar $s$ (de 20 a 60
+          con $S=100$) el costo de faltante cae de $\sim$86.400 a
+          $\sim$27.200, pero el de orden sube de $\sim$34.400 a
+          $\sim$72.400 (se ordena más seguido). El costo total refleja ese
+          balance.
+    \item \textbf{Política de menor costo:} entre las evaluadas, $(60,150)$
+          logra el menor costo total ($\sim$73.500), al combinar un stock de
+          seguridad que reduce los faltantes con un $S$ alto que espacia las
+          órdenes.
+\end{itemize}
+
+% =====================================================================
+\section{Comparación de las tres fuentes y conclusiones}
+% =====================================================================
+
+\subsection{Comparación}
+
+\begin{itemize}
+    \item En el \textbf{M/M/1}, las tres fuentes concuerdan de forma
+          excelente en el régimen estable ($\rho \leq 0.75$) y en todos los
+          escenarios de capacidad finita medidos. La única divergencia
+          —$\rho \geq 1$ en el experimento de carga— no es un error sino una
+          diferencia de modelado (cola no acotada en AnyLogic vs.\ $K=50$ en
+          teoría/Python) sobre un sistema inestable, cuyo comportamiento
+          transitorio depende del horizonte de simulación.
+    \item En el \textbf{inventario} de revisión continua, los dos
+          simuladores independientes (Python y AnyLogic) concuerdan
+          estrechamente en los cuatro componentes de costo de las cinco
+          políticas, lo que valida la implementación. La aproximación teórica
+          reproduce el orden de magnitud y la tendencia, con desvíos
+          esperables por su naturaleza aproximada.
+\end{itemize}
+
+\subsection{Conclusiones}
+
+\begin{enumerate}
+    \item La simulación a eventos discretos reproduce con precisión los
+          resultados analíticos cuando el número de réplicas y la longitud
+          de corrida son adecuados; los intervalos de confianza cuantifican
+          esa precisión y evitan conclusiones basadas en una sola corrida.
+    \item El análisis de $\rho \geq 1$ muestra la importancia de igualar los
+          supuestos de modelado entre fuentes: comparar un sistema con cola
+          infinita contra uno con cola finita produce discrepancias
+          esperables, no atribuibles a error de simulación.
+    \item En el inventario, la estructura de costos determina la política
+          óptima: el mínimo costo total surge del balance entre ordenar,
+          almacenar y las ventas perdidas, y no de eliminar por completo los
+          faltantes.
+    \item Las tres herramientas son complementarias: la teoría provee
+          referencias, Python flexibilidad y reproducibilidad, y AnyLogic
+          visualización y facilidad para variar parámetros de forma
+          interactiva.
+\end{enumerate}
+
+% =====================================================================
+\begin{thebibliography}{9}
+\bibitem{lawkelton} Law, A. M. y Kelton, W. D., \emph{Modelado y análisis de
+simulación} (título original: \emph{Simulation Modeling and Analysis}),
+Editorial McGraw-Hill.
+\bibitem{winston} Winston, W. L., \emph{Investigación de operaciones:
+aplicaciones y algoritmos}, Grupo Editorial Iberoamérica.
+\bibitem{grigoryev} Grigoryev, I., \emph{AnyLogic 8 en tres días} (título
+original: \emph{AnyLogic 8 in Three Days}), 6\textsuperscript{a} edición,
+2025.
+\bibitem{calculadora} Cátedra de Simulación, \emph{Calculadora de teoría de
+colas}: \url{https://noticias.ar/calculadora-de-teoria-de-colas}
+\end{thebibliography}
+
+\end{document}
