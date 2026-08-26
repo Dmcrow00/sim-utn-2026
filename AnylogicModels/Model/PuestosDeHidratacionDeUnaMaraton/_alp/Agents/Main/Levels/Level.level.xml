@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Presentation>
+	<Group>
+		<Id>1787284346100</Id>
+		<Name><![CDATA[grupoMenu]]></Name>
+		<X>390</X>
+		<Y>80</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("MENU")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Presentation>
+			<Text>
+				<Id>1787284346101</Id>
+				<Name><![CDATA[textTituloMenu]]></Name>
+				<X>-180</X>
+				<Y>-120</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Optimizacion de Puestos de Hidratacion - Maraton de Buenos Aires]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>16</Size>
+					<Style>1</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+		</Presentation>
+	</Group>
+	<Group>
+		<Id>1787284346110</Id>
+		<Name><![CDATA[grupoLogica]]></Name>
+		<X>390</X>
+		<Y>80</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("LOGICA")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Presentation>
+			<Text>
+				<Id>1787284346111</Id>
+				<Name><![CDATA[textPlaceholderLogica]]></Name>
+				<X>-180</X>
+				<Y>-120</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Logica del sistema - aca va el diagrama Source -> Seize -> Delay -> Release -> Sink (Subfase 1)]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>14</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+		</Presentation>
+	</Group>
+	<Group>
+		<Id>1787284346120</Id>
+		<Name><![CDATA[grupoEjecucion]]></Name>
+		<X>390</X>
+		<Y>80</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Presentation>
+			<Text>
+				<Id>1787284346121</Id>
+				<Name><![CDATA[textPlaceholderEjecucion]]></Name>
+				<X>-180</X>
+				<Y>-120</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Ejecucion y metricas - aca van los sliders de parametros y las graficas (Subfase 4)]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>14</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+		</Presentation>
+	</Group>
+	<Group>
+		<Id>1787284346130</Id>
+		<Name><![CDATA[grupoMapa2D]]></Name>
+		<X>390</X>
+		<Y>80</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("MAPA2D")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Presentation>
+			<Text>
+				<Id>1787284346131</Id>
+				<Name><![CDATA[textPlaceholderMapa2D]]></Name>
+				<X>-180</X>
+				<Y>-120</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Mapa 2D - aca va el GIS Map con el circuito real (Subfase 3, Pasos 2-7)]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>14</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+		</Presentation>
+	</Group>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787531599316</Id>
+		<Name><![CDATA[btnLogica]]></Name>
+		<X>270</X>
+		<Y>50</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "LOGICA";
+btnLogica.setVisible(false); 
+btnEjecucion.setVisible(false); 
+btnMapa2D.setVisible(false); 
+btnMapa3D.setVisible(false);
+btnVolverLogica.setVisible(true);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>Lógica</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787531608917</Id>
+		<Name><![CDATA[btnEjecucion]]></Name>
+		<X>400</X>
+		<Y>50</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "EJECUCION";
+btnLogica.setVisible(false); 
+btnEjecucion.setVisible(false); 
+btnMapa2D.setVisible(false); 
+btnMapa3D.setVisible(false);
+btnVolverEjecucion.setVisible(true);
+sliderVoluntarios.setVisible(true);
+sliderPuntoReposicion.setVisible(true);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>Ejecución</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787531610937</Id>
+		<Name><![CDATA[btnMapa2D]]></Name>
+		<X>530</X>
+		<Y>50</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="120" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "MAPA2D";
+btnLogica.setVisible(false); 
+btnEjecucion.setVisible(false); 
+btnMapa2D.setVisible(false); 
+btnMapa3D.setVisible(false);
+btnVolverMapa2D.setVisible(true);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>Presentación 2D</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787531614004</Id>
+		<Name><![CDATA[btnMapa3D]]></Name>
+		<X>680</X>
+		<Y>50</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="120" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "MAPA3D";
+btnLogica.setVisible(false); 
+btnEjecucion.setVisible(false); 
+btnMapa2D.setVisible(false); 
+btnMapa3D.setVisible(false);
+btnVolverMapa3D.setVisible(true);
+//viewArea3D.navigateTo();</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>Presentación 3D</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787537467633</Id>
+		<Name><![CDATA[btnVolverLogica]]></Name>
+		<X>240</X>
+		<Y>10</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "MENU";
+btnVolverLogica.setVisible(false);
+btnLogica.setVisible(true); 
+btnEjecucion.setVisible(true); 
+btnMapa2D.setVisible(true); 
+btnMapa3D.setVisible(true);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>◀ Menú</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787537484172</Id>
+		<Name><![CDATA[btnVolverEjecucion]]></Name>
+		<X>240</X>
+		<Y>10</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "MENU";
+btnVolverEjecucion.setVisible(false);
+btnLogica.setVisible(true); 
+btnEjecucion.setVisible(true); 
+btnMapa2D.setVisible(true); 
+btnMapa3D.setVisible(true);
+sliderVoluntarios.setVisible(false);
+sliderPuntoReposicion.setVisible(false);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>◀ Menú</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787537496203</Id>
+		<Name><![CDATA[btnVolverMapa2D]]></Name>
+		<X>240</X>
+		<Y>10</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>pantalla = "MENU";
+btnVolverMapa2D.setVisible(false);
+btnLogica.setVisible(true); 
+btnEjecucion.setVisible(true); 
+btnMapa2D.setVisible(true); 
+btnMapa3D.setVisible(true);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>◀ Menú</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787539694336</Id>
+		<Name><![CDATA[btnVolverMapa3D]]></Name>
+		<X>240</X>
+		<Y>10</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>//origin_VA.navigateTo();
+pantalla = "MENU";
+btnVolverMapa3D.setVisible(false);
+btnLogica.setVisible(true);
+btnEjecucion.setVisible(true);
+btnMapa2D.setVisible(true);
+btnMapa3D.setVisible(true);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>◀ Menú</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787540744370</Id>
+		<Name><![CDATA[sliderPuntoReposicion]]></Name>
+		<X>270</X>
+		<Y>160</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<VisibleCode>false</VisibleCode>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode>50</DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>0</MinValue>
+			<MaxValue>100</MaxValue>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1787540758170</Id>
+		<Name><![CDATA[sliderVoluntarios]]></Name>
+		<X>270</X>
+		<Y>110</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<VisibleCode>false</VisibleCode>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode>3</DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>10</MaxValue>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+</Presentation>
