@@ -1,0 +1,33 @@
+Parámetros: n_periodos=3000, warmup=200, n_corridas=30, K=50.0, c=2.0, h=1.0, p=5.0
+Demanda: valores=[0, 1, 2, 3, 4], prob=[0.1, 0.25, 0.35, 0.2, 0.1]
+Políticas evaluadas: [(0, 15), (2, 15), (2, 20), (5, 20), (5, 25)]
+
+==========================================================================================================================
+COSTOS DE INVENTARIO POR PERÍODO — Teórico (Markov exacto) vs. Python (media de N corridas, IC 95%)
+==========================================================================================================================
+     (s,S) Componente            Teórico   Python media   IC95 inf   IC95 sup   AnyLogic
+--------------------------------------------------------------------------------------------------------------------------
+    (0,15) costo_orden            9.7053         9.7177     9.6801     9.7552       --- 
+    (0,15) costo_mantenimiento       6.1327         6.1161     6.0993     6.1329       --- 
+    (0,15) costo_faltante         1.0420         1.0416     1.0290     1.0543       --- 
+    (0,15) costo_total           16.8800        16.8754    16.8307    16.9200       --- 
+    (2,15) costo_orden           10.4901        10.4982    10.4587    10.5378       --- 
+    (2,15) costo_mantenimiento       6.9549         6.9523     6.9369     6.9678       --- 
+    (2,15) costo_faltante         0.1690         0.1679     0.1617     0.1741       --- 
+    (2,15) costo_total           17.6140        17.6185    17.5808    17.6562       --- 
+    (2,20) costo_orden            8.8255         8.8386     8.8046     8.8727       --- 
+    (2,20) costo_mantenimiento       9.4530         9.4666     9.4469     9.4864       --- 
+    (2,20) costo_faltante         0.1263         0.1264     0.1206     0.1322       --- 
+    (2,20) costo_total           18.4048        18.4317    18.3930    18.4704       --- 
+    (5,20) costo_orden            9.7053         9.7177     9.6801     9.7552       --- 
+    (5,20) costo_mantenimiento      10.9243        10.9078    10.8900    10.9255       --- 
+    (5,20) costo_faltante         0.0000         0.0000     0.0000     0.0000       --- 
+    (5,20) costo_total           20.6296        20.6254    20.5883    20.6626       --- 
+    (5,25) costo_orden            8.3735         8.3823     8.3460     8.4187       --- 
+    (5,25) costo_mantenimiento      13.4296        13.4326    13.4079    13.4574       --- 
+    (5,25) costo_faltante         0.0000         0.0000     0.0000     0.0000       --- 
+    (5,25) costo_total           21.8031        21.8149    21.7725    21.8574       --- 
+==========================================================================================================================
+
+Gráficos guardados en: D:\Desarrollo\ProyectosUTN\SIM_2026\sim-utn-2026\tp3_2\graficos/
+CSV guardados en: D:\Desarrollo\ProyectosUTN\SIM_2026\sim-utn-2026\tp3_2\resultados/ (completar columna 'anylogic' con los resultados del modelo en AnyLogic)
