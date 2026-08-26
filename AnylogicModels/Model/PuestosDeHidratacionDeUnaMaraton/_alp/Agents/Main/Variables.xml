@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Variables>
+	<Variable Class="PlainVariable">
+		<Id>1787528412616</Id>
+		<Name><![CDATA[pantalla]]></Name>
+		<X>40</X>
+		<Y>100</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[String]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA["MENU"]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1787697156509</Id>
+		<Name><![CDATA[stockAgua]]></Name>
+		<X>40</X>
+		<Y>125</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1787697683713</Id>
+		<Name><![CDATA[capacidadMaximaAgua]]></Name>
+		<X>40</X>
+		<Y>175</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[200]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1787697683711</Id>
+				<EditorContolType>TEXT_BOX</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>100</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1787698089084</Id>
+		<Name><![CDATA[tasaLlegada]]></Name>
+		<X>40</X>
+		<Y>200</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.5]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1787698089082</Id>
+				<EditorContolType>TEXT_BOX</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>100</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1787698101394</Id>
+		<Name><![CDATA[puntoReposicionAgua]]></Name>
+		<X>40</X>
+		<Y>225</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[50]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1787698101392</Id>
+				<EditorContolType>TEXT_BOX</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>100</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1787698119094</Id>
+		<Name><![CDATA[tiempoReabastecimiento]]></Name>
+		<X>40</X>
+		<Y>250</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[5]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1787698119092</Id>
+				<EditorContolType>TEXT_BOX</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>100</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+</Variables>

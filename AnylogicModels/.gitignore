@@ -1,0 +1,9 @@
+~$*.docx
+~$*.doc
+*.log
+*.bak
+*.tmp
+*.alp.autosave
+*.original.alp
+/Model/*/model/
+/Model/*/database/
