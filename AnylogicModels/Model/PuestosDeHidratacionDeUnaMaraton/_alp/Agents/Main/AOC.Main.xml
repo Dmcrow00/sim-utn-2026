@@ -57,7 +57,7 @@ sliderPuntoReposicion.setVisible(false);]]></StartupCode>
 			<Code><![CDATA[1.0]]></Code>
 			<Unit Class="TimeUnits">SECOND</Unit>
 		</StepDurationCode>
-		<SpaceType>CONTINUOUS</SpaceType>
+		<SpaceType>GIS</SpaceType>
 		<WidthCode>500</WidthCode>
 		<HeightCode>500</HeightCode>
 		<ZHeightCode>0</ZHeightCode>
