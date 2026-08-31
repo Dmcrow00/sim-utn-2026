@@ -199,11 +199,12 @@
 			<TextColor>-16777216</TextColor>
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "LOGICA";
-btnLogica.setVisible(false); 
-btnEjecucion.setVisible(false); 
-btnMapa2D.setVisible(false); 
+btnLogica.setVisible(false);
+btnEjecucion.setVisible(false);
+btnMapa2D.setVisible(false);
 btnMapa3D.setVisible(false);
-btnVolverLogica.setVisible(true);</ActionCode>
+btnVolverLogica.setVisible(true);
+navigate(areaLogica);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -229,13 +230,14 @@ btnVolverLogica.setVisible(true);</ActionCode>
 			<TextColor>-16777216</TextColor>
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "EJECUCION";
-btnLogica.setVisible(false); 
-btnEjecucion.setVisible(false); 
-btnMapa2D.setVisible(false); 
+btnLogica.setVisible(false);
+btnEjecucion.setVisible(false);
+btnMapa2D.setVisible(false);
 btnMapa3D.setVisible(false);
 btnVolverEjecucion.setVisible(true);
 sliderVoluntarios.setVisible(true);
-sliderPuntoReposicion.setVisible(true);</ActionCode>
+sliderPuntoReposicion.setVisible(true);
+navigate(areaEjecucion);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -261,11 +263,12 @@ sliderPuntoReposicion.setVisible(true);</ActionCode>
 			<TextColor>-16777216</TextColor>
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "MAPA2D";
-btnLogica.setVisible(false); 
-btnEjecucion.setVisible(false); 
-btnMapa2D.setVisible(false); 
+btnLogica.setVisible(false);
+btnEjecucion.setVisible(false);
+btnMapa2D.setVisible(false);
 btnMapa3D.setVisible(false);
-btnVolverMapa2D.setVisible(true);</ActionCode>
+btnVolverMapa2D.setVisible(true);
+navigate(areaMapa2D);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -291,12 +294,12 @@ btnVolverMapa2D.setVisible(true);</ActionCode>
 			<TextColor>-16777216</TextColor>
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "MAPA3D";
-btnLogica.setVisible(false); 
-btnEjecucion.setVisible(false); 
-btnMapa2D.setVisible(false); 
+btnLogica.setVisible(false);
+btnEjecucion.setVisible(false);
+btnMapa2D.setVisible(false);
 btnMapa3D.setVisible(false);
 btnVolverMapa3D.setVisible(true);
-//viewArea3D.navigateTo();</ActionCode>
+navigate(areaMapa3D);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -323,10 +326,11 @@ btnVolverMapa3D.setVisible(true);
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "MENU";
 btnVolverLogica.setVisible(false);
-btnLogica.setVisible(true); 
-btnEjecucion.setVisible(true); 
-btnMapa2D.setVisible(true); 
-btnMapa3D.setVisible(true);</ActionCode>
+btnLogica.setVisible(true);
+btnEjecucion.setVisible(true);
+btnMapa2D.setVisible(true);
+btnMapa3D.setVisible(true);
+navigate(areaMenu);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -353,12 +357,13 @@ btnMapa3D.setVisible(true);</ActionCode>
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "MENU";
 btnVolverEjecucion.setVisible(false);
-btnLogica.setVisible(true); 
-btnEjecucion.setVisible(true); 
-btnMapa2D.setVisible(true); 
+btnLogica.setVisible(true);
+btnEjecucion.setVisible(true);
+btnMapa2D.setVisible(true);
 btnMapa3D.setVisible(true);
 sliderVoluntarios.setVisible(false);
-sliderPuntoReposicion.setVisible(false);</ActionCode>
+sliderPuntoReposicion.setVisible(false);
+navigate(areaMenu);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -385,10 +390,11 @@ sliderPuntoReposicion.setVisible(false);</ActionCode>
 			<Enabled>true</Enabled>
 			<ActionCode>pantalla = "MENU";
 btnVolverMapa2D.setVisible(false);
-btnLogica.setVisible(true); 
-btnEjecucion.setVisible(true); 
-btnMapa2D.setVisible(true); 
-btnMapa3D.setVisible(true);</ActionCode>
+btnLogica.setVisible(true);
+btnEjecucion.setVisible(true);
+btnMapa2D.setVisible(true);
+btnMapa3D.setVisible(true);
+navigate(areaMenu);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
@@ -413,13 +419,13 @@ btnMapa3D.setVisible(true);</ActionCode>
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<TextColor>-16777216</TextColor>
 			<Enabled>true</Enabled>
-			<ActionCode>//origin_VA.navigateTo();
-pantalla = "MENU";
+			<ActionCode>pantalla = "MENU";
 btnVolverMapa3D.setVisible(false);
 btnLogica.setVisible(true);
 btnEjecucion.setVisible(true);
 btnMapa2D.setVisible(true);
-btnMapa3D.setVisible(true);</ActionCode>
+btnMapa3D.setVisible(true);
+navigate(areaMenu);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>

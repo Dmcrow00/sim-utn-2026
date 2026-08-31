@@ -43,6 +43,23 @@ Referencias: [Propuesta_Maraton.md](Propuesta_Maraton.md) (qué pide la cátedra
 
 No existe `grupoMapa3D` — la vista 3D es una **View Area** separada, no un Group (ver Subfase3_GIS_Vistas2D3D.md).
 
+**Actualización 2026-08-26 — desactualizado lo de arriba en un punto:** `grupoLogica` y `grupoMapa2D` YA NO son el mecanismo real para el flowchart/GISMap — ver la sección "Navegación por Area" más abajo. El texto placeholder de esos grupos sigue ahí, pero el contenido real (flowchart, GISMap con 15 puestos ya cargados por Sedepski/Valeria) vive en zonas separadas del canvas, no dentro del Group.
+
+### Navegación por `Area` (View Areas) — reemplaza el enfoque de `Visible` para contenido no-Shape
+
+| Nombre | Tipo | Config | Para qué sirve | Estado |
+|---|---|---|---|---|
+| `navigate` | Function de `Main` | Parámetro `destino` (tipo `ViewArea`). Body: `destino.navigateTo();` | Helper reutilizable, llamado desde el Action de cada botón | Hecho |
+| `areaMenu` | Area | (390, 80), 900x300 | Zona del menú (ya coincide con donde están los botones) | Hecho |
+| `areaLogica` | Area | (0, -2500), 1200x800 | Destino del flowchart del puesto piloto | Area creada — **falta mover ahí los 6 bloques del flowchart** |
+| `areaEjecucion` | Area | (0, 2500), 1200x800 | Destino futuro de sliders/gráficas (opcional, ya funcionan con `Visible`) | Area creada, contenido no movido (no es urgente) |
+| `areaMapa2D` | Area | (4000, 0), 1200x800 | Destino del `GISMap` con los 15 puestos de Valeria | Area creada — **falta mover ahí el GISMap** |
+| `areaMapa3D` | Area | (4000, 2500), 1200x800 | Reservada para Pedestrian Library + Camera (Subfase 3) | Area creada, sin contenido todavía |
+
+Los 8 botones (4 menú + 4 "◀ Menú") ya tienen `navigate(areaX);` agregado a su Action, y el `StartupCode` de `Main` llama `navigate(areaMenu);` al arrancar. Detalle completo y pasos pendientes en [Subfase0_Menu_Navegacion.md](Subfase0_Menu_Navegacion.md), sección "Actualización — navegación por Area".
+
+**Por qué se necesitó esto:** tanto el flowchart (categoría "Agent" en el árbol de Projects) como el `GISMap` no tienen la propiedad `Visible` — no se pueden ocultar/mostrar con `pantalla` como los Group/Controls. La solución (tomada de un ejemplo real de AnyLogic Cloud, "Gas Station") es separarlos físicamente en zonas distintas del canvas y navegar entre ellas con `.navigateTo()`, en vez de ocultarlos.
+
 ### Botones (Controls, no anidan en los Groups a nivel XML — visibilidad propia)
 
 | Nombre | Label | Visible (Advanced) | Action | Estado |
