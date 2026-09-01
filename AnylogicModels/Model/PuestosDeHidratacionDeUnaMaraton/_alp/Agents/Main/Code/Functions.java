@@ -18,7 +18,8 @@ boolean decideHidratarse(Corredor c)
 // Decide si el corredor frena en el puesto o sigue de largo.
 // Tres efectos se suman:
 //   - propensionHidratacion: cuanto para un corredor promedio con clima fresco
-//   - nivelCalor: 0 = fresco, 1 = agobiante (con 1 paran todos)
+//   - nivelCalor: 0 = fresco, 1 = agobiante (con 1 para casi todo el mundo,
+//     salvo los mas tolerantes por la division de mas abajo)
 //   - puestosSinHidratar: la sed se acumula si viene salteando puestos
 double p = propensionHidratacion
          + ( 1 - propensionHidratacion ) * nivelCalor
