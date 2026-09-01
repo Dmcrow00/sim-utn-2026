@@ -40,7 +40,7 @@
 		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 		<ReturnType>boolean</ReturnType>
 		<Id>1788900000012</Id>
-		<Name><![CDATA[decideHidratarse]]></Name>
+		<Name><![CDATA[decidirHidratacion]]></Name>
 		<X>-170</X>
 		<Y>270</Y>
 		<Label>
@@ -53,6 +53,10 @@
 		<Parameter>
 			<Name><![CDATA[c]]></Name>
 			<Type><![CDATA[Corredor]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[puesto]]></Name>
+			<Type><![CDATA[int]]></Type>
 		</Parameter>
 		<Body xmlns:al="http://anylogic.com"/>
 	</Function>

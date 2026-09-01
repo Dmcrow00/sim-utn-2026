@@ -13,9 +13,20 @@ double b = max( tiempoHidratacionMin, tiempoHidratacionMax );
 return a == b ? a : uniform( a, b );
 /*ALCODEEND*/}
 
-boolean decideHidratarse(Corredor c)
+boolean decidirHidratacion(Corredor c, int puesto)
 {/*ALCODESTART::1788900000012*/
 // Decide si el corredor frena en el puesto o sigue de largo.
+//
+// SelectOutput evalua esta condicion mas de una vez para el mismo agente: una
+// para elegir la salida y otra al transmitirlo (por ejemplo si el seize esta
+// bloqueado y tiene que esperar). Si las dos respuestas no coinciden aborta la
+// corrida. Por eso el sorteo se hace una sola vez por puesto y despues se
+// devuelve el valor cacheado.
+if ( c.puestoDecidido == puesto ) {
+	return c.vaAHidratarse;
+}
+c.puestoDecidido = puesto;
+
 // Tres efectos se suman:
 //   - propensionHidratacion: cuanto para un corredor promedio con clima fresco
 //   - nivelCalor: 0 = fresco, 1 = agobiante (con 1 para casi todo el mundo,
@@ -29,9 +40,9 @@ double p = propensionHidratacion
 p = p / c.toleranciaCalor;
 p = max( 0, min( 1, p ) );
 
-boolean frena = randomTrue( p );
+c.vaAHidratarse = randomTrue( p );
 
-if ( frena ) {
+if ( c.vaAHidratarse ) {
 	c.puestosSinHidratar = 0;
 	c.vecesHidratado++;
 	c.estado = "hidratandose";
@@ -39,6 +50,6 @@ if ( frena ) {
 	c.puestosSinHidratar++;
 	c.estado = "corriendo";
 }
-return frena;
+return c.vaAHidratarse;
 /*ALCODEEND*/}
 
