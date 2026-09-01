@@ -3,8 +3,8 @@
 	<EmbeddedObject>
 		<Id>1787629124229</Id>
 		<Name><![CDATA[sourceCorredores]]></Name>
-		<X>110</X>
-		<Y>1190</Y>
+		<X>30</X>
+		<Y>-2410</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-20</Y>
@@ -249,8 +249,8 @@
 	<EmbeddedObject>
 		<Id>1787629146050</Id>
 		<Name><![CDATA[delayHidratacion]]></Name>
-		<X>520</X>
-		<Y>1180</Y>
+		<X>440</X>
+		<Y>-2420</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -349,8 +349,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1787629149281</Id>
 		<Name><![CDATA[releaseVoluntarios]]></Name>
-		<X>680</X>
-		<Y>1180</Y>
+		<X>600</X>
+		<Y>-2420</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -442,8 +442,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1787629150071</Id>
 		<Name><![CDATA[seizeVoluntarios]]></Name>
-		<X>340</X>
-		<Y>1180</Y>
+		<X>260</X>
+		<Y>-2420</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -648,8 +648,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1787629176209</Id>
 		<Name><![CDATA[sinkCorredores]]></Name>
-		<X>790</X>
-		<Y>2410</Y>
+		<X>710</X>
+		<Y>-1190</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-20</Y>
@@ -702,8 +702,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1787629198416</Id>
 		<Name><![CDATA[poolVoluntarios]]></Name>
-		<X>830</X>
-		<Y>1180</Y>
+		<X>750</X>
+		<Y>-2420</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -954,8 +954,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788046862800</Id>
 		<Name><![CDATA[moveTo1]]></Name>
-		<X>230</X>
-		<Y>1180</Y>
+		<X>150</X>
+		<Y>-2420</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -1105,8 +1105,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047651910</Id>
 		<Name><![CDATA[delayHidratacion1]]></Name>
-		<X>520</X>
-		<Y>1260</Y>
+		<X>440</X>
+		<Y>-2340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1205,8 +1205,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047651927</Id>
 		<Name><![CDATA[releaseVoluntarios1]]></Name>
-		<X>680</X>
-		<Y>1260</Y>
+		<X>600</X>
+		<Y>-2340</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -1298,8 +1298,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047651947</Id>
 		<Name><![CDATA[seizeVoluntarios1]]></Name>
-		<X>340</X>
-		<Y>1260</Y>
+		<X>260</X>
+		<Y>-2340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1504,8 +1504,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047652002</Id>
 		<Name><![CDATA[poolVoluntarios1]]></Name>
-		<X>830</X>
-		<Y>1260</Y>
+		<X>750</X>
+		<Y>-2340</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -1756,8 +1756,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047652073</Id>
 		<Name><![CDATA[moveTo2]]></Name>
-		<X>230</X>
-		<Y>1260</Y>
+		<X>150</X>
+		<Y>-2340</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -1907,8 +1907,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047740859</Id>
 		<Name><![CDATA[delayHidratacion2]]></Name>
-		<X>520</X>
-		<Y>1350</Y>
+		<X>440</X>
+		<Y>-2250</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -2007,8 +2007,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047740876</Id>
 		<Name><![CDATA[releaseVoluntarios2]]></Name>
-		<X>680</X>
-		<Y>1350</Y>
+		<X>600</X>
+		<Y>-2250</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -2100,8 +2100,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047740896</Id>
 		<Name><![CDATA[seizeVoluntarios2]]></Name>
-		<X>340</X>
-		<Y>1350</Y>
+		<X>260</X>
+		<Y>-2250</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -2306,8 +2306,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047740951</Id>
 		<Name><![CDATA[poolVoluntarios2]]></Name>
-		<X>830</X>
-		<Y>1350</Y>
+		<X>750</X>
+		<Y>-2250</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -2558,8 +2558,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047741022</Id>
 		<Name><![CDATA[moveTo3]]></Name>
-		<X>230</X>
-		<Y>1350</Y>
+		<X>150</X>
+		<Y>-2250</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -2709,8 +2709,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047769798</Id>
 		<Name><![CDATA[delayHidratacion3]]></Name>
-		<X>530</X>
-		<Y>1440</Y>
+		<X>450</X>
+		<Y>-2160</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -2809,8 +2809,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047769815</Id>
 		<Name><![CDATA[releaseVoluntarios3]]></Name>
-		<X>690</X>
-		<Y>1440</Y>
+		<X>610</X>
+		<Y>-2160</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -2902,8 +2902,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047769835</Id>
 		<Name><![CDATA[seizeVoluntarios3]]></Name>
-		<X>350</X>
-		<Y>1440</Y>
+		<X>270</X>
+		<Y>-2160</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3108,8 +3108,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047769890</Id>
 		<Name><![CDATA[poolVoluntarios3]]></Name>
-		<X>850</X>
-		<Y>1440</Y>
+		<X>770</X>
+		<Y>-2160</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -3360,8 +3360,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047769961</Id>
 		<Name><![CDATA[moveTo4]]></Name>
-		<X>240</X>
-		<Y>1440</Y>
+		<X>160</X>
+		<Y>-2160</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -3511,8 +3511,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047789280</Id>
 		<Name><![CDATA[delayHidratacion4]]></Name>
-		<X>530</X>
-		<Y>1520</Y>
+		<X>450</X>
+		<Y>-2080</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3611,8 +3611,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047789297</Id>
 		<Name><![CDATA[releaseVoluntarios4]]></Name>
-		<X>690</X>
-		<Y>1520</Y>
+		<X>610</X>
+		<Y>-2080</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -3704,8 +3704,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047789317</Id>
 		<Name><![CDATA[seizeVoluntarios4]]></Name>
-		<X>350</X>
-		<Y>1520</Y>
+		<X>270</X>
+		<Y>-2080</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3910,8 +3910,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047789372</Id>
 		<Name><![CDATA[poolVoluntarios4]]></Name>
-		<X>850</X>
-		<Y>1520</Y>
+		<X>770</X>
+		<Y>-2080</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -4162,8 +4162,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047789443</Id>
 		<Name><![CDATA[moveTo5]]></Name>
-		<X>240</X>
-		<Y>1520</Y>
+		<X>160</X>
+		<Y>-2080</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -4313,8 +4313,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047945730</Id>
 		<Name><![CDATA[delayHidratacion5]]></Name>
-		<X>530</X>
-		<Y>1600</Y>
+		<X>450</X>
+		<Y>-2000</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4413,8 +4413,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047945747</Id>
 		<Name><![CDATA[releaseVoluntarios5]]></Name>
-		<X>690</X>
-		<Y>1600</Y>
+		<X>610</X>
+		<Y>-2000</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -4506,8 +4506,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047945767</Id>
 		<Name><![CDATA[seizeVoluntarios5]]></Name>
-		<X>350</X>
-		<Y>1600</Y>
+		<X>270</X>
+		<Y>-2000</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4712,8 +4712,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047945822</Id>
 		<Name><![CDATA[poolVoluntarios5]]></Name>
-		<X>850</X>
-		<Y>1600</Y>
+		<X>770</X>
+		<Y>-2000</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -4964,8 +4964,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047945893</Id>
 		<Name><![CDATA[moveTo6]]></Name>
-		<X>240</X>
-		<Y>1600</Y>
+		<X>160</X>
+		<Y>-2000</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -5115,8 +5115,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047961443</Id>
 		<Name><![CDATA[delayHidratacion6]]></Name>
-		<X>530</X>
-		<Y>1680</Y>
+		<X>450</X>
+		<Y>-1920</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -5215,8 +5215,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047961460</Id>
 		<Name><![CDATA[releaseVoluntarios6]]></Name>
-		<X>690</X>
-		<Y>1680</Y>
+		<X>610</X>
+		<Y>-1920</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -5308,8 +5308,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047961480</Id>
 		<Name><![CDATA[seizeVoluntarios6]]></Name>
-		<X>350</X>
-		<Y>1680</Y>
+		<X>270</X>
+		<Y>-1920</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -5514,8 +5514,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047961535</Id>
 		<Name><![CDATA[poolVoluntarios6]]></Name>
-		<X>850</X>
-		<Y>1680</Y>
+		<X>770</X>
+		<Y>-1920</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -5766,8 +5766,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047961606</Id>
 		<Name><![CDATA[moveTo7]]></Name>
-		<X>240</X>
-		<Y>1680</Y>
+		<X>160</X>
+		<Y>-1920</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -5917,8 +5917,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047996589</Id>
 		<Name><![CDATA[delayHidratacion7]]></Name>
-		<X>530</X>
-		<Y>1760</Y>
+		<X>450</X>
+		<Y>-1840</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -6017,8 +6017,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047996606</Id>
 		<Name><![CDATA[releaseVoluntarios7]]></Name>
-		<X>690</X>
-		<Y>1760</Y>
+		<X>610</X>
+		<Y>-1840</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -6110,8 +6110,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047996626</Id>
 		<Name><![CDATA[seizeVoluntarios7]]></Name>
-		<X>350</X>
-		<Y>1760</Y>
+		<X>270</X>
+		<Y>-1840</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -6316,8 +6316,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047996681</Id>
 		<Name><![CDATA[poolVoluntarios7]]></Name>
-		<X>860</X>
-		<Y>1770</Y>
+		<X>780</X>
+		<Y>-1830</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -6568,8 +6568,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788047996752</Id>
 		<Name><![CDATA[moveTo8]]></Name>
-		<X>240</X>
-		<Y>1760</Y>
+		<X>160</X>
+		<Y>-1840</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -6719,8 +6719,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048016320</Id>
 		<Name><![CDATA[delayHidratacion8]]></Name>
-		<X>530</X>
-		<Y>1840</Y>
+		<X>450</X>
+		<Y>-1760</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -6819,8 +6819,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048016337</Id>
 		<Name><![CDATA[releaseVoluntarios8]]></Name>
-		<X>690</X>
-		<Y>1840</Y>
+		<X>610</X>
+		<Y>-1760</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -6912,8 +6912,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048016357</Id>
 		<Name><![CDATA[seizeVoluntarios8]]></Name>
-		<X>350</X>
-		<Y>1840</Y>
+		<X>270</X>
+		<Y>-1760</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -7118,8 +7118,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048016412</Id>
 		<Name><![CDATA[poolVoluntarios8]]></Name>
-		<X>850</X>
-		<Y>1850</Y>
+		<X>770</X>
+		<Y>-1750</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -7370,8 +7370,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048016483</Id>
 		<Name><![CDATA[moveTo9]]></Name>
-		<X>240</X>
-		<Y>1840</Y>
+		<X>160</X>
+		<Y>-1760</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -7521,8 +7521,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048034177</Id>
 		<Name><![CDATA[delayHidratacion9]]></Name>
-		<X>530</X>
-		<Y>1920</Y>
+		<X>450</X>
+		<Y>-1680</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -7621,8 +7621,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048034194</Id>
 		<Name><![CDATA[releaseVoluntarios9]]></Name>
-		<X>690</X>
-		<Y>1920</Y>
+		<X>610</X>
+		<Y>-1680</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -7714,8 +7714,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048034214</Id>
 		<Name><![CDATA[seizeVoluntarios9]]></Name>
-		<X>350</X>
-		<Y>1920</Y>
+		<X>270</X>
+		<Y>-1680</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -7920,8 +7920,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048034269</Id>
 		<Name><![CDATA[poolVoluntarios9]]></Name>
-		<X>850</X>
-		<Y>1930</Y>
+		<X>770</X>
+		<Y>-1670</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -8172,8 +8172,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048034340</Id>
 		<Name><![CDATA[moveTo10]]></Name>
-		<X>240</X>
-		<Y>1920</Y>
+		<X>160</X>
+		<Y>-1680</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -8323,8 +8323,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048268831</Id>
 		<Name><![CDATA[delayHidratacion10]]></Name>
-		<X>530</X>
-		<Y>2000</Y>
+		<X>450</X>
+		<Y>-1600</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -8423,8 +8423,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048268848</Id>
 		<Name><![CDATA[releaseVoluntarios10]]></Name>
-		<X>690</X>
-		<Y>2000</Y>
+		<X>610</X>
+		<Y>-1600</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -8516,8 +8516,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048268868</Id>
 		<Name><![CDATA[seizeVoluntarios10]]></Name>
-		<X>350</X>
-		<Y>2000</Y>
+		<X>270</X>
+		<Y>-1600</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -8722,8 +8722,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048268923</Id>
 		<Name><![CDATA[poolVoluntarios10]]></Name>
-		<X>850</X>
-		<Y>2010</Y>
+		<X>770</X>
+		<Y>-1590</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -8974,8 +8974,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048268994</Id>
 		<Name><![CDATA[moveTo11]]></Name>
-		<X>240</X>
-		<Y>2000</Y>
+		<X>160</X>
+		<Y>-1600</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -9125,8 +9125,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048290374</Id>
 		<Name><![CDATA[delayHidratacion11]]></Name>
-		<X>530</X>
-		<Y>2080</Y>
+		<X>450</X>
+		<Y>-1520</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -9225,8 +9225,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048290391</Id>
 		<Name><![CDATA[releaseVoluntarios11]]></Name>
-		<X>690</X>
-		<Y>2080</Y>
+		<X>610</X>
+		<Y>-1520</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -9318,8 +9318,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048290411</Id>
 		<Name><![CDATA[seizeVoluntarios11]]></Name>
-		<X>350</X>
-		<Y>2080</Y>
+		<X>270</X>
+		<Y>-1520</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -9524,8 +9524,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048290466</Id>
 		<Name><![CDATA[poolVoluntarios11]]></Name>
-		<X>850</X>
-		<Y>2090</Y>
+		<X>770</X>
+		<Y>-1510</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -9776,8 +9776,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048290537</Id>
 		<Name><![CDATA[moveTo12]]></Name>
-		<X>240</X>
-		<Y>2080</Y>
+		<X>160</X>
+		<Y>-1520</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -9927,8 +9927,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048304968</Id>
 		<Name><![CDATA[delayHidratacion12]]></Name>
-		<X>530</X>
-		<Y>2160</Y>
+		<X>450</X>
+		<Y>-1440</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -10027,8 +10027,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048304985</Id>
 		<Name><![CDATA[releaseVoluntarios12]]></Name>
-		<X>690</X>
-		<Y>2160</Y>
+		<X>610</X>
+		<Y>-1440</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -10120,8 +10120,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048305005</Id>
 		<Name><![CDATA[seizeVoluntarios12]]></Name>
-		<X>350</X>
-		<Y>2160</Y>
+		<X>270</X>
+		<Y>-1440</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -10326,8 +10326,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048305060</Id>
 		<Name><![CDATA[poolVoluntarios12]]></Name>
-		<X>850</X>
-		<Y>2170</Y>
+		<X>770</X>
+		<Y>-1430</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -10578,8 +10578,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048305131</Id>
 		<Name><![CDATA[moveTo13]]></Name>
-		<X>240</X>
-		<Y>2160</Y>
+		<X>160</X>
+		<Y>-1440</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -10729,8 +10729,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048325867</Id>
 		<Name><![CDATA[delayHidratacion13]]></Name>
-		<X>530</X>
-		<Y>2240</Y>
+		<X>450</X>
+		<Y>-1360</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -10829,8 +10829,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048325884</Id>
 		<Name><![CDATA[releaseVoluntarios13]]></Name>
-		<X>690</X>
-		<Y>2240</Y>
+		<X>610</X>
+		<Y>-1360</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -10922,8 +10922,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048325904</Id>
 		<Name><![CDATA[seizeVoluntarios13]]></Name>
-		<X>350</X>
-		<Y>2240</Y>
+		<X>270</X>
+		<Y>-1360</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -11128,8 +11128,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048325959</Id>
 		<Name><![CDATA[poolVoluntarios13]]></Name>
-		<X>850</X>
-		<Y>2250</Y>
+		<X>770</X>
+		<Y>-1350</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -11380,8 +11380,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048326030</Id>
 		<Name><![CDATA[moveTo14]]></Name>
-		<X>240</X>
-		<Y>2240</Y>
+		<X>160</X>
+		<Y>-1360</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>
@@ -11531,8 +11531,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048330851</Id>
 		<Name><![CDATA[delayHidratacion14]]></Name>
-		<X>530</X>
-		<Y>2320</Y>
+		<X>450</X>
+		<Y>-1280</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -11631,8 +11631,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048330868</Id>
 		<Name><![CDATA[releaseVoluntarios14]]></Name>
-		<X>690</X>
-		<Y>2320</Y>
+		<X>610</X>
+		<Y>-1280</Y>
 		<Label>
 			<X>-5</X>
 			<Y>-10</Y>
@@ -11724,8 +11724,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048330888</Id>
 		<Name><![CDATA[seizeVoluntarios14]]></Name>
-		<X>350</X>
-		<Y>2320</Y>
+		<X>270</X>
+		<Y>-1280</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -11930,8 +11930,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048330943</Id>
 		<Name><![CDATA[poolVoluntarios14]]></Name>
-		<X>850</X>
-		<Y>2330</Y>
+		<X>770</X>
+		<Y>-1270</Y>
 		<Label>
 			<X>-25</X>
 			<Y>-15</Y>
@@ -12182,8 +12182,8 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 	<EmbeddedObject>
 		<Id>1788048331014</Id>
 		<Name><![CDATA[moveTo15]]></Name>
-		<X>240</X>
-		<Y>2320</Y>
+		<X>160</X>
+		<Y>-1280</Y>
 		<Label>
 			<X>-10</X>
 			<Y>-15</Y>

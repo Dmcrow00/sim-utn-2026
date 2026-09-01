@@ -107,24 +107,7 @@ navigate(areaMenu);]]></StartupCode>
 	<ConnectionsId>1787284345516</ConnectionsId>
 	<Variables xmlns:al="http://anylogic.com"/>
 	<Events xmlns:al="http://anylogic.com"/>
-	<Functions>
-		<Function AccessType="default" StaticFunction="false">
-			<ReturnModificator>VOID</ReturnModificator>
-			<ReturnType><![CDATA[void]]></ReturnType>
-			<Id>1787600000001</Id>
-			<Name><![CDATA[navigate]]></Name>
-			<X>50</X><Y>-2900</Y>
-			<Label><X>10</X><Y>0</Y></Label>
-			<PublicFlag>false</PublicFlag>
-			<PresentationFlag>true</PresentationFlag>
-			<ShowLabel>true</ShowLabel>
-			<Parameter>
-				<Name><![CDATA[destino]]></Name>
-				<Type><![CDATA[ViewArea]]></Type>
-			</Parameter>
-			<Body><![CDATA[destino.navigateTo();]]></Body>
-		</Function>
-	</Functions>
+	<Functions xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
 			<Id>1787284345516</Id>
@@ -174,60 +157,80 @@ navigate(areaMenu);]]></StartupCode>
 		<Area>
 			<Id>1787600000010</Id>
 			<Name><![CDATA[areaMenu]]></Name>
-			<X>390</X><Y>80</Y>
-			<Label><X>0</X><Y>-10</Y></Label>
+			<X>160</X>
+			<Y>40</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
 			<PublicFlag>false</PublicFlag>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
-			<Title><![CDATA[Menu]]></Title>
-			<Width>900</Width>
-			<Height>300</Height>
+			<Title>Menu</Title>
+			<Width>680</Width>
+			<Height>150</Height>
 		</Area>
 		<Area>
 			<Id>1787600000011</Id>
 			<Name><![CDATA[areaLogica]]></Name>
-			<X>0</X><Y>-2500</Y>
-			<Label><X>0</X><Y>-10</Y></Label>
+			<X>0</X>
+			<Y>-2500</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
 			<PublicFlag>false</PublicFlag>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
-			<Title><![CDATA[Logica del sistema]]></Title>
-			<Width>1200</Width>
-			<Height>800</Height>
+			<Title>Logica del sistema</Title>
+			<Width>940</Width>
+			<Height>1360</Height>
 		</Area>
 		<Area>
 			<Id>1787600000012</Id>
 			<Name><![CDATA[areaEjecucion]]></Name>
-			<X>0</X><Y>2500</Y>
-			<Label><X>0</X><Y>-10</Y></Label>
+			<X>0</X>
+			<Y>2500</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
 			<PublicFlag>false</PublicFlag>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
-			<Title><![CDATA[Ejecucion y metricas]]></Title>
+			<Title>Ejecucion y metricas</Title>
 			<Width>1200</Width>
 			<Height>800</Height>
 		</Area>
 		<Area>
 			<Id>1787600000013</Id>
 			<Name><![CDATA[areaMapa2D]]></Name>
-			<X>4000</X><Y>0</Y>
-			<Label><X>0</X><Y>-10</Y></Label>
+			<X>160</X>
+			<Y>280</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
 			<PublicFlag>false</PublicFlag>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
-			<Title><![CDATA[Mapa 2D]]></Title>
-			<Width>1200</Width>
-			<Height>800</Height>
+			<Title>Mapa 2D</Title>
+			<Width>680</Width>
+			<Height>880</Height>
 		</Area>
 		<Area>
 			<Id>1787600000014</Id>
 			<Name><![CDATA[areaMapa3D]]></Name>
-			<X>4000</X><Y>2500</Y>
-			<Label><X>0</X><Y>-10</Y></Label>
+			<X>4000</X>
+			<Y>2500</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
 			<PublicFlag>false</PublicFlag>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
-			<Title><![CDATA[Mapa 3D]]></Title>
+			<Title>Mapa 3D</Title>
 			<Width>1200</Width>
 			<Height>800</Height>
 		</Area>

@@ -3,7 +3,7 @@
 	<Variable Class="PlainVariable">
 		<Id>1787528412616</Id>
 		<Name><![CDATA[pantalla]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>30</Y>
 		<Label>
 			<X>10</X>
@@ -25,7 +25,7 @@
 	<Variable Class="PlainVariable">
 		<Id>1787697156509</Id>
 		<Name><![CDATA[stockAgua]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>55</Y>
 		<Label>
 			<X>10</X>
@@ -47,7 +47,7 @@
 	<Variable Class="Parameter">
 		<Id>1787697683713</Id>
 		<Name><![CDATA[capacidadMaximaAgua]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>105</Y>
 		<Label>
 			<X>10</X>
@@ -75,7 +75,7 @@
 	<Variable Class="Parameter">
 		<Id>1787698089084</Id>
 		<Name><![CDATA[tasaLlegada]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>130</Y>
 		<Label>
 			<X>10</X>
@@ -103,7 +103,7 @@
 	<Variable Class="Parameter">
 		<Id>1787698101394</Id>
 		<Name><![CDATA[puntoReposicionAgua]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>155</Y>
 		<Label>
 			<X>10</X>
@@ -131,7 +131,7 @@
 	<Variable Class="Parameter">
 		<Id>1787698119094</Id>
 		<Name><![CDATA[tiempoReabastecimiento]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>180</Y>
 		<Label>
 			<X>10</X>
