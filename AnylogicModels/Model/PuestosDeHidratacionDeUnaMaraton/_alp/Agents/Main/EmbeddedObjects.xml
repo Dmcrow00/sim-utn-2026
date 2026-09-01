@@ -12353,35 +12353,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12428,35 +12431,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12503,35 +12509,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12578,35 +12587,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12653,35 +12665,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12728,35 +12743,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12803,35 +12821,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12878,35 +12899,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -12953,35 +12977,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -13028,35 +13055,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -13103,35 +13133,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -13178,35 +13211,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -13253,35 +13289,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -13328,35 +13367,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>
@@ -13403,35 +13445,38 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 				<ItemName>1412336242931</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
-			<Parameters>
-				<Parameter>
-					<Name><![CDATA[conditionIsProbabilistic]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[false]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[condition]]></Name>
-					<Value Class="CodeValue">
-						<Code><![CDATA[decideHidratarse(agent)]]></Code>
-					</Value>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[probability]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[choiceIsVolatile]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onEnter]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitTrue]]></Name>
-				</Parameter>
-				<Parameter>
-					<Name><![CDATA[onExitFalse]]></Name>
-				</Parameter>
-			</Parameters>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[conditionIsProbabilistic]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decideHidratarse((Corredor) agent)]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitTrue]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExitFalse]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtEnter]]></Name>
+			</Parameter>
+		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
 			<Code><![CDATA[100]]></Code>

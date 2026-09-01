@@ -2415,10 +2415,10 @@ navigate(areaMenu);</ActionCode>
 			<Enabled>true</Enabled>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[0.05]]></DefaultValueCode>
+			<DefaultValueCode>0.05</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
-			<MinValue><![CDATA[0]]></MinValue>
-			<MaxValue><![CDATA[2]]></MaxValue>
+			<MinValue>0</MinValue>
+			<MaxValue>2</MaxValue>
 			<LinkTo>true</LinkTo>
 			<Link>tiempoHidratacionMin</Link>
 		</ExtendedProperties>
@@ -2469,10 +2469,10 @@ navigate(areaMenu);</ActionCode>
 			<Enabled>true</Enabled>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[0.15]]></DefaultValueCode>
+			<DefaultValueCode>0.15</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
-			<MinValue><![CDATA[0]]></MinValue>
-			<MaxValue><![CDATA[2]]></MaxValue>
+			<MinValue>0</MinValue>
+			<MaxValue>2</MaxValue>
 			<LinkTo>true</LinkTo>
 			<Link>tiempoHidratacionMax</Link>
 		</ExtendedProperties>
@@ -2523,10 +2523,10 @@ navigate(areaMenu);</ActionCode>
 			<Enabled>true</Enabled>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[0.5]]></DefaultValueCode>
+			<DefaultValueCode>0.5</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
-			<MinValue><![CDATA[0]]></MinValue>
-			<MaxValue><![CDATA[1]]></MaxValue>
+			<MinValue>0</MinValue>
+			<MaxValue>1</MaxValue>
 			<LinkTo>true</LinkTo>
 			<Link>nivelCalor</Link>
 		</ExtendedProperties>
@@ -2577,10 +2577,10 @@ navigate(areaMenu);</ActionCode>
 			<Enabled>true</Enabled>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[0.3]]></DefaultValueCode>
+			<DefaultValueCode>0.3</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
-			<MinValue><![CDATA[0]]></MinValue>
-			<MaxValue><![CDATA[1]]></MaxValue>
+			<MinValue>0</MinValue>
+			<MaxValue>1</MaxValue>
 			<LinkTo>true</LinkTo>
 			<Link>propensionHidratacion</Link>
 		</ExtendedProperties>

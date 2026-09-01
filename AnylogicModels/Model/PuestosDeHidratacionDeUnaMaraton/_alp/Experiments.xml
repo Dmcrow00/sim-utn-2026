@@ -51,6 +51,18 @@
 			<Parameter>
 				<ParameterName>tiempoReabastecimiento</ParameterName>
 			</Parameter>
+			<Parameter>
+				<ParameterName>tiempoHidratacionMin</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>tiempoHidratacionMax</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>nivelCalor</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>propensionHidratacion</ParameterName>
+			</Parameter>
 		</Parameters>
 		<PresentationProperties>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>
