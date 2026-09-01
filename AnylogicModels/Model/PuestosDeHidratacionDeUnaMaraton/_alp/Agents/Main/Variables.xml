@@ -156,4 +156,116 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000000</Id>
+		<Name><![CDATA[tiempoHidratacionMin]]></Name>
+		<X>-170</X>
+		<Y>235</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.05]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000001</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>2</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000002</Id>
+		<Name><![CDATA[tiempoHidratacionMax]]></Name>
+		<X>-170</X>
+		<Y>260</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.15]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000003</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>2</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000004</Id>
+		<Name><![CDATA[nivelCalor]]></Name>
+		<X>-170</X>
+		<Y>285</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.5]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000005</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>1</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000006</Id>
+		<Name><![CDATA[propensionHidratacion]]></Name>
+		<X>-170</X>
+		<Y>310</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.3]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000007</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>1</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
 </Variables>

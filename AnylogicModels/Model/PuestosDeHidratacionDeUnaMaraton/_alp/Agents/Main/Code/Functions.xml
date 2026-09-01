@@ -20,4 +20,68 @@
 		</Parameter>
 		<Body xmlns:al="http://anylogic.com"/>
 	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1788900000011</Id>
+		<Name><![CDATA[tiempoHidratacion]]></Name>
+		<X>-170</X>
+		<Y>240</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"><![CDATA[// Muestrea el tiempo que tarda un corredor en hidratarse.
+// Los extremos salen de los sliders, asi que se ordenan por las dudas
+// de que el usuario deje el minimo por encima del maximo.
+double a = min( tiempoHidratacionMin, tiempoHidratacionMax );
+double b = max( tiempoHidratacionMin, tiempoHidratacionMax );
+return a == b ? a : uniform( a, b );]]></Body>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>boolean</ReturnType>
+		<Id>1788900000012</Id>
+		<Name><![CDATA[decideHidratarse]]></Name>
+		<X>-170</X>
+		<Y>270</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[c]]></Name>
+			<Type><![CDATA[Corredor]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"><![CDATA[// Decide si el corredor frena en el puesto o sigue de largo.
+// Tres efectos se suman:
+//   - propensionHidratacion: cuanto para un corredor promedio con clima fresco
+//   - nivelCalor: 0 = fresco, 1 = agobiante (con 1 paran todos)
+//   - puestosSinHidratar: la sed se acumula si viene salteando puestos
+double p = propensionHidratacion
+         + ( 1 - propensionHidratacion ) * nivelCalor
+         + 0.15 * c.puestosSinHidratar;
+
+// Un corredor mas tolerante al calor necesita parar menos seguido.
+p = p / c.toleranciaCalor;
+p = max( 0, min( 1, p ) );
+
+boolean frena = randomTrue( p );
+
+if ( frena ) {
+	c.puestosSinHidratar = 0;
+	c.vecesHidratado++;
+	c.estado = "hidratandose";
+} else {
+	c.puestosSinHidratar++;
+	c.estado = "corriendo";
+}
+return frena;]]></Body>
+	</Function>
 </Functions>

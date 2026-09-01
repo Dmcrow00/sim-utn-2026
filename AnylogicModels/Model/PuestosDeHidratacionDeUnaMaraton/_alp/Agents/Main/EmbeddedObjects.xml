@@ -276,7 +276,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -1132,7 +1132,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -1934,7 +1934,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -2736,7 +2736,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -3538,7 +3538,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -4340,7 +4340,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -5142,7 +5142,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -5944,7 +5944,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -6746,7 +6746,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -7548,7 +7548,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -8350,7 +8350,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -9152,7 +9152,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -9954,7 +9954,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -10756,7 +10756,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -11558,7 +11558,7 @@ if (stockAgua <= puntoReposicionAgua && !eventoReposicion.isActive()) {
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[uniform(0.05, 0.15)]]></Code>
+					<Code><![CDATA[tiempoHidratacion()]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
