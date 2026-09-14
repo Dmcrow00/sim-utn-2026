@@ -51,6 +51,18 @@
 			<Parameter>
 				<ParameterName>tiempoReabastecimiento</ParameterName>
 			</Parameter>
+			<Parameter>
+				<ParameterName>tiempoHidratacionMin</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>tiempoHidratacionMax</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>nivelCalor</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>propensionHidratacion</ParameterName>
+			</Parameter>
 		</Parameters>
 		<PresentationProperties>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>
@@ -61,11 +73,11 @@
 			<RealTimeScale>1.0</RealTimeScale>
 		</PresentationProperties>
 		<ModelTimeProperties>
-			<StopOption>Never</StopOption>
+			<StopOption>Stop at specified date</StopOption>
 			<InitialDate>1787270400000</InitialDate>
 			<InitialTime>0.0</InitialTime>
-			<FinalDate>1789948800000</FinalDate>
-			<FinalTime>100.0</FinalTime>
+			<FinalDate>1787331600000</FinalDate>
+			<FinalTime>1020.0</FinalTime>
 		</ModelTimeProperties>
 		<BypassInitialScreen>true</BypassInitialScreen>
 	</SimulationExperiment>

@@ -1,0 +1,32 @@
+# Normaliza saltos de linea para todo el equipo (Windows/WSL/Mac) y evita
+# diffs falsos causados por diferencias de core.autocrlf entre entornos.
+* text=auto
+
+# Codigo y texto: siempre LF en el repositorio
+*.py text eol=lf
+*.md text eol=lf
+*.xml text eol=lf
+*.java text eol=lf
+*.tex text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+
+# Binarios de AnyLogic: nunca tocar
+*.alp binary
+*.alpx binary
+*.alp.autosave binary
+
+# Otros binarios del repo: nunca tocar
+*.docx binary
+*.xlsx binary
+*.rar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
+*.shp binary
+*.shx binary
+*.dbf binary
+*.pyc binary

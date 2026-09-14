@@ -3,7 +3,7 @@
 	<Variable Class="PlainVariable">
 		<Id>1787528412616</Id>
 		<Name><![CDATA[pantalla]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>30</Y>
 		<Label>
 			<X>10</X>
@@ -24,9 +24,229 @@
 	</Variable>
 	<Variable Class="PlainVariable">
 		<Id>1787697156509</Id>
-		<Name><![CDATA[stockAgua]]></Name>
-		<X>30</X>
-		<Y>55</Y>
+		<Name><![CDATA[stockAgua1]]></Name>
+		<X>840</X>
+		<Y>-2400</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899559953</Id>
+		<Name><![CDATA[stockAgua11]]></Name>
+		<X>840</X>
+		<Y>-1560</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899567149</Id>
+		<Name><![CDATA[stockAgua12]]></Name>
+		<X>840</X>
+		<Y>-1480</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899569577</Id>
+		<Name><![CDATA[stockAgua3]]></Name>
+		<X>840</X>
+		<Y>-2220</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899575548</Id>
+		<Name><![CDATA[stockAgua13]]></Name>
+		<X>840</X>
+		<Y>-1400</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899579645</Id>
+		<Name><![CDATA[stockAgua5]]></Name>
+		<X>840</X>
+		<Y>-2060</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899580978</Id>
+		<Name><![CDATA[stockAgua14]]></Name>
+		<X>840</X>
+		<Y>-1320</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899581375</Id>
+		<Name><![CDATA[stockAgua7]]></Name>
+		<X>840</X>
+		<Y>-1900</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899581702</Id>
+		<Name><![CDATA[stockAgua15]]></Name>
+		<X>840</X>
+		<Y>-1260</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899582058</Id>
+		<Name><![CDATA[stockAgua9]]></Name>
+		<X>840</X>
+		<Y>-1720</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[capacidadMaximaAgua]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1788899582367</Id>
+		<Name><![CDATA[stockAgua10]]></Name>
+		<X>840</X>
+		<Y>-1640</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -47,7 +267,7 @@
 	<Variable Class="Parameter">
 		<Id>1787697683713</Id>
 		<Name><![CDATA[capacidadMaximaAgua]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>105</Y>
 		<Label>
 			<X>10</X>
@@ -61,7 +281,7 @@
 			<UnitType>NONE</UnitType>
 			<SdArray>false</SdArray>
 			<DefaultValue Class="CodeValue">
-				<Code><![CDATA[200]]></Code>
+				<Code><![CDATA[600]]></Code>
 			</DefaultValue>
 			<ParameterEditor>
 				<Id>1787697683711</Id>
@@ -75,7 +295,7 @@
 	<Variable Class="Parameter">
 		<Id>1787698089084</Id>
 		<Name><![CDATA[tasaLlegada]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>130</Y>
 		<Label>
 			<X>10</X>
@@ -103,7 +323,7 @@
 	<Variable Class="Parameter">
 		<Id>1787698101394</Id>
 		<Name><![CDATA[puntoReposicionAgua]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>155</Y>
 		<Label>
 			<X>10</X>
@@ -131,7 +351,7 @@
 	<Variable Class="Parameter">
 		<Id>1787698119094</Id>
 		<Name><![CDATA[tiempoReabastecimiento]]></Name>
-		<X>30</X>
+		<X>-170</X>
 		<Y>180</Y>
 		<Label>
 			<X>10</X>
@@ -152,6 +372,118 @@
 				<EditorContolType>TEXT_BOX</EditorContolType>
 				<MinSliderValue>0</MinSliderValue>
 				<MaxSliderValue>100</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000000</Id>
+		<Name><![CDATA[tiempoHidratacionMin]]></Name>
+		<X>-170</X>
+		<Y>325</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.05]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000001</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>2</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000002</Id>
+		<Name><![CDATA[tiempoHidratacionMax]]></Name>
+		<X>-170</X>
+		<Y>350</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.15]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000003</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>2</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000004</Id>
+		<Name><![CDATA[nivelCalor]]></Name>
+		<X>-170</X>
+		<Y>375</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.5]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000005</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>1</MaxSliderValue>
+				<DelimeterType>NO_DELIMETER</DelimeterType>
+			</ParameterEditor>
+		</Properties>
+	</Variable>
+	<Variable Class="Parameter">
+		<Id>1788900000006</Id>
+		<Name><![CDATA[propensionHidratacion]]></Name>
+		<X>-170</X>
+		<Y>300</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<SdArray>false</SdArray>
+			<DefaultValue Class="CodeValue">
+				<Code><![CDATA[0.3]]></Code>
+			</DefaultValue>
+			<ParameterEditor>
+				<Id>1788900000007</Id>
+				<EditorContolType>SLIDER</EditorContolType>
+				<MinSliderValue>0</MinSliderValue>
+				<MaxSliderValue>1</MaxSliderValue>
 				<DelimeterType>NO_DELIMETER</DelimeterType>
 			</ParameterEditor>
 		</Properties>

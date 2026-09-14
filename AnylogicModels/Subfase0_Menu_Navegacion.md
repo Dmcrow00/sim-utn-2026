@@ -112,6 +112,63 @@ No hace falta ligarlos (`LinkTo`) a ningún parámetro todavía — no existe `s
 - [ ] No hay dos grupos superpuestos visibles a la vez en ningún momento de la prueba.
 - [ ] *(Pendiente hasta Subfase 3)* Descomentar `viewArea3D.navigateTo();` con el nombre real, y crear `btnVolverMapa3D` dentro de la escena 3D (Paso 3.2).
 
+## Actualización — navegación por `Area` (View Areas), 2026-08-26
+
+El mecanismo `pantalla` + `Visible` (arriba) sigue vigente para los botones, sliders y textos — sigue funcionando y no se toca. Pero quedó un problema sin resolver: **el flowchart de la Subfase 1 (Source/Seize/Delay/Release/Sink/ResourcePool) y el `GISMap` real que armó Sedepski/Valeria (con los puestos de hidratación) son elementos de categoría "Agent"/mapa, no `Shape`** — no tienen la propiedad `Visible`, así que quedan visibles todo el tiempo sin importar la pantalla activa, sin importar en qué grupo los dibujes.
+
+La solución (encontrada revisando un ejemplo real de AnyLogic Cloud, "Gas Station", que resuelve exactamente este caso) es **`Area`** — lo que en la interfaz se llama "View Area": una región nombrada del mismo lienzo grande, con su propia posición y tamaño. En vez de ocultar/mostrar contenido, cada sección del menú vive en una zona *físicamente separada* del canvas, y navegar es simplemente mover la cámara de una zona a otra con `.navigateTo()`. Como cada zona está lejos de las demás, nunca se pisan visualmente — sin necesitar que el flowchart o el GISMap tengan `Visible`.
+
+### Qué ya está hecho (por XML, verificado)
+
+1. Función `navigate(ViewArea destino)` en `Main` — código: `destino.navigateTo();`.
+2. 5 `Area` creadas en `Main`, cada una con su posición y tamaño (1200x800, salvo `areaMenu`):
+
+| Area | Posición (X, Y) | Qué va a vivir ahí |
+|---|---|---|
+| `areaMenu` | (390, 80) | El menú (ya está ahí — no requiere mover nada) |
+| `areaLogica` | (0, -2500) | El flowchart del puesto piloto — **pendiente reubicar** |
+| `areaEjecucion` | (0, 2500) | Sliders/gráficas — ya funciona con `Visible`, mover es opcional |
+| `areaMapa2D` | (4000, 0) | El `GISMap` con los 15 puestos — **pendiente reubicar** |
+| `areaMapa3D` | (4000, 2500) | Pedestrian Library / Camera 3D (Subfase 3) |
+
+3. Los 8 botones (4 del menú + 4 "◀ Menú") ya llaman a `navigate(areaX)` en su Action, además de lo que ya hacían con `pantalla`/`setVisible()`.
+4. El `StartupCode` de `Main` llama a `navigate(areaMenu)` al arrancar, para que el modelo abra centrado ahí.
+
+**No se movió el flowchart ni el GISMap** — son contenido real (tuyo y de tu compañera), así que la reubicación queda para hacerla en el editor, viéndolo, en vez de mover coordenadas a ciegas por XML.
+
+### Paso 1 — Verificar que compila y los botones ya navegan
+
+1. Abrir el modelo, `Build` (F7) — no debería haber errores nuevos.
+2. Correr y probar los 4 botones del menú: aunque el flowchart y el mapa todavía no se movieron, la cámara ya debería "saltar" a cada zona (vas a ver lienzo vacío en Lógica/Mapa2D/Mapa3D, y eso es esperado hasta el Paso 2).
+3. Confirmar que "◀ Menú" vuelve a `areaMenu` correctamente en los 4 casos.
+
+### Paso 2 — Reubicar el flowchart a `areaLogica`
+
+1. En el editor, seleccionar los 6 elementos del puesto piloto: `sourceCorredores`, `seizeVoluntarios`, `delayHidratacion`, `releaseVoluntarios`, `sinkCorredores`, `poolVoluntarios` (click + Shift/Ctrl, o rectángulo de selección).
+2. Arrastrarlos en bloque hasta la zona de `areaLogica` — coordenadas de referencia: X entre 0 y 1200, Y entre -2500 y -1700 (el área mide 1200x800, centrada en X=0,Y=-2500 en el sentido de AnyLogic, que ancla desde la esquina). No hace falta que sea exacto, con que caigan dentro del rectángulo alcanza.
+3. Volver a correr y probar `btnLogica` — ahora sí debería verse el flowchart funcionando ahí.
+
+### Paso 3 — Reubicar el `GISMap` a `areaMapa2D`
+
+Mismo criterio, con más cuidado por ser el trabajo de Valeria:
+
+1. Seleccionar el `GISMap` completo (con los 15 `puesto1`...`puesto15` adentro).
+2. Arrastrarlo a la zona de `areaMapa2D` (X entre 4000 y 5200, Y entre 0 y 800).
+3. Correr y confirmar que el mapa y los puestos se siguen viendo bien alineados después del movimiento (mover un GIS Map en el lienzo 2D no debería afectar su georreferenciación interna, pero conviene confirmarlo visualmente antes de dar por cerrado este paso).
+4. Si algo se ve raro después de moverlo, avisar antes de seguir — mejor frenar ahí que asumir que quedó bien.
+
+### Paso 4 — Checklist final
+
+- [ ] Los 4 botones del menú navegan a su zona correspondiente.
+- [ ] Los 4 botones "◀ Menú" vuelven a `areaMenu`.
+- [ ] El flowchart se ve y funciona en `areaLogica`.
+- [ ] El GISMap con los 15 puestos se ve bien en `areaMapa2D`, sin desalinearse.
+- [ ] El modelo arranca centrado en `areaMenu`.
+
+### Opcional (no bloqueante): resaltar el botón activo
+
+El ejemplo de Gas Station usa una variable `selectedViewArea` + `FillColorCode` en cada botón para resaltar cuál está activo (`selectedViewArea == areaLogica ? colorActivo : colorNormal`). No se implementó acá por alcance — se puede agregar más adelante si el grupo quiere ese detalle visual.
+
 ## Nota para quien retome la Subfase 1 original
 
 El Paso 1 de la Subfase 1 (`Instructivo_TPI_Maraton_Hidratacion.docx`, sección 4.1) decía "importar como imagen de fondo el mapa oficial del circuito... en el diagrama Main". Con este cambio, ese contenido (y después el GIS Map real de la Subfase 3) va **adentro de `grupoMapa2D`**, no directo sobre `Main` — todo lo demás del Paso 1 (agente `Corredor`, puesto piloto) no cambia.
