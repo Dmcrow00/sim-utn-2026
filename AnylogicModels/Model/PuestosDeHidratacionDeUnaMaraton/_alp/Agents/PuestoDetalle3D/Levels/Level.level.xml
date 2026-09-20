@@ -4,8 +4,8 @@
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Id>1788978546769</Id>
 		<Name><![CDATA[btnVolverMapa3D]]></Name>
-		<X>90</X>
-		<Y>380</Y>
+		<X>50</X>
+		<Y>120</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -34,8 +34,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<TargetLine>
 		<Id>1788982035574</Id>
 		<Name><![CDATA[arribalLine]]></Name>
-		<X>270</X>
-		<Y>460</Y>
+		<X>120</X>
+		<Y>400</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -60,8 +60,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<TargetLine>
 		<Id>1788982068785</Id>
 		<Name><![CDATA[exitLine]]></Name>
-		<X>530</X>
-		<Y>460</Y>
+		<X>380</X>
+		<Y>400</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -86,8 +86,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<RectangleNode>
 		<Id>1789041225824</Id>
 		<Name><![CDATA[areaCalle]]></Name>
-		<X>270</X>
-		<Y>460</Y>
+		<X>120</X>
+		<Y>400</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -211,8 +211,8 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ServiceColor>-16744448</ServiceColor>
 		<Id>1789089786105</Id>
 		<Name><![CDATA[services]]></Name>
-		<X>410.129</X>
-		<Y>457.58</Y>
+		<X>260.129</X>
+		<Y>397.58</Y>
 		<Label>
 			<X>13.43</X>
 			<Y>59.012</Y>
@@ -319,8 +319,8 @@ main.navigate(main.areaMenu);</ActionCode>
 			<QueueLine>
 				<Id>1789089786107</Id>
 				<Name><![CDATA[queueLine]]></Name>
-				<X>330</X>
-				<Y>469</Y>
+				<X>180</X>
+				<Y>409</Y>
 				<Label>
 					<X>10</X>
 					<Y>0</Y>
@@ -376,8 +376,8 @@ main.navigate(main.areaMenu);</ActionCode>
 			<QueueLine>
 				<Id>1789089786109</Id>
 				<Name><![CDATA[queueLine1]]></Name>
-				<X>330</X>
-				<Y>479</Y>
+				<X>180</X>
+				<Y>419</Y>
 				<Label>
 					<X>10</X>
 					<Y>0</Y>
@@ -433,8 +433,8 @@ main.navigate(main.areaMenu);</ActionCode>
 			<ServicePoint>
 				<Id>1789089786111</Id>
 				<Name><![CDATA[servicePoint]]></Name>
-				<X>410</X>
-				<Y>496</Y>
+				<X>260</X>
+				<Y>436</Y>
 				<Label>
 					<X>10</X>
 					<Y>0</Y>
@@ -451,8 +451,8 @@ main.navigate(main.areaMenu);</ActionCode>
 			<ServicePoint>
 				<Id>1789089786113</Id>
 				<Name><![CDATA[servicePoint1]]></Name>
-				<X>397.402</X>
-				<Y>496.489</Y>
+				<X>247.402</X>
+				<Y>436.489</Y>
 				<Label>
 					<X>10</X>
 					<Y>0</Y>
@@ -482,8 +482,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<Camera3D>
 		<Id>1789091104596</Id>
 		<Name><![CDATA[camera]]></Name>
-		<X>285</X>
-		<Y>545</Y>
+		<X>135</X>
+		<Y>485</Y>
 		<Z>100</Z>
 		<Label>
 			<X>0</X>
@@ -496,8 +496,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<Control Type="Window3D">
 		<Id>1789091264286</Id>
 		<Name><![CDATA[window3d]]></Name>
-		<X>30</X>
-		<Y>640</Y>
+		<X>60</X>
+		<Y>180</Y>
 		<Width>440</Width>
 		<Height>180</Height>
 		<MakeDefaultViewArea>true</MakeDefaultViewArea>
@@ -514,8 +514,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<Figure3D>
 		<Id>1789150871715</Id>
 		<Name><![CDATA[table_2]]></Name>
-		<X>405</X>
-		<Y>506</Y>
+		<X>255</X>
+		<Y>446</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -524,8 +524,8 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>405</X>
-		<Y>506</Y>
+		<X>255</X>
+		<Y>446</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -557,8 +557,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<Figure3D>
 		<Id>1789150913672</Id>
 		<Name><![CDATA[woman_1]]></Name>
-		<X>400</X>
-		<Y>515</Y>
+		<X>250</X>
+		<Y>455</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -567,8 +567,8 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>400</X>
-		<Y>515</Y>
+		<X>250</X>
+		<Y>455</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -632,8 +632,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<Figure3D>
 		<Id>1789150928145</Id>
 		<Name><![CDATA[boy]]></Name>
-		<X>410</X>
-		<Y>514</Y>
+		<X>260</X>
+		<Y>454</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -642,8 +642,8 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>410</X>
-		<Y>514</Y>
+		<X>260</X>
+		<Y>454</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -709,10 +709,10 @@ main.navigate(main.areaMenu);</ActionCode>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789153032910</Id>
-		<Name><![CDATA[gacebo]]></Name>
-		<X>386</X>
-		<Y>539</Y>
+		<Id>1789391241279</Id>
+		<Name><![CDATA[pack1]]></Name>
+		<X>268</X>
+		<Y>445</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -721,8 +721,248 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>386</X>
-		<Y>539</Y>
+		<X>268</X>
+		<Y>445</Y>
+		<Z>8</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/box_closed.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[MA_Box]]></Name>
+				<OriginalColor>-14107679</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>90.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 100</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789391258948</Id>
+		<Name><![CDATA[pack2]]></Name>
+		<X>263</X>
+		<Y>445</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>263</X>
+		<Y>445</Y>
+		<Z>8</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/box_closed.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[MA_Box]]></Name>
+				<OriginalColor>-14107679</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>90.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 200</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789391263419</Id>
+		<Name><![CDATA[pack3]]></Name>
+		<X>258</X>
+		<Y>445</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>258</X>
+		<Y>445</Y>
+		<Z>8</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/box_closed.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[MA_Box]]></Name>
+				<OriginalColor>-14107679</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>90.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 300</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789391269624</Id>
+		<Name><![CDATA[pack4]]></Name>
+		<X>253</X>
+		<Y>445</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>253</X>
+		<Y>445</Y>
+		<Z>8</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/box_closed.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[MA_Box]]></Name>
+				<OriginalColor>-14107679</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>90.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 400</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789391273989</Id>
+		<Name><![CDATA[pack5]]></Name>
+		<X>248</X>
+		<Y>445</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>248</X>
+		<Y>445</Y>
+		<Z>8</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/box_closed.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[MA_Box]]></Name>
+				<OriginalColor>-14107679</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>90.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 500</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789391279901</Id>
+		<Name><![CDATA[pack6]]></Name>
+		<X>243</X>
+		<Y>445</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>243</X>
+		<Y>445</Y>
+		<Z>8</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/box_closed.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[MA_Box]]></Name>
+				<OriginalColor>-14107679</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>90.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 600</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517262694</Id>
+		<Name><![CDATA[fence]]></Name>
+		<X>265</X>
+		<Y>400</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>265</X>
+		<Y>400</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -730,36 +970,83 @@ main.navigate(main.areaMenu);</ActionCode>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/model.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[material]]></Name>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
 				<OriginalColor>-1</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[Color_006]]></Name>
-				<OriginalColor>-11119018</OriginalColor>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517299109</Id>
+		<Name><![CDATA[fence1]]></Name>
+		<X>245</X>
+		<Y>400</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>245</X>
+		<Y>400</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[Color_000]]></Name>
+				<Name><![CDATA[material1]]></Name>
 				<OriginalColor>-1</OriginalColor>
 			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
-		<Scale>7.1</Scale>
-		<Rotation>90.0</Rotation>
-		<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-		<SelectedAnimationPose>idle</SelectedAnimationPose>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789391241279</Id>
-		<Name><![CDATA[pack1]]></Name>
-		<X>418</X>
-		<Y>505</Y>
+		<Id>1789517350705</Id>
+		<Name><![CDATA[fence2]]></Name>
+		<X>225</X>
+		<Y>400</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -768,38 +1055,45 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>418</X>
-		<Y>505</Y>
-		<Z>8</Z>
+		<X>225</X>
+		<Y>400</Y>
+		<Z>0</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/box_closed.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_Box]]></Name>
-				<OriginalColor>-14107679</OriginalColor>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
-		<Rotation>90.0</Rotation>
+		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.stockAgua3 &gt;= 100</VisibleCode>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789391258948</Id>
-		<Name><![CDATA[pack2]]></Name>
-		<X>413</X>
-		<Y>505</Y>
+		<Id>1789517355725</Id>
+		<Name><![CDATA[fence3]]></Name>
+		<X>205</X>
+		<Y>400</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -808,38 +1102,45 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>413</X>
-		<Y>505</Y>
-		<Z>8</Z>
+		<X>205</X>
+		<Y>400</Y>
+		<Z>0</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/box_closed.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_Box]]></Name>
-				<OriginalColor>-14107679</OriginalColor>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
-		<Rotation>90.0</Rotation>
+		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.stockAgua3 &gt;= 200</VisibleCode>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789391263419</Id>
-		<Name><![CDATA[pack3]]></Name>
-		<X>408</X>
-		<Y>505</Y>
+		<Id>1789517359949</Id>
+		<Name><![CDATA[fence4]]></Name>
+		<X>185</X>
+		<Y>400</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -848,38 +1149,45 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>408</X>
-		<Y>505</Y>
-		<Z>8</Z>
+		<X>185</X>
+		<Y>400</Y>
+		<Z>0</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/box_closed.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_Box]]></Name>
-				<OriginalColor>-14107679</OriginalColor>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
-		<Rotation>90.0</Rotation>
+		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.stockAgua3 &gt;= 300</VisibleCode>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789391269624</Id>
-		<Name><![CDATA[pack4]]></Name>
-		<X>403</X>
-		<Y>505</Y>
+		<Id>1789517370971</Id>
+		<Name><![CDATA[fence5]]></Name>
+		<X>165</X>
+		<Y>400</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -888,38 +1196,45 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>403</X>
-		<Y>505</Y>
-		<Z>8</Z>
+		<X>165</X>
+		<Y>400</Y>
+		<Z>0</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/box_closed.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_Box]]></Name>
-				<OriginalColor>-14107679</OriginalColor>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
-		<Rotation>90.0</Rotation>
+		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.stockAgua3 &gt;= 400</VisibleCode>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789391273989</Id>
-		<Name><![CDATA[pack5]]></Name>
-		<X>398</X>
-		<Y>505</Y>
+		<Id>1789517376031</Id>
+		<Name><![CDATA[fence6]]></Name>
+		<X>145</X>
+		<Y>400</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -928,38 +1243,45 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>398</X>
-		<Y>505</Y>
-		<Z>8</Z>
+		<X>145</X>
+		<Y>400</Y>
+		<Z>0</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/box_closed.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_Box]]></Name>
-				<OriginalColor>-14107679</OriginalColor>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
-		<Rotation>90.0</Rotation>
+		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.stockAgua3 &gt;= 500</VisibleCode>
 	</Figure3D>
 	<Figure3D>
-		<Id>1789391279901</Id>
-		<Name><![CDATA[pack6]]></Name>
-		<X>393</X>
-		<Y>505</Y>
+		<Id>1789517380356</Id>
+		<Name><![CDATA[fence7]]></Name>
+		<X>285</X>
+		<Y>400</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -968,31 +1290,696 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>393</X>
-		<Y>505</Y>
-		<Z>8</Z>
+		<X>285</X>
+		<Y>400</Y>
+		<Z>0</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/box_closed.dae</ClassName>
+			<ClassName>3d/fence.dae</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_Box]]></Name>
-				<OriginalColor>-14107679</OriginalColor>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
-		<Rotation>90.0</Rotation>
+		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<SelectedAnimationPose/>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.stockAgua3 &gt;= 600</VisibleCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517384708</Id>
+		<Name><![CDATA[fence8]]></Name>
+		<X>305</X>
+		<Y>400</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>305</X>
+		<Y>400</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517388754</Id>
+		<Name><![CDATA[fence9]]></Name>
+		<X>325</X>
+		<Y>400</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>325</X>
+		<Y>400</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517393458</Id>
+		<Name><![CDATA[fence10]]></Name>
+		<X>345</X>
+		<Y>400</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>345</X>
+		<Y>400</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517401663</Id>
+		<Name><![CDATA[fence11]]></Name>
+		<X>365</X>
+		<Y>400</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>365</X>
+		<Y>400</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517413335</Id>
+		<Name><![CDATA[fence12]]></Name>
+		<X>345</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>345</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517413355</Id>
+		<Name><![CDATA[fence13]]></Name>
+		<X>285</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>285</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517413361</Id>
+		<Name><![CDATA[fence14]]></Name>
+		<X>365</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>365</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517413367</Id>
+		<Name><![CDATA[fence15]]></Name>
+		<X>325</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>325</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517413373</Id>
+		<Name><![CDATA[fence16]]></Name>
+		<X>305</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>305</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517441426</Id>
+		<Name><![CDATA[fence17]]></Name>
+		<X>225</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>225</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517441438</Id>
+		<Name><![CDATA[fence19]]></Name>
+		<X>185</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>185</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517441444</Id>
+		<Name><![CDATA[fence20]]></Name>
+		<X>145</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>145</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517441451</Id>
+		<Name><![CDATA[fence21]]></Name>
+		<X>205</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>205</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
+	<Figure3D>
+		<Id>1789517441459</Id>
+		<Name><![CDATA[fence22]]></Name>
+		<X>165</X>
+		<Y>440</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>165</X>
+		<Y>440</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/fence.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[material0]]></Name>
+				<OriginalColor>-4473925</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material1]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[material2]]></Name>
+				<OriginalColor>-6750208</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose/>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
 </Presentation>

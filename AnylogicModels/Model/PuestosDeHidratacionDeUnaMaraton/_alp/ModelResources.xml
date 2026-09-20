@@ -61,32 +61,14 @@
 		<Location>FILE_SYSTEM</Location>
 	</Resource>
 	<Resource>
-		<Id>1789153089988</Id>
-		<Path>3d/model.dae</Path>
-		<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		<Location>FILE_SYSTEM</Location>
-	</Resource>
-	<Resource>
-		<Id>1789153089993</Id>
-		<Path>3d/model/Metal_Steel_Textured_0.jpg</Path>
-		<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		<Location>FILE_SYSTEM</Location>
-	</Resource>
-	<Resource>
-		<Id>1789153090095</Id>
-		<Path>3d/model/Metal_Steel_Textured.jpg</Path>
-		<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		<Location>FILE_SYSTEM</Location>
-	</Resource>
-	<Resource>
-		<Id>1789153090167</Id>
-		<Path>3d/model/Metal_Aluminum_Anodized.jpg</Path>
-		<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		<Location>FILE_SYSTEM</Location>
-	</Resource>
-	<Resource>
 		<Id>1789388904692</Id>
 		<Path>3d/box_closed.dae</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+	<Resource>
+		<Id>1789517264558</Id>
+		<Path>3d/fence.dae</Path>
 		<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		<Location>FILE_SYSTEM</Location>
 	</Resource>

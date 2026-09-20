@@ -40,16 +40,7 @@
 		</Presentation>
 		<Parameters>
 			<Parameter>
-				<ParameterName>capacidadMaximaAgua</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>tasaLlegada</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>puntoReposicionAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>tiempoReabastecimiento</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>tiempoHidratacionMin</ParameterName>
