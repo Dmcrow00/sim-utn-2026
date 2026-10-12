@@ -39,7 +39,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[carga > 0]]></VisibleCode>
+		<VisibleCode>carga &gt; 0</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>4</ZHeight>

@@ -13513,8 +13513,8 @@ agent.inicializar( sortearCategoria() );]]></Code>
 	<EmbeddedObject>
 		<Id>1788898348121</Id>
 		<Name><![CDATA[puestoDetalle3D]]></Name>
-		<X>-170</X>
-		<Y>400</Y>
+		<X>-400</X>
+		<Y>580</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -13562,8 +13562,8 @@ agent.inicializar( sortearCategoria() );]]></Code>
 	<EmbeddedObject>
 		<Id>1789509282523</Id>
 		<Name><![CDATA[puesto]]></Name>
-		<X>-170</X>
-		<Y>430</Y>
+		<X>-400</X>
+		<Y>610</Y>
 		<Label>
 			<X>20</X>
 			<Y>0</Y>
@@ -13765,8 +13765,8 @@ agent.inicializar( sortearCategoria() );]]></Code>
 	<EmbeddedObject>
 		<Id>1790100000175</Id>
 		<Name><![CDATA[camiones]]></Name>
-		<X>-170</X>
-		<Y>470</Y>
+		<X>-400</X>
+		<Y>650</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -13814,8 +13814,8 @@ agent.inicializar( sortearCategoria() );]]></Code>
 	<EmbeddedObject>
 		<Id>1790100000177</Id>
 		<Name><![CDATA[operarios]]></Name>
-		<X>-170</X>
-		<Y>500</Y>
+		<X>-400</X>
+		<Y>680</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

@@ -32,12 +32,12 @@
 			<Code><![CDATA[main.velocidadZorraKmh]]></Code>
 			<Unit Class="SpeedUnits">KPH</Unit>
 		</VelocityCode>
-		<OnArrival><![CDATA[if ( fase.equals( "A_PUESTO" ) ) {
+		<OnArrival>if ( fase.equals( "A_PUESTO" ) ) {
 	// Llego a la mesa: descarga las cajas de la zorra.
 	fase = "DESCARGANDO";
 	create_FinDescarga( 1, MINUTE );
 } else if ( fase.equals( "A_CAMION" ) ) {
-	if ( puesto.necesitaCarga() && viajes < 40 ) {
+	if ( puesto.necesitaCarga() &amp;&amp; viajes &lt; 40 ) {
 		fase = "CARGANDO";
 		create_FinCarga( 1, MINUTE );
 	} else {
@@ -46,7 +46,7 @@
 		camion.terminarDescarga();
 		main.remove_operarios( this );
 	}
-}]]></OnArrival>
+}</OnArrival>
 		<PhysicalLength Class="CodeUnitValue">
 			<Code><![CDATA[1]]></Code>
 			<Unit Class="LengthUnits">METER</Unit>

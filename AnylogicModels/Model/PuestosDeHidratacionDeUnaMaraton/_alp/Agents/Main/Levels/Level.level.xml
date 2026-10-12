@@ -2568,7 +2568,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2594,13 +2594,13 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[resumenCategorias()]]></TextCode>
+		<TextCode>resumenCategorias()</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -2621,7 +2621,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2647,13 +2647,13 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[resumenPuestos()]]></TextCode>
+		<TextCode>resumenPuestos()</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -2661,4 +2661,124 @@ navigate(areaMenu);</ActionCode>
 		</Font>
 		<Alignment>LEFT</Alignment>
 	</Text>
+	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1791842774453</Id>
+		<Name><![CDATA[voluntariosPuesto1]]></Name>
+		<X>60</X>
+		<Y>2930</Y>
+		<Label>
+			<X>55</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="220" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+			<Enabled>true</Enabled>
+			<ActionCode>cambiarVoluntarios( 0, (int) value );</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode>voluntariosPorPuesto</DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>15</MaxValue>
+			<Step>1</Step>
+			<LinkTo>false</LinkTo>
+			<Link>poolVoluntarios.capacity</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1791843092221</Id>
+		<Name><![CDATA[voluntariosPuesto5]]></Name>
+		<X>60</X>
+		<Y>2980</Y>
+		<Label>
+			<X>55</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="220" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+			<Enabled>true</Enabled>
+			<ActionCode>cambiarVoluntarios( 4, (int) value );</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode>voluntariosPorPuesto</DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>15</MaxValue>
+			<Step>1</Step>
+			<LinkTo>false</LinkTo>
+			<Link>poolVoluntarios.capacity</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1791843141932</Id>
+		<Name><![CDATA[voluntariosPuesto10]]></Name>
+		<X>60</X>
+		<Y>3030</Y>
+		<Label>
+			<X>55</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="220" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+			<Enabled>true</Enabled>
+			<ActionCode>cambiarVoluntarios( 9, (int) value );</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode>voluntariosPorPuesto</DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>15</MaxValue>
+			<Step>1</Step>
+			<LinkTo>false</LinkTo>
+			<Link>poolVoluntarios.capacity</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1791843156902</Id>
+		<Name><![CDATA[voluntariosPuesto15]]></Name>
+		<X>60</X>
+		<Y>3080</Y>
+		<Label>
+			<X>55</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="220" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+			<Enabled>true</Enabled>
+			<ActionCode>cambiarVoluntarios( 14, (int) value );</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode>voluntariosPorPuesto</DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>15</MaxValue>
+			<Step>1</Step>
+			<LinkTo>false</LinkTo>
+			<Link>poolVoluntarios.capacity</Link>
+		</ExtendedProperties>
+	</Control>
 </Presentation>

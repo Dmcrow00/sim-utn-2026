@@ -22,6 +22,94 @@
 			</InitialValue>
 		</Properties>
 	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100000156</Id>
+		<Name><![CDATA[llegadosPorCategoria]]></Name>
+		<X>-400</X>
+		<Y>375</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[int[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[new int[ 4 ]]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100000157</Id>
+		<Name><![CDATA[sumaMinutosPorCategoria]]></Name>
+		<X>-400</X>
+		<Y>400</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[new double[ 4 ]]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100000158</Id>
+		<Name><![CDATA[faltantesTotales]]></Name>
+		<X>-400</X>
+		<Y>425</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[int]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[0]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100000159</Id>
+		<Name><![CDATA[camionesDespachados]]></Name>
+		<X>-400</X>
+		<Y>450</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[int]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[0]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
 	<Variable Class="Parameter">
 		<Id>1787698089084</Id>
 		<Name><![CDATA[tasaLlegada]]></Name>
@@ -53,8 +141,8 @@
 	<Variable Class="Parameter">
 		<Id>1788900000000</Id>
 		<Name><![CDATA[tiempoHidratacionMin]]></Name>
-		<X>-170</X>
-		<Y>325</Y>
+		<X>-400</X>
+		<Y>505</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -81,8 +169,8 @@
 	<Variable Class="Parameter">
 		<Id>1788900000002</Id>
 		<Name><![CDATA[tiempoHidratacionMax]]></Name>
-		<X>-170</X>
-		<Y>350</Y>
+		<X>-400</X>
+		<Y>530</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -109,8 +197,8 @@
 	<Variable Class="Parameter">
 		<Id>1788900000004</Id>
 		<Name><![CDATA[nivelCalor]]></Name>
-		<X>-170</X>
-		<Y>375</Y>
+		<X>-400</X>
+		<Y>555</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -137,8 +225,8 @@
 	<Variable Class="Parameter">
 		<Id>1788900000006</Id>
 		<Name><![CDATA[propensionHidratacion]]></Name>
-		<X>-170</X>
-		<Y>300</Y>
+		<X>-400</X>
+		<Y>480</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -496,94 +584,6 @@
 				<MaxSliderValue>100</MaxSliderValue>
 				<DelimeterType>NO_DELIMETER</DelimeterType>
 			</ParameterEditor>
-		</Properties>
-	</Variable>
-	<Variable Class="PlainVariable">
-		<Id>1790100000156</Id>
-		<Name><![CDATA[llegadosPorCategoria]]></Name>
-		<X>-400</X>
-		<Y>375</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true"
-              Constant="false"
-              AccessType="public"
-              StaticVariable="false">
-			<Type><![CDATA[int[]]]></Type>
-			<InitialValue Class="CodeValue">
-				<Code><![CDATA[new int[ 4 ]]]></Code>
-			</InitialValue>
-		</Properties>
-	</Variable>
-	<Variable Class="PlainVariable">
-		<Id>1790100000157</Id>
-		<Name><![CDATA[sumaMinutosPorCategoria]]></Name>
-		<X>-400</X>
-		<Y>400</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true"
-              Constant="false"
-              AccessType="public"
-              StaticVariable="false">
-			<Type><![CDATA[double[]]]></Type>
-			<InitialValue Class="CodeValue">
-				<Code><![CDATA[new double[ 4 ]]]></Code>
-			</InitialValue>
-		</Properties>
-	</Variable>
-	<Variable Class="PlainVariable">
-		<Id>1790100000158</Id>
-		<Name><![CDATA[faltantesTotales]]></Name>
-		<X>-400</X>
-		<Y>425</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true"
-              Constant="false"
-              AccessType="public"
-              StaticVariable="false">
-			<Type><![CDATA[int]]></Type>
-			<InitialValue Class="CodeValue">
-				<Code><![CDATA[0]]></Code>
-			</InitialValue>
-		</Properties>
-	</Variable>
-	<Variable Class="PlainVariable">
-		<Id>1790100000159</Id>
-		<Name><![CDATA[camionesDespachados]]></Name>
-		<X>-400</X>
-		<Y>450</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true"
-              Constant="false"
-              AccessType="public"
-              StaticVariable="false">
-			<Type><![CDATA[int]]></Type>
-			<InitialValue Class="CodeValue">
-				<Code><![CDATA[0]]></Code>
-			</InitialValue>
 		</Properties>
 	</Variable>
 </Variables>

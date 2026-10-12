@@ -32,13 +32,13 @@
 			<Code><![CDATA[main.velocidadCamionKmh]]></Code>
 			<Unit Class="SpeedUnits">KPH</Unit>
 		</VelocityCode>
-		<OnArrival><![CDATA[if ( fase.equals( "YENDO" ) ) {
+		<OnArrival>if ( fase.equals( "YENDO" ) ) {
 	// Estaciono en la calle aledaña: baja el operario con la zorra.
 	fase = "DESCARGANDO";
 	main.iniciarDescarga( this );
 } else if ( fase.equals( "VOLVIENDO" ) ) {
 	main.remove_camiones( this );
-}]]></OnArrival>
+}</OnArrival>
 		<PhysicalLength Class="CodeUnitValue">
 			<Code><![CDATA[1]]></Code>
 			<Unit Class="LengthUnits">METER</Unit>

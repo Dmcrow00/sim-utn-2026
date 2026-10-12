@@ -64,7 +64,7 @@ if ( ofrece[ FRUTA ] && c.nivelEnergia < 0.85
 }
 /*ALCODEEND*/}
 
-void darBebida(Corredor c, int insumo)
+void darBebida(Corredor c,int insumo)
 {/*ALCODESTART::1790100000043*/
 if ( insumo == AGUA ) {
 	c.hidratar( 0.30 );

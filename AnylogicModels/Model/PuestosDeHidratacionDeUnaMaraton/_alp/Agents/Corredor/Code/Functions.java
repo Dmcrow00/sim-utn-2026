@@ -69,7 +69,7 @@ if ( kmRecorrido > 30 ) {
 return max( 4, v );
 /*ALCODEEND*/}
 
-void avanzarHasta(double km, double nivelCalor)
+void avanzarHasta(double km,double nivelCalor)
 {/*ALCODESTART::1790100000019*/
 // Descuenta la hidratacion y la energia gastadas desde el ultimo puesto.
 double tramo = max( 0, km - kmRecorrido );

@@ -253,7 +253,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>255</X>
-		<Y>446</Y>
+		<Y>472</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -296,7 +296,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>250</X>
-		<Y>455</Y>
+		<Y>484</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -370,8 +370,8 @@ main.navigate(main.areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>260</X>
-		<Y>454</Y>
+		<X>262</X>
+		<Y>484</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -450,7 +450,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>268</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Z>8</Z>
 		<Label>
 			<X>0</X>
@@ -474,7 +474,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.833]]></VisibleCode>
+		<VisibleCode>main.puesto.get( PUESTO_3D ).fraccionStock() &gt; 0.833</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391258948</Id>
@@ -490,7 +490,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>263</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Z>8</Z>
 		<Label>
 			<X>0</X>
@@ -514,7 +514,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.667]]></VisibleCode>
+		<VisibleCode>main.puesto.get( PUESTO_3D ).fraccionStock() &gt; 0.667</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391263419</Id>
@@ -530,7 +530,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>258</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Z>8</Z>
 		<Label>
 			<X>0</X>
@@ -554,7 +554,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.500]]></VisibleCode>
+		<VisibleCode>main.puesto.get( PUESTO_3D ).fraccionStock() &gt; 0.500</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391269624</Id>
@@ -570,7 +570,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>253</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Z>8</Z>
 		<Label>
 			<X>0</X>
@@ -594,7 +594,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.333]]></VisibleCode>
+		<VisibleCode>main.puesto.get( PUESTO_3D ).fraccionStock() &gt; 0.333</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391273989</Id>
@@ -610,7 +610,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>248</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Z>8</Z>
 		<Label>
 			<X>0</X>
@@ -634,7 +634,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.167]]></VisibleCode>
+		<VisibleCode>main.puesto.get( PUESTO_3D ).fraccionStock() &gt; 0.167</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391279901</Id>
@@ -650,7 +650,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>243</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Z>8</Z>
 		<Label>
 			<X>0</X>
@@ -674,7 +674,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.000]]></VisibleCode>
+		<VisibleCode>main.puesto.get( PUESTO_3D ).fraccionStock() &gt; 0.000</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789517262694</Id>
@@ -690,7 +690,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>265</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -737,7 +737,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>245</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -784,7 +784,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>225</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -831,7 +831,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>205</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -878,7 +878,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>185</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -925,7 +925,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>165</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -972,7 +972,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>145</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -1019,7 +1019,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>285</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -1066,7 +1066,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>305</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -1113,7 +1113,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>325</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -1160,7 +1160,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>345</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -1207,7 +1207,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>365</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -1634,7 +1634,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
 		<Text><![CDATA[Puesto]]></Text>
-		<TextCode><![CDATA[main.puesto.get( PUESTO_3D ).resumen()]]></TextCode>
+		<TextCode>main.puesto.get( PUESTO_3D ).resumen()</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>

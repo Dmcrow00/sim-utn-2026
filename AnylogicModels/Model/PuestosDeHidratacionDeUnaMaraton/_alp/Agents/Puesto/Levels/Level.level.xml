@@ -18,14 +18,14 @@
 		<ZHeight>4</ZHeight>
 		<LineWidth>2</LineWidth>
 		<LineColor>-16777216</LineColor>
-		<LineColorCode><![CDATA[pedidoEnCurso ? red : black]]></LineColorCode>
+		<LineColorCode>pedidoEnCurso ? red : black</LineColorCode>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<RadiusX>6</RadiusX>
 		<RadiusY>6</RadiusY>
 		<Rotation>0.0</Rotation>
 		<FillColor>-12490271</FillColor>
-		<FillColorCode><![CDATA[colorTipo()]]></FillColorCode>
+		<FillColorCode>colorTipo()</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 	</Oval>
 	<Text>
@@ -46,7 +46,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
 		<Text><![CDATA[P]]></Text>
-		<TextCode><![CDATA["P" + numero]]></TextCode>
+		<TextCode>"P" + numero</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>

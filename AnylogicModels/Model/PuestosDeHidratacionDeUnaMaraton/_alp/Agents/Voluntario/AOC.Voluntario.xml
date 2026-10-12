@@ -33,13 +33,13 @@
 			<Code><![CDATA[1.3]]></Code>
 			<Unit Class="SpeedUnits">MPS</Unit>
 		</VelocityCode>
-		<OnArrival><![CDATA[if ( fase.equals( "A_MESA" ) ) {
+		<OnArrival>if ( fase.equals( "A_MESA" ) ) {
 	// Agarra la siguiente botella de la mesa.
 	fase = "TOMANDO";
 	create_TomarBotella( uniform( 1.5, 3 ), SECOND );
 } else if ( fase.equals( "A_CORDON" ) ) {
 	fase = "ESPERANDO";
-}]]></OnArrival>
+}</OnArrival>
 		<PhysicalLength Class="CodeUnitValue">
 			<Code><![CDATA[1]]></Code>
 			<Unit Class="LengthUnits">METER</Unit>
@@ -134,6 +134,42 @@
 			<LineArrowPosition>END</LineArrowPosition>
 		</AgentLink>
 	</AgentLinks>
+	<ContainerLinks>
+		<ContainerLink>
+			<Id>1791836766094</Id>
+			<Name><![CDATA[main]]></Name>
+			<X>50</X>
+			<Y>-100</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<ActiveObjectClass>
+				<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+				<ClassName>Main</ClassName>
+			</ActiveObjectClass>
+		</ContainerLink>
+		<ContainerLink>
+			<Id>1791836766096</Id>
+			<Name><![CDATA[puestoDetalle3D]]></Name>
+			<X>150</X>
+			<Y>-100</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<ActiveObjectClass>
+				<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+				<ClassName>PuestoDetalle3D</ClassName>
+			</ActiveObjectClass>
+		</ContainerLink>
+	</ContainerLinks>
 	<Presentation>
 		<Level>
 			<Id>1790100000090</Id>

@@ -337,20 +337,24 @@
 	<EmbeddedObject>
 		<Id>1790100000121</Id>
 		<Name><![CDATA[pedSeHidrata]]></Name>
-		<X>160</X><Y>70</Y>
-		<Label><X>-40</X><Y>-30</Y></Label>
+		<X>160</X>
+		<Y>70</Y>
+		<Label>
+			<X>-40</X>
+			<Y>-30</Y>
+		</Label>
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
 		<ActiveObjectClass>
-			<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-			<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+			<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+			<ClassName>PedSelectOutput</ClassName>
 		</ActiveObjectClass>
 		<GenericParameterSubstitute>
 			<GenericParameterSubstituteReference>
-				<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-				<ClassName><![CDATA[PedSelectOutput]]></ClassName>
-				<ItemName><![CDATA[1412464601215]]></ItemName>
+				<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+				<ClassName>PedSelectOutput</ClassName>
+				<ItemName>1412464601215</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
 		<Parameters>
@@ -420,6 +424,9 @@
 			<Parameter>
 				<Name><![CDATA[onExit5]]></Name>
 			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
 		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
@@ -453,30 +460,33 @@
 		</LocationNameCode>
 		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
-			<TableReference>
-			</TableReference>
+			<Id>0</Id>
+			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-		<QuantityColumn>
-		</QuantityColumn>
+		<QuantityColumn/>
 	</EmbeddedObject>
 	<EmbeddedObject>
 		<Id>1790100000122</Id>
 		<Name><![CDATA[pedIrAlVoluntario]]></Name>
-		<X>250</X><Y>40</Y>
-		<Label><X>-10</X><Y>-22</Y></Label>
+		<X>250</X>
+		<Y>40</Y>
+		<Label>
+			<X>-10</X>
+			<Y>-22</Y>
+		</Label>
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
 		<ActiveObjectClass>
-			<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-			<ClassName><![CDATA[PedGoTo]]></ClassName>
+			<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+			<ClassName>PedGoTo</ClassName>
 		</ActiveObjectClass>
 		<GenericParameterSubstitute>
 			<GenericParameterSubstituteReference>
-				<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-				<ClassName><![CDATA[PedGoTo]]></ClassName>
-				<ItemName><![CDATA[1412464601103]]></ItemName>
+				<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+				<ClassName>PedGoTo</ClassName>
+				<ItemName>1412464601103</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
 		<Parameters>
@@ -524,13 +534,13 @@
 				</Value>
 			</Parameter>
 			<Parameter>
-				<Name><![CDATA[locationArea]]></Name>
-			</Parameter>
-			<Parameter>
 				<Name><![CDATA[walkInReverseDirection]]></Name>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationNode]]></Name>
 			</Parameter>
 		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
@@ -540,7 +550,7 @@
 		<CollectionType>ARRAY_LIST_BASED</CollectionType>
 		<InitialSpeedCode Class="CodeUnitValue">
 			<Code><![CDATA[10]]></Code>
-			<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+			<Unit Class="SpeedUnits">MPS</Unit>
 		</InitialSpeedCode>
 		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
 		<XCode Class="CodeValue">
@@ -569,30 +579,33 @@
 		</LocationNameCode>
 		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
-			<TableReference>
-			</TableReference>
+			<Id>0</Id>
+			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-		<QuantityColumn>
-		</QuantityColumn>
+		<QuantityColumn/>
 	</EmbeddedObject>
 	<EmbeddedObject>
 		<Id>1790100000123</Id>
 		<Name><![CDATA[pedRecibirBotella]]></Name>
-		<X>330</X><Y>40</Y>
-		<Label><X>-45</X><Y>45</Y></Label>
+		<X>330</X>
+		<Y>40</Y>
+		<Label>
+			<X>-45</X>
+			<Y>45</Y>
+		</Label>
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
 		<ActiveObjectClass>
-			<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-			<ClassName><![CDATA[PedWait]]></ClassName>
+			<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+			<ClassName>PedWait</ClassName>
 		</ActiveObjectClass>
 		<GenericParameterSubstitute>
 			<GenericParameterSubstituteReference>
-				<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-				<ClassName><![CDATA[PedWait]]></ClassName>
-				<ItemName><![CDATA[1412464601107]]></ItemName>
+				<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+				<ClassName>PedWait</ClassName>
+				<ItemName>1412464601107</ItemName>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
 		<Parameters>
@@ -601,9 +614,6 @@
 				<Value Class="CodeValue">
 					<Code><![CDATA[self.LOCATION_POINT]]></Code>
 				</Value>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[locationArea]]></Name>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[locationX]]></Name>
@@ -670,6 +680,15 @@
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
 			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationNode]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[waitForGroup]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onAtExit]]></Name>
+			</Parameter>
 		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>
 		<Replication Class="CodeValue">
@@ -678,7 +697,7 @@
 		<CollectionType>ARRAY_LIST_BASED</CollectionType>
 		<InitialSpeedCode Class="CodeUnitValue">
 			<Code><![CDATA[10]]></Code>
-			<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+			<Unit Class="SpeedUnits">MPS</Unit>
 		</InitialSpeedCode>
 		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
 		<XCode Class="CodeValue">
@@ -707,12 +726,11 @@
 		</LocationNameCode>
 		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
-			<TableReference>
-			</TableReference>
+			<Id>0</Id>
+			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-		<QuantityColumn>
-		</QuantityColumn>
+		<QuantityColumn/>
 	</EmbeddedObject>
 	<EmbeddedObject>
 		<Id>1790100000124</Id>

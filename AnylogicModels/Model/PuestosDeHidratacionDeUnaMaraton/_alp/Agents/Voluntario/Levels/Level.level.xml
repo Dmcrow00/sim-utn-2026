@@ -13,9 +13,8 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<VisibleCode><![CDATA[indice % 2 == 0]]></VisibleCode>
-		<X>250</X>
-		<Y>455</Y>
+		<X>0</X>
+		<Y>0</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -75,6 +74,7 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>indice % 2 == 0</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100000108</Id>
@@ -89,9 +89,8 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<VisibleCode><![CDATA[indice % 2 == 1]]></VisibleCode>
-		<X>260</X>
-		<Y>454</Y>
+		<X>0</X>
+		<Y>0</Y>
 		<Z>0</Z>
 		<Label>
 			<X>0</X>
@@ -155,6 +154,7 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>indice % 2 == 1</VisibleCode>
 	</Figure3D>
 	<Oval>
 		<Id>1790100000109</Id>
@@ -169,7 +169,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<VisibleCode><![CDATA[tieneBotella]]></VisibleCode>
+		<VisibleCode>tieneBotella</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>9</Z>
 		<ZHeight>3</ZHeight>

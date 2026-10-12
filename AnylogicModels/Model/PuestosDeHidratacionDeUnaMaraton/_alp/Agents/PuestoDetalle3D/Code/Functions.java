@@ -1,4 +1,4 @@
-void ingresarCorredor(Corredor c, boolean seHidrata)
+void ingresarCorredor(Corredor c,boolean seHidrata)
 {/*ALCODESTART::1790100000116*/
 // Cada corredor que pasa por el puesto de la vista 3D (frene o no) entra a
 // la escena como peaton, con su velocidad y su decision de hidratarse.

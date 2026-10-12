@@ -13,7 +13,7 @@ double b = max( tiempoHidratacionMin, tiempoHidratacionMax );
 return a == b ? a : uniform( a, b );
 /*ALCODEEND*/}
 
-boolean decidirHidratacion(Corredor c, int nPuesto)
+boolean decidirHidratacion(Corredor c,int nPuesto)
 {/*ALCODESTART::1788900000012*/
 // Decide si el corredor frena en el puesto o sigue de largo.
 //
@@ -198,7 +198,7 @@ switch ( nPuesto ) {
 return null;
 /*ALCODEEND*/}
 
-void cambiarVoluntarios(int nPuesto, int cantidad)
+void cambiarVoluntarios(int nPuesto,int cantidad)
 {/*ALCODESTART::1790100009005*/
 // Cambia cuantos voluntarios trabajan en un puesto, tambien con la
 // simulacion corriendo (por ejemplo desde el Action de un slider:
