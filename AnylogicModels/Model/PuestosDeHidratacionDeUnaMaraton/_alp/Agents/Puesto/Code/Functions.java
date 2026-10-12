@@ -18,6 +18,9 @@ ofrece[ AGUA ] = ofertas[ i ].contains( "A" );
 ofrece[ ISOTONICA ] = ofertas[ i ].contains( "I" );
 ofrece[ FRUTA ] = ofertas[ i ].contains( "F" );
 ofrece[ GEL ] = ofertas[ i ].contains( "G" );
+// Voluntarios trabajando en este puesto. Arranca con el valor general y se
+// puede cambiar en la corrida con main.cambiarVoluntarios( i, cantidad ).
+voluntarios = main.voluntariosPorPuesto;
 latEstacionamiento = latEst[ i ];
 lonEstacionamiento = lonEst[ i ];
 
@@ -185,7 +188,7 @@ return royalBlue;
 
 String resumen()
 {/*ALCODESTART::1790100000052*/
-String s = "P" + numero + " km " + km + " (" + tipoTexto() + "):";
+String s = "P" + numero + " km " + km + " (" + tipoTexto() + ", " + voluntarios + " vol.):";
 for ( int k = 0; k < 4; k++ ) {
 	if ( !ofrece[ k ] ) {
 		continue;

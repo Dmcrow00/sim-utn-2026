@@ -175,3 +175,38 @@ s += "\nFaltantes totales: " + faltantesTotales + "    Camiones despachados: " +
 return s;
 /*ALCODEEND*/}
 
+ResourcePool poolDePuesto(int nPuesto)
+{/*ALCODESTART::1790100009004*/
+// Pool de voluntarios del puesto nPuesto (0 = puesto 1 ... 14 = puesto 15).
+switch ( nPuesto ) {
+	case 0: return poolVoluntarios;
+	case 1: return poolVoluntarios1;
+	case 2: return poolVoluntarios2;
+	case 3: return poolVoluntarios3;
+	case 4: return poolVoluntarios4;
+	case 5: return poolVoluntarios5;
+	case 6: return poolVoluntarios6;
+	case 7: return poolVoluntarios7;
+	case 8: return poolVoluntarios8;
+	case 9: return poolVoluntarios9;
+	case 10: return poolVoluntarios10;
+	case 11: return poolVoluntarios11;
+	case 12: return poolVoluntarios12;
+	case 13: return poolVoluntarios13;
+	case 14: return poolVoluntarios14;
+}
+return null;
+/*ALCODEEND*/}
+
+void cambiarVoluntarios(int nPuesto, int cantidad)
+{/*ALCODESTART::1790100009005*/
+// Cambia cuantos voluntarios trabajan en un puesto, tambien con la
+// simulacion corriendo (por ejemplo desde el Action de un slider:
+// cambiarVoluntarios( 0, (int) value ); ).
+// Que pasa con los voluntarios que sobran al bajar la cantidad depende de la
+// opcion "Destroy excess units" de cada pool.
+cantidad = max( 1, cantidad );
+puesto.get( nPuesto ).voluntarios = cantidad;
+poolDePuesto( nPuesto ).set_capacity( cantidad );
+/*ALCODEEND*/}
+

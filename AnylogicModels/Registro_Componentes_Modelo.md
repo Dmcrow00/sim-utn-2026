@@ -173,6 +173,13 @@ Datos del shapefile `puestos_hidratacion3.dbf` (agua/isotónica/fruta + km). Los
 3. Al estacionar baja un `OperarioZorra`. El operario carga `capacidadZorra` unidades, camina en línea recta hasta la mesa, descarga (1 min; `recibirCarga` reparte entre los insumos según lo que le falta a cada uno) y vuelve. Repite hasta llenar el puesto.
 4. Al terminar, `finReposicion()`: el camión vuelve al depósito y desaparece.
 
+### Voluntarios por puesto
+
+- `Puesto.voluntarios` (int): cuántos voluntarios trabajan en ese puesto. Arranca con `voluntariosPorPuesto` y aparece en el resumen de inventario.
+- `Main.cambiarVoluntarios(nPuesto, cantidad)`: cambia la variable y la capacidad del pool del puesto (`set_capacity`), también con la simulación corriendo. `nPuesto` va de 0 (puesto 1) a 14 (puesto 15); mínimo 1 voluntario.
+- `Main.poolDePuesto(nPuesto)`: devuelve el `ResourcePool` de ese puesto.
+- Para un slider: rango 1–10, valor inicial `voluntariosPorPuesto`, y en **Action** `cambiarVoluntarios( 0, (int) value );` (cambiando el 0 por el puesto). Pendiente: armar los sliders (lo hace Ramiro).
+
 ### Parámetros nuevos de `Main`
 
 `voluntariosPorPuesto` (4), `entregaEnMano` (true), `capacidadAgua` (800), `capacidadIsotonica` (600), `capacidadFruta` (300), `capacidadGel` (250), `porcentajeReposicion` (0,35), `latDeposito`/`lonDeposito` (-34,5960 / -58,4380), `velocidadCamionKmh` (25), `capacidadZorra` (200), `velocidadZorraKmh` (3,5). Todos son valores de prueba, sin calibrar.
