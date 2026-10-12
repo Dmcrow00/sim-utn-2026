@@ -13,7 +13,7 @@ double b = max( tiempoHidratacionMin, tiempoHidratacionMax );
 return a == b ? a : uniform( a, b );
 /*ALCODEEND*/}
 
-boolean decidirHidratacion(Corredor c,int puesto)
+boolean decidirHidratacion(Corredor c, int nPuesto)
 {/*ALCODESTART::1788900000012*/
 // Decide si el corredor frena en el puesto o sigue de largo.
 //
@@ -22,25 +22,32 @@ boolean decidirHidratacion(Corredor c,int puesto)
 // bloqueado y tiene que esperar). Si las dos respuestas no coinciden aborta la
 // corrida. Por eso el sorteo se hace una sola vez por puesto y despues se
 // devuelve el valor cacheado.
-if ( c.puestoDecidido == puesto ) {
+if ( c.puestoDecidido == nPuesto ) {
 	return c.vaAHidratarse;
 }
-c.puestoDecidido = puesto;
+c.puestoDecidido = nPuesto;
+Puesto p = puesto.get( nPuesto );
 
-// Tres efectos se suman:
+// Efectos que se suman:
 //   - propensionHidratacion: cuanto para un corredor promedio con clima fresco
-//   - nivelCalor: 0 = fresco, 1 = agobiante (con 1 para casi todo el mundo,
-//     salvo los mas tolerantes por la division de mas abajo)
+//   - nivelCalor: 0 = fresco, 1 = agobiante
 //   - puestosSinHidratar: la sed se acumula si viene salteando puestos
-double p = propensionHidratacion
-         + ( 1 - propensionHidratacion ) * nivelCalor
-         + 0.15 * c.puestosSinHidratar;
+//   - nivelHidratacion: cuanto mas deshidratado viene, mas ganas de parar
+//   - si el puesto da gel o fruta y le falta energia, tambien frena
+double prob = propensionHidratacion
+            + ( 1 - propensionHidratacion ) * nivelCalor
+            + 0.15 * c.puestosSinHidratar
+            + 1.2 * ( 1 - c.nivelHidratacion );
+if ( ( p.ofrece[ Puesto.GEL ] || p.ofrece[ Puesto.FRUTA ] ) && c.nivelEnergia < 0.6 ) {
+	prob += 0.4;
+}
 
-// Un corredor mas tolerante al calor necesita parar menos seguido.
-p = p / c.toleranciaCalor;
-p = max( 0, min( 1, p ) );
+// Cada categoria tiene su propia necesidad de hidratacion, y un corredor mas
+// tolerante al calor necesita parar menos seguido.
+prob = prob * c.necesidadHidratacion / c.toleranciaCalor;
+prob = max( 0, min( 1, prob ) );
 
-c.vaAHidratarse = randomTrue( p );
+c.vaAHidratarse = randomTrue( prob );
 
 if ( c.vaAHidratarse ) {
 	c.puestosSinHidratar = 0;
@@ -51,5 +58,120 @@ if ( c.vaAHidratarse ) {
 	c.estado = "corriendo";
 }
 return c.vaAHidratarse;
+/*ALCODEEND*/}
+
+int sortearCategoria()
+{/*ALCODESTART::1790100000160*/
+// Reparto de categorias en una maraton masiva (aprox. Maraton de Buenos
+// Aires): pocos elite, un grupo de avanzados y la gran mayoria intermedios
+// y principiantes.
+double u = uniform();
+if ( u < 0.03 ) return Corredor.ELITE;
+if ( u < 0.20 ) return Corredor.AVANZADO;
+if ( u < 0.70 ) return Corredor.INTERMEDIO;
+return Corredor.PRINCIPIANTE;
+/*ALCODEEND*/}
+
+double tiempoAtencion(Corredor c)
+{/*ALCODESTART::1790100000161*/
+// Minutos que el corredor ocupa a un voluntario en el puesto.
+// Con entrega en mano el corredor no va hasta la mesa: agarra al paso lo
+// que el voluntario le alcanza, asi que tarda bastante menos.
+double t = tiempoHidratacion() * c.factorTiempoPuesto;
+if ( entregaEnMano ) {
+	t *= 0.5;
+}
+return t;
+/*ALCODEEND*/}
+
+GISPoint puntoPuesto(int i)
+{/*ALCODESTART::1790100000162*/
+switch ( i ) {
+	case 0: return puesto1;
+	case 1: return puesto2;
+	case 2: return puesto3;
+	case 3: return puesto4;
+	case 4: return puesto5;
+	case 5: return puesto6;
+	case 6: return puesto7;
+	case 7: return puesto8;
+	case 8: return puesto9;
+	case 9: return puesto10;
+	case 10: return puesto11;
+	case 11: return puesto12;
+	case 12: return puesto13;
+	case 13: return puesto14;
+	case 14: return puesto15;
+}
+return largada;
+/*ALCODEEND*/}
+
+double capacidadInicial(int insumo)
+{/*ALCODESTART::1790100000163*/
+switch ( insumo ) {
+	case Puesto.AGUA: return capacidadAgua;
+	case Puesto.ISOTONICA: return capacidadIsotonica;
+	case Puesto.FRUTA: return capacidadFruta;
+	case Puesto.GEL: return capacidadGel;
+}
+return 0;
+/*ALCODEEND*/}
+
+void despacharCamion(Puesto p)
+{/*ALCODESTART::1790100000164*/
+// El puesto llego a su punto de reposicion: sale un camion del deposito.
+camionesDespachados++;
+Camion c = add_camiones();
+c.despachar( p );
+/*ALCODEEND*/}
+
+void iniciarDescarga(Camion c)
+{/*ALCODESTART::1790100000165*/
+// El camion ya estaciono en la calle aledaña: baja un operario que lleva la
+// mercaderia con la zorra hasta el puesto, en uno o varios viajes.
+OperarioZorra o = add_operarios();
+o.iniciar( c );
+/*ALCODEEND*/}
+
+void registrarLlegada(Corredor c)
+{/*ALCODESTART::1790100000166*/
+// Se llama en el sink: guarda el tiempo final del corredor por categoria.
+c.estado = "llego";
+llegadosPorCategoria[ c.categoria ]++;
+sumaMinutosPorCategoria[ c.categoria ] += time() - c.minutoLargada;
+/*ALCODEEND*/}
+
+String formatoHoras(double minutos)
+{/*ALCODESTART::1790100000167*/
+int h = (int) ( minutos / 60 );
+int m = (int) Math.round( minutos - h * 60 );
+if ( m == 60 ) {
+	h++;
+	m = 0;
+}
+return h + "h" + ( m < 10 ? "0" : "" ) + m;
+/*ALCODEEND*/}
+
+String resumenCategorias()
+{/*ALCODESTART::1790100000168*/
+String s = "";
+for ( int i = 0; i < 4; i++ ) {
+	s += Corredor.NOMBRES_CATEGORIA[ i ] + ": " + llegadosPorCategoria[ i ] + " llegados";
+	if ( llegadosPorCategoria[ i ] > 0 ) {
+		s += " - tiempo promedio " + formatoHoras( sumaMinutosPorCategoria[ i ] / llegadosPorCategoria[ i ] );
+	}
+	s += "\n";
+}
+return s;
+/*ALCODEEND*/}
+
+String resumenPuestos()
+{/*ALCODESTART::1790100000169*/
+String s = "";
+for ( Puesto p : puesto ) {
+	s += p.resumen() + "\n";
+}
+s += "\nFaltantes totales: " + faltantesTotales + "    Camiones despachados: " + camionesDespachados;
+return s;
 /*ALCODEEND*/}
 

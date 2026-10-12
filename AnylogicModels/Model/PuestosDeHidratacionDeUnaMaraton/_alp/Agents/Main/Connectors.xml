@@ -2160,57 +2160,6 @@
 		</Points>
 	</Connector>
 	<Connector>
-		<Id>1788048479169</Id>
-		<Name><![CDATA[connector60]]></Name>
-		<X>650</X>
-		<Y>-1260</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<SourceEmbeddedObjectReference>
-			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>Main</ClassName>
-			<ItemName>releaseVoluntarios14</ItemName>
-		</SourceEmbeddedObjectReference>
-		<SourceConnectableItemReference>
-			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Release</ClassName>
-			<ItemName>out</ItemName>
-		</SourceConnectableItemReference>
-		<TargetEmbeddedObjectReference>
-			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>Main</ClassName>
-			<ItemName>sinkCorredores</ItemName>
-		</TargetEmbeddedObjectReference>
-		<TargetConnectableItemReference>
-			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
-			<ClassName>Sink</ClassName>
-			<ItemName>in</ItemName>
-		</TargetConnectableItemReference>
-		<Points>
-			<Point>
-				<X>0</X>
-				<Y>0</Y>
-			</Point>
-			<Point>
-				<X>30</X>
-				<Y>0</Y>
-			</Point>
-			<Point>
-				<X>30</X>
-				<Y>80</Y>
-			</Point>
-			<Point>
-				<X>60</X>
-				<Y>80</Y>
-			</Point>
-		</Points>
-	</Connector>
-	<Connector>
 		<Id>1788900000130</Id>
 		<Name><![CDATA[conDecEntrada0]]></Name>
 		<X>190</X>
@@ -4335,10 +4284,61 @@
 		</Points>
 	</Connector>
 	<Connector>
-		<Id>1788900000174</Id>
-		<Name><![CDATA[conDecSigue14]]></Name>
-		<X>235</X>
-		<Y>-1275</Y>
+		<Id>1790100000179</Id>
+		<Name><![CDATA[con_releaseVoluntarios14_moveToLlegada]]></Name>
+		<X>620</X>
+		<Y>-1270</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>releaseVoluntarios14</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Release</ClassName>
+			<ItemName>out</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>moveToLlegada</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>MoveTo</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>20</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>20</X>
+				<Y>80</Y>
+			</Point>
+			<Point>
+				<X>-30</X>
+				<Y>80</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1790100000180</Id>
+		<Name><![CDATA[con_decisionHidratacion14_moveToLlegada]]></Name>
+		<X>215</X>
+		<Y>-1305</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -4359,6 +4359,53 @@
 		<TargetEmbeddedObjectReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
 			<ClassName>Main</ClassName>
+			<ItemName>moveToLlegada</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>MoveTo</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>0</X>
+				<Y>115</Y>
+			</Point>
+			<Point>
+				<X>355</X>
+				<Y>115</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1790100000181</Id>
+		<Name><![CDATA[con_moveToLlegada_sinkCorredores]]></Name>
+		<X>590</X>
+		<Y>-1190</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>moveToLlegada</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>MoveTo</ClassName>
+			<ItemName>out</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>Main</ClassName>
 			<ItemName>sinkCorredores</ItemName>
 		</TargetEmbeddedObjectReference>
 		<TargetConnectableItemReference>
@@ -4372,16 +4419,8 @@
 				<Y>0</Y>
 			</Point>
 			<Point>
-				<X>-105</X>
+				<X>110</X>
 				<Y>0</Y>
-			</Point>
-			<Point>
-				<X>-105</X>
-				<Y>105</Y>
-			</Point>
-			<Point>
-				<X>475</X>
-				<Y>105</Y>
 			</Point>
 		</Points>
 	</Connector>

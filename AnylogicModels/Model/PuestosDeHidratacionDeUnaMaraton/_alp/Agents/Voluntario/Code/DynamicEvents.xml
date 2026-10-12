@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DynamicEvents>
 	<DynamicEventClass>
-		<Id>1789503836492</Id>
-		<Name><![CDATA[Reposicion]]></Name>
-		<X>40</X>
-		<Y>240</Y>
+		<Id>1790100000106</Id>
+		<Name><![CDATA[TomarBotella]]></Name>
+		<X>220</X>
+		<Y>200</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

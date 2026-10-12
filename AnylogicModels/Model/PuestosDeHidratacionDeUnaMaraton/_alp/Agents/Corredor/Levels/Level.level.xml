@@ -24,6 +24,7 @@
 		<RadiusY>40</RadiusY>
 		<Rotation>0.0</Rotation>
 		<FillColor>-8388480</FillColor>
+		<FillColorCode><![CDATA[colorCategoria()]]></FillColorCode>
 		<FillMaterial>null</FillMaterial>
 	</Oval>
 </Presentation>

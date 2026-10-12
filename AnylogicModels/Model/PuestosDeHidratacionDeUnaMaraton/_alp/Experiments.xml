@@ -54,6 +54,42 @@
 			<Parameter>
 				<ParameterName>propensionHidratacion</ParameterName>
 			</Parameter>
+			<Parameter>
+				<ParameterName>voluntariosPorPuesto</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>entregaEnMano</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>capacidadAgua</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>capacidadIsotonica</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>capacidadFruta</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>capacidadGel</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>porcentajeReposicion</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>latDeposito</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>lonDeposito</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>velocidadCamionKmh</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>capacidadZorra</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>velocidadZorraKmh</ParameterName>
+			</Parameter>
 		</Parameters>
 		<PresentationProperties>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>

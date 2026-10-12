@@ -114,6 +114,71 @@ Actualmente **vacío** (se había creado por XML directo en la Subfase 1 origina
 
 En Subfase 3, además, a `Corredor` se le agrega **Space → Type: GIS** para que se pueda mover sobre el mapa real (ver Subfase3_GIS_Vistas2D3D.md, Paso 5).
 
+## Actualización 2026-10-12 — rama `r.ceballos/mejoraComportamientoSimulacion`
+
+Lo de arriba sobre `Corredor` vacío y sobre el stock global en `Main` quedó desactualizado: el stock ya vivía en el agente `Puesto` (rama `valeria-arreglosGral`) y esta rama lo extiende. Resumen de lo nuevo:
+
+### Corredores: 4 categorías por seniority (`Corredor`)
+
+`Source.onAtExit` llama `agent.inicializar( sortearCategoria() )`. Reparto: 3% Elite, 17% Avanzado, 50% Intermedio, 30% Principiante. La velocidad base sale de **cadencia (pasos/min) × zancada (m)**, así que el ritmo (min/km) queda consistente con ambas.
+
+| Categoría | Cadencia (media) | Zancada (media) | Ritmo aprox. | `necesidadHidratacion` | `factorTiempoPuesto` | `resistenciaFatiga` | Color 2D |
+|---|---|---|---|---|---|---|---|
+| Elite | 185 | 1,72 m | 3:05 min/km | 0,8 | 0,5 | 0,3 | dorado |
+| Avanzado | 178 | 1,32 m | 4:15 min/km | 0,9 | 0,8 | 0,55 | rojo |
+| Intermedio | 170 | 1,12 m | 5:15 min/km | 1,0 | 1,0 | 0,8 | violeta |
+| Principiante | 160 | 0,95 m | 6:40 min/km | 1,15 | 1,4 | 1,0 | verde |
+
+- Estado dinámico: `nivelHidratacion` y `nivelEnergia` (0..1). `avanzarHasta(km, nivelCalor)` (en el `onExit` de cada `moveToN`) los descuenta según los km corridos.
+- `velocidadKmh(nivelCalor)` (en el `speed` de cada `moveToN`) aplica: calor/`toleranciaCalor`, deshidratación (< 70%, hasta −25%), "muro" de energía (< 35%, hasta −20%) y fatiga después del km 30.
+- `decidirHidratacion` ahora además suma el déficit de hidratación, la necesidad de la categoría y si el puesto ofrece gel/fruta cuando falta energía.
+- Se agregó `moveToLlegada` (km 40 → `llegada`, km 42,195) antes del `sinkCorredores`; el sink registra el tiempo final por categoría (`registrarLlegada`).
+
+### Puestos: oferta real y stock separado por insumo (`Puesto`)
+
+Datos del shapefile `puestos_hidratacion3.dbf` (agua/isotónica/fruta + km). Los geles no estaban: se agregaron en km 22,6 y km 30. La población `puesto` ya no se carga de la base de datos `puestos_maraton` (la carpeta `database/` no está en el repo, así que en un clon limpio la población no tenía de dónde cargarse): ahora son 15 agentes fijos y `configurar()` les asigna km, oferta y estacionamiento del camión.
+
+| Puesto | km | Ofrece | | Puesto | km | Ofrece |
+|---|---|---|---|---|---|---|
+| 1 | 5 | Agua | | 9 | 25 | Agua |
+| 2 | 7,5 | Isotónica | | 10 | 27,5 | Isotónica |
+| 3 | 10 | Agua (vista 3D) | | 11 | 30 | Agua + Gel |
+| 4 | 12,5 | Isotónica | | 12 | 33 | Agua + Isotónica + Fruta |
+| 5 | 15 | Agua | | 13 | 35 | Agua |
+| 6 | 17,5 | Isotónica | | 14 | 37,7 | Agua + Isotónica |
+| 7 | 20 | Agua + Fruta | | 15 | 40 | Agua |
+| 8 | 22,6 | Isotónica + Gel | | | | |
+
+- Arrays por insumo (índices `Puesto.AGUA`, `ISOTONICA`, `FRUTA`, `GEL`): `ofrece`, `stock`, `capacidad`, `puntoReposicion`, `consumidos`, `faltantes`.
+- `atender(c)` (en el `onAtExit` de cada `delayHidratacionN`) decide qué toma el corredor; `consumir(insumo)` descuenta o cuenta un faltante si se acabó.
+- Se reemplazó `descontarAgua()` + evento `Reposicion` por el camión (ver abajo).
+- Corrección: los 15 `seizeVoluntariosN` tomaban todos `poolVoluntarios` (el del puesto 1). Ahora cada uno toma su `poolVoluntariosN`, con capacidad `voluntariosPorPuesto`.
+
+### Entrega en mano
+
+- Lógica: parámetro `entregaEnMano` (default `true`). `tiempoAtencion(c)` = `tiempoHidratacion() × factorTiempoPuesto`, y × 0,5 si el voluntario entrega en mano (el corredor no va hasta la mesa).
+- Vista 3D (`PuestoDetalle3D`): agente nuevo `Voluntario` (4 por puesto) parado en el cordón, delante de la mesa, con la botella en la mano. Cuando la entrega, camina a la mesa a buscar otra (`TomarBotella`) y vuelve. La mesa se corrió hacia atrás y el personal de reposición quedó detrás.
+
+### Calle ancha en 3D
+
+- La calle pasó de 4 m a 10 m (`areaCalle`, `arribalLine`, `exitLine`, vallado superior).
+- Ahora entran **todos** los corredores que pasan por el puesto 3, no solo los que frenan (`decisionHidratacion2.onExitTrue/False` → `puestoDetalle3D.ingresarCorredor(c, seHidrata)`), con la velocidad real de cada uno. Aparecen a lo ancho de toda la línea de llegada.
+- Flujo peatonal: `pedSource → pedSeHidrata → (sí) pedIrAlVoluntario → pedRecibirBotella → pedGoTo1 / (no) pedGoTo1 → pedSink`. Se eliminó `pedService` y el `ServiceWithLine` con colas.
+- Las cajas de la mesa (`pack1..6`) muestran la fracción de stock del puesto de la vista 3D (antes leían `puesto.get(3)`, que no era el puesto que inyectaba los peatones).
+
+### Reposición con camión y zorra (`Camion`, `OperarioZorra`)
+
+1. Cuando un insumo cae al punto de reposición (`porcentajeReposicion` × capacidad), `Puesto.revisarReposicion()` llama `main.despacharCamion(p)`.
+2. `Camion` sale del depósito (`latDeposito`, `lonDeposito`) y va por las calles reales (ruteo GIS) hasta un punto ~130 m al costado del circuito (`latEstacionamiento`/`lonEstacionamiento` del puesto), sobre una calle aledaña.
+3. Al estacionar baja un `OperarioZorra`. El operario carga `capacidadZorra` unidades, camina en línea recta hasta la mesa, descarga (1 min; `recibirCarga` reparte entre los insumos según lo que le falta a cada uno) y vuelve. Repite hasta llenar el puesto.
+4. Al terminar, `finReposicion()`: el camión vuelve al depósito y desaparece.
+
+### Parámetros nuevos de `Main`
+
+`voluntariosPorPuesto` (4), `entregaEnMano` (true), `capacidadAgua` (800), `capacidadIsotonica` (600), `capacidadFruta` (300), `capacidadGel` (250), `porcentajeReposicion` (0,35), `latDeposito`/`lonDeposito` (-34,5960 / -58,4380), `velocidadCamionKmh` (25), `capacidadZorra` (200), `velocidadZorraKmh` (3,5). Todos son valores de prueba, sin calibrar.
+
+Resultados en la pantalla de Ejecución: `textResultadosCategorias` (llegados y tiempo promedio por categoría) y `textInventarioPuestos` (stock, faltantes y reposiciones de cada puesto).
+
 ## Convención de nombres usada hasta ahora
 
 - **Agentes**: `PascalCase` en español (`Corredor`).

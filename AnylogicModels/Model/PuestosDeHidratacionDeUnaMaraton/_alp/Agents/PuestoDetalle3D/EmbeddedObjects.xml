@@ -121,9 +121,17 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[comfortableSpeed]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[velocidadProximo()]]></Code>
+					<Unit Class="SpeedUnits">MPS</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[initialSpeed]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[velocidadProximo()]]></Code>
+					<Unit Class="SpeedUnits">MPS</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[diameter]]></Name>
@@ -154,6 +162,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[asignarCorredor( (peatonPuesto) ped );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onBeginGrouping]]></Name>
@@ -186,106 +197,9 @@
 		<QuantityColumn/>
 	</EmbeddedObject>
 	<EmbeddedObject>
-		<Id>1788985563264</Id>
-		<Name><![CDATA[pedService]]></Name>
-		<X>255</X>
-		<Y>70</Y>
-		<Label>
-			<X>-20</X>
-			<Y>-25</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<ActiveObjectClass>
-			<PackageName>com.anylogic.libraries.pedestrian</PackageName>
-			<ClassName>PedService</ClassName>
-		</ActiveObjectClass>
-		<GenericParameterSubstitute>
-			<GenericParameterSubstituteReference>
-				<PackageName>com.anylogic.libraries.pedestrian</PackageName>
-				<ClassName>PedService</ClassName>
-				<ItemName>1416228850252</ItemName>
-			</GenericParameterSubstituteReference>
-		</GenericParameterSubstitute>
-		<Parameters>
-			<Parameter>
-				<Name><![CDATA[services]]></Name>
-				<Value Class="CodeValue">
-					<Code><![CDATA[services]]></Code>
-				</Value>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[queueChoicePolicy]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[chooseQueue]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[delayTime]]></Name>
-				<Value Class="CodeUnitValue">
-					<Code><![CDATA[main.tiempoHidratacion()]]></Code>
-					<Unit Class="TimeUnits">SECOND</Unit>
-				</Value>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[recoveryDelay]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[reverseQueue]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onEnter]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onEnterQueue]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onAtExitQueue]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onExitQueue]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onBeginService]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onEndService]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onExit]]></Name>
-			</Parameter>
-			<Parameter>
-				<Name><![CDATA[onCancel]]></Name>
-			</Parameter>
-		</Parameters>
-		<ReplicationFlag>false</ReplicationFlag>
-		<Replication Class="CodeValue">
-			<Code><![CDATA[100]]></Code>
-		</Replication>
-		<CollectionType>ARRAY_LIST_BASED</CollectionType>
-		<InitialLocationType>XYZ</InitialLocationType>
-		<ColumnCode Class="CodeValue">
-			<Code><![CDATA[0]]></Code>
-		</ColumnCode>
-		<RowCode Class="CodeValue">
-			<Code><![CDATA[0]]></Code>
-		</RowCode>
-		<LocationNameCode Class="CodeValue">
-			<Code><![CDATA[""]]></Code>
-		</LocationNameCode>
-		<InitializationType>SPECIFIED_NUMBER</InitializationType>
-		<InitializationDatabaseTableQuery>
-			<Id>1788985563262</Id>
-			<TableReference/>
-		</InitializationDatabaseTableQuery>
-		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-		<QuantityColumn/>
-	</EmbeddedObject>
-	<EmbeddedObject>
 		<Id>1788989573519</Id>
 		<Name><![CDATA[pedGoTo1]]></Name>
-		<X>350</X>
+		<X>430</X>
 		<Y>70</Y>
 		<Label>
 			<X>-10</X>
@@ -375,7 +289,7 @@
 	<EmbeddedObject>
 		<Id>1788989731300</Id>
 		<Name><![CDATA[pedSink]]></Name>
-		<X>460</X>
+		<X>520</X>
 		<Y>80</Y>
 		<Label>
 			<X>-20</X>
@@ -418,6 +332,435 @@
 		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
 			<Id>1788989731298</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000121</Id>
+		<Name><![CDATA[pedSeHidrata]]></Name>
+		<X>160</X><Y>70</Y>
+		<Label><X>-40</X><Y>-30</Y></Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+			<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+				<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+				<ItemName><![CDATA[1412464601215]]></ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[type]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition1]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).seHidrata]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition2]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition3]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition4]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability1]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability2]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability3]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability5]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[exitNumber]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit1]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit2]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit3]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit5]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+		<XCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</XCode>
+		<YCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</YCode>
+		<ZCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ZCode>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LatitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LatitudeCode>
+		<LongitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LongitudeCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<TableReference>
+			</TableReference>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn>
+		</QuantityColumn>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000122</Id>
+		<Name><![CDATA[pedIrAlVoluntario]]></Name>
+		<X>250</X><Y>40</Y>
+		<Label><X>-10</X><Y>-22</Y></Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+			<ClassName><![CDATA[PedGoTo]]></ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+				<ClassName><![CDATA[PedGoTo]]></ClassName>
+				<ItemName><![CDATA[1412464601103]]></ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[locationLine]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[mode]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[route]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[reachTolerance]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[0.5]]></Code>
+					<Unit Class="LengthUnits">METER</Unit>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onCancel]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.LOCATION_POINT]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationX]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).voluntario.xEntrega()]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationY]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).voluntario.yEntrega()]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationArea]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[walkInReverseDirection]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onRemove]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialSpeedCode Class="CodeUnitValue">
+			<Code><![CDATA[10]]></Code>
+			<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+		</InitialSpeedCode>
+		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+		<XCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</XCode>
+		<YCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</YCode>
+		<ZCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ZCode>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LatitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LatitudeCode>
+		<LongitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LongitudeCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<TableReference>
+			</TableReference>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn>
+		</QuantityColumn>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000123</Id>
+		<Name><![CDATA[pedRecibirBotella]]></Name>
+		<X>330</X><Y>40</Y>
+		<Label><X>-45</X><Y>45</Y></Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+			<ClassName><![CDATA[PedWait]]></ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+				<ClassName><![CDATA[PedWait]]></ClassName>
+				<ItemName><![CDATA[1412464601107]]></ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[locationType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.LOCATION_POINT]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationArea]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationX]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).voluntario.xEntrega()]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationY]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).voluntario.yEntrega()]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[attractorChoice]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[attractor]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[delayTimeout]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[((peatonPuesto) ped).voluntario.segundosHastaEntregar() + uniform( 0.4, 1.0 )]]></Code>
+					<Unit Class="TimeUnits">SECOND</Unit>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[delayStartsWhen]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).voluntario.entregar();]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onCancel]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[targetReachTolerance]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[0.5]]></Code>
+					<Unit Class="LengthUnits">METER</Unit>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationLine]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[delayType]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[maximumCapacity]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[capacity]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onBeginWait]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onRemove]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialSpeedCode Class="CodeUnitValue">
+			<Code><![CDATA[10]]></Code>
+			<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+		</InitialSpeedCode>
+		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+		<XCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</XCode>
+		<YCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</YCode>
+		<ZCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ZCode>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LatitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LatitudeCode>
+		<LongitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LongitudeCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<TableReference>
+			</TableReference>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn>
+		</QuantityColumn>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000124</Id>
+		<Name><![CDATA[voluntarios]]></Name>
+		<X>600</X>
+		<Y>200</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<PresentationId>1790100000120</PresentationId>
+		<ActiveObjectClass>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>Voluntario</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+				<ClassName>Voluntario</ClassName>
+				<ItemName>1790100000087</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters/>
+		<ReplicationFlag>true</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[4]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InEnvironment>true</InEnvironment>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1790100000125</Id>
 			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>

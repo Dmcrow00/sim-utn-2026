@@ -2,23 +2,7 @@
 <ActiveObjectClass>
 	<Id>1789503557668</Id>
 	<Name><![CDATA[Puesto]]></Name>
-	<StartupCode><![CDATA[switch(getIndex()) {
-    case 0: jumpTo(main.puesto1); break;
-    case 1: jumpTo(main.puesto2); break;
-    case 2: jumpTo(main.puesto3); break;
-    case 3: jumpTo(main.puesto4); break;
-    case 4: jumpTo(main.puesto5); break;
-    case 5: jumpTo(main.puesto6); break;
-    case 6: jumpTo(main.puesto7); break;
-    case 7: jumpTo(main.puesto8); break;
-    case 8: jumpTo(main.puesto9); break;
-    case 9: jumpTo(main.puesto10); break;
-    case 10: jumpTo(main.puesto11); break;
-    case 11: jumpTo(main.puesto12); break;
-    case 12: jumpTo(main.puesto13); break;
-    case 13: jumpTo(main.puesto14); break;
-    case 14: jumpTo(main.puesto15); break;
-}]]></StartupCode>
+	<StartupCode><![CDATA[configurar();]]></StartupCode>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1789503557673</Id>
@@ -116,7 +100,6 @@
 	<CurrentLevel>1789503557674</CurrentLevel>
 	<ConnectionsId>1789503557669</ConnectionsId>
 	<Variables xmlns:al="http://anylogic.com"/>
-	<DynamicEvents xmlns:al="http://anylogic.com"/>
 	<Functions xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
@@ -178,6 +161,7 @@
 			<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 			<Z>0</Z>
 			<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+			<Presentation xmlns:al="http://anylogic.com"/>
 		</Level>
 	</Presentation>
 </ActiveObjectClass>

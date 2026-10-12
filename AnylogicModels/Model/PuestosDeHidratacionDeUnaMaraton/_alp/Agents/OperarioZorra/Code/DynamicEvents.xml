@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DynamicEvents>
+	<DynamicEventClass>
+		<Id>1790100000082</Id>
+		<Name><![CDATA[FinDescarga]]></Name>
+		<X>220</X>
+		<Y>100</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Action xmlns:al="http://anylogic.com"/>
+	</DynamicEventClass>
+	<DynamicEventClass>
+		<Id>1790100000083</Id>
+		<Name><![CDATA[FinCarga]]></Name>
+		<X>220</X>
+		<Y>130</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Action xmlns:al="http://anylogic.com"/>
+	</DynamicEventClass>
+</DynamicEvents>

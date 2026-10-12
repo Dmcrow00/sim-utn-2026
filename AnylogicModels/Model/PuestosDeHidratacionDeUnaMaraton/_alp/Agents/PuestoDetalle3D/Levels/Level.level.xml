@@ -35,7 +35,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1788982035574</Id>
 		<Name><![CDATA[arribalLine]]></Name>
 		<X>120</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -53,7 +53,7 @@ main.navigate(main.areaMenu);</ActionCode>
 			</Point>
 			<Point>
 				<X>0</X>
-				<Y>40</Y>
+				<Y>100</Y>
 			</Point>
 		</Points>
 	</TargetLine>
@@ -61,7 +61,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1788982068785</Id>
 		<Name><![CDATA[exitLine]]></Name>
 		<X>380</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -79,7 +79,7 @@ main.navigate(main.areaMenu);</ActionCode>
 			</Point>
 			<Point>
 				<X>0</X>
-				<Y>40</Y>
+				<Y>100</Y>
 			</Point>
 		</Points>
 	</TargetLine>
@@ -87,7 +87,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789041225824</Id>
 		<Name><![CDATA[areaCalle]]></Name>
 		<X>120</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -204,287 +204,15 @@ main.navigate(main.areaMenu);</ActionCode>
 			<SlopeType>angle</SlopeType>
 		</Slope>
 		<Width>260</Width>
-		<Height>40</Height>
+		<Height>100</Height>
 		<Rotation>0.0</Rotation>
 	</RectangleNode>
-	<ServiceWithLine>
-		<ServiceColor>-16744448</ServiceColor>
-		<Id>1789089786105</Id>
-		<Name><![CDATA[services]]></Name>
-		<X>260.129</X>
-		<Y>397.58</Y>
-		<Label>
-			<X>13.43</X>
-			<Y>59.012</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<Presentation>
-			<PolygonNode>
-				<Id>1789089786100</Id>
-				<Name><![CDATA[waitingArea]]></Name>
-				<X>0</X>
-				<Y>0</Y>
-				<Label>
-					<X>10</X>
-					<Y>0</Y>
-				</Label>
-				<PublicFlag>true</PublicFlag>
-				<PresentationFlag>true</PresentationFlag>
-				<ShowLabel>false</ShowLabel>
-				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Z>0</Z>
-				<EmbeddedObject>
-					<Id>1789089786103</Id>
-					<ActiveObjectClass>
-						<PackageName>com.anylogic.libraries.modules.markup_descriptors</PackageName>
-						<ClassName>AreaNodeDescriptor</ClassName>
-					</ActiveObjectClass>
-					<Parameters/>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>XYZ</InitialLocationType>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<Id>1789089786102</Id>
-						<TableReference/>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn/>
-				</EmbeddedObject>
-				<LineColor>-16744448</LineColor>
-				<FillColor/>
-				<LineWidth>2</LineWidth>
-				<LineMaterial>null</LineMaterial>
-				<FillMaterial>null</FillMaterial>
-				<LineStyle>DASHED</LineStyle>
-				<AttractorsLayout>random</AttractorsLayout>
-				<Sloped>false</Sloped>
-				<Slope>
-					<Id>1789089786098</Id>
-					<Name><![CDATA[waitingArea]]></Name>
-					<X>0</X>
-					<Y>10</Y>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Dx>20</Dx>
-					<Dy>0</Dy>
-					<Dz>0</Dz>
-					<AngleX>30</AngleX>
-					<AngleZ>0</AngleZ>
-					<SlopeType>angle</SlopeType>
-				</Slope>
-				<Points>
-					<Point>
-						<X>0</X>
-						<Y>0</Y>
-					</Point>
-					<Point>
-						<X>0</X>
-						<Y>70</Y>
-					</Point>
-					<Point>
-						<X>20</X>
-						<Y>70</Y>
-					</Point>
-					<Point>
-						<X>20</X>
-						<Y>30</Y>
-					</Point>
-					<Point>
-						<X>70</X>
-						<Y>30</Y>
-					</Point>
-					<Point>
-						<X>70</X>
-						<Y>0</Y>
-					</Point>
-				</Points>
-			</PolygonNode>
-			<QueueLine>
-				<Id>1789089786107</Id>
-				<Name><![CDATA[queueLine]]></Name>
-				<X>180</X>
-				<Y>409</Y>
-				<Label>
-					<X>10</X>
-					<Y>0</Y>
-				</Label>
-				<PublicFlag>true</PublicFlag>
-				<PresentationFlag>true</PresentationFlag>
-				<ShowLabel>false</ShowLabel>
-				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Z>0</Z>
-				<Reversed>false</Reversed>
-				<LimitedCapacity>false</LimitedCapacity>
-				<Capacity>10</Capacity>
-				<Points>
-					<Point>
-						<X>0</X>
-						<Y>0</Y>
-					</Point>
-					<Point>
-						<X>0</X>
-						<Y>-12.159</Y>
-					</Point>
-					<Point>
-						<X>25</X>
-						<Y>0</Y>
-					</Point>
-					<Point>
-						<X>80</X>
-						<Y>0</Y>
-					</Point>
-					<Point>
-						<X>55</X>
-						<Y>0</Y>
-					</Point>
-					<Point>
-						<X>80.182</X>
-						<Y>24.999</Y>
-					</Point>
-					<Point>
-						<X>80.129</X>
-						<Y>17.762</Y>
-					</Point>
-					<Point>
-						<X>79.947</X>
-						<Y>-7.237</Y>
-					</Point>
-					<Point>
-						<X>80.129</X>
-						<Y>-11.42</Y>
-					</Point>
-				</Points>
-				<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
-			</QueueLine>
-			<QueueLine>
-				<Id>1789089786109</Id>
-				<Name><![CDATA[queueLine1]]></Name>
-				<X>180</X>
-				<Y>419</Y>
-				<Label>
-					<X>10</X>
-					<Y>0</Y>
-				</Label>
-				<PublicFlag>true</PublicFlag>
-				<PresentationFlag>true</PresentationFlag>
-				<ShowLabel>false</ShowLabel>
-				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Z>0</Z>
-				<Reversed>false</Reversed>
-				<LimitedCapacity>false</LimitedCapacity>
-				<Capacity>10</Capacity>
-				<Points>
-					<Point>
-						<X>0</X>
-						<Y>0</Y>
-					</Point>
-					<Point>
-						<X>0</X>
-						<Y>-12.159000000000002</Y>
-					</Point>
-					<Point>
-						<X>25</X>
-						<Y>-0.12400000000000233</Y>
-					</Point>
-					<Point>
-						<X>67.402</X>
-						<Y>-0.33300000000000196</Y>
-					</Point>
-					<Point>
-						<X>42.402</X>
-						<Y>-0.20900000000000318</Y>
-					</Point>
-					<Point>
-						<X>67.402</X>
-						<Y>24.667</Y>
-					</Point>
-					<Point>
-						<X>67.402</X>
-						<Y>7.761999999999997</Y>
-					</Point>
-					<Point>
-						<X>67.402</X>
-						<Y>-17.238</Y>
-					</Point>
-					<Point>
-						<X>67.402</X>
-						<Y>-21.42</Y>
-					</Point>
-				</Points>
-				<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
-			</QueueLine>
-			<ServicePoint>
-				<Id>1789089786111</Id>
-				<Name><![CDATA[servicePoint]]></Name>
-				<X>260</X>
-				<Y>436</Y>
-				<Label>
-					<X>10</X>
-					<Y>0</Y>
-				</Label>
-				<PublicFlag>true</PublicFlag>
-				<PresentationFlag>true</PresentationFlag>
-				<ShowLabel>false</ShowLabel>
-				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Z>0</Z>
-				<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
-				<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-				<Rotation>90</Rotation>
-			</ServicePoint>
-			<ServicePoint>
-				<Id>1789089786113</Id>
-				<Name><![CDATA[servicePoint1]]></Name>
-				<X>247.402</X>
-				<Y>436.489</Y>
-				<Label>
-					<X>10</X>
-					<Y>0</Y>
-				</Label>
-				<PublicFlag>true</PublicFlag>
-				<PresentationFlag>true</PresentationFlag>
-				<ShowLabel>false</ShowLabel>
-				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Z>0</Z>
-				<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
-				<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-				<Rotation>90</Rotation>
-			</ServicePoint>
-		</Presentation>
-		<Z>0</Z>
-		<Type><![CDATA[POINT]]></Type>
-		<QueueType>LINE</QueueType>
-		<Bidirectional>false</Bidirectional>
-		<WaitingAreaEnabled>false</WaitingAreaEnabled>
-		<QueueColor>-16744448</QueueColor>
-		<ReverseQueueColor>-65281</ReverseQueueColor>
-		<GroupBehaviorMode>SAME_FOR_ALL_GROUPS</GroupBehaviorMode>
-		<GroupBehavior>ALL_MEMBERS_INDIVIDUALLY</GroupBehavior>
-		<WaitForExit>false</WaitForExit>
-		<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-	</ServiceWithLine>
 	<Camera3D>
 		<Id>1789091104596</Id>
 		<Name><![CDATA[camera]]></Name>
 		<X>135</X>
-		<Y>485</Y>
-		<Z>100</Z>
+		<Y>540</Y>
+		<Z>130</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -515,7 +243,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789150871715</Id>
 		<Name><![CDATA[table_2]]></Name>
 		<X>255</X>
-		<Y>446</Y>
+		<Y>472</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -558,7 +286,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789150913672</Id>
 		<Name><![CDATA[woman_1]]></Name>
 		<X>250</X>
-		<Y>455</Y>
+		<Y>484</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -632,8 +360,8 @@ main.navigate(main.areaMenu);</ActionCode>
 	<Figure3D>
 		<Id>1789150928145</Id>
 		<Name><![CDATA[boy]]></Name>
-		<X>260</X>
-		<Y>454</Y>
+		<X>262</X>
+		<Y>484</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -712,7 +440,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789391241279</Id>
 		<Name><![CDATA[pack1]]></Name>
 		<X>268</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -746,13 +474,13 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 100</VisibleCode>
+		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.833]]></VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391258948</Id>
 		<Name><![CDATA[pack2]]></Name>
 		<X>263</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -786,13 +514,13 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 200</VisibleCode>
+		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.667]]></VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391263419</Id>
 		<Name><![CDATA[pack3]]></Name>
 		<X>258</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -826,13 +554,13 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 300</VisibleCode>
+		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.500]]></VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391269624</Id>
 		<Name><![CDATA[pack4]]></Name>
 		<X>253</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -866,13 +594,13 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 400</VisibleCode>
+		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.333]]></VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391273989</Id>
 		<Name><![CDATA[pack5]]></Name>
 		<X>248</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -906,13 +634,13 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 500</VisibleCode>
+		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.167]]></VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789391279901</Id>
 		<Name><![CDATA[pack6]]></Name>
 		<X>243</X>
-		<Y>445</Y>
+		<Y>471</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -946,13 +674,13 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>main.puesto.get(3).stockAgua &gt;= 600</VisibleCode>
+		<VisibleCode><![CDATA[main.puesto.get( PUESTO_3D ).fraccionStock() > 0.000]]></VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1789517262694</Id>
 		<Name><![CDATA[fence]]></Name>
 		<X>265</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -999,7 +727,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517299109</Id>
 		<Name><![CDATA[fence1]]></Name>
 		<X>245</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1046,7 +774,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517350705</Id>
 		<Name><![CDATA[fence2]]></Name>
 		<X>225</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1093,7 +821,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517355725</Id>
 		<Name><![CDATA[fence3]]></Name>
 		<X>205</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1140,7 +868,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517359949</Id>
 		<Name><![CDATA[fence4]]></Name>
 		<X>185</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1187,7 +915,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517370971</Id>
 		<Name><![CDATA[fence5]]></Name>
 		<X>165</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1234,7 +962,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517376031</Id>
 		<Name><![CDATA[fence6]]></Name>
 		<X>145</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1281,7 +1009,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517380356</Id>
 		<Name><![CDATA[fence7]]></Name>
 		<X>285</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1328,7 +1056,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517384708</Id>
 		<Name><![CDATA[fence8]]></Name>
 		<X>305</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1375,7 +1103,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517388754</Id>
 		<Name><![CDATA[fence9]]></Name>
 		<X>325</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1422,7 +1150,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517393458</Id>
 		<Name><![CDATA[fence10]]></Name>
 		<X>345</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1469,7 +1197,7 @@ main.navigate(main.areaMenu);</ActionCode>
 		<Id>1789517401663</Id>
 		<Name><![CDATA[fence11]]></Name>
 		<X>365</X>
-		<Y>400</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -1526,53 +1254,6 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>345</X>
-		<Y>440</Y>
-		<Z>0</Z>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<ResourceReference>
-			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/fence.dae</ClassName>
-		</ResourceReference>
-		<ColorTable>
-			<ColorMapping>
-				<Name><![CDATA[material0]]></Name>
-				<OriginalColor>-4473925</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[material1]]></Name>
-				<OriginalColor>-1</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[material2]]></Name>
-				<OriginalColor>-6750208</OriginalColor>
-			</ColorMapping>
-		</ColorTable>
-		<AutoScale>true</AutoScale>
-		<Scale>1.0</Scale>
-		<Rotation>0.0</Rotation>
-		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-		<SelectedAnimationPose/>
-		<ApplyShading>true</ApplyShading>
-		<InternalLighting>OFF</InternalLighting>
-		<IgnoreSceneLights>false</IgnoreSceneLights>
-	</Figure3D>
-	<Figure3D>
-		<Id>1789517413355</Id>
-		<Name><![CDATA[fence13]]></Name>
-		<X>285</X>
-		<Y>440</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>285</X>
 		<Y>440</Y>
 		<Z>0</Z>
 		<Label>
@@ -1714,53 +1395,6 @@ main.navigate(main.areaMenu);</ActionCode>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>305</X>
-		<Y>440</Y>
-		<Z>0</Z>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<ResourceReference>
-			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/fence.dae</ClassName>
-		</ResourceReference>
-		<ColorTable>
-			<ColorMapping>
-				<Name><![CDATA[material0]]></Name>
-				<OriginalColor>-4473925</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[material1]]></Name>
-				<OriginalColor>-1</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[material2]]></Name>
-				<OriginalColor>-6750208</OriginalColor>
-			</ColorMapping>
-		</ColorTable>
-		<AutoScale>true</AutoScale>
-		<Scale>1.0</Scale>
-		<Rotation>0.0</Rotation>
-		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-		<SelectedAnimationPose/>
-		<ApplyShading>true</ApplyShading>
-		<InternalLighting>OFF</InternalLighting>
-		<IgnoreSceneLights>false</IgnoreSceneLights>
-	</Figure3D>
-	<Figure3D>
-		<Id>1789517441426</Id>
-		<Name><![CDATA[fence17]]></Name>
-		<X>225</X>
-		<Y>440</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>225</X>
 		<Y>440</Y>
 		<Z>0</Z>
 		<Label>
@@ -1982,4 +1616,30 @@ main.navigate(main.areaMenu);</ActionCode>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
+	<Text>
+		<Id>1790100000131</Id>
+		<Name><![CDATA[textoPuesto3D]]></Name>
+		<X>60</X>
+		<Y>160</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Puesto]]></Text>
+		<TextCode><![CDATA[main.puesto.get( PUESTO_3D ).resumen()]]></TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
 </Presentation>

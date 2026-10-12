@@ -213,7 +213,8 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[agent.minutoLargada = time();]]></Code>
+					<Code><![CDATA[agent.minutoLargada = time();
+agent.inicializar( sortearCategoria() );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -276,7 +277,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -310,7 +311,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(0).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 0 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -668,6 +669,9 @@
 		<Parameters>
 			<Parameter>
 				<Name><![CDATA[onEnter]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[registrarLlegada( (Corredor) agent );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[destroyEntity]]></Name>
@@ -732,7 +736,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -1059,7 +1063,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -1071,6 +1075,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 0 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -1129,7 +1136,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -1163,7 +1170,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(1).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 1 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -1320,7 +1327,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios1 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -1531,7 +1538,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -1858,7 +1865,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -1870,6 +1877,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 1 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -1928,7 +1938,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -1958,14 +1968,11 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onEnter]]></Name>
-				<Value Class="CodeValue">
-					<Code><![CDATA[puestoDetalle3D.pedSource.inject(1)]]></Code>
-				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(2).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 2 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -2122,7 +2129,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios2 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -2333,7 +2340,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -2660,7 +2667,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -2672,6 +2679,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 2 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -2730,7 +2740,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -2764,7 +2774,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(3).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 3 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -2921,7 +2931,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios3 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -3132,7 +3142,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -3459,7 +3469,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -3471,6 +3481,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 3 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -3529,7 +3542,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -3563,7 +3576,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(4).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 4 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -3720,7 +3733,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios4 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -3931,7 +3944,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -4258,7 +4271,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -4270,6 +4283,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 4 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -4328,7 +4344,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -4362,7 +4378,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(5).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 5 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -4519,7 +4535,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios5 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -4730,7 +4746,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -5057,7 +5073,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -5069,6 +5085,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 5 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -5127,7 +5146,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -5161,7 +5180,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(6).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 6 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -5318,7 +5337,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios6 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -5529,7 +5548,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -5856,7 +5875,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -5868,6 +5887,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 6 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -5926,7 +5948,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -5960,7 +5982,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(7).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 7 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -6117,7 +6139,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios7 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -6328,7 +6350,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -6655,7 +6677,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -6667,6 +6689,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 7 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -6725,7 +6750,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -6759,7 +6784,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(8).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 8 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -6916,7 +6941,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios8 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -7127,7 +7152,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -7454,7 +7479,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -7466,6 +7491,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 8 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -7524,7 +7552,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -7558,7 +7586,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(9).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 9 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -7715,7 +7743,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios9 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -7926,7 +7954,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -8253,7 +8281,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -8265,6 +8293,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 9 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -8323,7 +8354,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -8357,7 +8388,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(10).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 10 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -8514,7 +8545,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios10 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -8725,7 +8756,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -9052,7 +9083,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -9064,6 +9095,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 10 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -9122,7 +9156,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -9156,7 +9190,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(11).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 11 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -9313,7 +9347,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios11 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -9524,7 +9558,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -9851,7 +9885,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -9863,6 +9897,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 11 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -9921,7 +9958,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -9955,7 +9992,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(12).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 12 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -10112,7 +10149,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios12 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -10323,7 +10360,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -10650,7 +10687,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -10662,6 +10699,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 12 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -10720,7 +10760,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -10754,7 +10794,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(13).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 13 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -10911,7 +10951,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios13 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -11122,7 +11162,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -11449,7 +11489,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -11461,6 +11501,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 13 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -11519,7 +11562,7 @@
 			<Parameter>
 				<Name><![CDATA[delayTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[tiempoHidratacion()]]></Code>
+					<Code><![CDATA[tiempoAtencion( (Corredor) agent )]]></Code>
 					<Unit Class="TimeUnits">MINUTE</Unit>
 				</Value>
 			</Parameter>
@@ -11553,7 +11596,7 @@
 			<Parameter>
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puesto.get(14).descontarAgua();]]></Code>
+					<Code><![CDATA[puesto.get( 14 ).atender( (Corredor) agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -11710,7 +11753,7 @@
 				<Name><![CDATA[resourceSets]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[{ 
-  { poolVoluntarios }
+  { poolVoluntarios14 }
 }]]></Code>
 				</Value>
 			</Parameter>
@@ -11921,7 +11964,7 @@
 			<Parameter>
 				<Name><![CDATA[capacity]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[3]]></Code>
+					<Code><![CDATA[voluntariosPorPuesto]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -12248,7 +12291,7 @@
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
 					<Unit Class="SpeedUnits">KPH</Unit>
 				</Value>
 			</Parameter>
@@ -12260,6 +12303,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( puesto.get( 14 ).km, nivelCalor );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onRemove]]></Name>
@@ -12491,9 +12537,15 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestoDetalle3D.ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestoDetalle3D.ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13519,6 +13571,7 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
+		<PresentationId>1790100000172</PresentationId>
 		<ActiveObjectClass>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
 			<ClassName>Puesto</ClassName>
@@ -13547,13 +13600,262 @@
 		<LocationNameCode Class="CodeValue">
 			<Code><![CDATA[""]]></Code>
 		</LocationNameCode>
-		<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
 			<Id>1789509282521</Id>
-			<TableReference>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000170</Id>
+		<Name><![CDATA[moveToLlegada]]></Name>
+		<X>580</X>
+		<Y>-1190</Y>
+		<Label>
+			<X>-10</X>
+			<Y>-15</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>MoveTo</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>MoveTo</ClassName>
+				<ItemName>1412336243157</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[mode]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationType]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationNode]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[llegada]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationAttractor]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationResource]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationAgent]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationX]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationY]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationZ]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationLatitude]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationLongitude]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationGeoPlaceName]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationInNetwork]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationNetwork]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationLevel]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[useOffsets]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[offsetX]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[offsetY]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[offsetZ]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[straightMovement]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationUseRotation]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationRotation]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[destinationVerticalRotation]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[movementType]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[tripTime]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[setSpeed]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[speed]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[((Corredor) agent).velocidadKmh( nivelCalor )]]></Code>
+					<Unit Class="SpeedUnits">KPH</Unit>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[restoreSpeedOnArrival]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((Corredor) agent).avanzarHasta( 42.195, nivelCalor );]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onRemove]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1790100000171</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000175</Id>
+		<Name><![CDATA[camiones]]></Name>
+		<X>-170</X>
+		<Y>470</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<PresentationId>1790100000173</PresentationId>
+		<ActiveObjectClass>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>Camion</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
 				<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-				<ClassName>puestos_maraton</ClassName>
-			</TableReference>
+				<ClassName>Camion</ClassName>
+				<ItemName>1790100000056</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters/>
+		<ReplicationFlag>true</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InEnvironment>true</InEnvironment>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>EMPTY</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1790100000176</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1790100000177</Id>
+		<Name><![CDATA[operarios]]></Name>
+		<X>-170</X>
+		<Y>500</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<PresentationId>1790100000174</PresentationId>
+		<ActiveObjectClass>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>OperarioZorra</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+				<ClassName>OperarioZorra</ClassName>
+				<ItemName>1790100000069</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters/>
+		<ReplicationFlag>true</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InEnvironment>true</InEnvironment>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>EMPTY</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1790100000178</Id>
+			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
 		<QuantityColumn/>
