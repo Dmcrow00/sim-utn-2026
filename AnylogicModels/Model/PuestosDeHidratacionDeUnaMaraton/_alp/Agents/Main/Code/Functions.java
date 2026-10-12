@@ -3,16 +3,6 @@ void navigate(ViewArea destino)
 destino.navigateTo();
 /*ALCODEEND*/}
 
-double tiempoHidratacion()
-{/*ALCODESTART::1788900000011*/
-// Muestrea el tiempo que tarda un corredor en hidratarse.
-// Los extremos salen de los sliders, asi que se ordenan por las dudas
-// de que el usuario deje el minimo por encima del maximo.
-double a = min( tiempoHidratacionMin, tiempoHidratacionMax );
-double b = max( tiempoHidratacionMin, tiempoHidratacionMax );
-return a == b ? a : uniform( a, b );
-/*ALCODEEND*/}
-
 boolean decidirHidratacion(Corredor c,int nPuesto)
 {/*ALCODESTART::1788900000012*/
 // Decide si el corredor frena en el puesto o sigue de largo.
@@ -29,13 +19,13 @@ c.puestoDecidido = nPuesto;
 Puesto p = puesto.get( nPuesto );
 
 // Efectos que se suman:
-//   - propensionHidratacion: cuanto para un corredor promedio con clima fresco
+//   - c.propensionHidratacion: cuanto para ese corredor con clima fresco
 //   - nivelCalor: 0 = fresco, 1 = agobiante
 //   - puestosSinHidratar: la sed se acumula si viene salteando puestos
 //   - nivelHidratacion: cuanto mas deshidratado viene, mas ganas de parar
 //   - si el puesto da gel o fruta y le falta energia, tambien frena
-double prob = propensionHidratacion
-            + ( 1 - propensionHidratacion ) * nivelCalor
+double prob = c.propensionHidratacion
+            + ( 1 - c.propensionHidratacion ) * nivelCalor
             + 0.15 * c.puestosSinHidratar
             + 1.2 * ( 1 - c.nivelHidratacion );
 if ( ( p.ofrece[ Puesto.GEL ] || p.ofrece[ Puesto.FRUTA ] ) && c.nivelEnergia < 0.6 ) {
@@ -77,7 +67,7 @@ double tiempoAtencion(Corredor c)
 // Minutos que el corredor ocupa a un voluntario en el puesto.
 // Con entrega en mano el corredor no va hasta la mesa: agarra al paso lo
 // que el voluntario le alcanza, asi que tarda bastante menos.
-double t = tiempoHidratacion() * c.factorTiempoPuesto;
+double t = c.tiempoHidratacion;
 if ( entregaEnMano ) {
 	t *= 0.5;
 }

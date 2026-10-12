@@ -3,6 +3,8 @@ void inicializar(int cat)
 // Perfil de cada categoria. La velocidad sale de pasos por minuto x zancada,
 // asi que el ritmo (min/km) queda consistente con ambas:
 //   velocidad (m/min) = cadencia (pasos/min) * zancada (m)
+// propensionHidratacion: cuanto para con clima fresco (los principiantes
+// paran mas seguido que los elite).
 // Ritmos de referencia: elite ~3:05 min/km, avanzado ~4:15, intermedio ~5:15,
 // principiante ~6:40 (maraton de 2h10 a 4h40 aprox.).
 // Ojo: en AnyLogic normal() recibe (sigma, media).
@@ -16,6 +18,7 @@ switch ( cat ) {
 		toleranciaCalor = uniform( 1.1, 1.4 );
 		factorTiempoPuesto = 0.5;     // agarra al paso, casi sin frenar
 		resistenciaFatiga = 0.3;
+		propensionHidratacion = uniform( 0.15, 0.30 );
 		break;
 	case AVANZADO:
 		cadencia = max( 165, normal( 5, 178 ) );
@@ -24,6 +27,7 @@ switch ( cat ) {
 		toleranciaCalor = uniform( 0.95, 1.25 );
 		factorTiempoPuesto = 0.8;
 		resistenciaFatiga = 0.55;
+		propensionHidratacion = uniform( 0.20, 0.35 );
 		break;
 	case INTERMEDIO:
 		cadencia = max( 155, normal( 6, 170 ) );
@@ -32,6 +36,7 @@ switch ( cat ) {
 		toleranciaCalor = uniform( 0.8, 1.2 );
 		factorTiempoPuesto = 1.0;
 		resistenciaFatiga = 0.8;
+		propensionHidratacion = uniform( 0.25, 0.40 );
 		break;
 	default:
 		cadencia = max( 145, normal( 7, 160 ) );
@@ -40,8 +45,12 @@ switch ( cat ) {
 		toleranciaCalor = uniform( 0.7, 1.1 );
 		factorTiempoPuesto = 1.4;     // frena y se toma su tiempo
 		resistenciaFatiga = 1.0;
+		propensionHidratacion = uniform( 0.35, 0.55 );
 		break;
 }
+// Minutos que tarda en agarrar lo que le dan (3 a 9 s para un corredor
+// promedio), escalado por su categoria. Es fijo para cada corredor.
+tiempoHidratacion = uniform( 0.05, 0.15 ) * factorTiempoPuesto;
 velocidadBaseKmh = cadencia * zancada * 60 / 1000;
 ritmoBaseMinKm = 60 / velocidadBaseKmh;
 estado = "corriendo";

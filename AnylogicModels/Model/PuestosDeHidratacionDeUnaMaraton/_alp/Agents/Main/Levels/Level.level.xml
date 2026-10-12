@@ -2340,222 +2340,6 @@ navigate(areaMenu);</ActionCode>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1788900000021</Id>
-		<Name><![CDATA[textLblMinHidratacion]]></Name>
-		<X>60</X>
-		<Y>2640</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-16777216</Color>
-		<Text><![CDATA[Tiempo de hidratacion - MINIMO (min)]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>11</Size>
-			<Style>0</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<Control Type="Slider">
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Id>1788900000022</Id>
-		<Name><![CDATA[sliderMinHidratacion]]></Name>
-		<X>60</X>
-		<Y>2658</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<BasicProperties Width="220" Height="30">
-			<EmbeddedIcon>false</EmbeddedIcon>
-			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-			<Enabled>true</Enabled>
-		</BasicProperties>
-		<ExtendedProperties>
-			<DefaultValueCode>0.05</DefaultValueCode>
-			<Orientation>HORIZONTAL</Orientation>
-			<MinValue>0</MinValue>
-			<MaxValue>2</MaxValue>
-			<LinkTo>true</LinkTo>
-			<Link>tiempoHidratacionMin</Link>
-		</ExtendedProperties>
-	</Control>
-	<Text>
-		<Id>1788900000023</Id>
-		<Name><![CDATA[textLblMaxHidratacion]]></Name>
-		<X>60</X>
-		<Y>2710</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-16777216</Color>
-		<Text><![CDATA[Tiempo de hidratacion - MAXIMO (min)]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>11</Size>
-			<Style>0</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<Control Type="Slider">
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Id>1788900000024</Id>
-		<Name><![CDATA[sliderMaxHidratacion]]></Name>
-		<X>60</X>
-		<Y>2728</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<BasicProperties Width="220" Height="30">
-			<EmbeddedIcon>false</EmbeddedIcon>
-			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-			<Enabled>true</Enabled>
-		</BasicProperties>
-		<ExtendedProperties>
-			<DefaultValueCode>0.15</DefaultValueCode>
-			<Orientation>HORIZONTAL</Orientation>
-			<MinValue>0</MinValue>
-			<MaxValue>2</MaxValue>
-			<LinkTo>true</LinkTo>
-			<Link>tiempoHidratacionMax</Link>
-		</ExtendedProperties>
-	</Control>
-	<Text>
-		<Id>1788900000025</Id>
-		<Name><![CDATA[textLblNivelCalor]]></Name>
-		<X>60</X>
-		<Y>2780</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-16777216</Color>
-		<Text><![CDATA[Nivel de calor  (0 = fresco / 1 = agobiante)]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>11</Size>
-			<Style>0</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<Control Type="Slider">
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Id>1788900000026</Id>
-		<Name><![CDATA[sliderNivelCalor]]></Name>
-		<X>60</X>
-		<Y>2798</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<BasicProperties Width="220" Height="30">
-			<EmbeddedIcon>false</EmbeddedIcon>
-			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-			<Enabled>true</Enabled>
-		</BasicProperties>
-		<ExtendedProperties>
-			<DefaultValueCode>0.5</DefaultValueCode>
-			<Orientation>HORIZONTAL</Orientation>
-			<MinValue>0</MinValue>
-			<MaxValue>1</MaxValue>
-			<LinkTo>true</LinkTo>
-			<Link>nivelCalor</Link>
-		</ExtendedProperties>
-	</Control>
-	<Text>
-		<Id>1788900000027</Id>
-		<Name><![CDATA[textLblPropension]]></Name>
-		<X>60</X>
-		<Y>2850</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-16777216</Color>
-		<Text><![CDATA[Propension a hidratarse con clima fresco]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>11</Size>
-			<Style>0</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<Control Type="Slider">
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Id>1788900000028</Id>
-		<Name><![CDATA[sliderPropension]]></Name>
-		<X>60</X>
-		<Y>2868</Y>
-		<Label>
-			<X>0</X>
-			<Y>-10</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<BasicProperties Width="220" Height="30">
-			<EmbeddedIcon>false</EmbeddedIcon>
-			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
-			<Enabled>true</Enabled>
-		</BasicProperties>
-		<ExtendedProperties>
-			<DefaultValueCode>0.3</DefaultValueCode>
-			<Orientation>HORIZONTAL</Orientation>
-			<MinValue>0</MinValue>
-			<MaxValue>1</MaxValue>
-			<LinkTo>true</LinkTo>
-			<Link>propensionHidratacion</Link>
-		</ExtendedProperties>
-	</Control>
-	<Text>
 		<Id>1790100000182</Id>
 		<Name><![CDATA[textTituloResultados]]></Name>
 		<X>360</X>
@@ -2666,7 +2450,7 @@ navigate(areaMenu);</ActionCode>
 		<Id>1791842774453</Id>
 		<Name><![CDATA[voluntariosPuesto1]]></Name>
 		<X>60</X>
-		<Y>2930</Y>
+		<Y>2650</Y>
 		<Label>
 			<X>55</X>
 			<Y>-10</Y>
@@ -2696,7 +2480,7 @@ navigate(areaMenu);</ActionCode>
 		<Id>1791843092221</Id>
 		<Name><![CDATA[voluntariosPuesto5]]></Name>
 		<X>60</X>
-		<Y>2980</Y>
+		<Y>2700</Y>
 		<Label>
 			<X>55</X>
 			<Y>-10</Y>
@@ -2726,7 +2510,7 @@ navigate(areaMenu);</ActionCode>
 		<Id>1791843141932</Id>
 		<Name><![CDATA[voluntariosPuesto10]]></Name>
 		<X>60</X>
-		<Y>3030</Y>
+		<Y>2750</Y>
 		<Label>
 			<X>55</X>
 			<Y>-10</Y>
@@ -2756,7 +2540,7 @@ navigate(areaMenu);</ActionCode>
 		<Id>1791843156902</Id>
 		<Name><![CDATA[voluntariosPuesto15]]></Name>
 		<X>60</X>
-		<Y>3080</Y>
+		<Y>2800</Y>
 		<Label>
 			<X>55</X>
 			<Y>-10</Y>
@@ -2781,4 +2565,571 @@ navigate(areaMenu);</ActionCode>
 			<Link>poolVoluntarios.capacity</Link>
 		</ExtendedProperties>
 	</Control>
+	<Text>
+		<Id>1790100009103</Id>
+		<Name><![CDATA[textTituloGraficos]]></Name>
+		<X>40</X>
+		<Y>3015</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Stock por puesto en tiempo real]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1790100009104</Id>
+		<Name><![CDATA[textTituloGraficoStockAgua]]></Name>
+		<X>90</X>
+		<Y>3048</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Stock de agua por puesto (unidades)]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<TimePlot>
+		<Id>1790100009105</Id>
+		<Name><![CDATA[graficoStockAgua]]></Name>
+		<X>40</X>
+		<Y>3060</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<AutoUpdate>true</AutoUpdate>
+		<OccurrenceAtTime>true</OccurrenceAtTime>
+		<OccurrenceDate>1787270400000</OccurrenceDate>
+		<OccurrenceTime Class="CodeUnitValue">
+			<Code><![CDATA[0]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</OccurrenceTime>
+		<RecurrenceCode Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</RecurrenceCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>560</Width>
+		<Height>230</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>50</XOffset>
+			<YOffset>25</YOffset>
+			<Width>380</Width>
+			<Height>170</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>EAST</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>110</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<ShowLegend>true</ShowLegend>
+		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
+		<TimeWindowUnits>MINUTE</TimeWindowUnits>
+		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+		<VerScaleType>AUTO</VerScaleType>
+		<DrawLine>true</DrawLine>
+		<Interpolation>LINEAR</Interpolation>
+		<DatasetExpression>
+			<Title><![CDATA[P1 km 5]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP1]]></Expression>
+			<Color>-16776961</Color>
+			<Expression2><![CDATA[puesto.get( 0 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P3 km 10]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP3]]></Expression>
+			<Color>-65536</Color>
+			<Expression2><![CDATA[puesto.get( 2 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P5 km 15]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP5]]></Expression>
+			<Color>-16744448</Color>
+			<Expression2><![CDATA[puesto.get( 4 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P7 km 20]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP7]]></Expression>
+			<Color>-23296</Color>
+			<Expression2><![CDATA[puesto.get( 6 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P9 km 25]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP9]]></Expression>
+			<Color>-8388480</Color>
+			<Expression2><![CDATA[puesto.get( 8 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P11 km 30]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP11]]></Expression>
+			<Color>-16728065</Color>
+			<Expression2><![CDATA[puesto.get( 10 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P12 km 33]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP12]]></Expression>
+			<Color>-6737204</Color>
+			<Expression2><![CDATA[puesto.get( 11 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P13 km 35]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP13]]></Expression>
+			<Color>-16777216</Color>
+			<Expression2><![CDATA[puesto.get( 12 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P14 km 37.7]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP14]]></Expression>
+			<Color>-7667712</Color>
+			<Expression2><![CDATA[puesto.get( 13 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P15 km 40]]></Title>
+			<Expression><![CDATA[dsgraficoStockAguaP15]]></Expression>
+			<Color>-2448096</Color>
+			<Expression2><![CDATA[puesto.get( 14 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<SamplesToKeep>900</SamplesToKeep>
+		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<FillAreaUnderLine>false</FillAreaUnderLine>
+		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+	</TimePlot>
+	<Text>
+		<Id>1790100009106</Id>
+		<Name><![CDATA[textTituloGraficoStockIsotonica]]></Name>
+		<X>670</X>
+		<Y>3048</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Stock de isotonica por puesto (unidades)]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<TimePlot>
+		<Id>1790100009107</Id>
+		<Name><![CDATA[graficoStockIsotonica]]></Name>
+		<X>620</X>
+		<Y>3060</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<AutoUpdate>true</AutoUpdate>
+		<OccurrenceAtTime>true</OccurrenceAtTime>
+		<OccurrenceDate>1787270400000</OccurrenceDate>
+		<OccurrenceTime Class="CodeUnitValue">
+			<Code><![CDATA[0]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</OccurrenceTime>
+		<RecurrenceCode Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</RecurrenceCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>560</Width>
+		<Height>230</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>50</XOffset>
+			<YOffset>25</YOffset>
+			<Width>380</Width>
+			<Height>170</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>EAST</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>110</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<ShowLegend>true</ShowLegend>
+		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
+		<TimeWindowUnits>MINUTE</TimeWindowUnits>
+		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+		<VerScaleType>AUTO</VerScaleType>
+		<DrawLine>true</DrawLine>
+		<Interpolation>LINEAR</Interpolation>
+		<DatasetExpression>
+			<Title><![CDATA[P2 km 7.5]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP2]]></Expression>
+			<Color>-16776961</Color>
+			<Expression2><![CDATA[puesto.get( 1 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P4 km 12.5]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP4]]></Expression>
+			<Color>-65536</Color>
+			<Expression2><![CDATA[puesto.get( 3 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P6 km 17.5]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP6]]></Expression>
+			<Color>-16744448</Color>
+			<Expression2><![CDATA[puesto.get( 5 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P8 km 22.6]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP8]]></Expression>
+			<Color>-23296</Color>
+			<Expression2><![CDATA[puesto.get( 7 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P10 km 27.5]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP10]]></Expression>
+			<Color>-8388480</Color>
+			<Expression2><![CDATA[puesto.get( 9 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P12 km 33]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP12]]></Expression>
+			<Color>-16728065</Color>
+			<Expression2><![CDATA[puesto.get( 11 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P14 km 37.7]]></Title>
+			<Expression><![CDATA[dsgraficoStockIsotonicaP14]]></Expression>
+			<Color>-6737204</Color>
+			<Expression2><![CDATA[puesto.get( 13 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<SamplesToKeep>900</SamplesToKeep>
+		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<FillAreaUnderLine>false</FillAreaUnderLine>
+		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+	</TimePlot>
+	<Text>
+		<Id>1790100009108</Id>
+		<Name><![CDATA[textTituloGraficoStockFruta]]></Name>
+		<X>90</X>
+		<Y>3308</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Stock de fruta por puesto (unidades)]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<TimePlot>
+		<Id>1790100009109</Id>
+		<Name><![CDATA[graficoStockFruta]]></Name>
+		<X>40</X>
+		<Y>3320</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<AutoUpdate>true</AutoUpdate>
+		<OccurrenceAtTime>true</OccurrenceAtTime>
+		<OccurrenceDate>1787270400000</OccurrenceDate>
+		<OccurrenceTime Class="CodeUnitValue">
+			<Code><![CDATA[0]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</OccurrenceTime>
+		<RecurrenceCode Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</RecurrenceCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>560</Width>
+		<Height>230</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>50</XOffset>
+			<YOffset>25</YOffset>
+			<Width>380</Width>
+			<Height>170</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>EAST</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>110</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<ShowLegend>true</ShowLegend>
+		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
+		<TimeWindowUnits>MINUTE</TimeWindowUnits>
+		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+		<VerScaleType>AUTO</VerScaleType>
+		<DrawLine>true</DrawLine>
+		<Interpolation>LINEAR</Interpolation>
+		<DatasetExpression>
+			<Title><![CDATA[P7 km 20]]></Title>
+			<Expression><![CDATA[dsgraficoStockFrutaP7]]></Expression>
+			<Color>-16776961</Color>
+			<Expression2><![CDATA[puesto.get( 6 ).stock[ Puesto.FRUTA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P12 km 33]]></Title>
+			<Expression><![CDATA[dsgraficoStockFrutaP12]]></Expression>
+			<Color>-65536</Color>
+			<Expression2><![CDATA[puesto.get( 11 ).stock[ Puesto.FRUTA ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<SamplesToKeep>900</SamplesToKeep>
+		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<FillAreaUnderLine>false</FillAreaUnderLine>
+		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+	</TimePlot>
+	<Text>
+		<Id>1790100009110</Id>
+		<Name><![CDATA[textTituloGraficoStockGel]]></Name>
+		<X>670</X>
+		<Y>3308</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-16777216</Color>
+		<Text><![CDATA[Stock de gel por puesto (unidades)]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<TimePlot>
+		<Id>1790100009111</Id>
+		<Name><![CDATA[graficoStockGel]]></Name>
+		<X>620</X>
+		<Y>3320</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<AutoUpdate>true</AutoUpdate>
+		<OccurrenceAtTime>true</OccurrenceAtTime>
+		<OccurrenceDate>1787270400000</OccurrenceDate>
+		<OccurrenceTime Class="CodeUnitValue">
+			<Code><![CDATA[0]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</OccurrenceTime>
+		<RecurrenceCode Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="TimeUnits">MINUTE</Unit>
+		</RecurrenceCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>560</Width>
+		<Height>230</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>50</XOffset>
+			<YOffset>25</YOffset>
+			<Width>380</Width>
+			<Height>170</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>EAST</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>110</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<ShowLegend>true</ShowLegend>
+		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
+		<TimeWindowUnits>MINUTE</TimeWindowUnits>
+		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+		<VerScaleType>AUTO</VerScaleType>
+		<DrawLine>true</DrawLine>
+		<Interpolation>LINEAR</Interpolation>
+		<DatasetExpression>
+			<Title><![CDATA[P8 km 22.6]]></Title>
+			<Expression><![CDATA[dsgraficoStockGelP8]]></Expression>
+			<Color>-16776961</Color>
+			<Expression2><![CDATA[puesto.get( 7 ).stock[ Puesto.GEL ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title><![CDATA[P11 km 30]]></Title>
+			<Expression><![CDATA[dsgraficoStockGelP11]]></Expression>
+			<Color>-65536</Color>
+			<Expression2><![CDATA[puesto.get( 10 ).stock[ Puesto.GEL ]]]></Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<SamplesToKeep>900</SamplesToKeep>
+		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<FillAreaUnderLine>false</FillAreaUnderLine>
+		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+	</TimePlot>
 </Presentation>

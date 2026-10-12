@@ -287,7 +287,7 @@ navigate(areaMenu);]]></StartupCode>
 			<ShowLabel>false</ShowLabel>
 			<Title>Ejecucion y metricas</Title>
 			<Width>1200</Width>
-			<Height>800</Height>
+			<Height>1100</Height>
 		</Area>
 		<Area>
 			<Id>1787600000013</Id>

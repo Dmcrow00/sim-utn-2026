@@ -129,6 +129,7 @@ Lo de arriba sobre `Corredor` vacío y sobre el stock global en `Main` quedó de
 | Intermedio | 170 | 1,12 m | 5:15 min/km | 1,0 | 1,0 | 0,8 | violeta |
 | Principiante | 160 | 0,95 m | 6:40 min/km | 1,15 | 1,4 | 1,0 | verde |
 
+- Fijos por corredor (se sortean en `inicializar`, ya no hay sliders): `tiempoHidratacion` = `uniform(0.05, 0.15)` min × `factorTiempoPuesto` (de 3 a 9 s para un intermedio), y `propensionHidratacion` según la categoría (Elite 0,15–0,30, Avanzado 0,20–0,35, Intermedio 0,25–0,40, Principiante 0,35–0,55). Se eliminaron de `Main` los parámetros `tiempoHidratacionMin`, `tiempoHidratacionMax` y `propensionHidratacion`, la función `tiempoHidratacion()` y sus 4 sliders. `nivelCalor` sigue siendo un parámetro de la carrera (es el clima del día, igual para todos) y se cambia desde el experimento.
 - Estado dinámico: `nivelHidratacion` y `nivelEnergia` (0..1). `avanzarHasta(km, nivelCalor)` (en el `onExit` de cada `moveToN`) los descuenta según los km corridos.
 - `velocidadKmh(nivelCalor)` (en el `speed` de cada `moveToN`) aplica: calor/`toleranciaCalor`, deshidratación (< 70%, hasta −25%), "muro" de energía (< 35%, hasta −20%) y fatiga después del km 30.
 - `decidirHidratacion` ahora además suma el déficit de hidratación, la necesidad de la categoría y si el puesto ofrece gel/fruta cuando falta energía.
@@ -183,6 +184,8 @@ Datos del shapefile `puestos_hidratacion3.dbf` (agua/isotónica/fruta + km). Los
 ### Parámetros nuevos de `Main`
 
 `voluntariosPorPuesto` (4), `entregaEnMano` (true), `capacidadAgua` (800), `capacidadIsotonica` (600), `capacidadFruta` (300), `capacidadGel` (250), `porcentajeReposicion` (0,35), `latDeposito`/`lonDeposito` (-34,5960 / -58,4380), `velocidadCamionKmh` (25), `capacidadZorra` (200), `velocidadZorraKmh` (3,5). Todos son valores de prueba, sin calibrar.
+
+Gráficos en la pantalla de Ejecución (`areaEjecucion` pasó a 1200x1100): 4 Time Plots (`graficoStockAgua`, `graficoStockIsotonica`, `graficoStockFruta`, `graficoStockGel`) con una serie por puesto que ofrece ese insumo (`puesto.get(i).stock[Puesto.X]`). Toman una muestra por minuto y muestran una ventana de 900 min. Las series se definieron a mano según la oferta actual de `configurar()`: si se cambia qué ofrece un puesto, hay que agregar o quitar su serie en el gráfico correspondiente.
 
 Resultados en la pantalla de Ejecución: `textResultadosCategorias` (llegados y tiempo promedio por categoría) y `textInventarioPuestos` (stock, faltantes y reposiciones de cada puesto).
 
