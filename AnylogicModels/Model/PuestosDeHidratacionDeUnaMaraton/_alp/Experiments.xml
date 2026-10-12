@@ -64,9 +64,6 @@
 				<ParameterName>capacidadGel</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>porcentajeReposicion</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>latDeposito</ParameterName>
 			</Parameter>
 			<Parameter>
@@ -80,6 +77,27 @@
 			</Parameter>
 			<Parameter>
 				<ParameterName>velocidadZorraKmh</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>consumoLiquidoMlHora</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>volumenVasoMl</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>gelesPorCorredor</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>frutaPorCorredor</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>zNivelServicio</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>topePuntoReposicion</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>factorRecorridoCalles</ParameterName>
 			</Parameter>
 		</Parameters>
 		<PresentationProperties>

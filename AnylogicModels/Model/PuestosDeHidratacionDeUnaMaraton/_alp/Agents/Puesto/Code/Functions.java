@@ -14,6 +14,7 @@ double[] lonEst = { -58.462352, -58.451763, -58.438920, -58.418522, -58.401393, 
 int i = getIndex();
 numero = i + 1;
 km = kms[ i ];
+kmDesdeAnterior = i == 0 ? kms[ 0 ] : kms[ i ] - kms[ i - 1 ];
 ofrece[ AGUA ] = ofertas[ i ].contains( "A" );
 ofrece[ ISOTONICA ] = ofertas[ i ].contains( "I" );
 ofrece[ FRUTA ] = ofertas[ i ].contains( "F" );
@@ -24,14 +25,19 @@ voluntarios = main.voluntariosPorPuesto;
 latEstacionamiento = latEst[ i ];
 lonEstacionamiento = lonEst[ i ];
 
-// Cada insumo que ofrece el puesto tiene su propio stock, capacidad y punto
-// de reposicion. Los que no ofrece quedan en 0.
+// Cada insumo que ofrece el puesto tiene su propio stock y capacidad. Los
+// que no ofrece quedan en 0.
 for ( int k = 0; k < 4; k++ ) {
 	capacidad[ k ] = ofrece[ k ] ? main.capacidadInicial( k ) : 0;
 	stock[ k ] = capacidad[ k ];
-	puntoReposicion[ k ] = Math.round( capacidad[ k ] * main.porcentajeReposicion );
 }
 jumpTo( main.puntoPuesto( i ) );
+
+// Punto de reposicion inicial (despues se recalcula cada minuto).
+for ( int k = 0; k < 4; k++ ) {
+	actualizarPuntoReposicion( k );
+}
+create_MedirDemanda( 1, MINUTE );
 /*ALCODEEND*/}
 
 void atender(Corredor c)
@@ -196,7 +202,8 @@ for ( int k = 0; k < 4; k++ ) {
 	if ( !ofrece[ k ] ) {
 		continue;
 	}
-	s += "  " + NOMBRES_INSUMO[ k ] + " " + (int) stock[ k ] + "/" + (int) capacidad[ k ];
+	s += "  " + NOMBRES_INSUMO[ k ] + " " + (int) stock[ k ] + "/" + (int) capacidad[ k ]
+	   + " (repone en " + (int) puntoReposicion[ k ] + ( ropTopeado[ k ] ? ", capacidad corta" : "" ) + ")";
 	if ( faltantes[ k ] > 0 ) {
 		s += " (faltaron " + faltantes[ k ] + ")";
 	}
@@ -209,5 +216,89 @@ if ( demoraUltimaReposicion >= 0 ) {
 	s += "  (el ultimo pedido tardo " + (int) demoraUltimaReposicion + " min en llegar)";
 }
 return s;
+/*ALCODEEND*/}
+
+double demandaPlanificada(int k)
+{/*ALCODESTART::1790100009323*/
+// Demanda esperada de un insumo en este puesto, en unidades por minuto.
+//
+// Flujo de corredores: 60 * tasaLlegada por minuto (el Source genera un
+// corredor cada exponential( tasaLlegada ) segundos).
+//
+// Bebidas: cada corredor repone en el puesto lo que tomaria desde el puesto
+// anterior.
+//   - Ingesta media 466 mL/h (Jimenez-Alfageme et al., 2025, Sports Med Open
+//     11:26, 160 corredores del Maraton de Sevilla 2022).
+//   - Vaso de 116 mL: 31.740 galones de agua en 1.036.003 vasos para 27.222
+//     corredores del Maraton de Boston 2017 (Cheuvront et al., 2019, Med Sci
+//     Sports Exerc 51(5):1040-1046).
+//   - El calor escala la ingesta con el mismo factor que la deshidratacion de
+//     Corredor (vale 1 con nivelCalor = 0.5).
+// Gel y fruta: unidades por corredor que pasa (supuesto: no hay datos
+// publicados de cuanto se retira en cada puesto).
+if ( !ofrece[ k ] ) {
+	return 0;
+}
+double flujo = 60 * main.tasaLlegada;
+if ( k == GEL ) {
+	return flujo * main.gelesPorCorredor;
+}
+if ( k == FRUTA ) {
+	return flujo * main.frutaPorCorredor;
+}
+double horasDesdeAnterior = kmDesdeAnterior * main.horasPorKmPromedio();
+double vasos = main.consumoLiquidoMlHora * ( 0.6 + 0.8 * main.nivelCalor ) * horasDesdeAnterior / main.volumenVasoMl;
+// Si el puesto da agua e isotonica, la bebida se reparte entre las dos.
+if ( ofrece[ AGUA ] && ofrece[ ISOTONICA ] ) {
+	vasos *= 0.5;
+}
+return flujo * vasos;
+/*ALCODEEND*/}
+
+double tiempoEntregaEstimado()
+{/*ALCODESTART::1790100009324*/
+// Minutos desde que sale el pedido hasta que el primer viaje de la zorra
+// llega a la mesa: camion por calles (distancia en linea recta por
+// factorRecorridoCalles), caminata de la zorra y 1 minuto de descarga.
+// Despues de la primera reposicion, si la demora medida fue mayor, se usa esa.
+double kmCamion = distanciaKm( main.latDeposito, main.lonDeposito, latEstacionamiento, lonEstacionamiento )
+                * main.factorRecorridoCalles;
+double kmZorra = distanciaKm( latEstacionamiento, lonEstacionamiento, getLatitude(), getLongitude() );
+double minutos = kmCamion / main.velocidadCamionKmh * 60 + kmZorra / main.velocidadZorraKmh * 60 + 1;
+return max( minutos, demoraUltimaReposicion );
+/*ALCODEEND*/}
+
+void actualizarPuntoReposicion(int k)
+{/*ALCODESTART::1790100009325*/
+// Modelo de revision continua: se pide cuando el stock alcanza la demanda
+// esperada durante el tiempo de entrega mas un stock de seguridad.
+//   ROP = d * L + z * sigma,   con demanda Poisson: sigma = sqrt( d * L )
+// z = zNivelServicio (1.65 = 95% de los pedidos llegan antes de quedarse sin
+// stock). La demanda d es la mayor entre la planificada (bibliografia) y la
+// medida en la corrida, para no quedarse corto si viene mas gente.
+if ( !ofrece[ k ] ) {
+	puntoReposicion[ k ] = 0;
+	ropTopeado[ k ] = false;
+	return;
+}
+double d = max( demandaPlanificada( k ), demandaObservada[ k ] );
+double demandaEnEntrega = d * tiempoEntregaEstimado();
+double rop = demandaEnEntrega + main.zNivelServicio * Math.sqrt( demandaEnEntrega );
+// Si el punto supera esta fraccion de la capacidad, el stock del puesto no
+// alcanza a cubrir el tiempo de entrega: se topea y se avisa en el resumen.
+double tope = main.topePuntoReposicion * capacidad[ k ];
+ropTopeado[ k ] = rop > tope;
+puntoReposicion[ k ] = Math.round( min( rop, tope ) );
+/*ALCODEEND*/}
+
+double distanciaKm(double lat1, double lon1, double lat2, double lon2)
+{/*ALCODESTART::1790100009326*/
+// Distancia en linea recta (formula de haversine).
+double dLat = Math.toRadians( lat2 - lat1 );
+double dLon = Math.toRadians( lon2 - lon1 );
+double a = Math.sin( dLat / 2 ) * Math.sin( dLat / 2 )
+         + Math.cos( Math.toRadians( lat1 ) ) * Math.cos( Math.toRadians( lat2 ) )
+         * Math.sin( dLon / 2 ) * Math.sin( dLon / 2 );
+return 2 * 6371 * Math.atan2( Math.sqrt( a ), Math.sqrt( 1 - a ) );
 /*ALCODEEND*/}
 

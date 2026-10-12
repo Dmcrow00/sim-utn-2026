@@ -214,7 +214,8 @@
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[agent.minutoLargada = time();
-agent.inicializar( sortearCategoria() );]]></Code>
+agent.inicializar( sortearCategoria() );
+registrarLargada( agent );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>

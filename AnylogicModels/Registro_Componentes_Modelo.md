@@ -169,7 +169,7 @@ Datos del shapefile `puestos_hidratacion3.dbf` (agua/isotónica/fruta + km). Los
 
 ### Reposición con camión y zorra (`Camion`, `OperarioZorra`)
 
-1. Cuando un insumo cae al punto de reposición (`porcentajeReposicion` × capacidad), `Puesto.revisarReposicion()` llama `main.despacharCamion(p)`.
+1. Cuando un insumo cae a su punto de reposición (ver "Política de reposición" abajo), `Puesto.revisarReposicion()` llama `main.despacharCamion(p)`.
 2. `Camion` sale del depósito (`latDeposito`, `lonDeposito`) y va por las calles reales (ruteo GIS) hasta un punto ~130 m al costado del circuito (`latEstacionamiento`/`lonEstacionamiento` del puesto), sobre una calle aledaña.
 3. Al estacionar baja un `OperarioZorra`. El operario carga `capacidadZorra` unidades, camina en línea recta hasta la mesa, descarga (1 min; `recibirCarga` reparte entre los insumos según lo que le falta a cada uno) y vuelve. Repite hasta llenar el puesto.
 4. Al terminar, `finReposicion()`: el camión vuelve al depósito y desaparece.
@@ -181,9 +181,36 @@ Datos del shapefile `puestos_hidratacion3.dbf` (agua/isotónica/fruta + km). Los
 - `Main.poolDePuesto(nPuesto)`: devuelve el `ResourcePool` de ese puesto.
 - Para un slider: rango 1–10, valor inicial `voluntariosPorPuesto`, y en **Action** `cambiarVoluntarios( 0, (int) value );` (cambiando el 0 por el puesto). Pendiente: armar los sliders (lo hace Ramiro).
 
+### Política de reposición: punto de reposición por demanda durante la entrega
+
+Reemplaza al `porcentajeReposicion` fijo (35 % de la capacidad), que con un tiempo de entrega de ~25 min dejaba los primeros puestos vacíos antes de que llegara el camión. Es el modelo clásico de revisión continua:
+
+**ROP = d · L + z · √(d · L)**
+
+- **d**, demanda por minuto (`Puesto.demandaPlanificada(k)`). Es la mayor entre la planificada con bibliografía y la medida en la corrida (`demandaObservada`, promedio móvil exponencial que actualiza el evento `MedirDemanda` cada minuto, contando también lo que se pidió y no había).
+  - Flujo de corredores: `60 × tasaLlegada` por minuto.
+  - Bebidas (vasos por corredor) = `consumoLiquidoMlHora` × factor de calor × horas desde el puesto anterior / `volumenVasoMl`. Si el puesto da agua e isotónica, se reparte mitad y mitad.
+  - Gel y fruta: `gelesPorCorredor` (0,5) y `frutaPorCorredor` (0,4) por corredor que pasa. **Son supuestos**: no se encontró bibliografía sobre cuánto se retira en cada puesto.
+- **L**, tiempo de entrega en minutos (`tiempoEntregaEstimado()`). Suma el camión desde el depósito (distancia en línea recta × `factorRecorridoCalles` / `velocidadCamionKmh`), la caminata de la zorra y 1 min de descarga. Después de la primera reposición se usa la demora medida (`demoraUltimaReposicion`) si fue mayor.
+- **z · √(d · L)**, stock de seguridad con demanda Poisson (varianza = media). `zNivelServicio` = 1,65 equivale a un 95 % de pedidos que llegan antes de quedarse sin stock.
+- Tope: si el ROP supera `topePuntoReposicion` (75 %) de la capacidad, se topea y el resumen avisa "capacidad corta". Significa que el puesto no puede cubrir el tiempo de entrega con su stock y hay que agrandar la capacidad o acercar el depósito.
+
+Fuentes:
+
+| Dato | Valor | Fuente |
+|---|---|---|
+| Ingesta de líquido en carrera | 466 ± 279 mL/h (n = 154; puestos cada ~3 km) | Jiménez-Alfageme R. et al. (2025). *Nutritional Intake and Timing of Marathon Runners: Influence of Athlete's Characteristics and Fueling Practices on Finishing Time.* Sports Medicine – Open 11:26. doi:10.1186/s40798-024-00801-w (Maratón de Sevilla 2022) |
+| Volumen por vaso | 116 mL (31.740 gal de agua en 1.036.003 vasos para 27.222 corredores, 21,5 °C) | Cheuvront S.N. et al. (2019). *Validation of a Mobile Application Water Planning Tool for Road Race Event Organizers.* Med Sci Sports Exerc 51(5):1040-1046. doi:10.1249/MSS.0000000000001861 (PubMed 30531484, Maratón de Boston 2017) |
+| Rango de referencia de ingesta | 0,55 ± 0,34 L/h en elite (ACSM: 0,4–0,8 L/h) | Beis L.Y. et al. (2012). *Drinking behaviors of elite male runners during marathon competition.* Clin J Sport Med 22(3):254-261. doi:10.1097/JSM.0b013e31824a55d7 |
+| ROP con stock de seguridad | d·L + z·σ_L | Modelo clásico de inventario de revisión continua (p. ej. Silver, Pyke & Peterson, *Inventory Management and Production Planning and Scheduling*) |
+
+Con los valores por defecto (`tasaLlegada` 0,5, `nivelCalor` 0,5) los puntos de reposición iniciales quedan entre ~300 y ~1350 unidades (10 %–45 % de la capacidad). P1 es el más alto porque está a 5 km de la largada.
+
+La unidad de bebida pasó a ser un **vaso de ~116 mL**, así que las capacidades se llevaron a una escala realista. Boston 2017 usó ~43.000 vasos por puesto en toda la carrera. Valores: agua 3000, isotónica 2500, fruta 1000, gel 1000, y la zorra lleva 900 vasos por viaje (~105 L). Con 200 por viaje la zorra reponía apenas por encima del consumo.
+
 ### Parámetros nuevos de `Main`
 
-`voluntariosPorPuesto` (4), `entregaEnMano` (true), `capacidadAgua` (800), `capacidadIsotonica` (600), `capacidadFruta` (300), `capacidadGel` (250), `porcentajeReposicion` (0,35), `latDeposito`/`lonDeposito` (-34,5960 / -58,4380), `velocidadCamionKmh` (25), `capacidadZorra` (200), `velocidadZorraKmh` (3,5). Todos son valores de prueba, sin calibrar.
+`voluntariosPorPuesto` (4), `entregaEnMano` (true), `capacidadAgua` (3000), `capacidadIsotonica` (2500), `capacidadFruta` (1000), `capacidadGel` (1000), `latDeposito`/`lonDeposito` (-34,5960 / -58,4380), `velocidadCamionKmh` (25), `capacidadZorra` (900), `velocidadZorraKmh` (3,5), `consumoLiquidoMlHora` (466), `volumenVasoMl` (116), `gelesPorCorredor` (0,5), `frutaPorCorredor` (0,4), `zNivelServicio` (1,65), `topePuntoReposicion` (0,75), `factorRecorridoCalles` (1,3). Los que no tienen fuente en la tabla de arriba son supuestos sin calibrar.
 
 Gráficos en la pantalla de Ejecución (`areaEjecucion` pasó a 1200x1100): 4 Time Plots (`graficoStockAgua`, `graficoStockIsotonica`, `graficoStockFruta`, `graficoStockGel`) con una serie por puesto que ofrece ese insumo (`puesto.get(i).stock[Puesto.X]`). Toman una muestra por minuto y muestran una ventana de 900 min. Las series se definieron a mano según la oferta actual de `configurar()`: si se cambia qué ofrece un puesto, hay que agregar o quitar su serie en el gráfico correspondiente.
 

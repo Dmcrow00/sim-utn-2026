@@ -200,3 +200,22 @@ puesto.get( nPuesto ).voluntarios = cantidad;
 poolDePuesto( nPuesto ).set_capacity( cantidad );
 /*ALCODEEND*/}
 
+void registrarLargada(Corredor c)
+{/*ALCODESTART::1790100009317*/
+// Lleva el promedio de horas por km de los corredores que largaron, para
+// estimar cuanto tardan entre un puesto y el siguiente.
+corredoresLargados++;
+sumaHorasPorKm += 1 / c.velocidadBaseKmh;
+/*ALCODEEND*/}
+
+double horasPorKmPromedio()
+{/*ALCODESTART::1790100009318*/
+// Promedio de 1/velocidad (h/km) de los corredores largados. Antes de la
+// primera largada usa 0.0905 h/km (5:26 min/km), el valor esperado con el
+// reparto de categorias de sortearCategoria().
+if ( corredoresLargados == 0 ) {
+	return 0.0905;
+}
+return sumaHorasPorKm / corredoresLargados;
+/*ALCODEEND*/}
+

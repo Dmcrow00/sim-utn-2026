@@ -100,6 +100,7 @@
 	<CurrentLevel>1789503557674</CurrentLevel>
 	<ConnectionsId>1789503557669</ConnectionsId>
 	<Variables xmlns:al="http://anylogic.com"/>
+	<DynamicEvents xmlns:al="http://anylogic.com"/>
 	<Functions xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
