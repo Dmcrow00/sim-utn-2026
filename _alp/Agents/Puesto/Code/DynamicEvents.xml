@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DynamicEvents>
+	<DynamicEventClass>
+		<Id>1789503836492</Id>
+		<Name><![CDATA[Reposicion]]></Name>
+		<X>40</X>
+		<Y>240</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Action xmlns:al="http://anylogic.com"/>
+	</DynamicEventClass>
+</DynamicEvents>
