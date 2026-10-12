@@ -35,6 +35,7 @@
 		<OnArrival>if ( fase.equals( "YENDO" ) ) {
 	// Estaciono en la calle aledaña: baja el operario con la zorra.
 	fase = "DESCARGANDO";
+	destino.estadoReposicion = "camion estacionado";
 	main.iniciarDescarga( this );
 } else if ( fase.equals( "VOLVIENDO" ) ) {
 	main.remove_camiones( this );

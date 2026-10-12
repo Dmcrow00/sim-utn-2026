@@ -103,6 +103,8 @@ if ( pedidoEnCurso ) {
 for ( int k = 0; k < 4; k++ ) {
 	if ( ofrece[ k ] && stock[ k ] <= puntoReposicion[ k ] ) {
 		pedidoEnCurso = true;
+		minutoPedido = time();
+		estadoReposicion = "camion en camino";
 		main.despacharCamion( this );
 		return;
 	}
@@ -148,6 +150,7 @@ void finReposicion()
 {/*ALCODESTART::1790100000048*/
 // El operario termino de traer la mercaderia y el camion se va.
 pedidoEnCurso = false;
+estadoReposicion = "";
 reposicionesRecibidas++;
 // Si mientras descargaban se volvio a consumir por debajo del punto de
 // reposicion, sale otro camion.
@@ -198,8 +201,12 @@ for ( int k = 0; k < 4; k++ ) {
 		s += " (faltaron " + faltantes[ k ] + ")";
 	}
 }
+// Seguimiento de la reposicion: en que etapa esta y hace cuanto se pidio.
 if ( pedidoEnCurso ) {
-	s += "  [reposicion en curso]";
+	s += "  [" + estadoReposicion + ", pedido hace " + (int) ( time() - minutoPedido ) + " min]";
+}
+if ( demoraUltimaReposicion >= 0 ) {
+	s += "  (el ultimo pedido tardo " + (int) demoraUltimaReposicion + " min en llegar)";
 }
 return s;
 /*ALCODEEND*/}

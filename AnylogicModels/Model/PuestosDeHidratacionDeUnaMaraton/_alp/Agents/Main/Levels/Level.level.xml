@@ -2670,8 +2670,8 @@ navigate(areaMenu);</ActionCode>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-		<VerScaleType>AUTO</VerScaleType>
+		<VerScaleToExpression><![CDATA[capacidadAgua]]></VerScaleToExpression>
+		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
@@ -2848,8 +2848,8 @@ navigate(areaMenu);</ActionCode>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-		<VerScaleType>AUTO</VerScaleType>
+		<VerScaleToExpression><![CDATA[capacidadIsotonica]]></VerScaleToExpression>
+		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
@@ -2999,8 +2999,8 @@ navigate(areaMenu);</ActionCode>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-		<VerScaleType>AUTO</VerScaleType>
+		<VerScaleToExpression><![CDATA[capacidadFruta]]></VerScaleToExpression>
+		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
@@ -3105,8 +3105,8 @@ navigate(areaMenu);</ActionCode>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
-		<VerScaleType>AUTO</VerScaleType>
+		<VerScaleToExpression><![CDATA[capacidadGel]]></VerScaleToExpression>
+		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
