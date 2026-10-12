@@ -7,18 +7,34 @@ pendientesHidrata.add( seHidrata );
 pedSource.inject( 1 );
 /*ALCODEEND*/}
 
-double velocidadProximo()
+double velocidadDe(peatonPuesto p)
 {/*ALCODESTART::1790100000117*/
-// Velocidad (m/s) del corredor que esta por aparecer en la escena.
-Corredor c = pendientes.peek();
-if ( c == null ) {
+// Velocidad (m/s) del corredor al que representa el peaton. pedSource la pide
+// al crear el peaton, asi que aca se le asignan sus datos por primera vez.
+asignarCorredor( p );
+if ( p.corredor == null ) {
 	return 3;
 }
-return c.velocidadKmh( main.nivelCalor ) / 3.6;
+return p.corredor.velocidadKmh( main.nivelCalor ) / 3.6;
+/*ALCODEEND*/}
+
+boolean vaAHidratarse(peatonPuesto p)
+{/*ALCODESTART::1790100009001*/
+// Condicion de pedSeHidrata. PedSelectOutput la evalua mas de una vez para el
+// mismo peaton (al llegar y al transmitirlo): si la respuesta cambia entre una
+// y otra aborta la corrida. Por eso los datos se asignan una sola vez
+// (asignarCorredor es idempotente) y aca solo se leen.
+asignarCorredor( p );
+return p.seHidrata;
 /*ALCODEEND*/}
 
 void asignarCorredor(peatonPuesto p)
 {/*ALCODESTART::1790100000118*/
+// Toma el proximo corredor de la cola, una sola vez por peaton.
+if ( p.asignado ) {
+	return;
+}
+p.asignado = true;
 p.corredor = pendientes.poll();
 Boolean h = pendientesHidrata.poll();
 p.seHidrata = h != null && h;

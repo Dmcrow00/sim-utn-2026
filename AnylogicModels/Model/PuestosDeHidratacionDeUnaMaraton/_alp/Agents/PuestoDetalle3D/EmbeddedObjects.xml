@@ -122,14 +122,14 @@
 			<Parameter>
 				<Name><![CDATA[comfortableSpeed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[velocidadProximo()]]></Code>
+					<Code><![CDATA[velocidadDe( (peatonPuesto) ped )]]></Code>
 					<Unit Class="SpeedUnits">MPS</Unit>
 				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[initialSpeed]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[velocidadProximo()]]></Code>
+					<Code><![CDATA[velocidadDe( (peatonPuesto) ped )]]></Code>
 					<Unit Class="SpeedUnits">MPS</Unit>
 				</Value>
 			</Parameter>
@@ -162,9 +162,6 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
-				<Value Class="CodeValue">
-					<Code><![CDATA[asignarCorredor( (peatonPuesto) ped );]]></Code>
-				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onBeginGrouping]]></Name>
@@ -366,7 +363,7 @@
 			<Parameter>
 				<Name><![CDATA[condition1]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[((peatonPuesto) ped).seHidrata]]></Code>
+					<Code><![CDATA[vaAHidratarse( (peatonPuesto) ped )]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
