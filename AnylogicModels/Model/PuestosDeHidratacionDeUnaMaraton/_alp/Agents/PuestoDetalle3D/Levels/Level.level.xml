@@ -196,7 +196,7 @@
 		<X>20</X>
 		<Y>-890</Y>
 		<Width>820</Width>
-		<Height>600</Height>
+		<Height>470</Height>
 		<MakeDefaultViewArea>true</MakeDefaultViewArea>
 		<Label>
 			<X>0</X>
@@ -3046,7 +3046,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 0 ] + ( miPuesto().faltantes[ 0 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 0 ] : "" )]]></TextCode>
+		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 0 ] + "  ·  " + textoAgotamiento( 0 ) + ( miPuesto().ropTopeado[ 0 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 0 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 0 ] : "" )]]></TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3177,7 +3177,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 1 ] + ( miPuesto().faltantes[ 1 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 1 ] : "" )]]></TextCode>
+		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 1 ] + "  ·  " + textoAgotamiento( 1 ) + ( miPuesto().ropTopeado[ 1 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 1 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 1 ] : "" )]]></TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3308,7 +3308,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 2 ] + ( miPuesto().faltantes[ 2 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 2 ] : "" )]]></TextCode>
+		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 2 ] + "  ·  " + textoAgotamiento( 2 ) + ( miPuesto().ropTopeado[ 2 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 2 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 2 ] : "" )]]></TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3439,7 +3439,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 3 ] + ( miPuesto().faltantes[ 3 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 3 ] : "" )]]></TextCode>
+		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 3 ] + "  ·  " + textoAgotamiento( 3 ) + ( miPuesto().ropTopeado[ 3 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 3 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 3 ] : "" )]]></TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3451,7 +3451,7 @@
 		<Id>1790100009697</Id>
 		<Name><![CDATA[panelVoluntarios]]></Name>
 		<X>880</X>
-		<Y>-510</Y>
+		<Y>-530</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3477,7 +3477,7 @@
 		<Id>1790100009698</Id>
 		<Name><![CDATA[panelAtendidos]]></Name>
 		<X>880</X>
-		<Y>-484</Y>
+		<Y>-504</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3503,7 +3503,7 @@
 		<Id>1790100009699</Id>
 		<Name><![CDATA[panelReposicion]]></Name>
 		<X>880</X>
-		<Y>-458</Y>
+		<Y>-478</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11569,5 +11569,656 @@ y usá la rueda para acercar.]]></Text>
 			<Style>1</Style>
 		</Font>
 		<Alignment>CENTER</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011018</Id>
+		<Name><![CDATA[ajustesFondo]]></Name>
+		<X>20</X>
+		<Y>-410</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-2761498</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>820</Width>
+		<Height>160</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-657413</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>12</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011019</Id>
+		<Name><![CDATA[ajustesTitulo]]></Name>
+		<X>36</X>
+		<Y>-398</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Ajustes de este puesto]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011020</Id>
+		<Name><![CDATA[chipInsumo0]]></Name>
+		<X>250</X>
+		<Y>-400</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 0 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>84</Width>
+		<Height>22</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-13351573</FillColor>
+		<FillColorCode><![CDATA[insumoSel == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>5</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011021</Id>
+		<Name><![CDATA[chipInsumoTexto0]]></Name>
+		<X>292</X>
+		<Y>-396</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 0 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-1</Color>
+		<Text><![CDATA[Agua]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011022</Id>
+		<Name><![CDATA[chipInsumo1]]></Name>
+		<X>340</X>
+		<Y>-400</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 1 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>84</Width>
+		<Height>22</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-13351573</FillColor>
+		<FillColorCode><![CDATA[insumoSel == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>5</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011023</Id>
+		<Name><![CDATA[chipInsumoTexto1]]></Name>
+		<X>382</X>
+		<Y>-396</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 1 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-1</Color>
+		<Text><![CDATA[Isotónica]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011024</Id>
+		<Name><![CDATA[chipInsumo2]]></Name>
+		<X>430</X>
+		<Y>-400</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 2 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>84</Width>
+		<Height>22</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-13351573</FillColor>
+		<FillColorCode><![CDATA[insumoSel == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>5</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011025</Id>
+		<Name><![CDATA[chipInsumoTexto2]]></Name>
+		<X>472</X>
+		<Y>-396</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 2 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-1</Color>
+		<Text><![CDATA[Fruta]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011026</Id>
+		<Name><![CDATA[chipInsumo3]]></Name>
+		<X>520</X>
+		<Y>-400</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 3 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>84</Width>
+		<Height>22</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-13351573</FillColor>
+		<FillColorCode><![CDATA[insumoSel == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>5</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011027</Id>
+		<Name><![CDATA[chipInsumoTexto3]]></Name>
+		<X>562</X>
+		<Y>-396</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
+		<OnClickCode><![CDATA[elegirInsumo( 3 );]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-1</Color>
+		<Text><![CDATA[Gel]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<Text>
+		<Id>1790100011028</Id>
+		<Name><![CDATA[ajustesAyuda]]></Name>
+		<X>824</X>
+		<Y>-396</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-7695450</Color>
+		<Text><![CDATA[stock máximo y mínimo: del insumo elegido]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>RIGHT</Alignment>
+	</Text>
+	<Text>
+		<Id>1790100011029</Id>
+		<Name><![CDATA[etiquetaMaximo]]></Name>
+		<X>36</X>
+		<Y>-362</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[-]]></Text>
+		<TextCode><![CDATA["Stock máximo: " + (int) miPuesto().capacidad[ insumoSel ]]]></TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Control Type="Slider">
+		<Id>1790100011030</Id>
+		<Name><![CDATA[sliderMaximo]]></Name>
+		<X>36</X>
+		<Y>-344</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<BasicProperties Width="185" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<Enabled>true</Enabled>
+			<ActionCode><![CDATA[miPuesto().ajustarCapacidad( insumoSel, value );]]></ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode><![CDATA[3000]]></DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>100</MinValue>
+			<MaxValue>10000</MaxValue>
+			<Step>50</Step>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+	<Text>
+		<Id>1790100011031</Id>
+		<Name><![CDATA[etiquetaMinimo]]></Name>
+		<X>236</X>
+		<Y>-362</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[-]]></Text>
+		<TextCode><![CDATA["Stock mínimo: " + (int) miPuesto().puntoReposicion[ insumoSel ] + ( miPuesto().minimoManual[ insumoSel ] < 0 ? " (auto)" : "" )]]></TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011032</Id>
+		<Name><![CDATA[botonMinimoAuto]]></Name>
+		<X>386</X>
+		<Y>-364</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<OnClickCode><![CDATA[miPuesto().minimoAutomatico( insumoSel ); sincronizarControles();]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>36</Width>
+		<Height>20</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-13351573</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>5</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011033</Id>
+		<Name><![CDATA[botonMinimoAutoTexto]]></Name>
+		<X>404</X>
+		<Y>-361</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<OnClickCode><![CDATA[miPuesto().minimoAutomatico( insumoSel ); sincronizarControles();]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-1</Color>
+		<Text><![CDATA[Auto]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<Control Type="Slider">
+		<Id>1790100011034</Id>
+		<Name><![CDATA[sliderMinimo]]></Name>
+		<X>236</X>
+		<Y>-344</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<BasicProperties Width="185" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<Enabled>true</Enabled>
+			<ActionCode><![CDATA[miPuesto().ajustarMinimo( insumoSel, value );]]></ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode><![CDATA[1000]]></DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>0</MinValue>
+			<MaxValue>10000</MaxValue>
+			<Step>10</Step>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+	<Text>
+		<Id>1790100011035</Id>
+		<Name><![CDATA[etiquetaDemora]]></Name>
+		<X>436</X>
+		<Y>-362</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[-]]></Text>
+		<TextCode><![CDATA["Camión: " + (int) Math.round( miPuesto().demoraCamionEfectiva() ) + " min" + ( miPuesto().demoraCamionMin < 0 ? " (auto)" : "" )]]></TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1790100011036</Id>
+		<Name><![CDATA[botonDemoraAuto]]></Name>
+		<X>586</X>
+		<Y>-364</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<OnClickCode><![CDATA[miPuesto().demoraAutomatica(); sincronizarControles();]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>36</Width>
+		<Height>20</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-13351573</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>5</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1790100011037</Id>
+		<Name><![CDATA[botonDemoraAutoTexto]]></Name>
+		<X>604</X>
+		<Y>-361</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<OnClickCode><![CDATA[miPuesto().demoraAutomatica(); sincronizarControles();]]></OnClickCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-1</Color>
+		<Text><![CDATA[Auto]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>CENTER</Alignment>
+	</Text>
+	<Control Type="Slider">
+		<Id>1790100011038</Id>
+		<Name><![CDATA[sliderDemora]]></Name>
+		<X>436</X>
+		<Y>-344</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<BasicProperties Width="185" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<Enabled>true</Enabled>
+			<ActionCode><![CDATA[miPuesto().ajustarDemoraCamion( value );]]></ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode><![CDATA[20]]></DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>120</MaxValue>
+			<Step>1</Step>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+	<Text>
+		<Id>1790100011039</Id>
+		<Name><![CDATA[etiquetaVoluntarios]]></Name>
+		<X>636</X>
+		<Y>-362</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[-]]></Text>
+		<TextCode><![CDATA["Voluntarios: " + miPuesto().voluntarios]]></TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Control Type="Slider">
+		<Id>1790100011040</Id>
+		<Name><![CDATA[sliderVoluntarios]]></Name>
+		<X>636</X>
+		<Y>-344</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<BasicProperties Width="185" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<Enabled>true</Enabled>
+			<ActionCode><![CDATA[main.cambiarVoluntarios( getIndex(), (int) value );]]></ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
+			<Orientation>HORIZONTAL</Orientation>
+			<MinValue>1</MinValue>
+			<MaxValue>15</MaxValue>
+			<Step>1</Step>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+	<Text>
+		<Id>1790100011041</Id>
+		<Name><![CDATA[ajustesEstado]]></Name>
+		<X>36</X>
+		<Y>-292</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-4959462</Color>
+		<Text><![CDATA[-]]></Text>
+		<TextCode><![CDATA[textoEstadoAjustes()]]></TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
 	</Text>
 </Presentation>

@@ -238,6 +238,7 @@ void verPuesto3D(int i)
 // Abre la escena 3D del puesto i (0 = puesto 1). Se usa desde el selector de
 // la vista 3D y al hacer clic en un puesto del mapa 2D.
 puesto3DActual = ( i + puesto.size() ) % puesto.size();
+puestosDetalle3D.get( puesto3DActual ).sincronizarControles();
 irA( "MAPA3D" );
 /*ALCODEEND*/}
 

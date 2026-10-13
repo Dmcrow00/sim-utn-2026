@@ -104,7 +104,13 @@ Puesto p = miPuesto();
 if ( !p.pedidoEnCurso ) {
 	return "Reposicion: sin pedido en curso";
 }
-return "Reposicion: " + p.estadoReposicion + " (hace " + (int) ( time() - p.minutoPedido ) + " min)";
+String s = "Reposicion: " + p.estadoReposicion + " (hace " + (int) ( time() - p.minutoPedido ) + " min)";
+double llega = p.minutosParaLlegarCamion();
+if ( llega >= 0 ) {
+	// en una segunda linea para que entre en el panel
+	s += "\nEl camion llega en ~" + (int) Math.round( llega ) + " min";
+}
+return s;
 /*ALCODEEND*/}
 
 void verCamara(int c)
@@ -134,5 +140,55 @@ if ( p != peatonSeguido ) {
 peatonSeguido = null;
 window3d.setCamera( camaraLlegada );
 seguirProximo = camaraActual == 3;
+/*ALCODEEND*/}
+
+void sincronizarControles()
+{/*ALCODESTART::1790100011014*/
+// Pone los sliders en los valores actuales del puesto (al entrar a la escena
+// o al elegir otro insumo). Si el insumo elegido no esta en el puesto, toma
+// el primero que ofrece.
+Puesto p = miPuesto();
+if ( !p.ofrece[ insumoSel ] ) {
+	for ( int k = 0; k < 4; k++ ) {
+		if ( p.ofrece[ k ] ) {
+			insumoSel = k;
+			break;
+		}
+	}
+}
+sliderMaximo.setValue( p.capacidad[ insumoSel ], false );
+sliderMinimo.setValue( p.puntoReposicion[ insumoSel ], false );
+sliderDemora.setValue( p.demoraCamionEfectiva(), false );
+sliderVoluntarios.setValue( p.voluntarios, false );
+/*ALCODEEND*/}
+
+void elegirInsumo(int k)
+{/*ALCODESTART::1790100011015*/
+insumoSel = k;
+sincronizarControles();
+/*ALCODEEND*/}
+
+String textoAgotamiento(int k)
+{/*ALCODESTART::1790100011016*/
+double m = miPuesto().minutosParaAgotar( k );
+if ( m < 0 ) {
+	return "sin consumo por ahora";
+}
+return "se agota en ~" + (int) Math.round( m ) + " min";
+/*ALCODEEND*/}
+
+String textoEstadoAjustes()
+{/*ALCODESTART::1790100011017*/
+// Linea de resumen debajo de los sliders: cuanto dura el stock del insumo
+// elegido y, si hay un camion en camino, cuanto le falta para llegar.
+Puesto p = miPuesto();
+String s = Puesto.NOMBRES_INSUMO[ insumoSel ] + ": " + textoAgotamiento( insumoSel );
+double llega = p.minutosParaLlegarCamion();
+if ( llega >= 0 ) {
+	s += "   ·   el camion llega en ~" + (int) Math.round( llega ) + " min";
+} else if ( p.pedidoEnCurso ) {
+	s += "   ·   descargando en el puesto";
+}
+return s;
 /*ALCODEEND*/}
 

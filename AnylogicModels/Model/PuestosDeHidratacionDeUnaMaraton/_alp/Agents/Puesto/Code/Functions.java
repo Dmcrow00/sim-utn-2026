@@ -171,6 +171,7 @@ void finReposicion()
 // El operario termino de traer la mercaderia y el camion se va.
 pedidoEnCurso = false;
 estadoReposicion = "";
+camionAsignado = null;
 reposicionesRecibidas++;
 // Si mientras descargaban se volvio a consumir por debajo del punto de
 // reposicion, sale otro camion.
@@ -275,10 +276,13 @@ double tiempoEntregaEstimado()
 // llega a la mesa: camion por calles (distancia en linea recta por
 // factorRecorridoCalles), caminata de la zorra y 1 minuto de descarga.
 // Despues de la primera reposicion, si la demora medida fue mayor, se usa esa.
-double kmCamion = distanciaKm( main.latDeposito, main.lonDeposito, latEstacionamiento, lonEstacionamiento )
-                * main.factorRecorridoCalles;
+// Si la demora del camion se fijo a mano (slider de la vista 3D), se usa
+// esa en lugar de la estimada y de la medida.
 double kmZorra = distanciaKm( latEstacionamiento, lonEstacionamiento, getLatitude(), getLongitude() );
-double minutos = kmCamion / main.velocidadCamionKmh * 60 + kmZorra / main.velocidadZorraKmh * 60 + 1;
+double minutos = demoraCamionEfectiva() + kmZorra / main.velocidadZorraKmh * 60 + 1;
+if ( demoraCamionMin >= 0 ) {
+	return minutos;
+}
 return max( minutos, demoraUltimaReposicion );
 /*ALCODEEND*/}
 
@@ -292,6 +296,12 @@ void actualizarPuntoReposicion(int k)
 // medida en la corrida, para no quedarse corto si viene mas gente.
 if ( !ofrece[ k ] ) {
 	puntoReposicion[ k ] = 0;
+	ropTopeado[ k ] = false;
+	return;
+}
+// Stock minimo fijado a mano desde el slider de la vista 3D.
+if ( minimoManual[ k ] >= 0 ) {
+	puntoReposicion[ k ] = min( minimoManual[ k ], capacidad[ k ] );
 	ropTopeado[ k ] = false;
 	return;
 }
@@ -314,5 +324,84 @@ double a = Math.sin( dLat / 2 ) * Math.sin( dLat / 2 )
          + Math.cos( Math.toRadians( lat1 ) ) * Math.cos( Math.toRadians( lat2 ) )
          * Math.sin( dLon / 2 ) * Math.sin( dLon / 2 );
 return 2 * 6371 * Math.atan2( Math.sqrt( a ), Math.sqrt( 1 - a ) );
+/*ALCODEEND*/}
+
+double demoraCamionEstimada()
+{/*ALCODESTART::1790100011004*/
+// Minutos que tarda el camion del deposito al estacionamiento, estimados por
+// distancia (linea recta por factorRecorridoCalles) y velocidad.
+double km = distanciaKm( main.latDeposito, main.lonDeposito, latEstacionamiento, lonEstacionamiento )
+          * main.factorRecorridoCalles;
+return km / main.velocidadCamionKmh * 60;
+/*ALCODEEND*/}
+
+double demoraCamionEfectiva()
+{/*ALCODESTART::1790100011005*/
+return demoraCamionMin >= 0 ? demoraCamionMin : demoraCamionEstimada();
+/*ALCODEEND*/}
+
+double minutosParaAgotar(int k)
+{/*ALCODESTART::1790100011006*/
+// Minutos hasta quedarse sin el insumo al ritmo de consumo actual (demanda
+// medida en la corrida). Devuelve -1 si todavia no hay consumo.
+if ( !ofrece[ k ] || demandaObservada[ k ] < 0.05 ) {
+	return -1;
+}
+return stock[ k ] / demandaObservada[ k ];
+/*ALCODEEND*/}
+
+double minutosParaLlegarCamion()
+{/*ALCODESTART::1790100011007*/
+// Minutos que le faltan al camion para estacionar (-1 si no viene en camino).
+if ( camionAsignado == null || !camionAsignado.fase.equals( "YENDO" ) ) {
+	return -1;
+}
+return camionAsignado.timeToArrival( MINUTE );
+/*ALCODEEND*/}
+
+void ajustarCapacidad(int k, double valor)
+{/*ALCODESTART::1790100011008*/
+capacidad[ k ] = max( 1, valor );
+stock[ k ] = min( stock[ k ], capacidad[ k ] );
+if ( minimoManual[ k ] > capacidad[ k ] ) {
+	minimoManual[ k ] = capacidad[ k ];
+}
+actualizarPuntoReposicion( k );
+revisarReposicion();
+/*ALCODEEND*/}
+
+void ajustarMinimo(int k, double valor)
+{/*ALCODESTART::1790100011009*/
+minimoManual[ k ] = max( 0, min( valor, capacidad[ k ] ) );
+actualizarPuntoReposicion( k );
+revisarReposicion();
+/*ALCODEEND*/}
+
+void minimoAutomatico(int k)
+{/*ALCODESTART::1790100011010*/
+// Vuelve a calcular el stock minimo con la formula (d * L + stock de seguridad).
+minimoManual[ k ] = -1;
+actualizarPuntoReposicion( k );
+revisarReposicion();
+/*ALCODEEND*/}
+
+void ajustarDemoraCamion(double minutos)
+{/*ALCODESTART::1790100011011*/
+// Demora del camion fijada a mano. Rige desde el proximo pedido (un camion que
+// ya salio llega con la demora con la que salio).
+demoraCamionMin = max( 1, minutos );
+for ( int k = 0; k < 4; k++ ) {
+	actualizarPuntoReposicion( k );
+}
+revisarReposicion();
+/*ALCODEEND*/}
+
+void demoraAutomatica()
+{/*ALCODESTART::1790100011012*/
+demoraCamionMin = -1;
+for ( int k = 0; k < 4; k++ ) {
+	actualizarPuntoReposicion( k );
+}
+revisarReposicion();
 /*ALCODEEND*/}
 
