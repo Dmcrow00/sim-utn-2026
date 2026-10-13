@@ -10,6 +10,9 @@ for ( int k = 0; k < 4; k++ ) {
 	actualizarPuntoReposicion( k );
 }
 revisarReposicion();
+// Horas-voluntario: cada minuto suma los voluntarios que hay en el puesto,
+// asi tambien cuenta bien si la cantidad cambia durante la corrida.
+minutosVoluntario += voluntarios;
 create_MedirDemanda( 1, MINUTE );
 /*ALCODEEND*/}
 

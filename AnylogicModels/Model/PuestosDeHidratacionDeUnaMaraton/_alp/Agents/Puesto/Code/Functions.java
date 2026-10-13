@@ -44,6 +44,8 @@ lonEstacionamiento = lonEst[ i ];
 for ( int k = 0; k < 4; k++ ) {
 	capacidad[ k ] = ofrece[ k ] ? capacidadInicial( k ) : 0;
 	stock[ k ] = capacidad[ k ];
+	// Lo que arranca en el puesto se compra antes de la carrera.
+	comprados[ k ] = stock[ k ];
 }
 jumpTo( main.puntoPuesto( i ) );
 
@@ -154,6 +156,8 @@ for ( int k = 0; k < 4; k++ ) {
 	double parte = Math.ceil( min( falta, unidades * falta / faltaTotal ) );
 	parte = min( parte, falta );
 	stock[ k ] += parte;
+	// Cada reposicion es mercaderia comprada (para el calculo de costos).
+	comprados[ k ] += parte;
 	entregado += parte;
 }
 return entregado;
@@ -434,5 +438,113 @@ switch ( insumo ) {
 	case GEL: return main.capacidadGel;
 }
 return 0;
+/*ALCODEEND*/}
+
+double litrosPorUnidad(int k)
+{/*ALCODESTART::1792000000006*/
+// Agua e isotonica se cuentan en vasos de main.volumenVasoMl; fruta y gel
+// en unidades, sin litros.
+if ( k == AGUA || k == ISOTONICA ) {
+	return main.volumenVasoMl / 1000.0;
+}
+return 0;
+/*ALCODEEND*/}
+
+double precioUnidad(int k)
+{/*ALCODESTART::1792000000007*/
+// Costo de compra de una unidad de insumo, sin el envase.
+switch ( k ) {
+	case AGUA: return litrosPorUnidad( k ) * main.precioLitroAgua;
+	case ISOTONICA: return litrosPorUnidad( k ) * main.precioLitroIsotonica;
+	case FRUTA: return main.precioPorcionFruta;
+	case GEL: return main.precioGel;
+}
+return 0;
+/*ALCODEEND*/}
+
+double costoInsumos()
+{/*ALCODESTART::1792000000008*/
+// Se paga lo comprado (stock inicial mas reposiciones), no solo lo consumido.
+double s = 0;
+for ( int k = 0; k < 4; k++ ) {
+	s += comprados[ k ] * precioUnidad( k );
+}
+return s;
+/*ALCODEEND*/}
+
+double costoEnvases()
+{/*ALCODESTART::1792000000009*/
+// Cada unidad de bebida comprada lleva su vaso o envase.
+return ( comprados[ AGUA ] + comprados[ ISOTONICA ] ) * main.precioVaso;
+/*ALCODEEND*/}
+
+double horasVoluntario()
+{/*ALCODESTART::1792000000010*/
+// Turno de los voluntarios: desde el inicio hasta que paso el ultimo corredor
+// por este puesto (ver decidirHidratacion en Main), mas montaje y desarme.
+return minutosVoluntarioCubiertos / 60 + voluntarios * main.horasExtraVoluntario;
+/*ALCODEEND*/}
+
+double costoVoluntarios()
+{/*ALCODESTART::1792000000011*/
+return horasVoluntario() * main.costoHoraVoluntario;
+/*ALCODEEND*/}
+
+double horasCamion()
+{/*ALCODESTART::1792000000012*/
+// Viajes terminados mas los camiones que todavia estan en viaje a este puesto.
+double m = minutosCamion;
+for ( Camion c : main.camiones ) {
+	if ( c.destino == this ) {
+		m += time() - c.minutoSalida;
+	}
+}
+return m / 60;
+/*ALCODEEND*/}
+
+double horasOperario()
+{/*ALCODESTART::1792000000013*/
+// Descargas terminadas mas los operarios que estan descargando en este puesto.
+double m = minutosOperario;
+for ( OperarioZorra o : main.operarios ) {
+	if ( o.puesto == this ) {
+		m += time() - o.minutoInicio;
+	}
+}
+return m / 60;
+/*ALCODEEND*/}
+
+double costoTransporte()
+{/*ALCODESTART::1792000000014*/
+return horasCamion() * main.costoHoraCamion + horasOperario() * main.costoHoraOperario;
+/*ALCODEEND*/}
+
+double costoTotalPuesto()
+{/*ALCODESTART::1792000000015*/
+return costoInsumos() + costoEnvases() + costoVoluntarios() + costoTransporte() + main.costoFijoPuesto;
+/*ALCODEEND*/}
+
+double valorSobrante()
+{/*ALCODESTART::1792000000016*/
+// Lo comprado que no se consumio, a precio de compra (insumo y envase).
+double s = 0;
+for ( int k = 0; k < 4; k++ ) {
+	double sobra = max( 0, comprados[ k ] - consumidos[ k ] );
+	double envase = ( k == AGUA || k == ISOTONICA ) ? main.precioVaso : 0;
+	s += sobra * ( precioUnidad( k ) + envase );
+}
+return s;
+/*ALCODEEND*/}
+
+int atendidosEfectivos()
+{/*ALCODESTART::1792000000017*/
+// Pararon y se llevaron bebida (atendidos incluye a los que se quedaron sin stock).
+return atendidos - noAtendidosStock;
+/*ALCODEEND*/}
+
+int noAtendidosTotales()
+{/*ALCODESTART::1792000000018*/
+// Quisieron parar y no los atendieron: por falta de stock o de voluntarios.
+return noAtendidosStock + noAtendidosVoluntarios;
 /*ALCODEEND*/}
 

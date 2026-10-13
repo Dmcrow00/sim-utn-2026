@@ -4,6 +4,8 @@ void despachar(Puesto p)
 // cortado, asi que no puede llegar hasta la mesa. Va por las calles reales
 // (ruteo del mapa GIS).
 destino = p;
+// Para las horas de camion del calculo de costos.
+minutoSalida = time();
 fase = "YENDO";
 p.camionAsignado = this;
 jumpTo( main.latDeposito, main.lonDeposito );

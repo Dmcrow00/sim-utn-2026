@@ -227,6 +227,43 @@ Gráficos en la pantalla de Ejecución (`areaEjecucion` pasó a 1200x1100): 4 Ti
 
 Resultados en la pantalla de Ejecución: `textResultadosCategorias` (llegados y tiempo promedio por categoría) y `textInventarioPuestos` (stock, faltantes y reposiciones de cada puesto).
 
+### Costos del evento (actualización 2026-10-13)
+
+Los criterios de cálculo y los pasos del experimento de comparación están en [Subfase4_Costos_CostoBeneficio.md](Subfase4_Costos_CostoBeneficio.md).
+
+**Parámetros de `Main`** (recuadro "Costos del evento" del editor; los valores son de ejemplo): `precioVaso` (30), `precioLitroAgua` (800), `precioLitroIsotonica` (3000), `precioPorcionFruta` (300), `precioGel` (2500), `costoHoraVoluntario` (0), `horasExtraVoluntario` (1), `costoHoraCamion` (25000), `costoHoraOperario` (6000), `costoFijoPuesto` (0), `penalizacionNoAtendido` (0).
+
+**Variables nuevas**
+
+| Agente | Variable | Qué guarda |
+|---|---|---|
+| `Puesto` | `comprados` (double[4]) | Unidades compradas por insumo: stock inicial + cargas recibidas |
+| `Puesto` | `minutosVoluntario` | Voluntarios-minuto acumulados; los suma `MedirDemanda` cada minuto |
+| `Puesto` | `minutosVoluntarioCubiertos` | Copia de lo anterior al pasar el último corredor; la actualiza `Main.decidirHidratacion` |
+| `Puesto` | `minutosCamion`, `minutosOperario` | Minutos de camión y de operario en viajes y descargas ya terminados |
+| `Camion` | `minutoSalida` | Momento en que salió del depósito; lo fija `despachar()` |
+| `OperarioZorra` | `minutoInicio` | Momento en que empezó la descarga; lo fija `iniciar()` |
+
+**Funciones de `Puesto`:** `litrosPorUnidad(k)`, `precioUnidad(k)`, `costoInsumos()`, `costoEnvases()`, `horasVoluntario()`, `costoVoluntarios()`, `horasCamion()`, `horasOperario()`, `costoTransporte()`, `costoTotalPuesto()`, `valorSobrante()`, `atendidosEfectivos()` y `noAtendidosTotales()`.
+
+**Funciones de `Main`:** `costoInsumosEvento()`, `costoEnvasesEvento()`, `costoVoluntariosEvento()`, `costoTransporteEvento()`, `costoFijoEvento()`, `costoTotalEvento()`, `valorSobranteEvento()`, `horasVoluntarioEvento()`, `atendidosEvento()`, `noAtendidosEvento()`, `porcentajeNoAtendidos()`, `costoPorAtendido()`, `costoAjustadoEvento()`, más `formatoPesos(v)` y `formatoRubro(v)` para los textos.
+
+**Formas en la pantalla de Ejecución** (todas con Visible `pantalla.equals("EJECUCION")`; `areaEjecucion` pasó a 1800 de alto):
+
+- `costosTitulo` y `costosNota`.
+- Fila 1, `costosResumen0..5`: costo total, costo por atendido, % no atendidos, sobrante, horas-voluntario, costo + penalización.
+- Fila 2, `costosRubro0..5`: un rubro por indicador y los corredores atendidos.
+- `textTituloGraficoCostos` y el Time Plot `graficoCostos`, con las series Insumos, Envases, Voluntarios, Transporte y Total; muestra por minuto y ventana de 900 min.
+
+En el editor (fuera de la pantalla) están `grupoMainMarcoCostos`, `grupoMainTituloCostos` y `grupoMainDetalleCostos`.
+
+**Panel "Precios y tarifas"** (debajo de `graficoCostos`; `areaEjecucion` pasó a 2020 de alto):
+
+- `preciosTitulo` y `preciosNota`.
+- Por cada parámetro de precio `X` hay cuatro elementos: el fondo `precioXFondo`, la etiqueta `precioXEtiqueta`, el Edit Box `editX` y el texto `precioXAplicado` con el valor aplicado (por ejemplo `editPrecioVaso`).
+- Cada Edit Box ejecuta `set_X( leerNumero( value, X ) )` y arranca con el texto `textoNumero( X )`. No está ligado con *Link to* para poder aceptar el formato argentino (`1.500,50`).
+- Funciones nuevas en `Main`: `leerNumero(texto, anterior)`, que interpreta el texto y devuelve el valor anterior si no es válido o es negativo, y `textoNumero(v)`, que da el texto inicial sin separador de miles y con coma decimal.
+
 ## Convención de nombres usada hasta ahora
 
 - **Agentes**: `PascalCase` en español (`Corredor`).

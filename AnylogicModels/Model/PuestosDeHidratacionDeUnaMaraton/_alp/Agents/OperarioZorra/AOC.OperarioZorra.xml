@@ -44,6 +44,8 @@
 		// El puesto quedo lleno: se termina la reposicion.
 		puesto.finReposicion();
 		camion.terminarDescarga();
+		// Horas de operario imputadas al puesto.
+		puesto.minutosOperario += time() - minutoInicio;
 		main.remove_operarios( this );
 	}
 }</OnArrival>

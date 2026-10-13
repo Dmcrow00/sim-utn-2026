@@ -38,6 +38,8 @@
 	destino.estadoReposicion = "camion estacionado";
 	main.iniciarDescarga( this );
 } else if ( fase.equals( "VOLVIENDO" ) ) {
+	// Horas de camion (con chofer) imputadas al puesto que atendio.
+	destino.minutosCamion += time() - minutoSalida;
 	main.remove_camiones( this );
 }</OnArrival>
 		<PhysicalLength Class="CodeUnitValue">

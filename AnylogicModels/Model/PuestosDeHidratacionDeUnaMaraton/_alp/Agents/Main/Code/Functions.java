@@ -13,6 +13,8 @@ if ( c.puestoDecidido == nPuesto ) {
 c.puestoDecidido = nPuesto;
 c.motivoNoAtendido = 0;
 Puesto p = puesto.get( nPuesto );
+// Turno de voluntarios del puesto: se cuenta hasta el ultimo corredor que paso.
+p.minutosVoluntarioCubiertos = p.minutosVoluntario;
 
 // Efectos que se suman:
 //   - c.propensionHidratacion: cuanto para ese corredor con clima fresco
@@ -351,3 +353,147 @@ getEngine().setRealTimeMode( true );
 getEngine().setRealTimeScale( m * second() );
 /*ALCODEEND*/}
 
+double costoInsumosEvento()
+{/*ALCODESTART::1792000000043*/
+double s = 0;
+for ( Puesto p : puesto ) {
+	s += p.costoInsumos();
+}
+return s;
+/*ALCODEEND*/}
+
+double costoEnvasesEvento()
+{/*ALCODESTART::1792000000044*/
+double s = 0;
+for ( Puesto p : puesto ) {
+	s += p.costoEnvases();
+}
+return s;
+/*ALCODEEND*/}
+
+double costoVoluntariosEvento()
+{/*ALCODESTART::1792000000045*/
+double s = 0;
+for ( Puesto p : puesto ) {
+	s += p.costoVoluntarios();
+}
+return s;
+/*ALCODEEND*/}
+
+double costoTransporteEvento()
+{/*ALCODESTART::1792000000046*/
+double s = 0;
+for ( Puesto p : puesto ) {
+	s += p.costoTransporte();
+}
+return s;
+/*ALCODEEND*/}
+
+double costoFijoEvento()
+{/*ALCODESTART::1792000000047*/
+return costoFijoPuesto * puesto.size();
+/*ALCODEEND*/}
+
+double costoTotalEvento()
+{/*ALCODESTART::1792000000048*/
+return costoInsumosEvento() + costoEnvasesEvento() + costoVoluntariosEvento()
+	+ costoTransporteEvento() + costoFijoEvento();
+/*ALCODEEND*/}
+
+double valorSobranteEvento()
+{/*ALCODESTART::1792000000049*/
+double s = 0;
+for ( Puesto p : puesto ) {
+	s += p.valorSobrante();
+}
+return s;
+/*ALCODEEND*/}
+
+double horasVoluntarioEvento()
+{/*ALCODESTART::1792000000050*/
+double s = 0;
+for ( Puesto p : puesto ) {
+	s += p.horasVoluntario();
+}
+return s;
+/*ALCODEEND*/}
+
+int atendidosEvento()
+{/*ALCODESTART::1792000000051*/
+int s = 0;
+for ( Puesto p : puesto ) {
+	s += p.atendidosEfectivos();
+}
+return s;
+/*ALCODEEND*/}
+
+int noAtendidosEvento()
+{/*ALCODESTART::1792000000052*/
+int s = 0;
+for ( Puesto p : puesto ) {
+	s += p.noAtendidosTotales();
+}
+return s;
+/*ALCODEEND*/}
+
+double porcentajeNoAtendidos()
+{/*ALCODESTART::1792000000053*/
+// Sobre los que quisieron parar: atendidos mas no atendidos.
+int quisieron = atendidosEvento() + noAtendidosEvento();
+return quisieron == 0 ? 0 : 100.0 * noAtendidosEvento() / quisieron;
+/*ALCODEEND*/}
+
+double costoPorAtendido()
+{/*ALCODESTART::1792000000054*/
+int a = atendidosEvento();
+return a == 0 ? 0 : costoTotalEvento() / a;
+/*ALCODEEND*/}
+
+double costoAjustadoEvento()
+{/*ALCODESTART::1792000000055*/
+// Costo operativo mas una penalizacion por cada corredor no atendido. Con la
+// penalizacion en 0 es igual al costo total.
+return costoTotalEvento() + penalizacionNoAtendido * noAtendidosEvento();
+/*ALCODEEND*/}
+
+String formatoPesos(double v)
+{/*ALCODESTART::1792000000056*/
+return "$ " + String.format( "%,.0f", v );
+/*ALCODEEND*/}
+
+String formatoRubro(double v)
+{/*ALCODESTART::1792000000057*/
+// Monto y porcentaje sobre el costo total.
+double t = costoTotalEvento();
+return formatoPesos( v ) + ( t > 0 ? String.format( "  (%.0f%%)", 100 * v / t ) : "" );
+/*ALCODEEND*/}
+
+double leerNumero(String texto, double anterior)
+{/*ALCODESTART::1792000000148*/
+// Acepta "1500", "1.500", "1.500,50", "0,5" y "$ 30". Si el texto no es un
+// numero valido o es negativo, deja el valor anterior.
+String s = texto.replace( "$", "" ).replace( " ", "" ).trim();
+if ( s.isEmpty() ) {
+	return anterior;
+}
+if ( s.contains( "," ) ) {
+	s = s.replace( ".", "" ).replace( ',', '.' );
+} else if ( s.matches( "\\d{1,3}(\\.\\d{3})+" ) ) {
+	s = s.replace( ".", "" );
+}
+try {
+	double v = Double.parseDouble( s );
+	return v < 0 ? anterior : v;
+} catch ( NumberFormatException e ) {
+	return anterior;
+}
+/*ALCODEEND*/}
+
+String textoNumero(double v)
+{/*ALCODESTART::1792000000149*/
+// Valor inicial de los campos de precios: sin separador de miles y con coma decimal.
+if ( v == Math.rint( v ) ) {
+	return String.valueOf( (long) v );
+}
+return String.valueOf( v ).replace( '.', ',' );
+/*ALCODEEND*/}

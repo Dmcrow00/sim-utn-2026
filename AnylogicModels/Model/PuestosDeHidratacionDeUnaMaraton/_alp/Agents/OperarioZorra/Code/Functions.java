@@ -2,6 +2,8 @@ void iniciar(Camion c)
 {/*ALCODESTART::1790100000080*/
 camion = c;
 puesto = c.destino;
+// Para las horas de operario del calculo de costos.
+minutoInicio = time();
 jumpTo( c.getLatitude(), c.getLongitude() );
 cargarYSalir();
 /*ALCODEEND*/}
