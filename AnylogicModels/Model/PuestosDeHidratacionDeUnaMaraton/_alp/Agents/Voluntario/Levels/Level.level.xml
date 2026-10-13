@@ -74,7 +74,7 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>indice % 2 == 0</VisibleCode>
+		<VisibleCode>activo() &amp;&amp; indice % 2 == 0</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100000108</Id>
@@ -154,7 +154,7 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>indice % 2 == 1</VisibleCode>
+		<VisibleCode>activo() &amp;&amp; indice % 2 == 1</VisibleCode>
 	</Figure3D>
 	<Oval>
 		<Id>1790100000109</Id>
@@ -169,7 +169,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<VisibleCode>tieneBotella</VisibleCode>
+		<VisibleCode>activo() &amp;&amp; tieneBotella</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>9</Z>
 		<ZHeight>3</ZHeight>
@@ -181,6 +181,7 @@
 		<RadiusY>0.7</RadiusY>
 		<Rotation>0.0</Rotation>
 		<FillColor>-12490271</FillColor>
+		<FillColorCode><![CDATA[puestoDetalle3D.miPuesto().colorTipo()]]></FillColorCode>
 		<FillMaterial>null</FillMaterial>
 	</Oval>
 </Presentation>

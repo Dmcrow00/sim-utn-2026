@@ -714,4 +714,70 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100009501</Id>
+		<Name><![CDATA[puesto3DActual]]></Name>
+		<X>-170</X>
+		<Y>470</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[int]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[0]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100009502</Id>
+		<Name><![CDATA[COLOR_TAB]]></Name>
+		<X>-170</X>
+		<Y>495</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[new Color( 0x34, 0x45, 0x6B )]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100009503</Id>
+		<Name><![CDATA[COLOR_TAB_ACTIVA]]></Name>
+		<X>-170</X>
+		<Y>520</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[new Color( 0xF2, 0x8C, 0x28 )]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
 </Variables>

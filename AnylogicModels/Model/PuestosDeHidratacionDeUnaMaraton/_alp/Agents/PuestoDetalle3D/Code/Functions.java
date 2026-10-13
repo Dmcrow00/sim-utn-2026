@@ -50,6 +50,10 @@ Voluntario elegirVoluntario()
 // tiene menos corredores yendo hacia el, y entre esos el que ya tiene botella.
 Voluntario mejor = null;
 for ( Voluntario v : voluntarios ) {
+	// Solo atienden los voluntarios que trabajan hoy en el puesto.
+	if ( !v.activo() ) {
+		continue;
+	}
 	if ( mejor == null
 			|| v.reservas < mejor.reservas
 			|| ( v.reservas == mejor.reservas && v.tieneBotella && !mejor.tieneBotella ) ) {
@@ -57,5 +61,38 @@ for ( Voluntario v : voluntarios ) {
 	}
 }
 return mejor;
+/*ALCODEEND*/}
+
+Puesto miPuesto()
+{/*ALCODESTART::1790100009623*/
+// Puesto que muestra esta escena: hay una escena por puesto, con el mismo
+// indice que en la poblacion main.puesto.
+return main.puesto.get( getIndex() );
+/*ALCODEEND*/}
+
+double fraccion(int k)
+{/*ALCODESTART::1790100009624*/
+Puesto p = miPuesto();
+if ( p.capacidad[ k ] <= 0 ) {
+	return 0.001;
+}
+return max( 0.001, p.stock[ k ] / p.capacidad[ k ] );
+/*ALCODEEND*/}
+
+Color colorBarra(int k)
+{/*ALCODESTART::1790100009625*/
+double f = fraccion( k );
+if ( f > 0.5 ) return mediumSeaGreen;
+if ( f > 0.2 ) return orange;
+return tomato;
+/*ALCODEEND*/}
+
+String textoReposicion()
+{/*ALCODESTART::1790100009626*/
+Puesto p = miPuesto();
+if ( !p.pedidoEnCurso ) {
+	return "Reposicion: sin pedido en curso";
+}
+return "Reposicion: " + p.estadoReposicion + " (hace " + (int) ( time() - p.minutoPedido ) + " min)";
 /*ALCODEEND*/}
 

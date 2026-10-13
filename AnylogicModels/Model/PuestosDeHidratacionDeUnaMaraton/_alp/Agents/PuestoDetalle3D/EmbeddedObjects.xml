@@ -759,7 +759,7 @@
 		<Parameters/>
 		<ReplicationFlag>true</ReplicationFlag>
 		<Replication Class="CodeValue">
-			<Code><![CDATA[4]]></Code>
+			<Code><![CDATA[8]]></Code>
 		</Replication>
 		<CollectionType>ARRAY_LIST_BASED</CollectionType>
 		<InEnvironment>true</InEnvironment>

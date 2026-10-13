@@ -3,9 +3,9 @@ void ubicar(int i)
 // Los voluntarios esperan parados en el borde de la calle, delante de la
 // mesa (no detras), con la botella en la mano extendida hacia los corredores.
 indice = i;
-xCordon = 225 + 20 * i;
+xCordon = 215 + 11 * i;
 yCordon = 444;
-xMesa = 244 + 8 * i;
+xMesa = 240 + 4 * i;
 yMesa = 462;
 jumpTo( xCordon, yCordon );
 setRotation( -PI / 2 );
@@ -38,5 +38,12 @@ tieneBotella = false;
 fase = "A_MESA";
 tiempoListo = time() + 6 * second();
 moveTo( xMesa, yMesa );
+/*ALCODEEND*/}
+
+boolean activo()
+{/*ALCODESTART::1790100009701*/
+// Trabajan los primeros N voluntarios de la escena, con N = voluntarios del
+// puesto (se cambia con los sliders de la pantalla de Metricas).
+return indice < puestoDetalle3D.miPuesto().voluntarios;
 /*ALCODEEND*/}
 

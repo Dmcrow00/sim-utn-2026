@@ -219,3 +219,35 @@ if ( corredoresLargados == 0 ) {
 return sumaHorasPorKm / corredoresLargados;
 /*ALCODEEND*/}
 
+void irA(String seccion)
+{/*ALCODESTART::1790100009504*/
+// Navegacion entre pantallas. Cada pantalla es una View Area y la barra
+// superior de todas ellas llama a esta funcion.
+pantalla = seccion;
+switch ( seccion ) {
+	case "MAPA2D": areaMapa2D.navigateTo(); break;
+	case "MAPA3D": puestosDetalle3D.get( puesto3DActual ).areaPuesto3D.navigateTo(); break;
+	case "LOGICA": areaLogica.navigateTo(); break;
+	case "EJECUCION": areaEjecucion.navigateTo(); break;
+	default: areaMenu.navigateTo(); break;
+}
+/*ALCODEEND*/}
+
+void verPuesto3D(int i)
+{/*ALCODESTART::1790100009505*/
+// Abre la escena 3D del puesto i (0 = puesto 1). Se usa desde el selector de
+// la vista 3D y al hacer clic en un puesto del mapa 2D.
+puesto3DActual = ( i + puesto.size() ) % puesto.size();
+irA( "MAPA3D" );
+/*ALCODEEND*/}
+
+Color colorTab(String seccion)
+{/*ALCODESTART::1790100009506*/
+return pantalla.equals( seccion ) ? COLOR_TAB_ACTIVA : COLOR_TAB;
+/*ALCODEEND*/}
+
+int corredoresEnRuta()
+{/*ALCODESTART::1790100009507*/
+return (int) ( sourceCorredores.count() - sinkCorredores.count() );
+/*ALCODEEND*/}
+

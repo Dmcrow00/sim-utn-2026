@@ -12382,9 +12382,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 0 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 0 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -12460,9 +12466,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 1 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 1 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -12539,13 +12551,13 @@ registrarLargada( agent );]]></Code>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puestoDetalle3D.ingresarCorredor( (Corredor) agent, true );]]></Code>
+					<Code><![CDATA[puestosDetalle3D.get( 2 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[puestoDetalle3D.ingresarCorredor( (Corredor) agent, false );]]></Code>
+					<Code><![CDATA[puestosDetalle3D.get( 2 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -12622,9 +12634,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 3 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 3 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -12700,9 +12718,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 4 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 4 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -12778,9 +12802,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 5 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 5 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -12856,9 +12886,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 6 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 6 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -12934,9 +12970,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 7 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 7 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13012,9 +13054,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 8 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 8 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13090,9 +13138,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 9 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 9 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13168,9 +13222,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 10 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 10 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13246,9 +13306,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 11 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 11 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13324,9 +13390,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 12 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 12 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13402,9 +13474,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 13 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 13 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13480,9 +13558,15 @@ registrarLargada( agent );]]></Code>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitTrue]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 14 ).ingresarCorredor( (Corredor) agent, true );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExitFalse]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[puestosDetalle3D.get( 14 ).ingresarCorredor( (Corredor) agent, false );]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onAtEnter]]></Name>
@@ -13513,7 +13597,7 @@ registrarLargada( agent );]]></Code>
 	</EmbeddedObject>
 	<EmbeddedObject>
 		<Id>1788898348121</Id>
-		<Name><![CDATA[puestoDetalle3D]]></Name>
+		<Name><![CDATA[puestosDetalle3D]]></Name>
 		<X>-520</X>
 		<Y>55</Y>
 		<Label>
@@ -13523,7 +13607,6 @@ registrarLargada( agent );]]></Code>
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<PresentationId>1788898348123</PresentationId>
 		<ActiveObjectClass>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
 			<ClassName>PuestoDetalle3D</ClassName>
@@ -13536,12 +13619,12 @@ registrarLargada( agent );]]></Code>
 			</GenericParameterSubstituteReference>
 		</GenericParameterSubstitute>
 		<Parameters/>
-		<ReplicationFlag>false</ReplicationFlag>
+		<ReplicationFlag>true</ReplicationFlag>
 		<Replication Class="CodeValue">
-			<Code><![CDATA[100]]></Code>
+			<Code><![CDATA[15]]></Code>
 		</Replication>
 		<CollectionType>ARRAY_LIST_BASED</CollectionType>
-		<InEnvironment>true</InEnvironment>
+		<InEnvironment>false</InEnvironment>
 		<InitialLocationType>XYZ</InitialLocationType>
 		<ColumnCode Class="CodeValue">
 			<Code><![CDATA[0]]></Code>

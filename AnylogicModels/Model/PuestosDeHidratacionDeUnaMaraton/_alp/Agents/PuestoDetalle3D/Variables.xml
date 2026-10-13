@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Variables>
 	<Variable Class="PlainVariable">
-		<Id>1790100000113</Id>
-		<Name><![CDATA[PUESTO_3D]]></Name>
-		<X>600</X>
-		<Y>20</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true"
-              Constant="true"
-              AccessType="public"
-              StaticVariable="true">
-			<Type><![CDATA[int]]></Type>
-			<InitialValue Class="CodeValue">
-				<Code><![CDATA[2]]></Code>
-			</InitialValue>
-		</Properties>
-	</Variable>
-	<Variable Class="PlainVariable">
 		<Id>1790100000114</Id>
 		<Name><![CDATA[pendientes]]></Name>
 		<X>600</X>

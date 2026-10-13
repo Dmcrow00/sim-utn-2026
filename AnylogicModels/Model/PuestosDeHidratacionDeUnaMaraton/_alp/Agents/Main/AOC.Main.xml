@@ -2,13 +2,7 @@
 <ActiveObjectClass>
 	<Id>1787284345515</Id>
 	<Name><![CDATA[Main]]></Name>
-	<StartupCode><![CDATA[btnVolverLogica.setVisible(false);
-btnVolverEjecucion.setVisible(false);
-btnVolverMapa2D.setVisible(false);
-puestoDetalle3D.btnVolverMapa3D.setVisible(false);
-sliderVoluntarios.setVisible(false);
-sliderPuntoReposicion.setVisible(false);
-navigate(areaMenu);]]></StartupCode>
+	<StartupCode><![CDATA[irA( "MENU" );]]></StartupCode>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1787284345520</Id>
@@ -217,35 +211,13 @@ navigate(areaMenu);]]></StartupCode>
 			<Latitude>0.0</Latitude>
 			<Longitude>0.0</Longitude>
 		</EmbeddedObjectPresentation>
-		<EmbeddedObjectPresentation>
-			<Id>1788898348123</Id>
-			<Name><![CDATA[puestoDetalle3D_presentation]]></Name>
-			<X>-70</X>
-			<Y>400</Y>
-			<Label>
-				<X>10</X>
-				<Y>0</Y>
-			</Label>
-			<PublicFlag>true</PublicFlag>
-			<PresentationFlag>true</PresentationFlag>
-			<ShowLabel>false</ShowLabel>
-			<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-			<EmbeddedIcon>false</EmbeddedIcon>
-			<Z>0</Z>
-			<Rotation>0.0</Rotation>
-			<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
-			<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
-			<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
-			<Latitude>-34.58</Latitude>
-			<Longitude>-58.41</Longitude>
-		</EmbeddedObjectPresentation>
 	</Presentation>
 	<Areas>
 		<Area>
 			<Id>1787600000010</Id>
 			<Name><![CDATA[areaMenu]]></Name>
-			<X>160</X>
-			<Y>40</Y>
+			<X>2000</X>
+			<Y>0</Y>
 			<Label>
 				<X>0</X>
 				<Y>-10</Y>
@@ -254,14 +226,14 @@ navigate(areaMenu);]]></StartupCode>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
 			<Title>Menu</Title>
-			<Width>680</Width>
-			<Height>150</Height>
+			<Width>1200</Width>
+			<Height>640</Height>
 		</Area>
 		<Area>
 			<Id>1787600000011</Id>
 			<Name><![CDATA[areaLogica]]></Name>
 			<X>0</X>
-			<Y>-2500</Y>
+			<Y>-2560</Y>
 			<Label>
 				<X>0</X>
 				<Y>-10</Y>
@@ -270,8 +242,8 @@ navigate(areaMenu);]]></StartupCode>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
 			<Title>Logica del sistema</Title>
-			<Width>940</Width>
-			<Height>1360</Height>
+			<Width>1200</Width>
+			<Height>1420</Height>
 		</Area>
 		<Area>
 			<Id>1787600000012</Id>
@@ -302,24 +274,8 @@ navigate(areaMenu);]]></StartupCode>
 			<PresentationFlag>true</PresentationFlag>
 			<ShowLabel>false</ShowLabel>
 			<Title>Mapa 2D</Title>
-			<Width>680</Width>
-			<Height>880</Height>
-		</Area>
-		<Area>
-			<Id>1787600000014</Id>
-			<Name><![CDATA[areaMapa3D]]></Name>
-			<X>4000</X>
-			<Y>2500</Y>
-			<Label>
-				<X>0</X>
-				<Y>-10</Y>
-			</Label>
-			<PublicFlag>false</PublicFlag>
-			<PresentationFlag>true</PresentationFlag>
-			<ShowLabel>false</ShowLabel>
-			<Title>Mapa 3D</Title>
-			<Width>1200</Width>
-			<Height>800</Height>
+			<Width>1000</Width>
+			<Height>860</Height>
 		</Area>
 	</Areas>
 </ActiveObjectClass>
