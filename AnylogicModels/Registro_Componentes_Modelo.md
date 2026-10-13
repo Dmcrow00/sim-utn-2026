@@ -208,6 +208,16 @@ Con los valores por defecto (`tasaLlegada` 0,5, `nivelCalor` 0,5) los puntos de 
 
 La unidad de bebida pasó a ser un **vaso de ~116 mL**, así que las capacidades se llevaron a una escala realista. Boston 2017 usó ~43.000 vasos por puesto en toda la carrera. Valores: agua 3000, isotónica 2500, fruta 1000, gel 1000, y la zorra lleva 900 vasos por viaje (~105 L). Con 200 por viaje la zorra reponía apenas por encima del consumo.
 
+### Interfaz y vista 3D (actualización 2026-10-13)
+
+- Navegación: barra superior en todas las pantallas (`Main.irA(seccion)`), inicio con indicadores en vivo y tarjetas, leyenda en el mapa 2D. Clic en un puesto del mapa: `verPuesto3D(i)`.
+- `puestosDetalle3D` es una población de 15 escenas, una por puesto, cada una con su View Area `areaPuesto3D`, el selector P1–P15 y un panel de estado. Solo la escena que se está mirando genera peatones.
+- Escena: avenida de 140 m × 14 m (asfalto con carriles, veredas con cordón de 15 cm, árboles, faroles, público, cielo `SKYBOX_1`). Edificios y arboleda según el entorno real del puesto.
+- Entorno real por puesto: en `Puesto.configurar()` (`calle`, `barrio`, `entorno` edificios/parque/mixto, `cercaDelAgua`, `carriles`). Los datos se sacaron de OpenStreetMap (Overpass + Nominatim) con las coordenadas de cada `GISPoint`. Criterio de entorno: ≤ 6 edificios en 120 m y ≥ 2 parques → parque; ≥ 15 edificios y parques < edificios/2 → edificios; si no, mixto.
+- Cámaras (`verCamara(c)`): desde la mesa (`camera`), corredores llegando (`camaraLlegada`), vista aérea (`camaraAerea`) y seguir a un corredor (`peatonPuesto.camaraCorredor`). En AnyLogic `RotationZ = 0` mira al este (+X) y los ángulos positivos giran hacia el sur.
+- Objetos 3D nuevos, copiados de la biblioteca de AnyLogic a `3d/`: `building_1/2/3`, `house_2`, `lamp`, `bench`, `bus_stop`, `tree_1`.
+- Para ver la corrida, usar un solo visor: AnyLogic la abre en su propio Chromium. Si se conecta un segundo navegador, los clics fallan, y al cerrar esa ventana se termina la corrida.
+
 ### Parámetros nuevos de `Main`
 
 `voluntariosPorPuesto` (4), `entregaEnMano` (true), `capacidadAgua` (3000), `capacidadIsotonica` (2500), `capacidadFruta` (1000), `capacidadGel` (1000), `latDeposito`/`lonDeposito` (-34,5960 / -58,4380), `velocidadCamionKmh` (25), `capacidadZorra` (900), `velocidadZorraKmh` (3,5), `consumoLiquidoMlHora` (466), `volumenVasoMl` (116), `gelesPorCorredor` (0,5), `frutaPorCorredor` (0,4), `zNivelServicio` (1,65), `topePuntoReposicion` (0,75), `factorRecorridoCalles` (1,3). Los que no tienen fuente en la tabla de arriba son supuestos sin calibrar.
