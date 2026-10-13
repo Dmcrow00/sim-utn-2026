@@ -16,6 +16,7 @@ if ( c.puestoDecidido == nPuesto ) {
 	return c.vaAHidratarse;
 }
 c.puestoDecidido = nPuesto;
+c.motivoNoAtendido = 0;
 Puesto p = puesto.get( nPuesto );
 
 // Efectos que se suman:
@@ -38,6 +39,15 @@ prob = prob * c.necesidadHidratacion / c.toleranciaCalor;
 prob = max( 0, min( 1, prob ) );
 
 c.vaAHidratarse = randomTrue( prob );
+
+// Si quiere parar pero no hay voluntario libre y la cola ya es larga,
+// sigue de largo: queda como no atendido por falta de voluntarios.
+if ( c.vaAHidratarse && hayDemasiadaCola( nPuesto ) ) {
+	c.vaAHidratarse = false;
+	c.motivoNoAtendido = 2;
+	p.noAtendidosVoluntarios++;
+	noAtendidosVoluntarios++;
+}
 
 if ( c.vaAHidratarse ) {
 	c.puestosSinHidratar = 0;
@@ -250,5 +260,110 @@ return pantalla.equals( seccion ) ? COLOR_TAB_ACTIVA : COLOR_TAB;
 int corredoresEnRuta()
 {/*ALCODESTART::1790100009507*/
 return (int) ( sourceCorredores.count() - sinkCorredores.count() );
+/*ALCODEEND*/}
+
+void ajustarTemperatura(double t)
+{/*ALCODESTART::1790100012013*/
+// Temperatura del dia en grados C. Se traduce al nivel de calor 0..1 que usa
+// el modelo: 10 C o menos = 0 (fresco), 30 C o mas = 1 (agobiante), lineal
+// en el medio (20 C = 0.5). Afecta la intencion de hidratarse, cuanto se
+// deshidratan los corredores, su velocidad y la demanda planificada.
+temperaturaC = t;
+nivelCalor = max( 0, min( 1, ( t - 10 ) / 20 ) );
+/*ALCODEEND*/}
+
+Seize seizeDePuesto(int nPuesto)
+{/*ALCODESTART::1790100012014*/
+switch ( nPuesto ) {
+	case 0: return seizeVoluntarios;
+	case 1: return seizeVoluntarios1;
+	case 2: return seizeVoluntarios2;
+	case 3: return seizeVoluntarios3;
+	case 4: return seizeVoluntarios4;
+	case 5: return seizeVoluntarios5;
+	case 6: return seizeVoluntarios6;
+	case 7: return seizeVoluntarios7;
+	case 8: return seizeVoluntarios8;
+	case 9: return seizeVoluntarios9;
+	case 10: return seizeVoluntarios10;
+	case 11: return seizeVoluntarios11;
+	case 12: return seizeVoluntarios12;
+	case 13: return seizeVoluntarios13;
+	case 14: return seizeVoluntarios14;
+}
+return null;
+/*ALCODEEND*/}
+
+boolean hayDemasiadaCola(int nPuesto)
+{/*ALCODESTART::1790100012015*/
+// No hay voluntarios libres y ya esperan colaMaximaPorVoluntario corredores
+// por cada voluntario: el que llega prefiere no frenar.
+ResourcePool pool = poolDePuesto( nPuesto );
+if ( pool.idle() > 0 ) {
+	return false;
+}
+return seizeDePuesto( nPuesto ).size() >= puesto.get( nPuesto ).voluntarios * colaMaximaPorVoluntario;
+/*ALCODEEND*/}
+
+String tiempoPromedioCategoria(int cat)
+{/*ALCODESTART::1790100012016*/
+if ( llegadosPorCategoria[ cat ] == 0 ) {
+	return "-";
+}
+return formatoHoras( sumaMinutosPorCategoria[ cat ] / llegadosPorCategoria[ cat ] );
+/*ALCODEEND*/}
+
+String ritmoPromedioCategoria(int cat)
+{/*ALCODESTART::1790100012017*/
+// Ritmo medio en min/km sobre los 42,195 km.
+if ( llegadosPorCategoria[ cat ] == 0 ) {
+	return "-";
+}
+double minKm = sumaMinutosPorCategoria[ cat ] / llegadosPorCategoria[ cat ] / 42.195;
+int m = (int) minKm;
+int seg = (int) Math.round( ( minKm - m ) * 60 );
+if ( seg == 60 ) {
+	m++;
+	seg = 0;
+}
+return m + ":" + ( seg < 10 ? "0" : "" ) + seg + " min/km";
+/*ALCODEEND*/}
+
+String celdaStock(int i, int k)
+{/*ALCODESTART::1790100012018*/
+Puesto p = puesto.get( i );
+if ( !p.ofrece[ k ] ) {
+	return "-";
+}
+return (int) p.stock[ k ] + " / " + (int) p.capacidad[ k ];
+/*ALCODEEND*/}
+
+Color colorCeldaStock(int i, int k)
+{/*ALCODESTART::1790100012019*/
+// Rojo: sin stock. Naranja: por debajo del punto de reposicion.
+Puesto p = puesto.get( i );
+if ( !p.ofrece[ k ] ) {
+	return silver;
+}
+if ( p.stock[ k ] < 1 ) {
+	return red;
+}
+if ( p.stock[ k ] <= p.puntoReposicion[ k ] ) {
+	return darkOrange;
+}
+return darkSlateGray;
+/*ALCODEEND*/}
+
+String textoReposicionCorto(int i)
+{/*ALCODESTART::1790100012020*/
+Puesto p = puesto.get( i );
+if ( !p.pedidoEnCurso ) {
+	return "-";
+}
+double llega = p.minutosParaLlegarCamion();
+if ( llega >= 0 ) {
+	return "camion llega en ~" + (int) Math.round( llega ) + " min";
+}
+return p.estadoReposicion;
 /*ALCODEEND*/}
 

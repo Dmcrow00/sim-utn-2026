@@ -70,6 +70,11 @@ if ( consumir( primera ) ) {
 	darBebida( c, primera );
 } else if ( consumir( segunda ) ) {
 	darBebida( c, segunda );
+} else if ( ofrece[ AGUA ] || ofrece[ ISOTONICA ] ) {
+	// Paro pero no habia bebida: corredor no atendido por falta de stock.
+	noAtendidosStock++;
+	main.noAtendidosStock++;
+	c.motivoNoAtendido = 1;
 }
 
 // Comida: gel si le esta faltando energia; fruta sobre todo los mas lentos.
@@ -403,5 +408,20 @@ for ( int k = 0; k < 4; k++ ) {
 	actualizarPuntoReposicion( k );
 }
 revisarReposicion();
+/*ALCODEEND*/}
+
+boolean hayBebida()
+{/*ALCODESTART::1790100012004*/
+// Hay al menos una bebida (agua o isotonica) para dar en este momento.
+return ( ofrece[ AGUA ] && stock[ AGUA ] >= 1 ) || ( ofrece[ ISOTONICA ] && stock[ ISOTONICA ] >= 1 );
+/*ALCODEEND*/}
+
+int faltantesTotales()
+{/*ALCODESTART::1790100012005*/
+int t = 0;
+for ( int k = 0; k < 4; k++ ) {
+	t += faltantes[ k ];
+}
+return t;
 /*ALCODEEND*/}
 

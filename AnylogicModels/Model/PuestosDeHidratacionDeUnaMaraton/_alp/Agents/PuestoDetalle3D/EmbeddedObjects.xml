@@ -652,7 +652,7 @@
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[((peatonPuesto) ped).voluntario.entregar();]]></Code>
+					<Code><![CDATA[terminarEntrega( (peatonPuesto) ped );]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>

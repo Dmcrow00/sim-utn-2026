@@ -169,7 +169,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<VisibleCode>activo() &amp;&amp; tieneBotella</VisibleCode>
+		<VisibleCode>activo() &amp;&amp; tieneBotella &amp;&amp; puestoDetalle3D.miPuesto().hayBebida()</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>10.5</Z>
 		<ZHeight>3</ZHeight>

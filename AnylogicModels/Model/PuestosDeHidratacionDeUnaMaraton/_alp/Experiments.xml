@@ -43,9 +43,6 @@
 				<ParameterName>tasaLlegada</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>nivelCalor</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>voluntariosPorPuesto</ParameterName>
 			</Parameter>
 			<Parameter>
@@ -98,6 +95,12 @@
 			</Parameter>
 			<Parameter>
 				<ParameterName>factorRecorridoCalles</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>temperaturaC</ParameterName>
+			</Parameter>
+			<Parameter>
+				<ParameterName>colaMaximaPorVoluntario</ParameterName>
 			</Parameter>
 		</Parameters>
 		<PresentationProperties>

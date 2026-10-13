@@ -43,6 +43,13 @@ p.asignado = true;
 p.corredor = pendientes.poll();
 Boolean h = pendientesHidrata.poll();
 p.seHidrata = h != null && h;
+// Corredores que no pudieron ser atendidos: sin voluntario libre (no frenan)
+// o sin bebida en el puesto (frenan pero se van con las manos vacias).
+if ( p.corredor != null && p.corredor.motivoNoAtendido == 2 ) {
+	p.motivoNoAtendido = 2;
+} else if ( p.seHidrata && !miPuesto().hayBebida() ) {
+	p.motivoNoAtendido = 1;
+}
 if ( p.seHidrata ) {
 	p.voluntario = elegirVoluntario();
 	p.voluntario.reservas++;
@@ -160,6 +167,7 @@ sliderMaximo.setValue( p.capacidad[ insumoSel ], false );
 sliderMinimo.setValue( p.puntoReposicion[ insumoSel ], false );
 sliderDemora.setValue( p.demoraCamionEfectiva(), false );
 sliderVoluntarios.setValue( p.voluntarios, false );
+sliderTemperatura.setValue( main.temperaturaC, false );
 /*ALCODEEND*/}
 
 void elegirInsumo(int k)
@@ -190,5 +198,16 @@ if ( llega >= 0 ) {
 	s += "   ·   descargando en el puesto";
 }
 return s;
+/*ALCODEEND*/}
+
+void terminarEntrega(peatonPuesto p)
+{/*ALCODESTART::1790100012274*/
+// Si el puesto se quedo sin bebida, el voluntario no tiene nada para dar:
+// el corredor sigue sin botella y el voluntario no va a buscar otra.
+if ( p.motivoNoAtendido == 1 ) {
+	p.voluntario.reservas = max( 0, p.voluntario.reservas - 1 );
+} else {
+	p.voluntario.entregar();
+}
 /*ALCODEEND*/}
 
