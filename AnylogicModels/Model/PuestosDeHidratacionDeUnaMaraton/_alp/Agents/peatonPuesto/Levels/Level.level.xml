@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Presentation>
 	<Figure3D>
-		<Id>1789092412446</Id>
-		<Name><![CDATA[sport]]></Name>
+		<Id>1790100013023</Id>
+		<Name><![CDATA[figuraCorredora]]></Name>
 		<X>0</X>
 		<Y>0</Y>
 		<Label>
@@ -60,17 +60,93 @@
 		<AnimationPose>idle</AnimationPose>
 		<AnimationPose>lie</AnimationPose>
 		<AnimationPose>lie_side</AnimationPose>
-		<AnimationPose>run_right</AnimationPose>
 		<AnimationPose>run_left</AnimationPose>
+		<AnimationPose>run_right</AnimationPose>
+		<AnimationPose>sit</AnimationPose>
+		<AnimationPose>sit_desk</AnimationPose>
+		<AnimationPose>stand</AnimationPose>
+		<AnimationPose>stand_desk</AnimationPose>
+		<AnimationPose>walk_left</AnimationPose>
+		<AnimationPose>walk_right</AnimationPose>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>OFF</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode><![CDATA[mujer]]></VisibleCode>
+		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+	</Figure3D>
+	<Figure3D>
+		<Id>1790100013024</Id>
+		<Name><![CDATA[figuraCorredor]]></Name>
+		<X>0</X>
+		<Y>0</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>0</X>
+		<Y>0</Y>
+		<Z>0</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
+			<ClassName>3d/ped_sport_1_m.glb</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[body]]></Name>
+				<OriginalColor>-3445958</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[eyes]]></Name>
+				<OriginalColor>-1</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[hair]]></Name>
+				<OriginalColor>-15528181</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[shirt]]></Name>
+				<OriginalColor>-15198694</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[shoes]]></Name>
+				<OriginalColor>-15198694</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[shorts]]></Name>
+				<OriginalColor>-16119286</OriginalColor>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>1.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose>idle</SelectedAnimationPose>
+		<AnimationPose>carry</AnimationPose>
+		<AnimationPose>drive</AnimationPose>
+		<AnimationPose>idle</AnimationPose>
+		<AnimationPose>lie</AnimationPose>
+		<AnimationPose>lie_side</AnimationPose>
+		<AnimationPose>run_left</AnimationPose>
+		<AnimationPose>run_right</AnimationPose>
 		<AnimationPose>sit_desk</AnimationPose>
 		<AnimationPose>sit</AnimationPose>
 		<AnimationPose>stand_desk</AnimationPose>
 		<AnimationPose>stand</AnimationPose>
-		<AnimationPose>walk_right</AnimationPose>
 		<AnimationPose>walk_left</AnimationPose>
+		<AnimationPose>walk_right</AnimationPose>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode><![CDATA[!mujer]]></VisibleCode>
+		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
 	</Figure3D>
 	<Camera3D>
 		<Id>1790100010280</Id>

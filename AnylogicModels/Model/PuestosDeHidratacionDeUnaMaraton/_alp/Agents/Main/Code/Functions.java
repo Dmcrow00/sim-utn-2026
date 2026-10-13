@@ -233,6 +233,18 @@ void irA(String seccion)
 {/*ALCODESTART::1790100009504*/
 // Navegacion entre pantallas. Cada pantalla es una View Area y la barra
 // superior de todas ellas llama a esta funcion.
+// La vista 3D va en tiempo real (ver aplicarVelocidad3D); al salir se vuelve
+// a la velocidad que tenia la simulacion antes de entrar.
+boolean entra3D = seccion.equals( "MAPA3D" ) && !"MAPA3D".equals( pantalla );
+boolean sale3D = !seccion.equals( "MAPA3D" ) && "MAPA3D".equals( pantalla );
+if ( entra3D ) {
+	escalaFuera3D = getEngine().getRealTimeScale();
+	tiempoRealFuera3D = getEngine().getRealTimeMode();
+	aplicarVelocidad3D( velocidad3D );
+} else if ( sale3D ) {
+	getEngine().setRealTimeMode( tiempoRealFuera3D );
+	getEngine().setRealTimeScale( escalaFuera3D );
+}
 pantalla = seccion;
 switch ( seccion ) {
 	case "MAPA2D": areaMapa2D.navigateTo(); break;
@@ -365,5 +377,17 @@ if ( llega >= 0 ) {
 	return "camion llega en ~" + (int) Math.round( llega ) + " min";
 }
 return p.estadoReposicion;
+/*ALCODEEND*/}
+
+void aplicarVelocidad3D(double m)
+{/*ALCODESTART::1790100013018*/
+// El modelo mide el tiempo en minutos y AnyLogic toma la escala de tiempo real
+// como "unidades de modelo por segundo real": en x1 pasa un minuto de carrera
+// por segundo y en la vista 3D un corredor cruza la calle en un instante. Aca
+// la escala se fija en m segundos de modelo por segundo real (m = 1: tiempo
+// real, cada persona se ve a su velocidad verdadera).
+velocidad3D = m;
+getEngine().setRealTimeMode( true );
+getEngine().setRealTimeScale( m * second() );
 /*ALCODEEND*/}
 

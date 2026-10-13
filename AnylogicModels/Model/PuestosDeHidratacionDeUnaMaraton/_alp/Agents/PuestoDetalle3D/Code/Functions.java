@@ -43,6 +43,10 @@ p.asignado = true;
 p.corredor = pendientes.poll();
 Boolean h = pendientesHidrata.poll();
 p.seHidrata = h != null && h;
+// Aspecto en 3D: mujer u hombre (supuesto: 30 % de mujeres) y ropa propia.
+p.mujer = randomTrue( 0.3 );
+p.fasePaso = uniform( 0, 2 );
+p.vestir();
 // Corredores que no pudieron ser atendidos: sin voluntario libre (no frenan)
 // o sin bebida en el puesto (frenan pero se van con las manos vacias).
 if ( p.corredor != null && p.corredor.motivoNoAtendido == 2 ) {
@@ -209,5 +213,26 @@ if ( p.motivoNoAtendido == 1 ) {
 } else {
 	p.voluntario.entregar();
 }
+/*ALCODEEND*/}
+
+double velocidadActual()
+{/*ALCODESTART::1790100013048*/
+// Cuantas veces mas rapido que la realidad corre la simulacion (1 = tiempo
+// real), o -1 si esta en modo "lo mas rapido posible".
+if ( !getEngine().getRealTimeMode() ) {
+	return -1;
+}
+return getEngine().getRealTimeScale() / second();
+/*ALCODEEND*/}
+
+String poseEspectador(int k, boolean chico)
+{/*ALCODESTART::1790100013049*/
+// El publico no esta congelado: cada persona cambia de postura cada algunos
+// segundos (con su propio desfase) y los chicos senalan a los corredores.
+int n = (int) Math.floor( time() / second() / 5 + k * 0.618 );
+if ( chico ) {
+	return n % 3 == 0 ? "pointing" : "idle";
+}
+return n % 4 == 0 ? "stand" : "idle";
 /*ALCODEEND*/}
 

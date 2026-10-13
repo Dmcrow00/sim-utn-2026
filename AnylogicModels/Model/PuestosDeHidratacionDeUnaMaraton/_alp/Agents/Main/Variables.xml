@@ -874,4 +874,202 @@
 			</InitialValue>
 		</Properties>
 	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013009</Id>
+		<Name><![CDATA[velocidad3D]]></Name>
+		<X>1400</X>
+		<Y>600</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[1]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013010</Id>
+		<Name><![CDATA[escalaFuera3D]]></Name>
+		<X>1400</X>
+		<Y>625</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[double]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[1]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013011</Id>
+		<Name><![CDATA[tiempoRealFuera3D]]></Name>
+		<X>1400</X>
+		<Y>650</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[boolean]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[true]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013012</Id>
+		<Name><![CDATA[PIELES]]></Name>
+		<X>1400</X>
+		<Y>690</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[{ new Color( 0xF1C8A8 ), new Color( 0xE0AC82 ), new Color( 0xC68656 ), new Color( 0x8D5524 ), new Color( 0x5C3A21 ) }]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013013</Id>
+		<Name><![CDATA[PELOS]]></Name>
+		<X>1400</X>
+		<Y>715</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[{ new Color( 0x1C1410 ), new Color( 0x3B2A1E ), new Color( 0x6B4A2F ), new Color( 0xB08D57 ), new Color( 0x9E9E9E ) }]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013014</Id>
+		<Name><![CDATA[ROPA]]></Name>
+		<X>1400</X>
+		<Y>740</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[{ new Color( 0xF2F2F2 ), new Color( 0x1F3A5F ), new Color( 0xC0392B ), new Color( 0x2E7D32 ), new Color( 0xF1C40F ), new Color( 0x7F8C8D ), new Color( 0x222222 ), new Color( 0x75AADB ), new Color( 0xE91E63 ), new Color( 0xE67E22 ), new Color( 0x5D4037 ), new Color( 0x8E44AD ) }]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013015</Id>
+		<Name><![CDATA[PANTALONES]]></Name>
+		<X>1400</X>
+		<Y>765</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[{ new Color( 0x2C3E50 ), new Color( 0x1B2631 ), new Color( 0x3B5998 ), new Color( 0xC2B280 ), new Color( 0x4D4D4D ), new Color( 0x5B4636 ) }]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013016</Id>
+		<Name><![CDATA[SHORTS]]></Name>
+		<X>1400</X>
+		<Y>790</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[{ new Color( 0x111111 ), new Color( 0x1F3A5F ), new Color( 0x2C2C2C ), new Color( 0x5A5A5A ), new Color( 0x7B241C ) }]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+	<Variable Class="PlainVariable">
+		<Id>1790100013017</Id>
+		<Name><![CDATA[ZAPATILLAS]]></Name>
+		<X>1400</X>
+		<Y>815</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="true"
+              AccessType="public"
+              StaticVariable="true">
+			<Type><![CDATA[Color[]]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[{ new Color( 0xF2F2F2 ), new Color( 0x222222 ), new Color( 0xE74C3C ), new Color( 0x3498DB ), new Color( 0xF39C12 ) }]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
 </Variables>

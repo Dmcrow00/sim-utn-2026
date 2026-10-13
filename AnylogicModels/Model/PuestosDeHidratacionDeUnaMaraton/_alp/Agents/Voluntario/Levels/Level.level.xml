@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Presentation>
 	<Figure3D>
-		<Id>1790100000107</Id>
+		<Id>1790100013028</Id>
 		<Name><![CDATA[figuraVoluntaria]]></Name>
 		<X>0</X>
 		<Y>0</Y>
@@ -22,62 +22,62 @@
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/woman_1.dae</ClassName>
+			<ClassName>3d/ped_3_f.glb</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA_material]]></Name>
+				<Name><![CDATA[body]]></Name>
+				<OriginalColor>-3445958</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[eyes]]></Name>
 				<OriginalColor>-1</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA_Color_B18]]></Name>
-				<OriginalColor>-10078168</OriginalColor>
+				<Name><![CDATA[hair]]></Name>
+				<OriginalColor>-15528181</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA_Shape_006]]></Name>
-				<OriginalColor>-3367560</OriginalColor>
+				<Name><![CDATA[pants]]></Name>
+				<OriginalColor>-15198694</OriginalColor>
+				<Color>-14997967</Color>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA_Shape_003]]></Name>
+				<Name><![CDATA[shoes]]></Name>
+				<OriginalColor>-11524592</OriginalColor>
+			</ColorMapping>
+			<ColorMapping>
+				<Name><![CDATA[tshirt]]></Name>
 				<OriginalColor>-3355444</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA_Color_A03]]></Name>
-				<OriginalColor>-39836</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA_Shape_12]]></Name>
-				<OriginalColor>-2148</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA_Shape_11]]></Name>
-				<OriginalColor>-16777216</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA_Color_009]]></Name>
-				<OriginalColor>-16777216</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA_Color_B24]]></Name>
-				<OriginalColor>-4650994</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA_Color_H10]]></Name>
-				<OriginalColor>-6107956</OriginalColor>
+				<Color>-16735264</Color>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
 		<Rotation>0.0</Rotation>
-		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-		<SelectedAnimationPose/>
+		<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose>idle</SelectedAnimationPose>
+		<AnimationPose>carry</AnimationPose>
+		<AnimationPose>drive</AnimationPose>
+		<AnimationPose>idle</AnimationPose>
+		<AnimationPose>lie</AnimationPose>
+		<AnimationPose>lie_side</AnimationPose>
+		<AnimationPose>run_left</AnimationPose>
+		<AnimationPose>run_right</AnimationPose>
+		<AnimationPose>sit_desk</AnimationPose>
+		<AnimationPose>sit</AnimationPose>
+		<AnimationPose>stand_desk</AnimationPose>
+		<AnimationPose>stand</AnimationPose>
+		<AnimationPose>walk_left</AnimationPose>
+		<AnimationPose>walk_right</AnimationPose>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>activo() &amp;&amp; indice % 2 == 0</VisibleCode>
+		<VisibleCode><![CDATA[activo() && indice % 2 == 0]]></VisibleCode>
+		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
-		<Id>1790100000108</Id>
+		<Id>1790100013029</Id>
 		<Name><![CDATA[figuraVoluntario]]></Name>
 		<X>0</X>
 		<Y>0</Y>
@@ -98,63 +98,59 @@
 		</Label>
 		<ResourceReference>
 			<PackageName>puestosdehidrataciondeunamaraton</PackageName>
-			<ClassName>3d/boy.dae</ClassName>
+			<ClassName>3d/ped_3_m.glb</ClassName>
 		</ResourceReference>
 		<ColorTable>
 			<ColorMapping>
-				<Name><![CDATA[MA___auto_1]]></Name>
-				<OriginalColor>-3361146</OriginalColor>
+				<Name><![CDATA[body]]></Name>
+				<OriginalColor>-3445958</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA___auto_4]]></Name>
-				<OriginalColor>-3355444</OriginalColor>
+				<Name><![CDATA[eyes]]></Name>
+				<OriginalColor>-1</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA___auto_6]]></Name>
-				<OriginalColor>-11442586</OriginalColor>
+				<Name><![CDATA[hair]]></Name>
+				<OriginalColor>-15528181</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA___auto_3]]></Name>
-				<OriginalColor>-9419222</OriginalColor>
+				<Name><![CDATA[pants]]></Name>
+				<OriginalColor>-16119286</OriginalColor>
+				<Color>-14997967</Color>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA___auto_10]]></Name>
-				<OriginalColor>-13027015</OriginalColor>
+				<Name><![CDATA[shoes]]></Name>
+				<OriginalColor>-11524592</OriginalColor>
 			</ColorMapping>
 			<ColorMapping>
-				<Name><![CDATA[MA___auto_5]]></Name>
-				<OriginalColor>-6712967</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA___auto_]]></Name>
-				<OriginalColor>-15069925</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA___auto_8]]></Name>
-				<OriginalColor>-3367561</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA___auto_9]]></Name>
-				<OriginalColor>-3407872</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA___auto_7]]></Name>
-				<OriginalColor>-7500403</OriginalColor>
-			</ColorMapping>
-			<ColorMapping>
-				<Name><![CDATA[MA___auto_2]]></Name>
-				<OriginalColor>-6123157</OriginalColor>
+				<Name><![CDATA[tshirt]]></Name>
+				<OriginalColor>-1</OriginalColor>
+				<Color>-16735264</Color>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
 		<Scale>1.0</Scale>
 		<Rotation>0.0</Rotation>
-		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-		<SelectedAnimationPose/>
+		<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+		<SelectedAnimationPose>idle</SelectedAnimationPose>
+		<AnimationPose>carry</AnimationPose>
+		<AnimationPose>drive</AnimationPose>
+		<AnimationPose>idle</AnimationPose>
+		<AnimationPose>lie</AnimationPose>
+		<AnimationPose>lie_side</AnimationPose>
+		<AnimationPose>run_left</AnimationPose>
+		<AnimationPose>run_right</AnimationPose>
+		<AnimationPose>sit_desk</AnimationPose>
+		<AnimationPose>sit</AnimationPose>
+		<AnimationPose>stand_desk</AnimationPose>
+		<AnimationPose>stand</AnimationPose>
+		<AnimationPose>walk_left</AnimationPose>
+		<AnimationPose>walk_right</AnimationPose>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode>activo() &amp;&amp; indice % 2 == 1</VisibleCode>
+		<VisibleCode><![CDATA[activo() && indice % 2 == 1]]></VisibleCode>
+		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
 	</Figure3D>
 	<Oval>
 		<Id>1790100000109</Id>
