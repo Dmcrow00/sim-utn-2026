@@ -2578,7 +2578,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2604,7 +2604,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2629,19 +2629,21 @@ navigate(areaMenu);</ActionCode>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<AutoUpdate>true</AutoUpdate>
-		<OccurrenceAtTime>true</OccurrenceAtTime>
-		<OccurrenceDate>1787270400000</OccurrenceDate>
-		<OccurrenceTime Class="CodeUnitValue">
-			<Code><![CDATA[0]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</OccurrenceTime>
-		<RecurrenceCode Class="CodeUnitValue">
-			<Code><![CDATA[1]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</RecurrenceCode>
+		<RecurrenceProperties>
+			<Id>1791849168928</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1791878400000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Width>560</Width>
 		<Height>230</Height>
@@ -2666,106 +2668,117 @@ navigate(areaMenu);</ActionCode>
 			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
 			<TextColor>-12566464</TextColor>
 		</Labels>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<ShowLegend>true</ShowLegend>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
-		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[capacidadAgua]]></VerScaleToExpression>
+		<VerScaleFromExpression>0</VerScaleFromExpression>
+		<VerScaleToExpression>capacidadAgua</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
-			<Title><![CDATA[P1 km 5]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP1]]></Expression>
+			<Title>P1 km 5</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP1</Expression>
 			<Color>-16776961</Color>
-			<Expression2><![CDATA[puesto.get( 0 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 0 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P3 km 10]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP3]]></Expression>
+			<Title>P3 km 10</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP3</Expression>
 			<Color>-65536</Color>
-			<Expression2><![CDATA[puesto.get( 2 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 2 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P5 km 15]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP5]]></Expression>
+			<Title>P5 km 15</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP5</Expression>
 			<Color>-16744448</Color>
-			<Expression2><![CDATA[puesto.get( 4 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 4 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P7 km 20]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP7]]></Expression>
+			<Title>P7 km 20</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP7</Expression>
 			<Color>-23296</Color>
-			<Expression2><![CDATA[puesto.get( 6 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 6 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P9 km 25]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP9]]></Expression>
+			<Title>P9 km 25</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP9</Expression>
 			<Color>-8388480</Color>
-			<Expression2><![CDATA[puesto.get( 8 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 8 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P11 km 30]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP11]]></Expression>
+			<Title>P11 km 30</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP11</Expression>
 			<Color>-16728065</Color>
-			<Expression2><![CDATA[puesto.get( 10 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 10 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P12 km 33]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP12]]></Expression>
+			<Title>P12 km 33</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP12</Expression>
 			<Color>-6737204</Color>
-			<Expression2><![CDATA[puesto.get( 11 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 11 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P13 km 35]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP13]]></Expression>
+			<Title>P13 km 35</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP13</Expression>
 			<Color>-16777216</Color>
-			<Expression2><![CDATA[puesto.get( 12 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 12 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P14 km 37.7]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP14]]></Expression>
+			<Title>P14 km 37.7</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP14</Expression>
 			<Color>-7667712</Color>
-			<Expression2><![CDATA[puesto.get( 13 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 13 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P15 km 40]]></Title>
-			<Expression><![CDATA[dsgraficoStockAguaP15]]></Expression>
+			<Title>P15 km 40</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockAguaP15</Expression>
 			<Color>-2448096</Color>
-			<Expression2><![CDATA[puesto.get( 14 ).stock[ Puesto.AGUA ]]]></Expression2>
+			<Expression2>puesto.get( 14 ).stock[ Puesto.AGUA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<TimeWindowExpression>900</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -2782,7 +2795,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2807,19 +2820,21 @@ navigate(areaMenu);</ActionCode>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<AutoUpdate>true</AutoUpdate>
-		<OccurrenceAtTime>true</OccurrenceAtTime>
-		<OccurrenceDate>1787270400000</OccurrenceDate>
-		<OccurrenceTime Class="CodeUnitValue">
-			<Code><![CDATA[0]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</OccurrenceTime>
-		<RecurrenceCode Class="CodeUnitValue">
-			<Code><![CDATA[1]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</RecurrenceCode>
+		<RecurrenceProperties>
+			<Id>1791849168931</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1791878400000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Width>560</Width>
 		<Height>230</Height>
@@ -2844,79 +2859,87 @@ navigate(areaMenu);</ActionCode>
 			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
 			<TextColor>-12566464</TextColor>
 		</Labels>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<ShowLegend>true</ShowLegend>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
-		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[capacidadIsotonica]]></VerScaleToExpression>
+		<VerScaleFromExpression>0</VerScaleFromExpression>
+		<VerScaleToExpression>capacidadIsotonica</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
-			<Title><![CDATA[P2 km 7.5]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP2]]></Expression>
+			<Title>P2 km 7.5</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP2</Expression>
 			<Color>-16776961</Color>
-			<Expression2><![CDATA[puesto.get( 1 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 1 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P4 km 12.5]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP4]]></Expression>
+			<Title>P4 km 12.5</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP4</Expression>
 			<Color>-65536</Color>
-			<Expression2><![CDATA[puesto.get( 3 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 3 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P6 km 17.5]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP6]]></Expression>
+			<Title>P6 km 17.5</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP6</Expression>
 			<Color>-16744448</Color>
-			<Expression2><![CDATA[puesto.get( 5 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 5 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P8 km 22.6]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP8]]></Expression>
+			<Title>P8 km 22.6</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP8</Expression>
 			<Color>-23296</Color>
-			<Expression2><![CDATA[puesto.get( 7 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 7 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P10 km 27.5]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP10]]></Expression>
+			<Title>P10 km 27.5</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP10</Expression>
 			<Color>-8388480</Color>
-			<Expression2><![CDATA[puesto.get( 9 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 9 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P12 km 33]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP12]]></Expression>
+			<Title>P12 km 33</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP12</Expression>
 			<Color>-16728065</Color>
-			<Expression2><![CDATA[puesto.get( 11 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 11 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P14 km 37.7]]></Title>
-			<Expression><![CDATA[dsgraficoStockIsotonicaP14]]></Expression>
+			<Title>P14 km 37.7</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockIsotonicaP14</Expression>
 			<Color>-6737204</Color>
-			<Expression2><![CDATA[puesto.get( 13 ).stock[ Puesto.ISOTONICA ]]]></Expression2>
+			<Expression2>puesto.get( 13 ).stock[ Puesto.ISOTONICA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<TimeWindowExpression>900</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -2933,7 +2956,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2958,19 +2981,21 @@ navigate(areaMenu);</ActionCode>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<AutoUpdate>true</AutoUpdate>
-		<OccurrenceAtTime>true</OccurrenceAtTime>
-		<OccurrenceDate>1787270400000</OccurrenceDate>
-		<OccurrenceTime Class="CodeUnitValue">
-			<Code><![CDATA[0]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</OccurrenceTime>
-		<RecurrenceCode Class="CodeUnitValue">
-			<Code><![CDATA[1]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</RecurrenceCode>
+		<RecurrenceProperties>
+			<Id>1791849168934</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1791878400000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Width>560</Width>
 		<Height>230</Height>
@@ -2995,34 +3020,37 @@ navigate(areaMenu);</ActionCode>
 			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
 			<TextColor>-12566464</TextColor>
 		</Labels>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<ShowLegend>true</ShowLegend>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
-		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[capacidadFruta]]></VerScaleToExpression>
+		<VerScaleFromExpression>0</VerScaleFromExpression>
+		<VerScaleToExpression>capacidadFruta</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
-			<Title><![CDATA[P7 km 20]]></Title>
-			<Expression><![CDATA[dsgraficoStockFrutaP7]]></Expression>
+			<Title>P7 km 20</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockFrutaP7</Expression>
 			<Color>-16776961</Color>
-			<Expression2><![CDATA[puesto.get( 6 ).stock[ Puesto.FRUTA ]]]></Expression2>
+			<Expression2>puesto.get( 6 ).stock[ Puesto.FRUTA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P12 km 33]]></Title>
-			<Expression><![CDATA[dsgraficoStockFrutaP12]]></Expression>
+			<Title>P12 km 33</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockFrutaP12</Expression>
 			<Color>-65536</Color>
-			<Expression2><![CDATA[puesto.get( 11 ).stock[ Puesto.FRUTA ]]]></Expression2>
+			<Expression2>puesto.get( 11 ).stock[ Puesto.FRUTA ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<TimeWindowExpression>900</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -3039,7 +3067,7 @@ navigate(areaMenu);</ActionCode>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3064,19 +3092,21 @@ navigate(areaMenu);</ActionCode>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<AutoUpdate>true</AutoUpdate>
-		<OccurrenceAtTime>true</OccurrenceAtTime>
-		<OccurrenceDate>1787270400000</OccurrenceDate>
-		<OccurrenceTime Class="CodeUnitValue">
-			<Code><![CDATA[0]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</OccurrenceTime>
-		<RecurrenceCode Class="CodeUnitValue">
-			<Code><![CDATA[1]]></Code>
-			<Unit Class="TimeUnits">MINUTE</Unit>
-		</RecurrenceCode>
+		<RecurrenceProperties>
+			<Id>1791849168937</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1791878400000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Width>560</Width>
 		<Height>230</Height>
@@ -3101,34 +3131,37 @@ navigate(areaMenu);</ActionCode>
 			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
 			<TextColor>-12566464</TextColor>
 		</Labels>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<ShowLegend>true</ShowLegend>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
-		<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
-		<VerScaleToExpression><![CDATA[capacidadGel]]></VerScaleToExpression>
+		<VerScaleFromExpression>0</VerScaleFromExpression>
+		<VerScaleToExpression>capacidadGel</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
-			<Title><![CDATA[P8 km 22.6]]></Title>
-			<Expression><![CDATA[dsgraficoStockGelP8]]></Expression>
+			<Title>P8 km 22.6</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockGelP8</Expression>
 			<Color>-16776961</Color>
-			<Expression2><![CDATA[puesto.get( 7 ).stock[ Puesto.GEL ]]]></Expression2>
+			<Expression2>puesto.get( 7 ).stock[ Puesto.GEL ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title><![CDATA[P11 km 30]]></Title>
-			<Expression><![CDATA[dsgraficoStockGelP11]]></Expression>
+			<Title>P11 km 30</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoStockGelP11</Expression>
 			<Color>-65536</Color>
-			<Expression2><![CDATA[puesto.get( 10 ).stock[ Puesto.GEL ]]]></Expression2>
+			<Expression2>puesto.get( 10 ).stock[ Puesto.GEL ]</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression><![CDATA[900]]></TimeWindowExpression>
+		<TimeWindowExpression>900</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>

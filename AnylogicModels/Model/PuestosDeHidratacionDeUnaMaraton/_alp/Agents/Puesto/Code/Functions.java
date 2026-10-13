@@ -291,7 +291,7 @@ ropTopeado[ k ] = rop > tope;
 puntoReposicion[ k ] = Math.round( min( rop, tope ) );
 /*ALCODEEND*/}
 
-double distanciaKm(double lat1, double lon1, double lat2, double lon2)
+double distanciaKm(double lat1,double lon1,double lat2,double lon2)
 {/*ALCODESTART::1790100009326*/
 // Distancia en linea recta (formula de haversine).
 double dLat = Math.toRadians( lat2 - lat1 );
