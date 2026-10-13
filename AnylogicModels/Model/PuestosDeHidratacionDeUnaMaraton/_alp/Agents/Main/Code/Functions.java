@@ -301,7 +301,7 @@ if ( seg == 60 ) {
 return m + ":" + ( seg < 10 ? "0" : "" ) + seg + " min/km";
 /*ALCODEEND*/}
 
-String celdaStock(int i, int k)
+String celdaStock(int i,int k)
 {/*ALCODESTART::1790100012018*/
 Puesto p = puesto.get( i );
 if ( !p.ofrece[ k ] ) {
@@ -310,7 +310,7 @@ if ( !p.ofrece[ k ] ) {
 return (int) p.stock[ k ] + " / " + (int) p.capacidad[ k ];
 /*ALCODEEND*/}
 
-Color colorCeldaStock(int i, int k)
+Color colorCeldaStock(int i,int k)
 {/*ALCODESTART::1790100012019*/
 // Rojo: sin stock. Naranja: por debajo del punto de reposicion.
 Puesto p = puesto.get( i );

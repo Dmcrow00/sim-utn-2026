@@ -2495,7 +2495,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2507,7 +2507,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MENU" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MENU" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2524,7 +2524,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2550,7 +2550,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2562,7 +2562,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA2D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA2D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2579,7 +2579,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2605,7 +2605,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2617,7 +2617,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA3D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA3D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2634,7 +2634,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2660,7 +2660,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2672,7 +2672,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "LOGICA" )]]></FillColorCode>
+		<FillColorCode>colorTab( "LOGICA" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2689,7 +2689,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2715,7 +2715,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2727,7 +2727,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "EJECUCION" )]]></FillColorCode>
+		<FillColorCode>colorTab( "EJECUCION" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2744,7 +2744,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2821,7 +2821,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2833,7 +2833,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MENU" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MENU" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2850,7 +2850,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2876,7 +2876,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2888,7 +2888,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA2D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA2D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2905,7 +2905,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2931,7 +2931,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2943,7 +2943,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA3D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA3D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2960,7 +2960,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2986,7 +2986,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2998,7 +2998,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "LOGICA" )]]></FillColorCode>
+		<FillColorCode>colorTab( "LOGICA" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3015,7 +3015,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3041,7 +3041,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3053,7 +3053,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "EJECUCION" )]]></FillColorCode>
+		<FillColorCode>colorTab( "EJECUCION" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3070,7 +3070,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3147,7 +3147,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3159,7 +3159,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MENU" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MENU" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3176,7 +3176,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3202,7 +3202,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3214,7 +3214,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA2D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA2D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3231,7 +3231,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3257,7 +3257,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3269,7 +3269,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA3D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA3D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3286,7 +3286,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3312,7 +3312,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3324,7 +3324,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "LOGICA" )]]></FillColorCode>
+		<FillColorCode>colorTab( "LOGICA" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3341,7 +3341,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3367,7 +3367,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3379,7 +3379,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "EJECUCION" )]]></FillColorCode>
+		<FillColorCode>colorTab( "EJECUCION" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3396,7 +3396,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3473,7 +3473,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3485,7 +3485,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MENU" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MENU" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3502,7 +3502,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3528,7 +3528,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3540,7 +3540,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA2D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA2D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3557,7 +3557,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3583,7 +3583,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3595,7 +3595,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "MAPA3D" )]]></FillColorCode>
+		<FillColorCode>colorTab( "MAPA3D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3612,7 +3612,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3638,7 +3638,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3650,7 +3650,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "LOGICA" )]]></FillColorCode>
+		<FillColorCode>colorTab( "LOGICA" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3667,7 +3667,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3693,7 +3693,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3705,7 +3705,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[colorTab( "EJECUCION" )]]></FillColorCode>
+		<FillColorCode>colorTab( "EJECUCION" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -3722,7 +3722,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -3880,7 +3880,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[formatoHoras( time() )]]></TextCode>
+		<TextCode>formatoHoras( time() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>26</Size>
@@ -3958,7 +3958,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( corredoresEnRuta() )]]></TextCode>
+		<TextCode>String.valueOf( corredoresEnRuta() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>26</Size>
@@ -4036,7 +4036,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( sinkCorredores.count() )]]></TextCode>
+		<TextCode>String.valueOf( sinkCorredores.count() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>26</Size>
@@ -4114,7 +4114,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.stream().mapToInt( p -> p.faltantesTotales() ).sum() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.stream().mapToInt( p -&gt; p.faltantesTotales() ).sum() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>26</Size>
@@ -4192,7 +4192,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( camiones.size() )]]></TextCode>
+		<TextCode>String.valueOf( camiones.size() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>26</Size>
@@ -4213,7 +4213,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4241,7 +4241,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4268,7 +4268,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4294,7 +4294,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4322,7 +4322,7 @@ y camiones de reposición.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4348,7 +4348,7 @@ y camiones de reposición.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4376,7 +4376,7 @@ y camiones de reposición.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4403,7 +4403,7 @@ y camiones de reposición.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4429,7 +4429,7 @@ y camiones de reposición.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4457,7 +4457,7 @@ y el stock de cada mesa.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4483,7 +4483,7 @@ y el stock de cada mesa.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4511,7 +4511,7 @@ y el stock de cada mesa.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4538,7 +4538,7 @@ y el stock de cada mesa.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4564,7 +4564,7 @@ y el stock de cada mesa.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4592,7 +4592,7 @@ y tiempos de atención.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4618,7 +4618,7 @@ y tiempos de atención.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4646,7 +4646,7 @@ y tiempos de atención.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -4673,7 +4673,7 @@ y tiempos de atención.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4699,7 +4699,7 @@ y tiempos de atención.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -4727,7 +4727,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5491,7 +5491,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5517,7 +5517,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5543,7 +5543,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5569,7 +5569,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -5597,7 +5597,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5623,7 +5623,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5649,7 +5649,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5675,7 +5675,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5701,7 +5701,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -5728,7 +5728,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5754,13 +5754,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( llegadosPorCategoria[ 0 ] )]]></TextCode>
+		<TextCode>String.valueOf( llegadosPorCategoria[ 0 ] )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -5781,13 +5781,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[tiempoPromedioCategoria( 0 )]]></TextCode>
+		<TextCode>tiempoPromedioCategoria( 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -5808,13 +5808,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[ritmoPromedioCategoria( 0 )]]></TextCode>
+		<TextCode>ritmoPromedioCategoria( 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -5835,7 +5835,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -5862,7 +5862,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -5888,13 +5888,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( llegadosPorCategoria[ 1 ] )]]></TextCode>
+		<TextCode>String.valueOf( llegadosPorCategoria[ 1 ] )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -5915,13 +5915,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[tiempoPromedioCategoria( 1 )]]></TextCode>
+		<TextCode>tiempoPromedioCategoria( 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -5942,13 +5942,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[ritmoPromedioCategoria( 1 )]]></TextCode>
+		<TextCode>ritmoPromedioCategoria( 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -5969,7 +5969,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -5996,7 +5996,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6022,13 +6022,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( llegadosPorCategoria[ 2 ] )]]></TextCode>
+		<TextCode>String.valueOf( llegadosPorCategoria[ 2 ] )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -6049,13 +6049,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[tiempoPromedioCategoria( 2 )]]></TextCode>
+		<TextCode>tiempoPromedioCategoria( 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -6076,13 +6076,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[ritmoPromedioCategoria( 2 )]]></TextCode>
+		<TextCode>ritmoPromedioCategoria( 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -6103,7 +6103,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6130,7 +6130,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6156,13 +6156,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( llegadosPorCategoria[ 3 ] )]]></TextCode>
+		<TextCode>String.valueOf( llegadosPorCategoria[ 3 ] )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -6183,13 +6183,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[tiempoPromedioCategoria( 3 )]]></TextCode>
+		<TextCode>tiempoPromedioCategoria( 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -6210,13 +6210,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[ritmoPromedioCategoria( 3 )]]></TextCode>
+		<TextCode>ritmoPromedioCategoria( 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -6237,7 +6237,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6263,7 +6263,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6291,7 +6291,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6317,13 +6317,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( corredoresEnRuta() )]]></TextCode>
+		<TextCode>String.valueOf( corredoresEnRuta() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>20</Size>
@@ -6344,7 +6344,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6372,7 +6372,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6398,13 +6398,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( sinkCorredores.count() )]]></TextCode>
+		<TextCode>String.valueOf( sinkCorredores.count() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>20</Size>
@@ -6425,7 +6425,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6453,7 +6453,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6479,13 +6479,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[(int) Math.round( temperaturaC ) + " °C"]]></TextCode>
+		<TextCode>(int) Math.round( temperaturaC ) + " °C"</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>20</Size>
@@ -6506,7 +6506,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6534,7 +6534,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6560,13 +6560,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.stream().mapToInt( p -> p.noAtendidosStock ).sum() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.stream().mapToInt( p -&gt; p.noAtendidosStock ).sum() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>20</Size>
@@ -6587,7 +6587,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6615,7 +6615,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6641,13 +6641,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.stream().mapToInt( p -> p.noAtendidosVoluntarios ).sum() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.stream().mapToInt( p -&gt; p.noAtendidosVoluntarios ).sum() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>20</Size>
@@ -6668,7 +6668,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6696,7 +6696,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6722,13 +6722,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[0]]></Text>
-		<TextCode><![CDATA[String.valueOf( camionesDespachados )]]></TextCode>
+		<TextCode>String.valueOf( camionesDespachados )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>20</Size>
@@ -6749,7 +6749,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6775,7 +6775,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6801,7 +6801,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -6829,7 +6829,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6855,7 +6855,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6881,7 +6881,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6907,7 +6907,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6933,7 +6933,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6959,7 +6959,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -6985,7 +6985,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7011,7 +7011,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7037,7 +7037,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7063,7 +7063,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7089,7 +7089,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7115,7 +7115,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7141,7 +7141,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -7168,7 +7168,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7194,7 +7194,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7220,13 +7220,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 0 ).calle]]></TextCode>
+		<TextCode>puesto.get( 0 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7247,14 +7247,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 0, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 0, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 0, 0 )]]></TextCode>
+		<TextCode>celdaStock( 0, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7275,14 +7275,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 0, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 0, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 0, 1 )]]></TextCode>
+		<TextCode>celdaStock( 0, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7303,14 +7303,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 0, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 0, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 0, 2 )]]></TextCode>
+		<TextCode>celdaStock( 0, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7331,14 +7331,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 0, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 0, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 0, 3 )]]></TextCode>
+		<TextCode>celdaStock( 0, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7359,13 +7359,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 0 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 0 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7386,13 +7386,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 0 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 0 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7413,13 +7413,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 0 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 0 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7440,13 +7440,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 0 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 0 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7467,13 +7467,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 0 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7494,7 +7494,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7520,7 +7520,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7546,13 +7546,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 1 ).calle]]></TextCode>
+		<TextCode>puesto.get( 1 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7573,14 +7573,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 1, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 1, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 1, 0 )]]></TextCode>
+		<TextCode>celdaStock( 1, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7601,14 +7601,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 1, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 1, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 1, 1 )]]></TextCode>
+		<TextCode>celdaStock( 1, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7629,14 +7629,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 1, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 1, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 1, 2 )]]></TextCode>
+		<TextCode>celdaStock( 1, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7657,14 +7657,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 1, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 1, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 1, 3 )]]></TextCode>
+		<TextCode>celdaStock( 1, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7685,13 +7685,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 1 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 1 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7712,13 +7712,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 1 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 1 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7739,13 +7739,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 1 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 1 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7766,13 +7766,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 1 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 1 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7793,13 +7793,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 1 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7820,7 +7820,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -7847,7 +7847,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7873,7 +7873,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -7899,13 +7899,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 2 ).calle]]></TextCode>
+		<TextCode>puesto.get( 2 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7926,14 +7926,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 2, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 2, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 2, 0 )]]></TextCode>
+		<TextCode>celdaStock( 2, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7954,14 +7954,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 2, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 2, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 2, 1 )]]></TextCode>
+		<TextCode>celdaStock( 2, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -7982,14 +7982,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 2, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 2, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 2, 2 )]]></TextCode>
+		<TextCode>celdaStock( 2, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8010,14 +8010,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 2, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 2, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 2, 3 )]]></TextCode>
+		<TextCode>celdaStock( 2, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8038,13 +8038,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 2 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 2 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8065,13 +8065,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 2 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 2 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8092,13 +8092,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 2 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 2 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8119,13 +8119,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 2 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 2 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8146,13 +8146,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 2 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8173,7 +8173,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -8199,7 +8199,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -8225,13 +8225,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 3 ).calle]]></TextCode>
+		<TextCode>puesto.get( 3 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8252,14 +8252,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 3, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 3, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 3, 0 )]]></TextCode>
+		<TextCode>celdaStock( 3, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8280,14 +8280,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 3, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 3, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 3, 1 )]]></TextCode>
+		<TextCode>celdaStock( 3, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8308,14 +8308,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 3, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 3, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 3, 2 )]]></TextCode>
+		<TextCode>celdaStock( 3, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8336,14 +8336,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 3, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 3, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 3, 3 )]]></TextCode>
+		<TextCode>celdaStock( 3, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8364,13 +8364,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 3 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 3 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8391,13 +8391,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 3 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 3 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8418,13 +8418,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 3 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 3 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8445,13 +8445,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 3 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 3 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8472,13 +8472,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 3 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8499,7 +8499,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -8526,7 +8526,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -8552,7 +8552,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -8578,13 +8578,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 4 ).calle]]></TextCode>
+		<TextCode>puesto.get( 4 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8605,14 +8605,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 4, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 4, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 4, 0 )]]></TextCode>
+		<TextCode>celdaStock( 4, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8633,14 +8633,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 4, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 4, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 4, 1 )]]></TextCode>
+		<TextCode>celdaStock( 4, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8661,14 +8661,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 4, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 4, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 4, 2 )]]></TextCode>
+		<TextCode>celdaStock( 4, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8689,14 +8689,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 4, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 4, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 4, 3 )]]></TextCode>
+		<TextCode>celdaStock( 4, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8717,13 +8717,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 4 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 4 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8744,13 +8744,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 4 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 4 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8771,13 +8771,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 4 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 4 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8798,13 +8798,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 4 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 4 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8825,13 +8825,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 4 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 4 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8852,7 +8852,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -8878,7 +8878,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -8904,13 +8904,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 5 ).calle]]></TextCode>
+		<TextCode>puesto.get( 5 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8931,14 +8931,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 5, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 5, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 5, 0 )]]></TextCode>
+		<TextCode>celdaStock( 5, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8959,14 +8959,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 5, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 5, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 5, 1 )]]></TextCode>
+		<TextCode>celdaStock( 5, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -8987,14 +8987,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 5, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 5, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 5, 2 )]]></TextCode>
+		<TextCode>celdaStock( 5, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9015,14 +9015,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 5, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 5, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 5, 3 )]]></TextCode>
+		<TextCode>celdaStock( 5, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9043,13 +9043,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 5 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 5 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9070,13 +9070,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 5 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 5 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9097,13 +9097,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 5 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 5 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9124,13 +9124,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 5 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 5 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9151,13 +9151,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 5 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 5 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9178,7 +9178,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -9205,7 +9205,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -9231,7 +9231,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -9257,13 +9257,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 6 ).calle]]></TextCode>
+		<TextCode>puesto.get( 6 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9284,14 +9284,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 6, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 6, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 6, 0 )]]></TextCode>
+		<TextCode>celdaStock( 6, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9312,14 +9312,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 6, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 6, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 6, 1 )]]></TextCode>
+		<TextCode>celdaStock( 6, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9340,14 +9340,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 6, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 6, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 6, 2 )]]></TextCode>
+		<TextCode>celdaStock( 6, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9368,14 +9368,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 6, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 6, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 6, 3 )]]></TextCode>
+		<TextCode>celdaStock( 6, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9396,13 +9396,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 6 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 6 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9423,13 +9423,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 6 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 6 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9450,13 +9450,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 6 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 6 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9477,13 +9477,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 6 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 6 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9504,13 +9504,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 6 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 6 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9531,7 +9531,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -9557,7 +9557,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -9583,13 +9583,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 7 ).calle]]></TextCode>
+		<TextCode>puesto.get( 7 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9610,14 +9610,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 7, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 7, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 7, 0 )]]></TextCode>
+		<TextCode>celdaStock( 7, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9638,14 +9638,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 7, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 7, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 7, 1 )]]></TextCode>
+		<TextCode>celdaStock( 7, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9666,14 +9666,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 7, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 7, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 7, 2 )]]></TextCode>
+		<TextCode>celdaStock( 7, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9694,14 +9694,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 7, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 7, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 7, 3 )]]></TextCode>
+		<TextCode>celdaStock( 7, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9722,13 +9722,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 7 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 7 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9749,13 +9749,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 7 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 7 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9776,13 +9776,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 7 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 7 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9803,13 +9803,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 7 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 7 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9830,13 +9830,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 7 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 7 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9857,7 +9857,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -9884,7 +9884,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -9910,7 +9910,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -9936,13 +9936,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 8 ).calle]]></TextCode>
+		<TextCode>puesto.get( 8 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9963,14 +9963,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 8, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 8, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 8, 0 )]]></TextCode>
+		<TextCode>celdaStock( 8, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -9991,14 +9991,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 8, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 8, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 8, 1 )]]></TextCode>
+		<TextCode>celdaStock( 8, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10019,14 +10019,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 8, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 8, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 8, 2 )]]></TextCode>
+		<TextCode>celdaStock( 8, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10047,14 +10047,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 8, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 8, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 8, 3 )]]></TextCode>
+		<TextCode>celdaStock( 8, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10075,13 +10075,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 8 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 8 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10102,13 +10102,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 8 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 8 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10129,13 +10129,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 8 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 8 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10156,13 +10156,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 8 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 8 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10183,13 +10183,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 8 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 8 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10210,7 +10210,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10236,7 +10236,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10262,13 +10262,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 9 ).calle]]></TextCode>
+		<TextCode>puesto.get( 9 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10289,14 +10289,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 9, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 9, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 9, 0 )]]></TextCode>
+		<TextCode>celdaStock( 9, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10317,14 +10317,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 9, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 9, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 9, 1 )]]></TextCode>
+		<TextCode>celdaStock( 9, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10345,14 +10345,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 9, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 9, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 9, 2 )]]></TextCode>
+		<TextCode>celdaStock( 9, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10373,14 +10373,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 9, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 9, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 9, 3 )]]></TextCode>
+		<TextCode>celdaStock( 9, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10401,13 +10401,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 9 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 9 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10428,13 +10428,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 9 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 9 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10455,13 +10455,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 9 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 9 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10482,13 +10482,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 9 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 9 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10509,13 +10509,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 9 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 9 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10536,7 +10536,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10563,7 +10563,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10589,7 +10589,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10615,13 +10615,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 10 ).calle]]></TextCode>
+		<TextCode>puesto.get( 10 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10642,14 +10642,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 10, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 10, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 10, 0 )]]></TextCode>
+		<TextCode>celdaStock( 10, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10670,14 +10670,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 10, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 10, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 10, 1 )]]></TextCode>
+		<TextCode>celdaStock( 10, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10698,14 +10698,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 10, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 10, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 10, 2 )]]></TextCode>
+		<TextCode>celdaStock( 10, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10726,14 +10726,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 10, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 10, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 10, 3 )]]></TextCode>
+		<TextCode>celdaStock( 10, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10754,13 +10754,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 10 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 10 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10781,13 +10781,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 10 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 10 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10808,13 +10808,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 10 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 10 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10835,13 +10835,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 10 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 10 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10862,13 +10862,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 10 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 10 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10889,7 +10889,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10915,7 +10915,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10941,13 +10941,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 11 ).calle]]></TextCode>
+		<TextCode>puesto.get( 11 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10968,14 +10968,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 11, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 11, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 11, 0 )]]></TextCode>
+		<TextCode>celdaStock( 11, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -10996,14 +10996,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 11, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 11, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 11, 1 )]]></TextCode>
+		<TextCode>celdaStock( 11, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11024,14 +11024,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 11, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 11, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 11, 2 )]]></TextCode>
+		<TextCode>celdaStock( 11, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11052,14 +11052,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 11, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 11, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 11, 3 )]]></TextCode>
+		<TextCode>celdaStock( 11, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11080,13 +11080,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 11 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 11 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11107,13 +11107,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 11 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 11 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11134,13 +11134,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 11 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 11 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11161,13 +11161,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 11 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 11 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11188,13 +11188,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 11 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 11 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11215,7 +11215,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11242,7 +11242,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11268,7 +11268,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11294,13 +11294,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 12 ).calle]]></TextCode>
+		<TextCode>puesto.get( 12 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11321,14 +11321,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 12, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 12, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 12, 0 )]]></TextCode>
+		<TextCode>celdaStock( 12, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11349,14 +11349,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 12, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 12, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 12, 1 )]]></TextCode>
+		<TextCode>celdaStock( 12, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11377,14 +11377,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 12, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 12, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 12, 2 )]]></TextCode>
+		<TextCode>celdaStock( 12, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11405,14 +11405,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 12, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 12, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 12, 3 )]]></TextCode>
+		<TextCode>celdaStock( 12, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11433,13 +11433,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 12 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 12 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11460,13 +11460,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 12 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 12 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11487,13 +11487,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 12 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 12 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11514,13 +11514,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 12 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 12 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11541,13 +11541,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 12 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 12 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11568,7 +11568,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11594,7 +11594,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11620,13 +11620,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 13 ).calle]]></TextCode>
+		<TextCode>puesto.get( 13 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11647,14 +11647,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 13, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 13, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 13, 0 )]]></TextCode>
+		<TextCode>celdaStock( 13, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11675,14 +11675,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 13, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 13, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 13, 1 )]]></TextCode>
+		<TextCode>celdaStock( 13, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11703,14 +11703,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 13, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 13, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 13, 2 )]]></TextCode>
+		<TextCode>celdaStock( 13, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11731,14 +11731,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 13, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 13, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 13, 3 )]]></TextCode>
+		<TextCode>celdaStock( 13, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11759,13 +11759,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 13 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 13 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11786,13 +11786,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 13 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 13 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11813,13 +11813,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 13 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 13 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11840,13 +11840,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 13 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 13 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11867,13 +11867,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 13 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 13 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -11894,7 +11894,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11921,7 +11921,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11947,7 +11947,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11973,13 +11973,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[puesto.get( 14 ).calle]]></TextCode>
+		<TextCode>puesto.get( 14 ).calle</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12000,14 +12000,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 14, 0 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 14, 0 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 14, 0 )]]></TextCode>
+		<TextCode>celdaStock( 14, 0 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12028,14 +12028,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 14, 1 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 14, 1 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 14, 1 )]]></TextCode>
+		<TextCode>celdaStock( 14, 1 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12056,14 +12056,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 14, 2 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 14, 2 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 14, 2 )]]></TextCode>
+		<TextCode>celdaStock( 14, 2 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12084,14 +12084,14 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<ColorCode><![CDATA[colorCeldaStock( 14, 3 )]]></ColorCode>
+		<ColorCode>colorCeldaStock( 14, 3 )</ColorCode>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[celdaStock( 14, 3 )]]></TextCode>
+		<TextCode>celdaStock( 14, 3 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12112,13 +12112,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 14 ).voluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 14 ).voluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12139,13 +12139,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 14 ).faltantesTotales() )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 14 ).faltantesTotales() )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12166,13 +12166,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 14 ).noAtendidosStock )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 14 ).noAtendidosStock )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12193,13 +12193,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[String.valueOf( puesto.get( 14 ).noAtendidosVoluntarios )]]></TextCode>
+		<TextCode>String.valueOf( puesto.get( 14 ).noAtendidosVoluntarios )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12220,13 +12220,13 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicionCorto( 14 )]]></TextCode>
+		<TextCode>textoReposicionCorto( 14 )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -12247,7 +12247,7 @@ categoría de corredor.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -12263,8 +12263,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014025</Id>
 		<Name><![CDATA[grupoMainTitulo]]></Name>
-		<X>-1420</X>
-		<Y>-62</Y>
+		<X>-2040</X>
+		<Y>18</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12288,8 +12288,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014026</Id>
 		<Name><![CDATA[grupoMainNota]]></Name>
-		<X>-1420</X>
-		<Y>-38</Y>
+		<X>-2040</X>
+		<Y>42</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12313,8 +12313,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014001</Id>
 		<Name><![CDATA[grupoMainMarco0]]></Name>
-		<X>-1420</X>
-		<Y>0</Y>
+		<X>-2040</X>
+		<Y>80</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12340,8 +12340,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014002</Id>
 		<Name><![CDATA[grupoMainTitulo0]]></Name>
-		<X>-1408</X>
-		<Y>10</Y>
+		<X>-2028</X>
+		<Y>90</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12365,8 +12365,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014003</Id>
 		<Name><![CDATA[grupoMainDetalle0]]></Name>
-		<X>-1408</X>
-		<Y>30</Y>
+		<X>-2028</X>
+		<Y>110</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12390,8 +12390,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014004</Id>
 		<Name><![CDATA[grupoMainMarco1853]]></Name>
-		<X>-1420</X>
-		<Y>107</Y>
+		<X>-2040</X>
+		<Y>187</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12417,8 +12417,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014005</Id>
 		<Name><![CDATA[grupoMainTitulo1853]]></Name>
-		<X>-1408</X>
-		<Y>117</Y>
+		<X>-2028</X>
+		<Y>197</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12442,8 +12442,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014006</Id>
 		<Name><![CDATA[grupoMainDetalle1853]]></Name>
-		<X>-1408</X>
-		<Y>137</Y>
+		<X>-2028</X>
+		<Y>217</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12467,8 +12467,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014007</Id>
 		<Name><![CDATA[grupoMainMarco3722]]></Name>
-		<X>-1420</X>
-		<Y>339</Y>
+		<X>-2040</X>
+		<Y>419</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12494,8 +12494,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014008</Id>
 		<Name><![CDATA[grupoMainTitulo3722]]></Name>
-		<X>-1408</X>
-		<Y>349</Y>
+		<X>-2028</X>
+		<Y>429</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12519,8 +12519,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014009</Id>
 		<Name><![CDATA[grupoMainDetalle3722]]></Name>
-		<X>-1408</X>
-		<Y>369</Y>
+		<X>-2028</X>
+		<Y>449</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12544,8 +12544,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014010</Id>
 		<Name><![CDATA[grupoMainMarco5598]]></Name>
-		<X>-960</X>
-		<Y>0</Y>
+		<X>-1580</X>
+		<Y>80</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12571,8 +12571,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014011</Id>
 		<Name><![CDATA[grupoMainTitulo5598]]></Name>
-		<X>-948</X>
-		<Y>10</Y>
+		<X>-1568</X>
+		<Y>90</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12596,8 +12596,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014012</Id>
 		<Name><![CDATA[grupoMainDetalle5598]]></Name>
-		<X>-948</X>
-		<Y>30</Y>
+		<X>-1568</X>
+		<Y>110</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12621,8 +12621,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014013</Id>
 		<Name><![CDATA[grupoMainMarco7466]]></Name>
-		<X>-960</X>
-		<Y>157</Y>
+		<X>-1580</X>
+		<Y>237</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12648,8 +12648,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014014</Id>
 		<Name><![CDATA[grupoMainTitulo7466]]></Name>
-		<X>-948</X>
-		<Y>167</Y>
+		<X>-1568</X>
+		<Y>247</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12673,8 +12673,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014015</Id>
 		<Name><![CDATA[grupoMainDetalle7466]]></Name>
-		<X>-948</X>
-		<Y>187</Y>
+		<X>-1568</X>
+		<Y>267</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12698,8 +12698,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014016</Id>
 		<Name><![CDATA[grupoMainMarco9340]]></Name>
-		<X>-960</X>
-		<Y>389</Y>
+		<X>-1580</X>
+		<Y>469</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12725,8 +12725,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014017</Id>
 		<Name><![CDATA[grupoMainTitulo9340]]></Name>
-		<X>-948</X>
-		<Y>399</Y>
+		<X>-1568</X>
+		<Y>479</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12750,8 +12750,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014018</Id>
 		<Name><![CDATA[grupoMainDetalle9340]]></Name>
-		<X>-948</X>
-		<Y>419</Y>
+		<X>-1568</X>
+		<Y>499</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12775,8 +12775,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014019</Id>
 		<Name><![CDATA[grupoMainMarco11212]]></Name>
-		<X>-500</X>
-		<Y>0</Y>
+		<X>-1120</X>
+		<Y>80</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12802,8 +12802,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014020</Id>
 		<Name><![CDATA[grupoMainTitulo11212]]></Name>
-		<X>-488</X>
-		<Y>10</Y>
+		<X>-1108</X>
+		<Y>90</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12827,8 +12827,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014021</Id>
 		<Name><![CDATA[grupoMainDetalle11212]]></Name>
-		<X>-488</X>
-		<Y>30</Y>
+		<X>-1108</X>
+		<Y>110</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12852,8 +12852,8 @@ categoría de corredor.]]></Text>
 	<RoundedRectangle>
 		<Id>1790100014022</Id>
 		<Name><![CDATA[grupoMainMarco13087]]></Name>
-		<X>-500</X>
-		<Y>257</Y>
+		<X>-1120</X>
+		<Y>337</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12879,8 +12879,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014023</Id>
 		<Name><![CDATA[grupoMainTitulo13087]]></Name>
-		<X>-488</X>
-		<Y>267</Y>
+		<X>-1108</X>
+		<Y>347</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -12904,8 +12904,8 @@ categoría de corredor.]]></Text>
 	<Text>
 		<Id>1790100014024</Id>
 		<Name><![CDATA[grupoMainDetalle13087]]></Name>
-		<X>-488</X>
-		<Y>287</Y>
+		<X>-1108</X>
+		<Y>367</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>

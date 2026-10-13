@@ -71,8 +71,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[mujer]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>mujer</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013024</Id>
@@ -145,8 +145,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[!mujer]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>!mujer</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Camera3D>
 		<Id>1790100010280</Id>
@@ -159,8 +159,8 @@
 			<Y>-10</Y>
 		</Label>
 		<ShowLabel>false</ShowLabel>
-		<RotationX>6</RotationX>
-		<RotationZ>0</RotationZ>
+		<RotationX>6.0</RotationX>
+		<RotationZ>0.0</RotationZ>
 	</Camera3D>
 	<Oval>
 		<Id>1790100012273</Id>
@@ -175,7 +175,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<VisibleCode><![CDATA[motivoNoAtendido > 0]]></VisibleCode>
+		<VisibleCode>motivoNoAtendido &gt; 0</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>21</Z>
 		<ZHeight>5</ZHeight>
@@ -187,7 +187,7 @@
 		<RadiusY>4</RadiusY>
 		<Rotation>0.0</Rotation>
 		<FillColor>-65536</FillColor>
-		<FillColorCode><![CDATA[motivoNoAtendido == 1 ? red : orange]]></FillColorCode>
+		<FillColorCode>motivoNoAtendido == 1 ? red : orange</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 	</Oval>
 </Presentation>

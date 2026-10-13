@@ -5,8 +5,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1788900000012</Id>
 		<Name><![CDATA[decidirHidratacion]]></Name>
-		<X>-1188</X>
-		<Y>190</Y>
+		<X>-1808</X>
+		<Y>270</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -29,8 +29,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1790100000160</Id>
 		<Name><![CDATA[sortearCategoria]]></Name>
-		<X>-1188</X>
-		<Y>58</Y>
+		<X>-1808</X>
+		<Y>138</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -45,8 +45,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100000161</Id>
 		<Name><![CDATA[tiempoAtencion]]></Name>
-		<X>-1188</X>
-		<Y>397</Y>
+		<X>-1808</X>
+		<Y>477</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -65,8 +65,8 @@
 		<ReturnType>GISPoint</ReturnType>
 		<Id>1790100000162</Id>
 		<Name><![CDATA[puntoPuesto]]></Name>
-		<X>-728</X>
-		<Y>447</Y>
+		<X>-1348</X>
+		<Y>527</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -85,8 +85,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000164</Id>
 		<Name><![CDATA[despacharCamion]]></Name>
-		<X>-728</X>
-		<Y>215</Y>
+		<X>-1348</X>
+		<Y>295</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -105,8 +105,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000165</Id>
 		<Name><![CDATA[iniciarDescarga]]></Name>
-		<X>-728</X>
-		<Y>240</Y>
+		<X>-1348</X>
+		<Y>320</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -125,8 +125,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000166</Id>
 		<Name><![CDATA[registrarLlegada]]></Name>
-		<X>-268</X>
-		<Y>83</Y>
+		<X>-888</X>
+		<Y>163</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -145,8 +145,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100000167</Id>
 		<Name><![CDATA[formatoHoras]]></Name>
-		<X>-268</X>
-		<Y>208</Y>
+		<X>-888</X>
+		<Y>288</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -165,8 +165,8 @@
 		<ReturnType>ResourcePool</ReturnType>
 		<Id>1790100009004</Id>
 		<Name><![CDATA[poolDePuesto]]></Name>
-		<X>-1188</X>
-		<Y>472</Y>
+		<X>-1808</X>
+		<Y>552</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -185,8 +185,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009005</Id>
 		<Name><![CDATA[cambiarVoluntarios]]></Name>
-		<X>-1188</X>
-		<Y>447</Y>
+		<X>-1808</X>
+		<Y>527</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -209,8 +209,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009317</Id>
 		<Name><![CDATA[registrarLargada]]></Name>
-		<X>-268</X>
-		<Y>58</Y>
+		<X>-888</X>
+		<Y>138</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -229,8 +229,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100009318</Id>
 		<Name><![CDATA[horasPorKmPromedio]]></Name>
-		<X>-268</X>
-		<Y>108</Y>
+		<X>-888</X>
+		<Y>188</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -245,8 +245,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009504</Id>
 		<Name><![CDATA[irA]]></Name>
-		<X>-268</X>
-		<Y>315</Y>
+		<X>-888</X>
+		<Y>395</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -265,8 +265,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009505</Id>
 		<Name><![CDATA[verPuesto3D]]></Name>
-		<X>-268</X>
-		<Y>340</Y>
+		<X>-888</X>
+		<Y>420</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -285,8 +285,8 @@
 		<ReturnType>Color</ReturnType>
 		<Id>1790100009506</Id>
 		<Name><![CDATA[colorTab]]></Name>
-		<X>-268</X>
-		<Y>365</Y>
+		<X>-888</X>
+		<Y>445</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -305,8 +305,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1790100009507</Id>
 		<Name><![CDATA[corredoresEnRuta]]></Name>
-		<X>-268</X>
-		<Y>133</Y>
+		<X>-888</X>
+		<Y>213</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -321,8 +321,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100012013</Id>
 		<Name><![CDATA[ajustarTemperatura]]></Name>
-		<X>-1188</X>
-		<Y>165</Y>
+		<X>-1808</X>
+		<Y>245</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -341,8 +341,8 @@
 		<ReturnType>Seize</ReturnType>
 		<Id>1790100012014</Id>
 		<Name><![CDATA[seizeDePuesto]]></Name>
-		<X>-1188</X>
-		<Y>497</Y>
+		<X>-1808</X>
+		<Y>577</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -361,8 +361,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1790100012015</Id>
 		<Name><![CDATA[hayDemasiadaCola]]></Name>
-		<X>-1188</X>
-		<Y>422</Y>
+		<X>-1808</X>
+		<Y>502</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -381,8 +381,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012016</Id>
 		<Name><![CDATA[tiempoPromedioCategoria]]></Name>
-		<X>-268</X>
-		<Y>158</Y>
+		<X>-888</X>
+		<Y>238</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -401,8 +401,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012017</Id>
 		<Name><![CDATA[ritmoPromedioCategoria]]></Name>
-		<X>-268</X>
-		<Y>183</Y>
+		<X>-888</X>
+		<Y>263</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -421,8 +421,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012018</Id>
 		<Name><![CDATA[celdaStock]]></Name>
-		<X>-268</X>
-		<Y>415</Y>
+		<X>-888</X>
+		<Y>495</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -445,8 +445,8 @@
 		<ReturnType>Color</ReturnType>
 		<Id>1790100012019</Id>
 		<Name><![CDATA[colorCeldaStock]]></Name>
-		<X>-268</X>
-		<Y>440</Y>
+		<X>-888</X>
+		<Y>520</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -469,8 +469,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012020</Id>
 		<Name><![CDATA[textoReposicionCorto]]></Name>
-		<X>-268</X>
-		<Y>465</Y>
+		<X>-888</X>
+		<Y>545</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -489,8 +489,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100013018</Id>
 		<Name><![CDATA[aplicarVelocidad3D]]></Name>
-		<X>-268</X>
-		<Y>390</Y>
+		<X>-888</X>
+		<Y>470</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

@@ -71,8 +71,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[modelo == 0]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>modelo == 0</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013042</Id>
@@ -145,8 +145,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[modelo == 1]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>modelo == 1</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013043</Id>
@@ -219,8 +219,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[modelo == 2]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>modelo == 2</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013044</Id>
@@ -297,7 +297,7 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[modelo == 3]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>modelo == 3</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 </Presentation>

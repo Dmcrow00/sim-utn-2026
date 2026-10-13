@@ -49,18 +49,6 @@
 		<Location>FILE_SYSTEM</Location>
 	</Resource>
 	<Resource>
-		<Id>1789150916432</Id>
-		<Path>3d/woman_1.dae</Path>
-		<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		<Location>FILE_SYSTEM</Location>
-	</Resource>
-	<Resource>
-		<Id>1789150930659</Id>
-		<Path>3d/boy.dae</Path>
-		<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		<Location>FILE_SYSTEM</Location>
-	</Resource>
-	<Resource>
 		<Id>1789388904692</Id>
 		<Path>3d/box_closed.dae</Path>
 		<ReferencedFromUserCode>false</ReferencedFromUserCode>

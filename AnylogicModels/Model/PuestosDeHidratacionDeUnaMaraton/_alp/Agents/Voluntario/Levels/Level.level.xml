@@ -73,8 +73,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[activo() && indice % 2 == 0]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>activo() &amp;&amp; indice % 2 == 0</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013029</Id>
@@ -149,8 +149,8 @@
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<VisibleCode><![CDATA[activo() && indice % 2 == 1]]></VisibleCode>
-		<SelectedAnimationPoseCode><![CDATA[pose()]]></SelectedAnimationPoseCode>
+		<VisibleCode>activo() &amp;&amp; indice % 2 == 1</VisibleCode>
+		<SelectedAnimationPoseCode>pose()</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Oval>
 		<Id>1790100000109</Id>
@@ -177,7 +177,7 @@
 		<RadiusY>0.7</RadiusY>
 		<Rotation>0.0</Rotation>
 		<FillColor>-12490271</FillColor>
-		<FillColorCode><![CDATA[puestoDetalle3D.miPuesto().colorTipo()]]></FillColorCode>
+		<FillColorCode>puestoDetalle3D.miPuesto().colorTipo()</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 	</Oval>
 </Presentation>

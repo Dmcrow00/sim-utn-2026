@@ -362,7 +362,7 @@ if ( camionAsignado == null || !camionAsignado.fase.equals( "YENDO" ) ) {
 return camionAsignado.timeToArrival( MINUTE );
 /*ALCODEEND*/}
 
-void ajustarCapacidad(int k, double valor)
+void ajustarCapacidad(int k,double valor)
 {/*ALCODESTART::1790100011008*/
 capacidad[ k ] = max( 1, valor );
 stock[ k ] = min( stock[ k ], capacidad[ k ] );
@@ -373,7 +373,7 @@ actualizarPuntoReposicion( k );
 revisarReposicion();
 /*ALCODEEND*/}
 
-void ajustarMinimo(int k, double valor)
+void ajustarMinimo(int k,double valor)
 {/*ALCODESTART::1790100011009*/
 minimoManual[ k ] = max( 0, min( valor, capacidad[ k ] ) );
 actualizarPuntoReposicion( k );

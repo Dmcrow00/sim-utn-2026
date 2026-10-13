@@ -225,7 +225,7 @@ if ( !getEngine().getRealTimeMode() ) {
 return getEngine().getRealTimeScale() / second();
 /*ALCODEEND*/}
 
-String poseEspectador(int k, boolean chico)
+String poseEspectador(int k,boolean chico)
 {/*ALCODESTART::1790100013049*/
 // El publico no esta congelado: cada persona cambia de postura cada algunos
 // segundos (con su propio desfase) y los chicos senalan a los corredores.

@@ -13,7 +13,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( getIndex() );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( getIndex() );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>4</ZHeight>
@@ -42,7 +42,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( getIndex() );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( getIndex() );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>

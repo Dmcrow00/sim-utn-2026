@@ -187,8 +187,8 @@
 			<Y>-10</Y>
 		</Label>
 		<ShowLabel>false</ShowLabel>
-		<RotationX>5</RotationX>
-		<RotationZ>200</RotationZ>
+		<RotationX>5.0</RotationX>
+		<RotationZ>200.0</RotationZ>
 	</Camera3D>
 	<Control Type="Window3D">
 		<Id>1789091264286</Id>
@@ -1645,7 +1645,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>main.irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1657,7 +1657,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[main.colorTab( "MENU" )]]></FillColorCode>
+		<FillColorCode>main.colorTab( "MENU" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -1674,7 +1674,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "MENU" );]]></OnClickCode>
+		<OnClickCode>main.irA( "MENU" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -1700,7 +1700,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>main.irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1712,7 +1712,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[main.colorTab( "MAPA2D" )]]></FillColorCode>
+		<FillColorCode>main.colorTab( "MAPA2D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -1729,7 +1729,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "MAPA2D" );]]></OnClickCode>
+		<OnClickCode>main.irA( "MAPA2D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -1755,7 +1755,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>main.irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1767,7 +1767,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[main.colorTab( "MAPA3D" )]]></FillColorCode>
+		<FillColorCode>main.colorTab( "MAPA3D" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -1784,7 +1784,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "MAPA3D" );]]></OnClickCode>
+		<OnClickCode>main.irA( "MAPA3D" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -1810,7 +1810,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>main.irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1822,7 +1822,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[main.colorTab( "LOGICA" )]]></FillColorCode>
+		<FillColorCode>main.colorTab( "LOGICA" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -1839,7 +1839,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "LOGICA" );]]></OnClickCode>
+		<OnClickCode>main.irA( "LOGICA" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -1865,7 +1865,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>main.irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1877,7 +1877,7 @@
 		<Height>32</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[main.colorTab( "EJECUCION" )]]></FillColorCode>
+		<FillColorCode>main.colorTab( "EJECUCION" )</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -1894,7 +1894,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.irA( "EJECUCION" );]]></OnClickCode>
+		<OnClickCode>main.irA( "EJECUCION" );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -1920,7 +1920,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( getIndex() - 1 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( getIndex() - 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1948,7 +1948,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( getIndex() - 1 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( getIndex() - 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -1974,7 +1974,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 0 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 0 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -1986,7 +1986,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2003,7 +2003,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 0 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 0 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2029,7 +2029,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 1 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2041,7 +2041,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2058,7 +2058,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 1 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2084,7 +2084,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 2 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2096,7 +2096,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2113,7 +2113,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 2 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2139,7 +2139,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 3 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 3 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2151,7 +2151,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2168,7 +2168,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 3 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 3 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2194,7 +2194,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 4 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 4 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2206,7 +2206,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 4 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 4 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2223,7 +2223,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 4 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 4 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2249,7 +2249,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 5 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 5 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2261,7 +2261,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 5 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 5 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2278,7 +2278,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 5 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 5 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2304,7 +2304,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 6 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 6 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2316,7 +2316,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 6 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 6 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2333,7 +2333,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 6 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 6 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2359,7 +2359,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 7 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 7 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2371,7 +2371,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 7 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 7 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2388,7 +2388,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 7 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 7 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2414,7 +2414,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 8 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 8 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2426,7 +2426,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 8 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 8 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2443,7 +2443,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 8 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 8 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2469,7 +2469,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 9 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 9 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2481,7 +2481,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 9 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 9 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2498,7 +2498,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 9 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 9 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2524,7 +2524,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 10 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 10 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2536,7 +2536,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 10 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 10 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2553,7 +2553,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 10 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 10 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2579,7 +2579,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 11 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 11 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2591,7 +2591,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 11 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 11 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2608,7 +2608,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 11 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 11 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2634,7 +2634,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 12 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 12 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2646,7 +2646,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 12 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 12 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2663,7 +2663,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 12 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 12 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2689,7 +2689,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 13 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 13 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2701,7 +2701,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 13 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 13 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2718,7 +2718,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 13 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 13 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2744,7 +2744,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 14 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 14 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2756,7 +2756,7 @@
 		<Height>26</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[getIndex() == 14 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>getIndex() == 14 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -2773,7 +2773,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( 14 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( 14 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2799,7 +2799,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( getIndex() + 1 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( getIndex() + 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2827,7 +2827,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.verPuesto3D( getIndex() + 1 );]]></OnClickCode>
+		<OnClickCode>main.verPuesto3D( getIndex() + 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -2885,7 +2885,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[Puesto]]></Text>
-		<TextCode><![CDATA["Puesto " + miPuesto().numero + "  ·  km " + miPuesto().km]]></TextCode>
+		<TextCode>"Puesto " + miPuesto().numero + "  ·  km " + miPuesto().km</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>18</Size>
@@ -2911,7 +2911,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[miPuesto().calle + "  ·  " + miPuesto().barrio]]></TextCode>
+		<TextCode>miPuesto().calle + "  ·  " + miPuesto().barrio</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -2932,13 +2932,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 0 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[Puesto.NOMBRES_INSUMO[ 0 ] + ":  " + (int) miPuesto().stock[ 0 ] + " / " + (int) miPuesto().capacidad[ 0 ]]]></TextCode>
+		<TextCode>Puesto.NOMBRES_INSUMO[ 0 ] + ":  " + (int) miPuesto().stock[ 0 ] + " / " + (int) miPuesto().capacidad[ 0 ]</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -2959,7 +2959,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 0 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -2987,40 +2987,40 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 0 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
-		<ScaleXCode><![CDATA[fraccion( 0 )]]></ScaleXCode>
+		<ScaleXCode>fraccion( 0 )</ScaleXCode>
 		<Presentation>
-	<RoundedRectangle>
-		<Id>1790100009679</Id>
-		<Name><![CDATA[panelBarraRelleno0]]></Name>
-		<X>0</X>
-		<Y>0</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<ZHeight>10</ZHeight>
-		<LineWidth>1</LineWidth>
-		<LineColor/>
-		<LineMaterial>null</LineMaterial>
-		<LineStyle>SOLID</LineStyle>
-		<Width>280</Width>
-		<Height>12</Height>
-		<Rotation>0.0</Rotation>
-		<FillColor>-12799119</FillColor>
-		<FillColorCode><![CDATA[colorBarra( 0 )]]></FillColorCode>
-		<FillMaterial>null</FillMaterial>
-		<ArcRadius>6</ArcRadius>
-	</RoundedRectangle>
+			<RoundedRectangle>
+				<Id>1790100009679</Id>
+				<Name><![CDATA[panelBarraRelleno0]]></Name>
+				<X>0</X>
+				<Y>0</Y>
+				<Label>
+					<X>0</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<ZHeight>10</ZHeight>
+				<LineWidth>1</LineWidth>
+				<LineColor/>
+				<LineMaterial>null</LineMaterial>
+				<LineStyle>SOLID</LineStyle>
+				<Width>280</Width>
+				<Height>12</Height>
+				<Rotation>0.0</Rotation>
+				<FillColor>-12799119</FillColor>
+				<FillColorCode>colorBarra( 0 )</FillColorCode>
+				<FillMaterial>null</FillMaterial>
+				<ArcRadius>6</ArcRadius>
+			</RoundedRectangle>
 		</Presentation>
 	</Group>
 	<Text>
@@ -3036,13 +3036,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 0 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 0 ] + "  ·  " + textoAgotamiento( 0 ) + ( miPuesto().ropTopeado[ 0 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 0 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 0 ] : "" )]]></TextCode>
+		<TextCode>"Repone en " + (int) miPuesto().puntoReposicion[ 0 ] + "  ·  " + textoAgotamiento( 0 ) + ( miPuesto().ropTopeado[ 0 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 0 ] &gt; 0 ? "   ·   faltaron " + miPuesto().faltantes[ 0 ] : "" )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3063,13 +3063,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 1 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[Puesto.NOMBRES_INSUMO[ 1 ] + ":  " + (int) miPuesto().stock[ 1 ] + " / " + (int) miPuesto().capacidad[ 1 ]]]></TextCode>
+		<TextCode>Puesto.NOMBRES_INSUMO[ 1 ] + ":  " + (int) miPuesto().stock[ 1 ] + " / " + (int) miPuesto().capacidad[ 1 ]</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -3090,7 +3090,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 1 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3118,40 +3118,40 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 1 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
-		<ScaleXCode><![CDATA[fraccion( 1 )]]></ScaleXCode>
+		<ScaleXCode>fraccion( 1 )</ScaleXCode>
 		<Presentation>
-	<RoundedRectangle>
-		<Id>1790100009684</Id>
-		<Name><![CDATA[panelBarraRelleno1]]></Name>
-		<X>0</X>
-		<Y>0</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<ZHeight>10</ZHeight>
-		<LineWidth>1</LineWidth>
-		<LineColor/>
-		<LineMaterial>null</LineMaterial>
-		<LineStyle>SOLID</LineStyle>
-		<Width>280</Width>
-		<Height>12</Height>
-		<Rotation>0.0</Rotation>
-		<FillColor>-12799119</FillColor>
-		<FillColorCode><![CDATA[colorBarra( 1 )]]></FillColorCode>
-		<FillMaterial>null</FillMaterial>
-		<ArcRadius>6</ArcRadius>
-	</RoundedRectangle>
+			<RoundedRectangle>
+				<Id>1790100009684</Id>
+				<Name><![CDATA[panelBarraRelleno1]]></Name>
+				<X>0</X>
+				<Y>0</Y>
+				<Label>
+					<X>0</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<ZHeight>10</ZHeight>
+				<LineWidth>1</LineWidth>
+				<LineColor/>
+				<LineMaterial>null</LineMaterial>
+				<LineStyle>SOLID</LineStyle>
+				<Width>280</Width>
+				<Height>12</Height>
+				<Rotation>0.0</Rotation>
+				<FillColor>-12799119</FillColor>
+				<FillColorCode>colorBarra( 1 )</FillColorCode>
+				<FillMaterial>null</FillMaterial>
+				<ArcRadius>6</ArcRadius>
+			</RoundedRectangle>
 		</Presentation>
 	</Group>
 	<Text>
@@ -3167,13 +3167,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 1 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 1 ] + "  ·  " + textoAgotamiento( 1 ) + ( miPuesto().ropTopeado[ 1 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 1 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 1 ] : "" )]]></TextCode>
+		<TextCode>"Repone en " + (int) miPuesto().puntoReposicion[ 1 ] + "  ·  " + textoAgotamiento( 1 ) + ( miPuesto().ropTopeado[ 1 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 1 ] &gt; 0 ? "   ·   faltaron " + miPuesto().faltantes[ 1 ] : "" )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3194,13 +3194,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 2 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[Puesto.NOMBRES_INSUMO[ 2 ] + ":  " + (int) miPuesto().stock[ 2 ] + " / " + (int) miPuesto().capacidad[ 2 ]]]></TextCode>
+		<TextCode>Puesto.NOMBRES_INSUMO[ 2 ] + ":  " + (int) miPuesto().stock[ 2 ] + " / " + (int) miPuesto().capacidad[ 2 ]</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -3221,7 +3221,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 2 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3249,40 +3249,40 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 2 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
-		<ScaleXCode><![CDATA[fraccion( 2 )]]></ScaleXCode>
+		<ScaleXCode>fraccion( 2 )</ScaleXCode>
 		<Presentation>
-	<RoundedRectangle>
-		<Id>1790100009689</Id>
-		<Name><![CDATA[panelBarraRelleno2]]></Name>
-		<X>0</X>
-		<Y>0</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<ZHeight>10</ZHeight>
-		<LineWidth>1</LineWidth>
-		<LineColor/>
-		<LineMaterial>null</LineMaterial>
-		<LineStyle>SOLID</LineStyle>
-		<Width>280</Width>
-		<Height>12</Height>
-		<Rotation>0.0</Rotation>
-		<FillColor>-12799119</FillColor>
-		<FillColorCode><![CDATA[colorBarra( 2 )]]></FillColorCode>
-		<FillMaterial>null</FillMaterial>
-		<ArcRadius>6</ArcRadius>
-	</RoundedRectangle>
+			<RoundedRectangle>
+				<Id>1790100009689</Id>
+				<Name><![CDATA[panelBarraRelleno2]]></Name>
+				<X>0</X>
+				<Y>0</Y>
+				<Label>
+					<X>0</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<ZHeight>10</ZHeight>
+				<LineWidth>1</LineWidth>
+				<LineColor/>
+				<LineMaterial>null</LineMaterial>
+				<LineStyle>SOLID</LineStyle>
+				<Width>280</Width>
+				<Height>12</Height>
+				<Rotation>0.0</Rotation>
+				<FillColor>-12799119</FillColor>
+				<FillColorCode>colorBarra( 2 )</FillColorCode>
+				<FillMaterial>null</FillMaterial>
+				<ArcRadius>6</ArcRadius>
+			</RoundedRectangle>
 		</Presentation>
 	</Group>
 	<Text>
@@ -3298,13 +3298,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 2 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 2 ] + "  ·  " + textoAgotamiento( 2 ) + ( miPuesto().ropTopeado[ 2 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 2 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 2 ] : "" )]]></TextCode>
+		<TextCode>"Repone en " + (int) miPuesto().puntoReposicion[ 2 ] + "  ·  " + textoAgotamiento( 2 ) + ( miPuesto().ropTopeado[ 2 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 2 ] &gt; 0 ? "   ·   faltaron " + miPuesto().faltantes[ 2 ] : "" )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3325,13 +3325,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 3 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[Puesto.NOMBRES_INSUMO[ 3 ] + ":  " + (int) miPuesto().stock[ 3 ] + " / " + (int) miPuesto().capacidad[ 3 ]]]></TextCode>
+		<TextCode>Puesto.NOMBRES_INSUMO[ 3 ] + ":  " + (int) miPuesto().stock[ 3 ] + " / " + (int) miPuesto().capacidad[ 3 ]</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -3352,7 +3352,7 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 3 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -3380,40 +3380,40 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 3 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
-		<ScaleXCode><![CDATA[fraccion( 3 )]]></ScaleXCode>
+		<ScaleXCode>fraccion( 3 )</ScaleXCode>
 		<Presentation>
-	<RoundedRectangle>
-		<Id>1790100009694</Id>
-		<Name><![CDATA[panelBarraRelleno3]]></Name>
-		<X>0</X>
-		<Y>0</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<ZHeight>10</ZHeight>
-		<LineWidth>1</LineWidth>
-		<LineColor/>
-		<LineMaterial>null</LineMaterial>
-		<LineStyle>SOLID</LineStyle>
-		<Width>280</Width>
-		<Height>12</Height>
-		<Rotation>0.0</Rotation>
-		<FillColor>-12799119</FillColor>
-		<FillColorCode><![CDATA[colorBarra( 3 )]]></FillColorCode>
-		<FillMaterial>null</FillMaterial>
-		<ArcRadius>6</ArcRadius>
-	</RoundedRectangle>
+			<RoundedRectangle>
+				<Id>1790100009694</Id>
+				<Name><![CDATA[panelBarraRelleno3]]></Name>
+				<X>0</X>
+				<Y>0</Y>
+				<Label>
+					<X>0</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<ZHeight>10</ZHeight>
+				<LineWidth>1</LineWidth>
+				<LineColor/>
+				<LineMaterial>null</LineMaterial>
+				<LineStyle>SOLID</LineStyle>
+				<Width>280</Width>
+				<Height>12</Height>
+				<Rotation>0.0</Rotation>
+				<FillColor>-12799119</FillColor>
+				<FillColorCode>colorBarra( 3 )</FillColorCode>
+				<FillMaterial>null</FillMaterial>
+				<ArcRadius>6</ArcRadius>
+			</RoundedRectangle>
 		</Presentation>
 	</Group>
 	<Text>
@@ -3429,13 +3429,13 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
+		<VisibleCode>miPuesto().ofrece[ 3 ]</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Repone en " + (int) miPuesto().puntoReposicion[ 3 ] + "  ·  " + textoAgotamiento( 3 ) + ( miPuesto().ropTopeado[ 3 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 3 ] > 0 ? "   ·   faltaron " + miPuesto().faltantes[ 3 ] : "" )]]></TextCode>
+		<TextCode>"Repone en " + (int) miPuesto().puntoReposicion[ 3 ] + "  ·  " + textoAgotamiento( 3 ) + ( miPuesto().ropTopeado[ 3 ] ? "  ·  capacidad corta" : "" ) + ( miPuesto().faltantes[ 3 ] &gt; 0 ? "   ·   faltaron " + miPuesto().faltantes[ 3 ] : "" )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3461,7 +3461,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["No atendidos: " + miPuesto().noAtendidosStock + " sin bebida  ·  " + miPuesto().noAtendidosVoluntarios + " sin voluntario"]]></TextCode>
+		<TextCode>"No atendidos: " + miPuesto().noAtendidosStock + " sin bebida  ·  " + miPuesto().noAtendidosVoluntarios + " sin voluntario"</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
@@ -3487,7 +3487,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Corredores atendidos: " + miPuesto().atendidos]]></TextCode>
+		<TextCode>"Corredores atendidos: " + miPuesto().atendidos</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -3513,7 +3513,7 @@
 		<Rotation>0.0</Rotation>
 		<Color>-10853256</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoReposicion()]]></TextCode>
+		<TextCode>textoReposicion()</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -3562,7 +3562,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS]]></VisibleCode>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>-0.5</Z>
 		<ZHeight>0.5</ZHeight>
@@ -3589,7 +3589,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno != Puesto.ENTORNO_EDIFICIOS]]></VisibleCode>
+		<VisibleCode>miPuesto().entorno != Puesto.ENTORNO_EDIFICIOS</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>-0.5</Z>
 		<ZHeight>0.5</ZHeight>
@@ -3616,7 +3616,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno != Puesto.ENTORNO_PARQUE]]></VisibleCode>
+		<VisibleCode>miPuesto().entorno != Puesto.ENTORNO_PARQUE</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>-0.5</Z>
 		<ZHeight>0.5</ZHeight>
@@ -3643,7 +3643,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>-0.5</Z>
 		<ZHeight>0.5</ZHeight>
@@ -3670,7 +3670,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().cercaDelAgua]]></VisibleCode>
+		<VisibleCode>miPuesto().cercaDelAgua</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>0.2</ZHeight>
@@ -6923,7 +6923,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 0 )]]></VisibleCode>
 		<X>-900</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -6943,6 +6942,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010135</Id>
@@ -6957,7 +6957,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>-900</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -6977,6 +6976,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010136</Id>
@@ -6991,7 +6991,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 0 )]]></VisibleCode>
 		<X>-560</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -7011,6 +7010,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010137</Id>
@@ -7025,7 +7025,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>-560</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -7045,6 +7044,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010138</Id>
@@ -7059,7 +7059,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 0 )]]></VisibleCode>
 		<X>-220</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -7079,6 +7078,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010139</Id>
@@ -7093,7 +7093,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>-220</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -7113,6 +7112,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010140</Id>
@@ -7127,7 +7127,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 0 )]]></VisibleCode>
 		<X>120</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -7147,6 +7146,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010141</Id>
@@ -7161,7 +7161,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>120</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -7181,6 +7180,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010142</Id>
@@ -7195,7 +7195,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 0 )]]></VisibleCode>
 		<X>460</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -7215,6 +7214,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010143</Id>
@@ -7229,7 +7229,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>460</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -7249,6 +7248,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010144</Id>
@@ -7263,7 +7263,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 0 )]]></VisibleCode>
 		<X>800</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -7283,6 +7282,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010145</Id>
@@ -7297,7 +7297,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>800</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -7317,6 +7316,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010146</Id>
@@ -7331,7 +7331,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 0 )]]></VisibleCode>
 		<X>1140</X>
 		<Y>70</Y>
 		<Z>0</Z>
@@ -7351,6 +7350,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 0 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010147</Id>
@@ -7365,7 +7365,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO]]></VisibleCode>
 		<X>1140</X>
 		<Y>700</Y>
 		<Z>0</Z>
@@ -7385,6 +7384,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_EDIFICIOS || miPuesto().entorno == Puesto.ENTORNO_MIXTO</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010148</Id>
@@ -7399,7 +7399,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-970</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7419,6 +7418,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010149</Id>
@@ -7433,7 +7433,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-860</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7453,6 +7452,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010150</Id>
@@ -7467,7 +7467,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-750</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7487,6 +7486,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010151</Id>
@@ -7501,7 +7501,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-640</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7521,6 +7520,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010152</Id>
@@ -7535,7 +7535,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-530</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7555,6 +7554,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010153</Id>
@@ -7569,7 +7569,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-420</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7589,6 +7588,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010154</Id>
@@ -7603,7 +7603,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-310</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7623,6 +7622,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010155</Id>
@@ -7637,7 +7637,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-200</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7657,6 +7656,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010156</Id>
@@ -7671,7 +7671,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-90</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7691,6 +7690,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010157</Id>
@@ -7705,7 +7705,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>20</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7725,6 +7724,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010158</Id>
@@ -7739,7 +7739,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>130</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7759,6 +7758,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010159</Id>
@@ -7773,7 +7773,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>240</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7793,6 +7792,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010160</Id>
@@ -7807,7 +7807,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>350</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7827,6 +7826,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010161</Id>
@@ -7841,7 +7841,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>460</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7861,6 +7860,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010162</Id>
@@ -7875,7 +7875,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>570</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7895,6 +7894,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010163</Id>
@@ -7909,7 +7909,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>680</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7929,6 +7928,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010164</Id>
@@ -7943,7 +7943,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>790</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7963,6 +7962,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010165</Id>
@@ -7977,7 +7977,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>900</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -7997,6 +7996,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010166</Id>
@@ -8011,7 +8011,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>1010</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -8031,6 +8030,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010167</Id>
@@ -8045,7 +8045,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>1120</X>
 		<Y>190</Y>
 		<Z>0</Z>
@@ -8065,6 +8064,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010168</Id>
@@ -8079,7 +8079,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-915</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8099,6 +8098,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010169</Id>
@@ -8113,7 +8113,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-805</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8133,6 +8132,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010170</Id>
@@ -8147,7 +8147,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-695</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8167,6 +8166,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010171</Id>
@@ -8181,7 +8181,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-585</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8201,6 +8200,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010172</Id>
@@ -8215,7 +8215,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-475</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8235,6 +8234,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010173</Id>
@@ -8249,7 +8249,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-365</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8269,6 +8268,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010174</Id>
@@ -8283,7 +8283,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-255</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8303,6 +8302,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010175</Id>
@@ -8317,7 +8317,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>-145</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8337,6 +8336,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010176</Id>
@@ -8351,7 +8351,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>-35</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8371,6 +8370,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010177</Id>
@@ -8385,7 +8385,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>75</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8405,6 +8404,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010178</Id>
@@ -8419,7 +8419,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>185</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8439,6 +8438,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010179</Id>
@@ -8453,7 +8453,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>295</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8473,6 +8472,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010180</Id>
@@ -8487,7 +8487,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>405</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8507,6 +8506,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010181</Id>
@@ -8521,7 +8521,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>515</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8541,6 +8540,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010182</Id>
@@ -8555,7 +8555,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>625</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8575,6 +8574,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010183</Id>
@@ -8589,7 +8589,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>735</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8609,6 +8608,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010184</Id>
@@ -8623,7 +8623,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>845</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8643,6 +8642,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010185</Id>
@@ -8657,7 +8657,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>955</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8677,6 +8676,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010186</Id>
@@ -8691,7 +8691,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 0 == 1 )]]></VisibleCode>
 		<X>1065</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8711,6 +8710,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 0 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010187</Id>
@@ -8725,7 +8725,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO && 1 == 1 )]]></VisibleCode>
 		<X>1175</X>
 		<Y>125</Y>
 		<Z>0</Z>
@@ -8745,6 +8744,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE || ( miPuesto().entorno == Puesto.ENTORNO_MIXTO &amp;&amp; 1 == 1 )</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010188</Id>
@@ -8759,7 +8759,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-970</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8779,6 +8778,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010189</Id>
@@ -8793,7 +8793,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-860</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8813,6 +8812,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010190</Id>
@@ -8827,7 +8827,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-750</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8847,6 +8846,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010191</Id>
@@ -8861,7 +8861,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-640</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8881,6 +8880,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010192</Id>
@@ -8895,7 +8895,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-530</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8915,6 +8914,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010193</Id>
@@ -8929,7 +8929,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-420</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8949,6 +8948,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010194</Id>
@@ -8963,7 +8963,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-310</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -8983,6 +8982,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010195</Id>
@@ -8997,7 +8997,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-200</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9017,6 +9016,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010196</Id>
@@ -9031,7 +9031,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-90</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9051,6 +9050,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010197</Id>
@@ -9065,7 +9065,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>20</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9085,6 +9084,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010198</Id>
@@ -9099,7 +9099,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>130</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9119,6 +9118,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010199</Id>
@@ -9133,7 +9133,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>240</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9153,6 +9152,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010200</Id>
@@ -9167,7 +9167,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>350</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9187,6 +9186,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010201</Id>
@@ -9201,7 +9201,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>460</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9221,6 +9220,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010202</Id>
@@ -9235,7 +9235,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>570</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9255,6 +9254,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010203</Id>
@@ -9269,7 +9269,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>680</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9289,6 +9288,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010204</Id>
@@ -9303,7 +9303,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>790</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9323,6 +9322,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010205</Id>
@@ -9337,7 +9337,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>900</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9357,6 +9356,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010206</Id>
@@ -9371,7 +9371,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>1010</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9391,6 +9390,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010207</Id>
@@ -9405,7 +9405,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>1120</X>
 		<Y>600</Y>
 		<Z>0</Z>
@@ -9425,6 +9424,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010208</Id>
@@ -9439,7 +9439,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-915</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9459,6 +9458,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010209</Id>
@@ -9473,7 +9473,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-805</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9493,6 +9492,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010210</Id>
@@ -9507,7 +9507,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-695</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9527,6 +9526,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010211</Id>
@@ -9541,7 +9541,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-585</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9561,6 +9560,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010212</Id>
@@ -9575,7 +9575,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-475</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9595,6 +9594,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010213</Id>
@@ -9609,7 +9609,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-365</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9629,6 +9628,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010214</Id>
@@ -9643,7 +9643,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-255</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9663,6 +9662,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010215</Id>
@@ -9677,7 +9677,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-145</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9697,6 +9696,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010216</Id>
@@ -9711,7 +9711,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>-35</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9731,6 +9730,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010217</Id>
@@ -9745,7 +9745,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>75</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9765,6 +9764,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010218</Id>
@@ -9779,7 +9779,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>185</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9799,6 +9798,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010219</Id>
@@ -9813,7 +9813,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>295</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9833,6 +9832,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010220</Id>
@@ -9847,7 +9847,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>405</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9867,6 +9866,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010221</Id>
@@ -9881,7 +9881,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>515</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9901,6 +9900,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010222</Id>
@@ -9915,7 +9915,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>625</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9935,6 +9934,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010223</Id>
@@ -9949,7 +9949,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>735</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -9969,6 +9968,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010224</Id>
@@ -9983,7 +9983,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>845</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -10003,6 +10002,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010225</Id>
@@ -10017,7 +10017,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>955</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -10037,6 +10036,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010226</Id>
@@ -10051,7 +10051,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>1065</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -10071,6 +10070,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010227</Id>
@@ -10085,7 +10085,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno == Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>1175</X>
 		<Y>670</Y>
 		<Z>0</Z>
@@ -10105,6 +10104,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno == Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100010228</Id>
@@ -10185,7 +10185,6 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().entorno != Puesto.ENTORNO_PARQUE]]></VisibleCode>
 		<X>520</X>
 		<Y>500</Y>
 		<Z>1.5</Z>
@@ -10205,6 +10204,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
+		<VisibleCode>miPuesto().entorno != Puesto.ENTORNO_PARQUE</VisibleCode>
 	</Figure3D>
 	<Camera3D>
 		<Id>1790100010264</Id>
@@ -10217,8 +10217,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 			<Y>-10</Y>
 		</Label>
 		<ShowLabel>false</ShowLabel>
-		<RotationX>10</RotationX>
-		<RotationZ>0</RotationZ>
+		<RotationX>10.0</RotationX>
+		<RotationZ>0.0</RotationZ>
 	</Camera3D>
 	<Camera3D>
 		<Id>1790100010265</Id>
@@ -10231,8 +10231,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 			<Y>-10</Y>
 		</Label>
 		<ShowLabel>false</ShowLabel>
-		<RotationX>45</RotationX>
-		<RotationZ>-90</RotationZ>
+		<RotationX>45.0</RotationX>
+		<RotationZ>-90.0</RotationZ>
 	</Camera3D>
 	<Text>
 		<Id>1790100010266</Id>
@@ -10272,7 +10272,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 0 );]]></OnClickCode>
+		<OnClickCode>verCamara( 0 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10284,7 +10284,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>28</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[camaraActual == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>camaraActual == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -10301,7 +10301,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 0 );]]></OnClickCode>
+		<OnClickCode>verCamara( 0 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10327,7 +10327,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 1 );]]></OnClickCode>
+		<OnClickCode>verCamara( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10339,7 +10339,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>28</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[camaraActual == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>camaraActual == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -10356,7 +10356,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 1 );]]></OnClickCode>
+		<OnClickCode>verCamara( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10382,7 +10382,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 2 );]]></OnClickCode>
+		<OnClickCode>verCamara( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10394,7 +10394,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>28</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[camaraActual == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>camaraActual == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -10411,7 +10411,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 2 );]]></OnClickCode>
+		<OnClickCode>verCamara( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10437,7 +10437,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 3 );]]></OnClickCode>
+		<OnClickCode>verCamara( 3 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10449,7 +10449,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>28</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[camaraActual == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>camaraActual == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>6</ArcRadius>
 	</RoundedRectangle>
@@ -10466,7 +10466,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[verCamara( 3 );]]></OnClickCode>
+		<OnClickCode>verCamara( 3 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10544,8 +10544,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 0 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 0 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 0 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10557,7 +10557,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[insumoSel == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>insumoSel == 0 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -10574,8 +10574,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 0 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 0 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 0 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 0 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10601,8 +10601,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 1 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 1 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10614,7 +10614,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[insumoSel == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>insumoSel == 1 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -10631,8 +10631,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 1 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 1 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 1 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10658,8 +10658,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 2 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 2 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10671,7 +10671,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[insumoSel == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>insumoSel == 2 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -10688,8 +10688,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 2 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 2 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 2 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10715,8 +10715,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 3 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 3 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 3 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10728,7 +10728,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[insumoSel == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>insumoSel == 3 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -10745,8 +10745,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<VisibleCode><![CDATA[miPuesto().ofrece[ 3 ]]]></VisibleCode>
-		<OnClickCode><![CDATA[elegirInsumo( 3 );]]></OnClickCode>
+		<VisibleCode>miPuesto().ofrece[ 3 ]</VisibleCode>
+		<OnClickCode>elegirInsumo( 3 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10802,7 +10802,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Stock máximo: " + (int) miPuesto().capacidad[ insumoSel ]]]></TextCode>
+		<TextCode>"Stock máximo: " + (int) miPuesto().capacidad[ insumoSel ]</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -10811,6 +10811,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
 		<Id>1790100011030</Id>
 		<Name><![CDATA[sliderMaximo]]></Name>
 		<X>36</X>
@@ -10822,14 +10823,14 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<BasicProperties Width="185" Height="30">
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[miPuesto().ajustarCapacidad( insumoSel, value );]]></ActionCode>
+			<ActionCode>miPuesto().ajustarCapacidad( insumoSel, value );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[3000]]></DefaultValueCode>
+			<DefaultValueCode>3000</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
 			<MinValue>100</MinValue>
 			<MaxValue>10000</MaxValue>
@@ -10855,7 +10856,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Stock mínimo: " + (int) miPuesto().puntoReposicion[ insumoSel ] + ( miPuesto().minimoManual[ insumoSel ] < 0 ? " (auto)" : "" )]]></TextCode>
+		<TextCode>"Stock mínimo: " + (int) miPuesto().puntoReposicion[ insumoSel ] + ( miPuesto().minimoManual[ insumoSel ] &lt; 0 ? " (auto)" : "" )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -10876,7 +10877,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[miPuesto().minimoAutomatico( insumoSel ); sincronizarControles();]]></OnClickCode>
+		<OnClickCode>miPuesto().minimoAutomatico( insumoSel ); sincronizarControles();</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -10904,7 +10905,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[miPuesto().minimoAutomatico( insumoSel ); sincronizarControles();]]></OnClickCode>
+		<OnClickCode>miPuesto().minimoAutomatico( insumoSel ); sincronizarControles();</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -10918,6 +10919,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Alignment>CENTER</Alignment>
 	</Text>
 	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
 		<Id>1790100011034</Id>
 		<Name><![CDATA[sliderMinimo]]></Name>
 		<X>236</X>
@@ -10929,14 +10931,14 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<BasicProperties Width="185" Height="30">
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[miPuesto().ajustarMinimo( insumoSel, value );]]></ActionCode>
+			<ActionCode>miPuesto().ajustarMinimo( insumoSel, value );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[1000]]></DefaultValueCode>
+			<DefaultValueCode>1000</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
 			<MinValue>0</MinValue>
 			<MaxValue>10000</MaxValue>
@@ -10962,7 +10964,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Camión: " + (int) Math.round( miPuesto().demoraCamionEfectiva() ) + " min" + ( miPuesto().demoraCamionMin < 0 ? " (auto)" : "" )]]></TextCode>
+		<TextCode>"Camión: " + (int) Math.round( miPuesto().demoraCamionEfectiva() ) + " min" + ( miPuesto().demoraCamionMin &lt; 0 ? " (auto)" : "" )</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -10983,7 +10985,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[miPuesto().demoraAutomatica(); sincronizarControles();]]></OnClickCode>
+		<OnClickCode>miPuesto().demoraAutomatica(); sincronizarControles();</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11011,7 +11013,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[miPuesto().demoraAutomatica(); sincronizarControles();]]></OnClickCode>
+		<OnClickCode>miPuesto().demoraAutomatica(); sincronizarControles();</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11025,6 +11027,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Alignment>CENTER</Alignment>
 	</Text>
 	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
 		<Id>1790100011038</Id>
 		<Name><![CDATA[sliderDemora]]></Name>
 		<X>436</X>
@@ -11036,14 +11039,14 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<BasicProperties Width="185" Height="30">
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[miPuesto().ajustarDemoraCamion( value );]]></ActionCode>
+			<ActionCode>miPuesto().ajustarDemoraCamion( value );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[20]]></DefaultValueCode>
+			<DefaultValueCode>20</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
 			<MinValue>1</MinValue>
 			<MaxValue>120</MaxValue>
@@ -11069,7 +11072,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Voluntarios: " + miPuesto().voluntarios]]></TextCode>
+		<TextCode>"Voluntarios: " + miPuesto().voluntarios</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -11078,6 +11081,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
 		<Id>1790100011040</Id>
 		<Name><![CDATA[sliderVoluntarios]]></Name>
 		<X>636</X>
@@ -11089,14 +11093,14 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<BasicProperties Width="185" Height="30">
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[main.cambiarVoluntarios( getIndex(), (int) value );]]></ActionCode>
+			<ActionCode>main.cambiarVoluntarios( getIndex(), (int) value );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
+			<DefaultValueCode>4</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
 			<MinValue>1</MinValue>
 			<MaxValue>15</MaxValue>
@@ -11122,7 +11126,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Rotation>0.0</Rotation>
 		<Color>-4959462</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA[textoEstadoAjustes()]]></TextCode>
+		<TextCode>textoEstadoAjustes()</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -11148,7 +11152,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
 		<Text><![CDATA[-]]></Text>
-		<TextCode><![CDATA["Temperatura: " + (int) Math.round( main.temperaturaC ) + " °C (toda la carrera)"]]></TextCode>
+		<TextCode>"Temperatura: " + (int) Math.round( main.temperaturaC ) + " °C (toda la carrera)"</TextCode>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -11157,6 +11161,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Control Type="Slider">
+		<EmbeddedIcon>false</EmbeddedIcon>
 		<Id>1790100012276</Id>
 		<Name><![CDATA[sliderTemperatura]]></Name>
 		<X>580</X>
@@ -11168,14 +11173,14 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PublicFlag>true</PublicFlag>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<BasicProperties Width="240" Height="30">
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[main.ajustarTemperatura( value );]]></ActionCode>
+			<ActionCode>main.ajustarTemperatura( value );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
-			<DefaultValueCode><![CDATA[20]]></DefaultValueCode>
+			<DefaultValueCode>20</DefaultValueCode>
 			<Orientation>HORIZONTAL</Orientation>
 			<MinValue>0</MinValue>
 			<MaxValue>40</MaxValue>
@@ -11221,7 +11226,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 1 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11233,7 +11238,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[Math.abs( velocidadActual() - 1 ) < 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>Math.abs( velocidadActual() - 1 ) &lt; 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -11250,7 +11255,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 1 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 1 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11276,7 +11281,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 2 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11288,7 +11293,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[Math.abs( velocidadActual() - 2 ) < 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>Math.abs( velocidadActual() - 2 ) &lt; 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -11305,7 +11310,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 2 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 2 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11331,7 +11336,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 5 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 5 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11343,7 +11348,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[Math.abs( velocidadActual() - 5 ) < 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>Math.abs( velocidadActual() - 5 ) &lt; 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -11360,7 +11365,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 5 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 5 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11386,7 +11391,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 15 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 15 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11398,7 +11403,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[Math.abs( velocidadActual() - 15 ) < 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>Math.abs( velocidadActual() - 15 ) &lt; 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -11415,7 +11420,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 15 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 15 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11441,7 +11446,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 60 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 60 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
@@ -11453,7 +11458,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<Height>22</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-13351573</FillColor>
-		<FillColorCode><![CDATA[Math.abs( velocidadActual() - 60 ) < 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB]]></FillColorCode>
+		<FillColorCode>Math.abs( velocidadActual() - 60 ) &lt; 0.01 ? Main.COLOR_TAB_ACTIVA : Main.COLOR_TAB</FillColorCode>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>5</ArcRadius>
 	</RoundedRectangle>
@@ -11470,7 +11475,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<OnClickCode><![CDATA[main.aplicarVelocidad3D( 60 );]]></OnClickCode>
+		<OnClickCode>main.aplicarVelocidad3D( 60 );</OnClickCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
@@ -11559,7 +11564,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 0, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 0, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013064</Id>
@@ -11641,7 +11646,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 1, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 1, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013065</Id>
@@ -11719,13 +11724,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 2, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 2, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013066</Id>
 		<Name><![CDATA[publico3]]></Name>
 		<X>-415.8</X>
-		<Y>291.0</Y>
+		<Y>291</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -11735,7 +11740,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>-415.8</X>
-		<Y>291.0</Y>
+		<Y>291</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -11797,12 +11802,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 3, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 3, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013067</Id>
 		<Name><![CDATA[publico4]]></Name>
-		<X>-408.0</X>
+		<X>-408</X>
 		<Y>288.9</Y>
 		<Label>
 			<X>0</X>
@@ -11812,7 +11817,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>-408.0</X>
+		<X>-408</X>
 		<Y>288.9</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -11875,7 +11880,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 4, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 4, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013068</Id>
@@ -11953,7 +11958,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 5, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 5, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013069</Id>
@@ -12035,7 +12040,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 6, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 6, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013070</Id>
@@ -12117,7 +12122,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 7, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 7, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013071</Id>
@@ -12195,13 +12200,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 8, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 8, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013072</Id>
 		<Name><![CDATA[publico9]]></Name>
 		<X>-250.9</X>
-		<Y>281.0</Y>
+		<Y>281</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -12211,7 +12216,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>-250.9</X>
-		<Y>281.0</Y>
+		<Y>281</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -12273,7 +12278,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 9, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 9, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013073</Id>
@@ -12351,7 +12356,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 10, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 10, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013074</Id>
@@ -12429,7 +12434,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 11, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 11, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013075</Id>
@@ -12507,7 +12512,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 12, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 12, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013076</Id>
@@ -12585,7 +12590,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 13, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 13, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013077</Id>
@@ -12663,12 +12668,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 14, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 14, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013078</Id>
 		<Name><![CDATA[publico15]]></Name>
-		<X>-143.0</X>
+		<X>-143</X>
 		<Y>288.3</Y>
 		<Label>
 			<X>0</X>
@@ -12678,7 +12683,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>-143.0</X>
+		<X>-143</X>
 		<Y>288.3</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -12741,7 +12746,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 15, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 15, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013079</Id>
@@ -12819,7 +12824,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 16, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 16, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013080</Id>
@@ -12901,7 +12906,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 17, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 17, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013081</Id>
@@ -12975,13 +12980,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 18, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 18, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013082</Id>
 		<Name><![CDATA[publico19]]></Name>
 		<X>1.4</X>
-		<Y>292.0</Y>
+		<Y>292</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -12991,7 +12996,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>1.4</X>
-		<Y>292.0</Y>
+		<Y>292</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -13053,7 +13058,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 19, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 19, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013083</Id>
@@ -13122,7 +13127,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 20, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 20, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013084</Id>
@@ -13200,7 +13205,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 21, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 21, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013085</Id>
@@ -13278,7 +13283,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 22, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 22, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013086</Id>
@@ -13356,7 +13361,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 23, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 23, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013087</Id>
@@ -13434,7 +13439,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 24, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 24, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013088</Id>
@@ -13512,13 +13517,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 25, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 25, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013089</Id>
 		<Name><![CDATA[publico26]]></Name>
 		<X>269.3</X>
-		<Y>290.0</Y>
+		<Y>290</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -13528,7 +13533,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>269.3</X>
-		<Y>290.0</Y>
+		<Y>290</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -13594,7 +13599,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 26, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 26, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013090</Id>
@@ -13672,7 +13677,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 27, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 27, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013091</Id>
@@ -13741,7 +13746,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 28, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 28, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013092</Id>
@@ -13819,7 +13824,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 29, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 29, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013093</Id>
@@ -13897,12 +13902,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 30, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 30, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013094</Id>
 		<Name><![CDATA[publico31]]></Name>
-		<X>379.0</X>
+		<X>379</X>
 		<Y>292.1</Y>
 		<Label>
 			<X>0</X>
@@ -13912,7 +13917,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>379.0</X>
+		<X>379</X>
 		<Y>292.1</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -13975,12 +13980,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 31, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 31, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013095</Id>
 		<Name><![CDATA[publico32]]></Name>
-		<X>450.0</X>
+		<X>450</X>
 		<Y>291.2</Y>
 		<Label>
 			<X>0</X>
@@ -13990,7 +13995,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>450.0</X>
+		<X>450</X>
 		<Y>291.2</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -14053,7 +14058,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 32, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 32, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013096</Id>
@@ -14131,13 +14136,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 33, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 33, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013097</Id>
 		<Name><![CDATA[publico34]]></Name>
 		<X>531.6</X>
-		<Y>289.0</Y>
+		<Y>289</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -14147,7 +14152,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>531.6</X>
-		<Y>289.0</Y>
+		<Y>289</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -14213,7 +14218,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 34, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 34, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013098</Id>
@@ -14295,12 +14300,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 35, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 35, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013099</Id>
 		<Name><![CDATA[publico36]]></Name>
-		<X>587.0</X>
+		<X>587</X>
 		<Y>289.2</Y>
 		<Label>
 			<X>0</X>
@@ -14310,7 +14315,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>587.0</X>
+		<X>587</X>
 		<Y>289.2</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -14373,7 +14378,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 36, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 36, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013100</Id>
@@ -14451,7 +14456,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 37, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 37, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013101</Id>
@@ -14529,7 +14534,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 38, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 38, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013102</Id>
@@ -14607,7 +14612,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 39, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 39, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013103</Id>
@@ -14676,7 +14681,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 40, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 40, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013104</Id>
@@ -14754,7 +14759,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 41, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 41, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013105</Id>
@@ -14823,7 +14828,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 42, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 42, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013106</Id>
@@ -14901,7 +14906,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 43, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 43, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013107</Id>
@@ -14979,12 +14984,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 44, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 44, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013108</Id>
 		<Name><![CDATA[publico45]]></Name>
-		<X>-427.0</X>
+		<X>-427</X>
 		<Y>446.5</Y>
 		<Label>
 			<X>0</X>
@@ -14994,7 +14999,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>-427.0</X>
+		<X>-427</X>
 		<Y>446.5</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -15057,7 +15062,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 45, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 45, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013109</Id>
@@ -15135,12 +15140,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 46, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 46, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013110</Id>
 		<Name><![CDATA[publico47]]></Name>
-		<X>-414.0</X>
+		<X>-414</X>
 		<Y>446.9</Y>
 		<Label>
 			<X>0</X>
@@ -15150,7 +15155,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>-414.0</X>
+		<X>-414</X>
 		<Y>446.9</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -15213,7 +15218,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 47, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 47, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013111</Id>
@@ -15282,7 +15287,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 48, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 48, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013112</Id>
@@ -15360,7 +15365,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 49, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 49, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013113</Id>
@@ -15442,13 +15447,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 50, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 50, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013114</Id>
 		<Name><![CDATA[publico51]]></Name>
-		<X>-323.0</X>
-		<Y>456.0</Y>
+		<X>-323</X>
+		<Y>456</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -15457,8 +15462,8 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>-323.0</X>
-		<Y>456.0</Y>
+		<X>-323</X>
+		<Y>456</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -15511,7 +15516,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 51, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 51, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013115</Id>
@@ -15593,7 +15598,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 52, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 52, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013116</Id>
@@ -15671,7 +15676,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 53, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 53, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013117</Id>
@@ -15749,12 +15754,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 54, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 54, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013118</Id>
 		<Name><![CDATA[publico55]]></Name>
-		<X>-216.0</X>
+		<X>-216</X>
 		<Y>445.2</Y>
 		<Label>
 			<X>0</X>
@@ -15764,7 +15769,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>-216.0</X>
+		<X>-216</X>
 		<Y>445.2</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -15827,13 +15832,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 55, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 55, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013119</Id>
 		<Name><![CDATA[publico56]]></Name>
 		<X>-128.7</X>
-		<Y>451.0</Y>
+		<Y>451</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -15843,7 +15848,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>-128.7</X>
-		<Y>451.0</Y>
+		<Y>451</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -15905,7 +15910,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 56, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 56, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013120</Id>
@@ -15983,7 +15988,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 57, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 57, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013121</Id>
@@ -16052,7 +16057,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 58, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 58, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013122</Id>
@@ -16134,7 +16139,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 59, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 59, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013123</Id>
@@ -16208,7 +16213,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 60, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 60, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013124</Id>
@@ -16286,7 +16291,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 61, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 61, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013125</Id>
@@ -16364,7 +16369,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 62, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 62, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013126</Id>
@@ -16442,12 +16447,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 63, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 63, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013127</Id>
 		<Name><![CDATA[publico64]]></Name>
-		<X>121.0</X>
+		<X>121</X>
 		<Y>446.8</Y>
 		<Label>
 			<X>0</X>
@@ -16457,7 +16462,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>121.0</X>
+		<X>121</X>
 		<Y>446.8</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -16520,7 +16525,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 64, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 64, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013128</Id>
@@ -16602,7 +16607,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 65, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 65, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013129</Id>
@@ -16680,7 +16685,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 66, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 66, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013130</Id>
@@ -16758,7 +16763,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 67, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 67, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013131</Id>
@@ -16827,13 +16832,13 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 68, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 68, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013132</Id>
 		<Name><![CDATA[publico69]]></Name>
 		<X>441.7</X>
-		<Y>446.0</Y>
+		<Y>446</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -16843,7 +16848,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
 		<X>441.7</X>
-		<Y>446.0</Y>
+		<Y>446</Y>
 		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
@@ -16905,12 +16910,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 69, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 69, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013133</Id>
 		<Name><![CDATA[publico70]]></Name>
-		<X>449.0</X>
+		<X>449</X>
 		<Y>449.9</Y>
 		<Label>
 			<X>0</X>
@@ -16920,7 +16925,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>449.0</X>
+		<X>449</X>
 		<Y>449.9</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -16983,12 +16988,12 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 70, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 70, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013134</Id>
 		<Name><![CDATA[publico71]]></Name>
-		<X>457.0</X>
+		<X>457</X>
 		<Y>448.7</Y>
 		<Label>
 			<X>0</X>
@@ -16998,7 +17003,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_3D</DrawMode>
-		<X>457.0</X>
+		<X>457</X>
 		<Y>448.7</Y>
 		<Z>1.5</Z>
 		<Label>
@@ -17061,7 +17066,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 71, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 71, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013135</Id>
@@ -17139,7 +17144,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 72, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 72, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013136</Id>
@@ -17217,7 +17222,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 73, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 73, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013137</Id>
@@ -17299,7 +17304,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 74, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 74, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013138</Id>
@@ -17368,7 +17373,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 75, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 75, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013139</Id>
@@ -17446,7 +17451,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 76, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 76, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013140</Id>
@@ -17524,7 +17529,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 77, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 77, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013141</Id>
@@ -17602,7 +17607,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 78, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 78, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013142</Id>
@@ -17671,7 +17676,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 79, true )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 79, true )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013143</Id>
@@ -17753,7 +17758,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 80, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 80, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<Figure3D>
 		<Id>1790100013144</Id>
@@ -17831,7 +17836,7 @@ Globo rojo: sin bebida · naranja: sin voluntario.]]></Text>
 		<ApplyShading>true</ApplyShading>
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
-		<SelectedAnimationPoseCode><![CDATA[poseEspectador( 81, false )]]></SelectedAnimationPoseCode>
+		<SelectedAnimationPoseCode>poseEspectador( 81, false )</SelectedAnimationPoseCode>
 	</Figure3D>
 	<RoundedRectangle>
 		<Id>1790100014040</Id>
