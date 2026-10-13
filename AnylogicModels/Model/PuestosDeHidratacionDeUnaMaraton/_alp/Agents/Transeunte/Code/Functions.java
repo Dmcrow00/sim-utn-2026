@@ -6,10 +6,10 @@ modelo = uniform_discr( 0, 3 );
 fasePaso = uniform( 0, 4 );
 Shape3DObject fig = modelo == 0 ? figura0 : modelo == 1 ? figura1 : modelo == 2 ? figura2 : figura3;
 String arriba = modelo <= 1 ? "tshirt" : modelo == 2 ? "hoodie" : "shirt";
-fig.setColor( arriba, Main.ROPA[ uniform_discr( 0, Main.ROPA.length - 1 ) ] );
-fig.setColor( "pants", Main.PANTALONES[ uniform_discr( 0, Main.PANTALONES.length - 1 ) ] );
-fig.setColor( "hair", Main.PELOS[ uniform_discr( 0, Main.PELOS.length - 1 ) ] );
-fig.setColor( "body", Main.PIELES[ uniform_discr( 0, Main.PIELES.length - 1 ) ] );
+fig.setColor( arriba, PuestoDetalle3D.ROPA[ uniform_discr( 0, PuestoDetalle3D.ROPA.length - 1 ) ] );
+fig.setColor( "pants", PuestoDetalle3D.PANTALONES[ uniform_discr( 0, PuestoDetalle3D.PANTALONES.length - 1 ) ] );
+fig.setColor( "hair", PuestoDetalle3D.PELOS[ uniform_discr( 0, PuestoDetalle3D.PELOS.length - 1 ) ] );
+fig.setColor( "body", PuestoDetalle3D.PIELES[ uniform_discr( 0, PuestoDetalle3D.PIELES.length - 1 ) ] );
 nuevoRecorrido( true );
 /*ALCODEEND*/}
 

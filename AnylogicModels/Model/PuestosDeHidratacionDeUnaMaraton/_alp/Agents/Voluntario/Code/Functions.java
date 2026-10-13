@@ -70,8 +70,8 @@ void vestir()
 {/*ALCODESTART::1790100013027*/
 // Todos con la remera de voluntario; piel y pelo cambian de uno a otro.
 Shape3DObject fig = indice % 2 == 0 ? figuraVoluntaria : figuraVoluntario;
-fig.setColor( "body", Main.PIELES[ uniform_discr( 0, Main.PIELES.length - 1 ) ] );
-fig.setColor( "hair", Main.PELOS[ uniform_discr( 0, Main.PELOS.length - 1 ) ] );
+fig.setColor( "body", PuestoDetalle3D.PIELES[ uniform_discr( 0, PuestoDetalle3D.PIELES.length - 1 ) ] );
+fig.setColor( "hair", PuestoDetalle3D.PELOS[ uniform_discr( 0, PuestoDetalle3D.PELOS.length - 1 ) ] );
 fasePaso = uniform( 0, 4 );
 /*ALCODEEND*/}
 

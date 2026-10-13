@@ -26,9 +26,9 @@ Shape3DObject fig = mujer ? figuraCorredora : figuraCorredor;
 if ( corredor != null ) {
 	fig.setColor( "shirt", corredor.colorCategoria() );
 }
-fig.setColor( "body", Main.PIELES[ uniform_discr( 0, Main.PIELES.length - 1 ) ] );
-fig.setColor( "hair", Main.PELOS[ uniform_discr( 0, Main.PELOS.length - 1 ) ] );
-fig.setColor( "shorts", Main.SHORTS[ uniform_discr( 0, Main.SHORTS.length - 1 ) ] );
-fig.setColor( "shoes", Main.ZAPATILLAS[ uniform_discr( 0, Main.ZAPATILLAS.length - 1 ) ] );
+fig.setColor( "body", PuestoDetalle3D.PIELES[ uniform_discr( 0, PuestoDetalle3D.PIELES.length - 1 ) ] );
+fig.setColor( "hair", PuestoDetalle3D.PELOS[ uniform_discr( 0, PuestoDetalle3D.PELOS.length - 1 ) ] );
+fig.setColor( "shorts", PuestoDetalle3D.SHORTS[ uniform_discr( 0, PuestoDetalle3D.SHORTS.length - 1 ) ] );
+fig.setColor( "shoes", PuestoDetalle3D.ZAPATILLAS[ uniform_discr( 0, PuestoDetalle3D.ZAPATILLAS.length - 1 ) ] );
 /*ALCODEEND*/}
 

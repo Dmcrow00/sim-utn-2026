@@ -42,7 +42,7 @@ lonEstacionamiento = lonEst[ i ];
 // Cada insumo que ofrece el puesto tiene su propio stock y capacidad. Los
 // que no ofrece quedan en 0.
 for ( int k = 0; k < 4; k++ ) {
-	capacidad[ k ] = ofrece[ k ] ? main.capacidadInicial( k ) : 0;
+	capacidad[ k ] = ofrece[ k ] ? capacidadInicial( k ) : 0;
 	stock[ k ] = capacidad[ k ];
 }
 jumpTo( main.puntoPuesto( i ) );
@@ -73,7 +73,6 @@ if ( consumir( primera ) ) {
 } else if ( ofrece[ AGUA ] || ofrece[ ISOTONICA ] ) {
 	// Paro pero no habia bebida: corredor no atendido por falta de stock.
 	noAtendidosStock++;
-	main.noAtendidosStock++;
 	c.motivoNoAtendido = 1;
 }
 
@@ -109,7 +108,6 @@ if ( !ofrece[ insumo ] ) {
 }
 if ( stock[ insumo ] < 1 ) {
 	faltantes[ insumo ]++;
-	main.faltantesTotales++;
 	return false;
 }
 stock[ insumo ]--;
@@ -423,5 +421,18 @@ for ( int k = 0; k < 4; k++ ) {
 	t += faltantes[ k ];
 }
 return t;
+/*ALCODEEND*/}
+
+double capacidadInicial(int insumo)
+{/*ALCODESTART::1790100014027*/
+// Capacidad con la que arranca cada insumo. La fijan los parametros del
+// experimento (en Main) y es la misma para todos los puestos.
+switch ( insumo ) {
+	case AGUA: return main.capacidadAgua;
+	case ISOTONICA: return main.capacidadIsotonica;
+	case FRUTA: return main.capacidadFruta;
+	case GEL: return main.capacidadGel;
+}
+return 0;
 /*ALCODEEND*/}
 

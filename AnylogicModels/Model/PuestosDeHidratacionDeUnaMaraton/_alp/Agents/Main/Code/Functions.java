@@ -1,8 +1,3 @@
-void navigate(ViewArea destino)
-{/*ALCODESTART::1788224740786*/
-destino.navigateTo();
-/*ALCODEEND*/}
-
 boolean decidirHidratacion(Corredor c,int nPuesto)
 {/*ALCODESTART::1788900000012*/
 // Decide si el corredor frena en el puesto o sigue de largo.
@@ -46,7 +41,6 @@ if ( c.vaAHidratarse && hayDemasiadaCola( nPuesto ) ) {
 	c.vaAHidratarse = false;
 	c.motivoNoAtendido = 2;
 	p.noAtendidosVoluntarios++;
-	noAtendidosVoluntarios++;
 }
 
 if ( c.vaAHidratarse ) {
@@ -106,17 +100,6 @@ switch ( i ) {
 return largada;
 /*ALCODEEND*/}
 
-double capacidadInicial(int insumo)
-{/*ALCODESTART::1790100000163*/
-switch ( insumo ) {
-	case Puesto.AGUA: return capacidadAgua;
-	case Puesto.ISOTONICA: return capacidadIsotonica;
-	case Puesto.FRUTA: return capacidadFruta;
-	case Puesto.GEL: return capacidadGel;
-}
-return 0;
-/*ALCODEEND*/}
-
 void despacharCamion(Puesto p)
 {/*ALCODESTART::1790100000164*/
 // El puesto llego a su punto de reposicion: sale un camion del deposito.
@@ -150,29 +133,6 @@ if ( m == 60 ) {
 	m = 0;
 }
 return h + "h" + ( m < 10 ? "0" : "" ) + m;
-/*ALCODEEND*/}
-
-String resumenCategorias()
-{/*ALCODESTART::1790100000168*/
-String s = "";
-for ( int i = 0; i < 4; i++ ) {
-	s += Corredor.NOMBRES_CATEGORIA[ i ] + ": " + llegadosPorCategoria[ i ] + " llegados";
-	if ( llegadosPorCategoria[ i ] > 0 ) {
-		s += " - tiempo promedio " + formatoHoras( sumaMinutosPorCategoria[ i ] / llegadosPorCategoria[ i ] );
-	}
-	s += "\n";
-}
-return s;
-/*ALCODEEND*/}
-
-String resumenPuestos()
-{/*ALCODESTART::1790100000169*/
-String s = "";
-for ( Puesto p : puesto ) {
-	s += p.resumen() + "\n";
-}
-s += "\nFaltantes totales: " + faltantesTotales + "    Camiones despachados: " + camionesDespachados;
-return s;
 /*ALCODEEND*/}
 
 ResourcePool poolDePuesto(int nPuesto)

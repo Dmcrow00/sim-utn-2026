@@ -13598,8 +13598,8 @@ registrarLargada( agent );]]></Code>
 	<EmbeddedObject>
 		<Id>1788898348121</Id>
 		<Name><![CDATA[puestosDetalle3D]]></Name>
-		<X>-520</X>
-		<Y>55</Y>
+		<X>-942</X>
+		<Y>472</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -13646,8 +13646,8 @@ registrarLargada( agent );]]></Code>
 	<EmbeddedObject>
 		<Id>1789509282523</Id>
 		<Name><![CDATA[puesto]]></Name>
-		<X>-520</X>
-		<Y>85</Y>
+		<X>-942</X>
+		<Y>447</Y>
 		<Label>
 			<X>20</X>
 			<Y>0</Y>
@@ -13849,8 +13849,8 @@ registrarLargada( agent );]]></Code>
 	<EmbeddedObject>
 		<Id>1790100000175</Id>
 		<Name><![CDATA[camiones]]></Name>
-		<X>-520</X>
-		<Y>115</Y>
+		<X>-942</X>
+		<Y>497</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -13898,8 +13898,8 @@ registrarLargada( agent );]]></Code>
 	<EmbeddedObject>
 		<Id>1790100000177</Id>
 		<Name><![CDATA[operarios]]></Name>
-		<X>-520</X>
-		<Y>145</Y>
+		<X>-942</X>
+		<Y>522</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
