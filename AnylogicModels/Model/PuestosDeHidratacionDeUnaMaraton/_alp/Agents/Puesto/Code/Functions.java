@@ -22,6 +22,20 @@ ofrece[ GEL ] = ofertas[ i ].contains( "G" );
 // Voluntarios trabajando en este puesto. Arranca con el valor general y se
 // puede cambiar en la corrida con main.cambiarVoluntarios( i, cantidad ).
 voluntarios = main.voluntariosPorPuesto;
+// Contexto real de cada puesto, sacado de OpenStreetMap (Overpass y
+// Nominatim) con las coordenadas del puesto: calle del recorrido, barrio,
+// carriles, si alrededor hay edificios o parque (edificios y parques en
+// 120 m) y si hay agua cerca. Lo usa la vista 3D para decorar la escena.
+String[] calles = { "Av. Del Libertador", "Av. Int. Cantilo", "Av. Pte. Figueroa Alcorta", "Av. Pte. Figueroa Alcorta", "Av. Del Libertador", "Av. 9 de Julio", "Av. Leandro N. Alem", "Av. 9 de Julio", "Av. Paseo Col\u00f3n", "Arist\u00f3bulo Del Valle", "Av. Don Pedro de Mendoza", "Macacha G\u00fcemes", "Av. Ant\u00e1rtida Argentina", "Av. Pte. Ram\u00f3n S. Castillo", "Av. Pte. Sarmiento" };
+String[] barrios = { "N\u00fa\u00f1ez", "Belgrano", "Belgrano", "Palermo", "Palermo", "Retiro", "San Nicol\u00e1s", "Monserrat", "San Telmo", "La Boca", "La Boca", "Puerto Madero", "Retiro", "Recoleta", "Palermo" };
+int[] entornos = { 0, 1, 1, 1, 1, 2, 0, 2, 0, 0, 1, 2, 2, 2, 1 };
+boolean[] agua = { false, true, false, false, false, false, false, false, true, false, false, false, true, false, false };
+int[] carrilesOsm = { 6, 4, 5, 2, 10, 5, 2, 5, 3, 0, 2, 3, 2, 2, 5 };
+calle = calles[ i ];
+barrio = barrios[ i ];
+entorno = entornos[ i ];
+cercaDelAgua = agua[ i ];
+carriles = carrilesOsm[ i ];
 latEstacionamiento = latEst[ i ];
 lonEstacionamiento = lonEst[ i ];
 

@@ -19,7 +19,7 @@
 	<SceneGridColor/>
 	<SceneBackgroundColor>-4144960</SceneBackgroundColor>
 	<EnvironmentResourceRef/>
-	<EnvironmentType>NONE</EnvironmentType>
+	<EnvironmentType>SKYBOX_1</EnvironmentType>
 	<EnvironmentRotationX>0</EnvironmentRotationX>
 	<EnvironmentRotationY>0</EnvironmentRotationY>
 	<EnvironmentRotationZ>0</EnvironmentRotationZ>

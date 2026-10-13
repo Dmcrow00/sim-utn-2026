@@ -15,7 +15,7 @@
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>0</X>
 		<Y>0</Y>
-		<Z>0</Z>
+		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -91,7 +91,7 @@
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<X>0</X>
 		<Y>0</Y>
-		<Z>0</Z>
+		<Z>1.5</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -171,7 +171,7 @@
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<VisibleCode>activo() &amp;&amp; tieneBotella</VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>9</Z>
+		<Z>10.5</Z>
 		<ZHeight>3</ZHeight>
 		<LineWidth>1</LineWidth>
 		<LineColor/>

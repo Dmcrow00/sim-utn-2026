@@ -2,6 +2,11 @@ void ingresarCorredor(Corredor c,boolean seHidrata)
 {/*ALCODESTART::1790100000116*/
 // Cada corredor que pasa por el puesto de la vista 3D (frene o no) entra a
 // la escena como peaton, con su velocidad y su decision de hidratarse.
+// Para no cargar el simulador, solo la escena que se esta mirando tiene
+// peatones (al cambiar de puesto, la calle se llena en unos segundos).
+if ( !main.pantalla.equals( "MAPA3D" ) || main.puesto3DActual != getIndex() ) {
+	return;
+}
 pendientes.add( c );
 pendientesHidrata.add( seHidrata );
 pedSource.inject( 1 );
@@ -41,6 +46,12 @@ p.seHidrata = h != null && h;
 if ( p.seHidrata ) {
 	p.voluntario = elegirVoluntario();
 	p.voluntario.reservas++;
+}
+// Modo "seguir a un corredor": la camara se engancha a este peaton.
+if ( seguirProximo && p.corredor != null ) {
+	seguirProximo = false;
+	peatonSeguido = p;
+	window3d.setCamera( p.camaraCorredor, true, 1000 );
 }
 /*ALCODEEND*/}
 
@@ -94,5 +105,34 @@ if ( !p.pedidoEnCurso ) {
 	return "Reposicion: sin pedido en curso";
 }
 return "Reposicion: " + p.estadoReposicion + " (hace " + (int) ( time() - p.minutoPedido ) + " min)";
+/*ALCODEEND*/}
+
+void verCamara(int c)
+{/*ALCODESTART::1790100010278*/
+// Cambia la camara de la ventana 3D con una transicion suave:
+//   0 = desde la mesa, 1 = corredores llegando, 2 = vista aerea,
+//   3 = seguir a un corredor (se engancha al proximo que entra a la escena).
+camaraActual = c;
+peatonSeguido = null;
+seguirProximo = c == 3;
+if ( c == 1 ) {
+	window3d.setCamera( camaraLlegada, true, 1500 );
+} else if ( c == 2 ) {
+	window3d.setCamera( camaraAerea, true, 1500 );
+} else if ( c == 0 ) {
+	window3d.setCamera( camera, true, 1500 );
+}
+/*ALCODEEND*/}
+
+void dejarDeSeguir(peatonPuesto p)
+{/*ALCODESTART::1790100010279*/
+// El corredor seguido sale de la escena: la camara pasa a la vista de
+// llegada y, si sigue activo el modo "seguir", se engancha al proximo.
+if ( p != peatonSeguido ) {
+	return;
+}
+peatonSeguido = null;
+window3d.setCamera( camaraLlegada );
+seguirProximo = camaraActual == 3;
 /*ALCODEEND*/}
 

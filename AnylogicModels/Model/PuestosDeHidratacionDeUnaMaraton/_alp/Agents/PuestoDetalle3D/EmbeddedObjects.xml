@@ -309,6 +309,9 @@
 		<Parameters>
 			<Parameter>
 				<Name><![CDATA[onEnter]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[dejarDeSeguir( (peatonPuesto) ped );]]></Code>
+				</Value>
 			</Parameter>
 		</Parameters>
 		<ReplicationFlag>false</ReplicationFlag>

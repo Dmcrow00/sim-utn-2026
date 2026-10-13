@@ -72,4 +72,18 @@
 		<InternalLighting>OFF</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
+	<Camera3D>
+		<Id>1790100010280</Id>
+		<Name><![CDATA[camaraCorredor]]></Name>
+		<X>-30</X>
+		<Y>0</Y>
+		<Z>22</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ShowLabel>false</ShowLabel>
+		<RotationX>6</RotationX>
+		<RotationZ>-90</RotationZ>
+	</Camera3D>
 </Presentation>
