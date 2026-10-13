@@ -187,8 +187,8 @@
 			<Y>-10</Y>
 		</Label>
 		<ShowLabel>false</ShowLabel>
-		<RotationX>4</RotationX>
-		<RotationZ>68</RotationZ>
+		<RotationX>5</RotationX>
+		<RotationZ>200</RotationZ>
 	</Camera3D>
 	<Control Type="Window3D">
 		<Id>1789091264286</Id>
@@ -11309,7 +11309,7 @@ y usá la rueda para acercar.]]></Text>
 		</Label>
 		<ShowLabel>false</ShowLabel>
 		<RotationX>10</RotationX>
-		<RotationZ>-90</RotationZ>
+		<RotationZ>0</RotationZ>
 	</Camera3D>
 	<Camera3D>
 		<Id>1790100010265</Id>
@@ -11323,13 +11323,13 @@ y usá la rueda para acercar.]]></Text>
 		</Label>
 		<ShowLabel>false</ShowLabel>
 		<RotationX>45</RotationX>
-		<RotationZ>0</RotationZ>
+		<RotationZ>-90</RotationZ>
 	</Camera3D>
 	<Text>
 		<Id>1790100010266</Id>
 		<Name><![CDATA[panelCamarasTitulo]]></Name>
 		<X>880</X>
-		<Y>-442</Y>
+		<Y>-434</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11354,7 +11354,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010267</Id>
 		<Name><![CDATA[botonCamara0]]></Name>
 		<X>880</X>
-		<Y>-418</Y>
+		<Y>-410</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11383,7 +11383,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010268</Id>
 		<Name><![CDATA[botonCamara0Texto]]></Name>
 		<X>947</X>
-		<Y>-411</Y>
+		<Y>-403</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11409,7 +11409,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010269</Id>
 		<Name><![CDATA[botonCamara1]]></Name>
 		<X>1025</X>
-		<Y>-418</Y>
+		<Y>-410</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11438,7 +11438,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010270</Id>
 		<Name><![CDATA[botonCamara1Texto]]></Name>
 		<X>1092</X>
-		<Y>-411</Y>
+		<Y>-403</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11464,7 +11464,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010271</Id>
 		<Name><![CDATA[botonCamara2]]></Name>
 		<X>880</X>
-		<Y>-384</Y>
+		<Y>-376</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11493,7 +11493,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010272</Id>
 		<Name><![CDATA[botonCamara2Texto]]></Name>
 		<X>947</X>
-		<Y>-377</Y>
+		<Y>-369</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11519,7 +11519,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010273</Id>
 		<Name><![CDATA[botonCamara3]]></Name>
 		<X>1025</X>
-		<Y>-384</Y>
+		<Y>-376</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -11548,7 +11548,7 @@ y usá la rueda para acercar.]]></Text>
 		<Id>1790100010274</Id>
 		<Name><![CDATA[botonCamara3Texto]]></Name>
 		<X>1092</X>
-		<Y>-377</Y>
+		<Y>-369</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>

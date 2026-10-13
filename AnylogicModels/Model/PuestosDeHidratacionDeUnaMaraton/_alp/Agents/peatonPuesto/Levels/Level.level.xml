@@ -84,6 +84,6 @@
 		</Label>
 		<ShowLabel>false</ShowLabel>
 		<RotationX>6</RotationX>
-		<RotationZ>-90</RotationZ>
+		<RotationZ>0</RotationZ>
 	</Camera3D>
 </Presentation>
