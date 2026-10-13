@@ -102,13 +102,13 @@
 		<VisibleCode><![CDATA[motivoNoAtendido > 0]]></VisibleCode>
 		<EmbeddedIcon>false</EmbeddedIcon>
 		<Z>21</Z>
-		<ZHeight>3</ZHeight>
+		<ZHeight>5</ZHeight>
 		<LineWidth>1</LineWidth>
 		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<RadiusX>2.5</RadiusX>
-		<RadiusY>2.5</RadiusY>
+		<RadiusX>4</RadiusX>
+		<RadiusY>4</RadiusY>
 		<Rotation>0.0</Rotation>
 		<FillColor>-65536</FillColor>
 		<FillColorCode><![CDATA[motivoNoAtendido == 1 ? red : orange]]></FillColorCode>
