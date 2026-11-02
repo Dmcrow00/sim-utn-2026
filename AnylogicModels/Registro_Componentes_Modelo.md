@@ -253,6 +253,7 @@ Los criterios de cálculo y los pasos del experimento de comparación están en 
 - `costosTitulo` y `costosNota`.
 - Fila 1, `costosResumen0..5`: costo total, costo por atendido, % no atendidos, sobrante, horas-voluntario, costo + penalización.
 - Fila 2, `costosRubro0..5`: un rubro por indicador y los corredores atendidos.
+- Fila 3, `costosConsumo0..5` (y = 3968): lo consumido a precio de compra, lo consumido por atendido y agua, isotónica, fruta y geles consumidos (pesos y unidades). Usa `Puesto.valorConsumido(k)` y, en Main, `unidadesConsumidasEvento(k)`, `valorConsumidoEvento(k)` (con k = −1 suma todo), `consumidoPorAtendido()` y `textoConsumo(k)`. Para que entre, todo lo que estaba debajo bajó 66 px y `areaEjecucion` pasó a 2426 de alto.
 - `textTituloGraficoCostos` y el Time Plot `graficoCostos`, con las series Insumos, Envases, Voluntarios, Transporte y Total; muestra por minuto y ventana de 900 min.
 
 En el editor (fuera de la pantalla) están `grupoMainMarcoCostos`, `grupoMainTituloCostos` y `grupoMainDetalleCostos`.
@@ -264,6 +265,122 @@ En el editor (fuera de la pantalla) están `grupoMainMarcoCostos`, `grupoMainTit
 - Cada Edit Box ejecuta `set_X( leerNumero( value, X ) )` y arranca con el texto `textoNumero( X )`. No está ligado con *Link to* para poder aceptar el formato argentino (`1.500,50`).
 - Funciones nuevas en `Main`: `leerNumero(texto, anterior)`, que interpreta el texto y devuelve el valor anterior si no es válido o es negativo, y `textoNumero(v)`, que da el texto inicial sin separador de miles y con coma decimal.
 
+## Calibración con la carrera real 2025 (actualización 2026-10-27)
+
+Los datos y los scripts están en [Datos/](Datos/). Los criterios y la validación, en [Defensa_TPI.md](Defensa_TPI.md), secciones 2 y 9.
+
+**Largada real.** El `Source` ya no usa `exponential(tasaLlegada)`:
+
+- *Interarrival time* = `intervaloLargada()` (segundos), *Max arrivals* = `cantidadCorredores`.
+- *On at exit*: `inicializarReal( siguienteTiempoNeto(), ajusteRitmo )` y `dibujarEnMapa`.
+- Cada corredor simulado es un corredor real de 2025: cruza la alfombra en el segundo en que la cruzó y su ritmo sale de su tiempo neto oficial.
+- `Main.datosCarreraReal()` guarda los 12.792 pares (largada, tiempo neto) codificados en base 64. Se generan con `Datos/preparar_datos_modelo.py`.
+- `prepararLargada()` los decodifica. Con otra cantidad de corredores, o con `repetirCarreraReal = false`, hace bootstrap: sortea corredores reales con reposición.
+
+**Parámetros nuevos de `Main`:**
+
+| Parámetro | Valor | Para qué |
+|---|---|---|
+| `cantidadCorredores` (reemplaza a `tasaLlegada`) | 12792 | Corredores de la corrida (los que llegaron en 2025) |
+| `repetirCarreraReal` | true | Repetir la carrera en el orden real; si es false, bootstrap |
+| `ajusteRitmo` | 1,039 | Compensa lo que el modelo le resta al ritmo (calor, fatiga, paradas). Calibrado: simulado/real = 1,000 |
+| `dotacionSegunFlujo` | true | Voluntarios por puesto de 10 a 35, proporcionales al pico real (Vermont City Marathon); si es false, `voluntariosPorPuesto` para todos |
+| `factorVoluntarios` | 1 | Escala la dotación (escenario de pocos voluntarios) |
+| `stockSegunDemanda` | true | Stock inicial = corredores × unidades por corredor × cobertura; si es false, las capacidades fijas |
+| `coberturaStockInicial` | 1 | Fracción de la demanda esperada que se coloca antes de la largada |
+| `corredoresPorPuntoMapa` | 10 | En el mapa se dibuja 1 de cada N corredores, porque la animación web no aguanta 12.800 puntos |
+| `ejecucionRapida` | false | Corrida sin animación en tiempo real (para réplicas) |
+| `temperaturaC` | 15 (antes 20) | Pronóstico del SMN para la largada del 21/9/2025 |
+
+**Funciones nuevas:**
+
+- **`Main`:** `datosCarreraReal`, `prepararLargada`, `intervaloLargada`, `siguienteTiempoNeto`, `picosRealesPorMinuto`, `minutosPicoReal`, `flujoMedioReal`, `finVentanaReal`, `flujoPlanificado(i)` (flujo medio real mientras pasa el pelotón, después 0), `voluntariosIniciales(i)`, `esperaMediaEvento`, `puestoPeorEspera`, `textoValidacion` y `exportarResultados`. Se eliminó `sortearCategoria`.
+- **`Corredor`:** `inicializarReal(tiempoMin, ajuste)`. La categoría sale de los cortes reales 175,0 / 210,9 / 264,7 min (3 / 17 / 50 / 30 %).
+- **`Puesto`:** `unidadesPorCorredor(k)`, `registrarEspera(min)`, `esperaMediaSeg`, `esperaP95Seg`. `capacidadInicial` y `demandaPlanificada` usan las anteriores.
+
+**Variables nuevas:**
+
+- **`Main`:** `largadaSeg`, `tiempoNetoMin`, `iIntervalo`, `iCorredor`, `nComparados`, `sumaNetoSim`, `sumaNetoReal`, `sumaRelacionTiempo` y `resultadosExportados`.
+- **`Corredor`:** `tiempoRealMin`, `minutoEntradaCola`, `dibujarEnMapa`, y `mapaVisible` (estática; la actualiza `irA`).
+- **`Puesto`:** `pasesMinutoActual`, `pasesMinutoAnterior`, `picoPases`, `minutoPicoPases`, `sumaEspera`, `cantidadEsperas`, `maxEspera` e `histEspera` (int[601], 1 s por casillero).
+
+**Espera en cola.** Cuando el corredor decide parar se guarda la hora en `decidirHidratacion`. En `atender()` se calcula espera = transcurrido − tiempo de atención.
+
+**Pantalla de Métricas, sección "Validación con la carrera real 2025"** (`areaEjecucion` pasó a 2360 de alto):
+
+- `graficoFlujo`: corredores por minuto en los km 5, 20 y 40.
+- `textValidacion`: pico real contra simulado en 5 puestos, tiempo neto real contra simulado y espera en cola.
+
+**Exportación.** Un minuto antes del fin de la corrida, el puesto 1 llama a `exportarResultados()`. Esa función agrega una fila a `resultados_corridas.csv` y una fila por puesto a `resultados_puestos.csv`, en la carpeta del modelo e ignorados por git. Las corridas de calibración quedaron en `Datos/calibracion/`.
+
+**Experimento `Simulation`.** Corta en 300 min (antes, 1020), por el límite de 5 h de PLE con la Pedestrian Library.
+
+## Escenarios, semilla común y óptimo (actualización 2026-10-28)
+
+Resultados y análisis en [Defensa_TPI.md](Defensa_TPI.md), secciones 8 y 10, y en [Datos/experimentos/](Datos/experimentos/).
+
+**Parámetros nuevos de `Main`:**
+
+| Parámetro | Valor | Para qué |
+|---|---|---|
+| `escenario` | 0 | 0 base 2025, 1 óptimo según el clima, 2 escasez, 3 exceso, 4 relevamiento de consumo |
+| `semilla` | 1 | Se aplica en el *On startup* con `getDefaultRandomGenerator().setSeed(semilla)`: mismos números aleatorios en todos los escenarios |
+| `temperaturaPlanificada` | 15 | Temperatura pronosticada con la que se arma el plan del óptimo |
+| `perdidaMaximaPorTramo` | 0,114 | C de la regla de distancia máxima (teórico 0,15; calibrado por simulación) |
+| `factorVoluntariosOptimo` | 1,0 | Escala de voluntarios del óptimo |
+| `coberturaOptima` | 0,6 | Cobertura del óptimo cuando no hay tabla de retiro (otro plan) |
+| `umbralDeshidratacion` | 0,7 | Debajo de este nivel el corredor cuenta como deshidratado |
+| `costoHoraVoluntario` | 1500 (antes 0) | Valor de ejemplo para medir la pérdida por horas ociosas |
+
+**Funciones de `Main`:**
+
+- **Escenario:** `nombreEscenario`, `coberturaEfectiva`, `factorVoluntariosEfectivo` y `reposicionActiva` (no hay camiones en el escenario 1 ni en el 4).
+- **Plan de puestos:** `kmPuestos`, `nivelCalorDe`, `tasaPerdidaKm`, `distanciaMaximaKm`, `calcularPuestosActivos`, `puestoActivo(i)` y `puestosActivos`.
+- **Stock del óptimo:** `retiroPlanificado(i,k)`, la tabla del stock justo del plan de 12 puestos.
+- **Métricas:** `porcentajeDeshidratados`, `porcentajeDeshidratadosSeveros`, `hidratacionMinimaMedia`, `faltantesEvento`, `ocupacionVoluntarios`, `horasVoluntarioOciosas` y `perdidaPorExceso`.
+
+**Otros cambios:**
+
+- **Variables nuevas:** `Corredor.minHidratacion` (la actualiza `avanzarHasta`); `Puesto.minutosOcupados` (la suma `atender`); en `Main`, `llegadosDeshidratados`, `llegadosDeshidratadosSeveros`, `sumaHidratacionMinima` y `activos`.
+- **Puestos que no se arman:** no ofrecen nada y tienen 0 voluntarios. El corredor pasa sin contarlo como puesto salteado, y `kmDesdeAnterior` se mide desde el puesto armado anterior.
+- **Exportación:** `exportarResultados` agrega a la fila de cada corrida el escenario, la semilla y las métricas nuevas. Por puesto agrega comprado, consumido y faltante de cada insumo.
+
+**Experimentos** (Parameter Variation, sin animación, unos 1,5 s por corrida):
+
+| Experimento | Varía | Corridas | Para qué |
+|---|---|---|---|
+| `Relevamiento` | escenario 4, semilla 1–5, `perdidaMaximaPorTramo` 0,1035–0,115 | 30 | Elegir el plan (C) y medir el retiro real |
+| `Optimizacion` | escenario 1, semilla 1–3, `coberturaOptima` 0,3–0,9, `factorVoluntariosOptimo` 0,25–1 | 84 | Barrido de stock y voluntarios |
+| `Escenarios` | escenario 0–3, semilla 1–10 | 40 | Comparación a 15 °C |
+| `Sensibilidad` | escenario 0–3, semilla 1–10, `temperaturaC` 10–30 | 200 | Comparación y sensibilidad con IC |
+
+Para la demo en vivo se cambia `escenario` en `Simulation: Main` → Parameters.
+
+## Escena 3D del puesto: vallas y atención (actualización 2026-10-28)
+
+**El problema.** Con la largada real, en el km 5 pasan hasta 1.235 corredores por minuto. La escena 3D tenía 8 voluntarios que caminaban 6 s hasta la mesa por cada botella, y atendía unos 80 corredores por minuto. Se formaba un tumulto, y los corredores atravesaban las vallas porque eran objetos 3D decorativos y no obstáculos. En la lógica la espera era ≈ 0 s, así que era un problema solo de la vista 3D.
+
+**Cambios en `PuestoDetalle3D` y `Voluntario`.** Todos son solo visuales y no cambian ningún resultado.
+
+- **Vallas:** `vallaNorte` y `vallaSur` son paredes peatonales (`Wall`, invisibles) a lo largo de los dos bordes de la calle, en y = 300 y y = 440, de x = −600 a 800. Los corredores ya no salen de la calzada.
+- **Voluntarios:** la población `voluntarios` pasó de 8 a 35. Trabajan tantos como en la lógica del puesto (`activo()`: 35 en el km 5, 10 en el km 40), parados cada 1,5 m desde x = −5. El corredor recibe el vaso 1 m adentro de la calle (`yEntrega`).
+- **Entrega:** los vasos ya están servidos en la mesa, 1 m detrás de cada voluntario. Agarrar otro tarda 0,3–0,8 s y el voluntario vuelve a estar listo a los 2 s; antes era una caminata de 6 s.
+- **Mesas y stock:** 21 mesas (`mesaVasos0..20`) a lo largo de la zona, con 2 packs cada una (`packMesa0..41`). Cada pack se ve mientras `fraccionStock()` supere su umbral; los umbrales están intercalados para que los packs desaparezcan repartidos por la mesa. Se quitaron la mesa original (`table_2`) y sus 6 packs, y los dos ayudantes (`ayudanteMesa1/2`) quedaron detrás de la mesa larga.
+- **Elección del voluntario según el contexto** (2026-11-01). Entre los voluntarios libres que tiene adelante, más allá de su distancia de frenado, el corredor elige el de menor `costoVoluntario`: 1 punto cada 20 m que tenga que seguir corriendo, 1 punto cada 15 m de su lugar preferido en la fila (`preferenciaFila` = U^1,3, mediana 0,45) y 1 punto por cada vecino inmediato con otro corredor yendo hacia él (0,5 si está a dos lugares; `vecinoOcupado`). Medido en el pico (263 entregas): se usan los 35 voluntarios (38 % en los primeros 7, 9 % en los últimos 7) y el 85 % recibe sin otro corredor en el voluntario de al lado. Antes, casi todo se concentraba en los primeros 7 a 12.
+- **Frenado según la velocidad y la desaceleración de cada corredor** (2026-11-01). Cada peatón tiene `desaceleracion` según su categoría: elite 2,2, avanzado 2,0, intermedio 1,8 y principiante 1,6 m/s², ±10 % (`desaceleracionDe`). Son valores de frenada cómoda: están por debajo del umbral de alta intensidad, −2,5 m/s² (Chen et al., 2025, *J. Hum. Kinet.* 95, doi 10.5114/jhk/189659), y cerca de la mitad de la máxima medida en deportistas tras un sprint, −4,2 a −5,0 m/s² desde 7,4–7,8 m/s (Harper et al., 2020, *Sports* 8:76, doi 10.3390/sports8060076). Que los más entrenados frenen más fuerte es un supuesto.
+  - **Distancia de frenado** (`distanciaFrenadoPx`): v²/(2a) + 1 m. Solo se eligen voluntarios más allá de esa distancia.
+  - **Frenado:** el corredor va con un único PedGoTo hasta la mano del voluntario. El voluntario lo vigila con el evento `VigilarCorredor`, cada 0,1 s, que llama a `ajustarFrenado`: fija su velocidad en min(v0, √(2·a·d)) y, en el último metro, 0,6 m/s. Al recibir el vaso recupera su ritmo (`terminarEntrega`). La velocidad se cambia con `velocidadDeMarcha`, a través de `PedExtension.setComfortableSpeed`.
+  - **Medido en el pico (253 entregas):** elite y avanzados llegan a la mano con 0,06–0,08 m de diferencia promedio; solo 2 la pasaron por más de 0,3 m.
+  - **Lo que no funcionó:** frenar de a tramos de 1 m con un PedGoTo por tramo. Cada entrada a un PedGoTo recalcula la ruta en la malla de navegación, y el modelo quedó casi detenido.
+- **Carril de hidratación** (2026-11-01): pared peatonal invisible `separadorCarril` en y = 404, de x = −40 a 540, a 3 m de la mano de los voluntarios, con la línea blanca `lineaCarrilHidratacion` pintada encima. Los que se hidratan entran por la boca del carril (antes de x = −40) y salen por el final. Los que no se hidratan pasan antes por `pedCalzadaCentral` (PedGoTo a x = −80, y uniforme entre 308 y 396, tolerancia 3 m) para no entrar al carril.
+- **Elección del voluntario** (actualizado el 2026-11-01): el corredor que se hidrata va primero al carril de los voluntarios, 4 m antes del primero. Desde ahí recorre la fila en orden y nunca vuelve hacia atrás. En `elegirVoluntario(p)` descarta a los que ya pasó o tiene a menos de 2 m, y se queda con el primero libre que tendrá el vaso listo cuando llegue. Si los próximos están ocupados, avanza dos voluntarios por el carril (1 m adentro de la calle) y vuelve a mirar; cerca del final espera al que se libere antes. Cada voluntario atiende a un corredor por vez (`reservas` 0/1, `reservar`). El flujo es `pedIrAlVoluntario` (PedGoTo a `objetivoX/Y` del peatón) → `pedHayVoluntario` (PedSelectOutput con `decidir(p)`: 1 recibe, 0 sigue por el carril, 2 sale sin vaso) → `pedRecibirBotella`. La decisión se calcula una sola vez por llegada (`decidido`), porque PedSelectOutput evalúa la condición antes del onExit del bloque anterior y más de una vez. El corredor apunta a 1,5 m antes de la mano del voluntario: medido en el pico, termina en promedio 0,73 m antes y solo 4 de 186 la pasaron (menos de 30 cm). Después de cada entrega el voluntario queda ocupado `segundosOcupado(p)` = N × tiempo de atención de la lógica − 3 s, el rato que pasa en la mesa.
+- **Muestra de corredores** (`muestra3D`): en los picos se dibuja 1 de cada N corredores, con N = ⌈pases por minuto del puesto / 150⌉ (en el km 5 llega a 8 o 9). Con cientos de peatones animados a la vez la vista se trababa. Como cada corredor dibujado ocupa al voluntario por N, la carga de la fila se ve como en la realidad. Los contadores del panel son los del puesto, y el panel avisa la muestra junto a «Corredores atendidos».
+- **Escenografía:** las vallas del lado sur se corrieron fuera de la zona de hidratación y el público de esa vereda quedó detrás de las mesas.
+- **Rendimiento (medido el 2026-10-28):** en el pico del puesto 1 en 3D, Java usaba 0,1 núcleos y las pausas de memoria eran de 2–3 ms. El que se saturaba era el proceso de gráficos del navegador de AnyLogic (1,13 núcleos, un hilo al 100 %), por la cantidad de personajes `.glb` de ~4 MB: 82 de público, 35 voluntarios y ~160 corredores. Se dejaron 41 de público (`publico` pares) y 40 árboles de la arboleda de fondo (`arboleda` pares), y la muestra bajó a ~150 corredores por minuto. El experimento `Simulation` pasó de 512 a 2048 MB de memoria máxima, como los Parameter Variation.
+- **Mapa 2D (medido el 2026-11-01 con Java Flight Recorder):** la memoria no es el problema (145 recolecciones en 100 s, pausa máxima 5 ms). El costo está en la animación. El hilo "Frame Collector" de AnyLogic recorre en cada cuadro los ~12.800 corredores que están en el espacio GIS, aunque solo se dibuje una parte, y el navegador dibuja el cuadro como SVG. Con 1 de cada 4 puntos, el proceso del navegador estaba saturado en el 29 % de las muestras; con `corredoresPorPuntoMapa` = 10 (valor por defecto desde entonces), en el 13 %. Ocultar el GISMap fuera de la vista 2D no mostró mejora y se revirtió.
+- **Sliders en su paso:** `sincronizarControles` redondea los valores del puesto al paso de cada slider (10 unidades y 0,1 min). Antes AnyLogic avisaba con un WARNING "out of range or not on the step grid" al elegir un puesto; ese aviso no cambiaba ningún valor del puesto, porque `setValue(…, false)` no ejecuta la acción del slider.
+- **Sliders del panel 3D:** el stock máximo y mínimo llegan hasta 40.000 y los voluntarios hasta 70. Antes llegaban a 10.000 y 15, y AnyLogic recortaba los valores reales del puesto.
+
 ## Convención de nombres usada hasta ahora
 
 - **Agentes**: `PascalCase` en español (`Corredor`).
@@ -274,3 +391,94 @@ En el editor (fuera de la pantalla) están `grupoMainMarcoCostos`, `grupoMainTit
 - **Bloques de proceso**: prefijo del tipo de bloque en minúscula + qué hace (`sourceCorredores`, `seizeVoluntarios`, `delayHidratacion`).
 
 Si agregás algo nuevo, seguí el mismo patrón y sumalo a la tabla correspondiente de este documento.
+
+## Decisión de hidratarse por sed + intervalo preferido (actualización 2026-11-01)
+
+**El problema.** La probabilidad de parar tenía un término fijo (propensión + calor) que no dependía de lo recorrido: en el km 5 a 15 °C paraba el 33 % de los elite. Además, `decidirHidratacion` es la condición del `SelectOutput` y AnyLogic la evalúa **antes** del onExit del `MoveTo` que trae al corredor, donde se llamaba a `avanzarHasta`. Por eso se decidía con la hidratación del puesto anterior y, en el primero, con 0 km recorridos.
+
+**Cambios.**
+- **`Corredor.intervaloTomaKm`:** cada cuántos km le dan ganas de volver a tomar, por categoría. Elite U(8; 12) km, avanzado U(5; 8), intermedio U(3,5; 5,5) y principiante U(2,5; 4). Fuentes: Beis et al. 2012 (los elite toman ad libitum, unos 25 s en total por maratón) y la pauta del ACSM (Convertino et al. 1996) de 150–350 mL cada 15–20 min.
+- **`Corredor.kmUltimaToma`:** se actualiza cuando toma.
+- **Regla en `Main.decidirHidratacion`:** p = [(propensión + (1 − propensión)·nivelCalor) × hábito + 1,2·(1 − hidratación)] × necesidad / tolerancia, con hábito = min(2, km desde la última toma / (intervalo × (1 − 0,5·nivelCalor))). Las ganas vuelven de a poco después de cada toma, crecen hasta el doble si no toma, y con calor el intervalo se acorta hasta la mitad.
+- **Orden de evaluación:** `decidirHidratacion` llama primero a `c.avanzarHasta(p.km, nivelCalor)`. Es idempotente, así que la llamada del onExit queda sin efecto.
+
+**Cómo se eligieron los parámetros.** Se compararon variantes con un Monte Carlo de la regla (sin colas). Con tope 1 y sin acortar el intervalo por calor se deshidrataba el 4 %, y los elite hasta el 30 % con calor. Con la variante elegida, a 15 °C: en el km 5 para alrededor del 26 % de los elite, cada elite toma unas 4 veces y cada principiante unas 12, y se deshidrata el 0,1 %.
+
+**Recalibración.** `Relevamiento` con C de 0,090 a 0,150 cada 0,006 × 5 semillas, 55 corridas:
+
+| Puestos | 9 | 12 | 14 | 15 |
+|---|---|---|---|---|
+| Deshidratados | 2,0 % | 0,24 % | 0,11 % | 0,08 % |
+
+C = 0,114 sigue dando el plan mínimo con menos del 1 %. `retiroPlanificado` se recalculó: media + 1,65σ del plan de 12 puestos, en `relevamiento_v3_*.csv`.
+
+**Resultados nuevos** (200 corridas de `Sensibilidad`):
+- **Base a 15 °C:** 0,11 % de deshidratados, 0,24 % de no atendidos (en el pico del km 5) y $ 115,9 M.
+- **Óptimo:** 0,24 % de deshidratados y $ 52,7 M (−55 %).
+- **Escasez:** 48 % de no atendidos.
+- **Exceso:** pierde $ 89,8 M.
+- **Paradas:** en el km 5 para el 74 %; cada corredor toma 9,4 veces en total.
+- **Validación:** 13 de 15 puestos dentro del ±10 % (km 20 −18 %, km 22,6 −12 %).
+
+Las corridas con la lógica anterior quedaron en `Datos/experimentos/logica_anterior/`.
+
+## Experimentos por escenario (2026-11-01)
+
+Hay tres experimentos de simulación con animación, copias de `Simulation` con sus parámetros cargados (`ParameterValue`):
+
+| Experimento | Escenario | Parámetros fijados |
+|---|---|---|
+| `Pesimista` | 2 | `coberturaEscasez` = 0,35, `factorVoluntariosEscasez` = 0,25 |
+| `Optimista` | 1 | `temperaturaPlanificada` = 15, `perdidaMaximaPorTramo` = 0,114, `factorVoluntariosOptimo` = 1 |
+| `Excesivo` | 3 | `coberturaExceso` = 2, `factorVoluntariosExceso` = 2 |
+
+Los tres usan `temperaturaC` = 15 y `semilla` = 1.
+
+Los recursos de la escasez y del exceso eran valores fijos en `coberturaEfectiva` y `factorVoluntariosEfectivo`. Ahora son los parámetros `coberturaEscasez`, `factorVoluntariosEscasez`, `coberturaExceso` y `factorVoluntariosExceso`, con los mismos valores por defecto. En los Parameter Variation figuran como FIXED, así que los experimentos ya corridos dan lo mismo.
+
+`nombreEscenario` ahora muestra "Optimista: …", "Pesimista: …" y "Excesivo: …".
+
+## Gráficos de Métricas y escena 3D más liviana (2026-11-01)
+
+**Gráficos de stock** (`graficoStockAgua/Isotonica/Fruta/Gel`). Antes tomaban una muestra por segundo de simulación y guardaban 900 (solo los últimos 15 min), con el eje vertical fijo en `capacidadAgua` = 3.000 cuando el puesto 1 tiene 19.960 vasos, y el eje horizontal de 900 min. Ahora toman una muestra por minuto, guardan 400 y el eje es de 300 min. Cada línea es el porcentaje que le queda a cada puesto: 100 × stock / max(1, capacidad), con eje fijo de 0 a 100.
+
+**Gráfico de costos** (`graficoCostos`). En M$ y con ventana de 300 min, muestra lo comprado (insumos + envases), lo consumido (`valorConsumidoEvento(-1)`), el sobrante, voluntarios + transporte y el costo total.
+
+**Escena 3D.**
+- Nuevo parámetro `corredores3DPorMinuto` (60 por defecto; antes estaba fijo en 150), que se puede ajustar en cada experimento: `muestra3D` = ⌈pases por minuto / corredores3DPorMinuto⌉. Medido en el pico del puesto 1, cámara «Corredores llegando», a x2: con 100 por minuto el proceso gráfico usaba 0,53 núcleos en promedio y estaba saturado el 23 % del tiempo (los tirones); con 60, 0,23 núcleos y nunca saturado. Java, 0,07–0,08 núcleos en los dos casos. El costo está en los corredores animados, no en la escenografía.
+- Los transeúntes de la vereda norte bajaron de 8 a 4 por escena.
+
+## Voluntarios en 3D y puestos sin armar en los gráficos (2026-11-01)
+
+- **Tiempo ocupado del voluntario:** `segundosOcupado` ya no multiplica por `muestra3D`. Con `corredores3DPorMinuto` = 60, en el pico cada peatón representa unos 21 corredores y el voluntario quedaba cerca de un minuto en la mesa por entrega. Ahora queda el tiempo de atención de la lógica para ese corredor (unos pocos segundos). La carga real se ve en el panel.
+- **Gráficos de stock:** los puestos que no se arman en el escenario (en el óptimo, los km 25, 35 y 40) devuelven −1, fuera de la escala de 0 a 100, y no se ven. NaN no sirve: el DataSet lo rechaza con "Invalid value: NaN". Antes aparecían como una línea en 0 %, porque su capacidad es 0.
+
+## Panel "Ajustes de este puesto" de la escena 3D (2026-11-01)
+
+Se reorganizó en dos filas de tarjetas blancas (`ajustesTarjeta00`…`12`, de 260 × 56):
+- **Arriba:** stock máximo, stock mínimo y camión, cada una con su botón Auto a la derecha cuando corresponde.
+- **Abajo:** voluntarios, temperatura (ahora "Temperatura del día: X °C", para que entre) y el estado del insumo.
+
+**Sliders:** ocupan el ancho de la tarjeta (244 px).
+
+**Estado del insumo:** `textoEstadoAjustes` va en dos renglones, el agotamiento y el camión en camino.
+
+**Botones de insumo:** el texto de ayuda se acortó ("stock y camión: del insumo elegido") para que no se pise con ellos.
+
+## Generadores aleatorios separados: lógica y escena 3D (2026-11-01)
+
+**Problema.** Todo el modelo sorteaba con el generador del motor de AnyLogic. La escena 3D también lo usa: los transeúntes, los colores de ropa, el frenado de cada peatón y, por dentro, la biblioteca de peatones (`PedSettings.uniform`). Por eso abrir una vista 3D durante la corrida, o cambiar cuántos transeúntes hay, corría la secuencia de números de los corredores y cambiaba el resultado con la misma semilla. Por ejemplo, Optimista con semilla 1 daba 316 o 243 no atendidos por falta de voluntario según si se miraba el puesto en 3D.
+
+**Solución.** Se sobrescribe `getDefaultRandomGenerator()` en el código adicional de cada clase (`Code/AdditionalClassCode.java`, con `<AdditionalClassCode/>` en el `AOC`). Así `uniform()`, `normal()`, `randomTrue()` y los parámetros de los bloques que se evalúan en esa clase sortean con otro generador:
+
+| Clases | Generador |
+|---|---|
+| `Main`, `Corredor`, `Puesto`, `Camion`, `OperarioZorra` | El de la lógica: un `java.util.Random` propio de `Main`, que se siembra con `semilla` en el *On startup* (la línea `getDefaultRandomGenerator().setSeed( semilla )` ya existente ahora siembra este) |
+| `PuestoDetalle3D`, `Voluntario`, `peatonPuesto`, `Transeunte` | `PuestoDetalle3D.ALEATORIO_3D`, solo para lo visual |
+
+El generador del motor queda para la biblioteca de peatones. Los bloques del flowchart (`Source` por intervalo, `Delay`, `Seize` con pool estático, `SelectOutput` por condición) no sortean por dentro.
+
+**Verificación.** Optimista, semilla 1, 15 °C, tres corridas: con la vista 3D del primer puesto abierta toda la corrida y sin abrirla dan exactamente lo mismo (11.232 llegados, 57 + 316 no atendidos, 118 faltantes, 0,187 % de deshidratados).
+
+**Consecuencia.** Cambió la secuencia de números de cada semilla, así que se volvieron a correr `Sensibilidad` (200 corridas) y `Relevamiento` (55). Las corridas anteriores quedaron en `Datos/experimentos/version_anterior_20261101/`.
+

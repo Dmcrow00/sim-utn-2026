@@ -32,7 +32,7 @@ Están en el recuadro **"Costos del evento"** del editor de `Main`, a la izquier
 | `precioLitroIsotonica` | $ por litro | 3000 |
 | `precioPorcionFruta` | $ por porción | 300 |
 | `precioGel` | $ por gel | 2500 |
-| `costoHoraVoluntario` | $ por hora (0 = sin pago) | 0 |
+| `costoHoraVoluntario` | $ por hora (0 = sin pago) | 1500 (refrigerio, remera y seguro prorrateados) |
 | `horasExtraVoluntario` | horas por voluntario (montaje y desarme) | 1 |
 | `costoHoraCamion` | $ por hora de camión con chofer | 25000 |
 | `costoHoraOperario` | $ por hora de operario de zorra | 6000 |
@@ -45,10 +45,13 @@ Debajo de los gráficos de stock aparece la sección **"Costos del evento"** (`a
 
 - **Fila 1:** costo total, costo por corredor atendido, % no atendidos, valor del sobrante, horas-voluntario y costo + penalización.
 - **Fila 2:** el monto de cada rubro (insumos, vasos y envases, voluntarios, transporte, costos fijos), con su porcentaje sobre el total, y la cantidad de corredores atendidos.
+- **Fila 3 (agregada el 2026-10-28):** lo consumido a precio de compra (insumo + envase), lo consumido por corredor atendido y lo consumido de cada insumo, en pesos y unidades. Cada unidad suma su precio completo: vaso de agua $ 122,80 (0,116 L × $ 800 + $ 30 de vaso), vaso de isotónica $ 378, porción de fruta $ 300 y gel $ 2.500.
 - **Gráfico `graficoCostos`:** costo acumulado por rubro y total, minuto a minuto. Los escalones corresponden a las reposiciones.
 - **Panel "Precios y tarifas":** 11 campos de texto (Edit Box) para cambiar precios y tarifas durante la corrida (ver Paso 1). `areaEjecucion` pasó a 2020 de alto.
 
 Al arrancar la corrida, el costo de insumos ya es alto porque el stock inicial se compra antes de la largada. Por la misma razón, el sobrante arranca igual al costo de lo comprado y va bajando a medida que se consume.
+
+El costo por corredor atendido reparte todo lo comprado entre los atendidos, así que durante la corrida baja sin parar y solo se lee al final (≈ $ 961 en el caso base). Para seguir el consumo en vivo está la fila 3: "Consumido por corredor atendido" usa solo lo que ya se tomó y arranca en unos $ 150–200, porque al principio casi todos toman un vaso. Sube cuando aparecen la fruta y los geles en los puestos más lejanos.
 
 ## Paso 0 — Verificación
 
@@ -102,11 +105,13 @@ Este es el paso que responde **cuál es la mejor combinación**. Cada configurac
 
    | Parámetro | Mín | Máx | Paso |
    |---|---|---|---|
-   | `voluntariosPorPuesto` | 3 | 5 | 1 |
-   | `capacidadAgua` | 2000 | 4000 | 1000 |
+   | `factorVoluntarios` | 0,5 | 1 | 0,25 |
+   | `coberturaStockInicial` | 0,5 | 1 | 0,25 |
    | `entregaEnMano` | false / true (Freeform) | | |
 
-   Se pueden sumar `capacidadIsotonica`, `capacidadZorra` o `temperaturaC` (escenario de calor), pero cada parámetro multiplica la cantidad de corridas.
+   Desde la calibración del 27/10, los voluntarios y el stock se dimensionan con los datos reales (`dotacionSegunFlujo` y `stockSegunDemanda` en true). Por eso se varían sus factores y no `voluntariosPorPuesto` ni `capacidadAgua`, que solo se usan si esos modos se apagan. Se pueden sumar `capacidadZorra`, `velocidadCamionKmh` o `temperaturaC` (escenario de calor), pero cada parámetro multiplica la cantidad de corridas.
+
+   Poner `ejecucionRapida` en true en el experimento para que cada corrida vaya sin animación. Cada réplica deja además una fila en `resultados_corridas.csv` (ver `Main.exportarResultados`), que se puede analizar directamente en una planilla.
 4. **Replications:** marcar *Use replications* con un número fijo de 5 a 10 por configuración. Usar *Random seed* (no fija) para que las réplicas difieran.
 5. **Model time → Stop:** *Stop at specified time* en **300 minutos como máximo**. Ver el límite de PLE más abajo.
 6. **Randomness:** semilla aleatoria por réplica, como en el punto 4.
@@ -133,7 +138,7 @@ En las propiedades del experimento:
    double costo = root.costoTotalEvento();
    double noAt  = root.porcentajeNoAtendidos();
    puntos.add( noAt, costo );
-   traceln( root.voluntariosPorPuesto + ";" + root.capacidadAgua + ";" + root.entregaEnMano
+   traceln( root.factorVoluntarios + ";" + root.coberturaStockInicial + ";" + root.entregaEnMano
             + ";" + costo + ";" + noAt + ";" + root.costoAjustadoEvento() );
    ```
 

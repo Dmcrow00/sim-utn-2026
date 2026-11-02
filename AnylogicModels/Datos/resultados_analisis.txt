@@ -1,0 +1,62 @@
+corredores: 12795  terminaron (con tiempo de llegada): 12792
+sexo: {'M': 8897, 'F': 3898}
+
+== Cruce de la largada (min despues del disparo) ==
+count    12792.00
+mean         1.43
+std          1.68
+min          0.00
+5%           0.07
+25%          0.45
+50%          0.87
+75%          1.75
+95%          4.82
+99%          5.52
+max         40.90
+corredores por minuto (primeros 45): [7333, 2748, 709, 988, 547, 421, 5, 4, 4, 2, 4, 1, 7, 3, 4, 1, 0, 0, 0, 1, 0, 2, 1, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1]
+  ajuste uniform      KS D=0.8561 p=0 params=[0.0, 40.9]
+  ajuste triang       KS D=0.6395 p=0 params=[0.146, -6.636, 47.541]
+  ajuste expon        KS D=0.0760 p=1.2e-64 params=[0.0, 1.43]
+  ajuste gamma        KS D=0.6706 p=0 params=[0.148, -0.0, 1.54]
+  ajuste lognorm      KS D=0.5245 p=0 params=[113.556, -0.0, 0.0]
+  ajuste weibull_min  KS D=0.2499 p=0 params=[0.718, -0.0, 0.764]
+
+== Tiempo neto de llegada (min) ==
+count    12792.0
+mean       245.8
+std         41.4
+min        129.4
+1%         163.3
+3%         175.0
+20%        210.9
+50%        242.6
+70%        264.7
+95%        320.5
+99%        357.2
+max        400.6
+  ajuste norm     KS D=0.0337 p=4.9e-13 params=[245.823, 41.446]
+  ajuste lognorm  KS D=0.0114 p=0.0732 params=[0.144, -40.52, 283.389]
+  ajuste gamma    KS D=0.0125 p=0.0357 params=[22.178, 50.647, 8.8]
+cortes de tiempo para 3/17/50/30 %: [175.  210.9 264.7] min
+reparto por umbral de tiempo: {'Elite(<2h45)': 1.3, 'Avanzado(2h45-3h45)': 30.5, 'Intermedio(3h45-4h45)': 51.9, 'Principiante(>4h45)': 16.4}
+
+== Ritmo medio (min/km) por categoria del modelo (cuantiles 3/17/50/30) ==
+              count  mean   std   min   max
+Llegada_chip                               
+Elite           384  3.90  0.21  3.07  4.15
+Avanzado       2175  4.65  0.24  4.15  5.00
+Intermedio     6395  5.64  0.35  5.00  6.27
+Principiante   3838  6.99  0.63  6.27  9.49
+
+2a mitad / 1a mitad (ritmo): {'count': 12623.0, 'mean': 1.078, 'std': 0.108, 'min': 0.398, '25%': 1.009, '50%': 1.05, '75%': 1.12, 'max': 3.633}
+  por categoria (mediana): {'Elite': 1.019, 'Avanzado': 1.024, 'Intermedio': 1.037, 'Principiante': 1.119}
+
+== Paso por cada punto (reloj desde el disparo) ==
+5K  : pasan 12580, primero   15.1 min, ultimo   61.2 min, pico 1226 corr/min en el min 28, ventana 90% = 21-38 min
+10K : pasan 12592, primero   30.3 min, ultimo  107.0 min, pico 625 corr/min en el min 55, ventana 90% = 43-73 min
+20K : pasan 11852, primero   59.1 min, ultimo  189.0 min, pico 368 corr/min en el min 111, ventana 90% = 84-143 min
+30K : pasan 12530, primero   91.1 min, ultimo  282.4 min, pico 245 corr/min en el min 168, ventana 90% = 127-220 min
+40K : pasan 12120, primero  122.3 min, ultimo  377.9 min, pico 160 corr/min en el min 229, ventana 90% = 172-304 min
+
+terminan antes de 300 min de reloj: 89.0%  ultimo: 401 min
+con paso por 5K: 12580, llegaron: 12792, abandono aprox: -1.7%
