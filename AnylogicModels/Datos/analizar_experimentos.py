@@ -123,7 +123,7 @@ for col, e_ok in [("pctDeshidratados", 0.5), ("pctNoAtendidos", 0.5), ("costoTot
 temps = sorted(df.temperaturaC.unique())
 if len(temps) > 1:
     lineas.append("\n## Sensibilidad a la temperatura del día (media ± IC 95 %)\n")
-    lineas.append("El plan del escenario óptimo se arma con la temperatura pronosticada (`temperaturaPlanificada` = 15 °C); acá cambia la temperatura real del día.\n")
+    lineas.append("El escenario óptimo se planifica con el pronóstico del día, que acá acierta (`temperaturaPlanificada` = −1): a cada temperatura arma los puestos, el stock y los voluntarios para esa temperatura, con camiones de respaldo.\n")
     for col, nom, uni, d, _ in KPI[:3] + [KPI[8], KPI[11]]:
         lineas.append(f"\n**{nom} ({uni})**\n")
         lineas.append("| Escenario | " + " | ".join(f"{t:.0f} °C" for t in temps) + " |")

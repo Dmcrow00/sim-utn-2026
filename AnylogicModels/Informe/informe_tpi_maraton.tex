@@ -58,7 +58,7 @@ Magali Lentino\textsuperscript{1}\par}
 \end{center}
 
 \begin{abstract}
-\noindent Los puestos de hidratación de una maratón masiva se planifican hoy por experiencia: se arman todos los puestos y se compra stock de sobra, sin medir cuánto se consume ni qué pasaría con otra configuración. Este trabajo presenta un modelo de simulación de eventos discretos y agentes, construido en AnyLogic, del sistema de hidratación de la Maratón de Buenos Aires 2025. Los 12.792 corredores que terminaron la carrera entran al modelo con su segundo real de largada y su tiempo oficial. Cada uno de los 15 puestos es una cola con voluntarios, inventario propio y reposición por camión. El modelo reproduce el flujo real de corredores por puesto (13 de 15 puestos dentro del $\pm$10\,\%) y el tiempo de carrera (simulado/real $=$ 1,000). La decisión de hidratarse de cada corredor depende de su sed, del calor y de cuánto corrió desde su última toma, con intervalos entre tomas según su nivel. Se compararon cuatro escenarios con números aleatorios comunes (20 réplicas, intervalos de confianza del 95\,\%). Un plan ajustado al pronóstico del clima, con 12 puestos a 15\,°C y stock según el consumo observado, mantiene la deshidratación en 0,22\,\% con un costo 55\,\% menor que la configuración real. La escasez de recursos deja sin atender al 48\,\% de los que quieren parar, y el exceso pierde \$\,90\,M sin mejorar el servicio de forma apreciable. El análisis de sensibilidad muestra que el plan debe recalcularse con la temperatura del día: el de 15\,°C deja de alcanzar desde los 20\,°C.
+\noindent Los puestos de hidratación de una maratón masiva se planifican hoy por experiencia: se arman todos los puestos y se compra stock de sobra, sin medir cuánto se consume ni qué pasaría con otra configuración. Este trabajo presenta un modelo de simulación de eventos discretos y agentes, construido en AnyLogic, del sistema de hidratación de la Maratón de Buenos Aires 2025. Los 12.792 corredores que terminaron la carrera entran al modelo con su segundo real de largada y su tiempo oficial. Cada uno de los 15 puestos es una cola con voluntarios, inventario propio y reposición por camión. El modelo reproduce el flujo real de corredores por puesto (13 de 15 puestos dentro del $\pm$10\,\%) y el tiempo de carrera (simulado/real $=$ 1,001), y cada corrida llega hasta el último corredor. La decisión de hidratarse de cada corredor depende de su sed, del calor y de cuánto corrió desde su última toma, con intervalos entre tomas según su nivel. Se compararon cuatro escenarios con números aleatorios comunes (20 réplicas, intervalos de confianza del 95\,\%). Un plan ajustado al pronóstico del clima, que arma los puestos, el stock y los voluntarios para la temperatura del día y deja los camiones como respaldo, mantiene la deshidratación por debajo del 0,3\,\% entre 10 y 30\,°C con un costo entre 44 y 54\,\% menor que la configuración real (a 15\,°C, 0,20\,\% de deshidratados y 54\,\% de ahorro). La escasez de recursos deja sin atender al 48\,\% de los que quieren parar, y el exceso pierde \$\,90\,M sin mejorar el servicio de forma apreciable. La configuración real, en cambio, llega al 2,1\,\% de deshidratados a 30\,°C. Si el pronóstico falla por 5\,°C, los camiones de respaldo mantienen la deshidratación en 0,35\,\%; con errores mayores hay que rearmar el plan.
 
 \vspace{0.2cm}
 \noindent\textbf{Palabras clave:} simulación de eventos discretos, AnyLogic, maratón, puestos de hidratación, teoría de colas, inventario, números aleatorios comunes.
@@ -66,7 +66,7 @@ Magali Lentino\textsuperscript{1}\par}
 
 \renewcommand{\abstractname}{Abstract}
 \begin{abstract}
-\noindent A discrete-event and agent-based AnyLogic model of the hydration system of the 2025 Buenos Aires Marathon was built from real race data (12,792 finishers with their actual start time and official result). The model reproduces the real runner flow at each aid station and the race times. Four scenarios were compared using common random numbers and 95\,\% confidence intervals. A weather-based plan (12 stations at 15\,°C, stock sized from observed consumption) keeps dehydration at 0.22\,\% at 55\,\% lower cost than the real setup, while scarcity causes congestion and excess wastes resources. The optimal plan depends on the forecast temperature.
+\noindent A discrete-event and agent-based AnyLogic model of the hydration system of the 2025 Buenos Aires Marathon was built from real race data (12,792 finishers with their actual start time and official result). The model reproduces the real runner flow at each aid station and the race times. Four scenarios were compared using common random numbers and 95\,\% confidence intervals. A forecast-based plan (stations, stock and volunteers sized for the day's temperature, with backup trucks) keeps dehydration below 0.3\,\% from 10 to 30\,°C at 44--54\,\% lower cost than the real setup, while scarcity causes congestion and excess wastes resources.
 \end{abstract}
 
 % ---------------------------------------------------------------------
@@ -137,7 +137,7 @@ donde $d$ es la demanda por minuto medida durante la carrera, $L$ la demora del 
 \begin{equation}
     p = \left[ \left( \pi + (1-\pi)\,c(T) \right) \min\!\left(2,\ \frac{\Delta}{I\,(1 - 0{,}5\,c(T))}\right) + 1{,}2\,(1-h) \right] \frac{n}{\tau},
 \end{equation}
-donde $\pi$ es su propensión a hidratarse con clima fresco, $c(T)$ el nivel de calor del día (entre 0 y 1), $\Delta$ los km que corrió desde su última toma, $I$ su intervalo preferido entre tomas, $h$ su nivel de hidratación, $n$ la necesidad de hidratación de su categoría y $\tau$ su tolerancia al calor. El primer término es el hábito: las ganas de tomar vuelven de a poco después de cada toma, se completan al recorrer el intervalo preferido, siguen creciendo hasta el doble si no toma, y con calor el intervalo se acorta hasta la mitad. El segundo término es la sed por deshidratación. El intervalo depende de la categoría. Los corredores de élite toman \emph{ad libitum} y poco: en total, unos 25\,s de tomar por maratón \cite{beis}. La pauta para recreativos es de 150 a 350\,mL cada 15 a 20 minutos \cite{acsm}, que a su ritmo equivale a 2,5 a 5\,km. Con esta regla, en el escenario base cada corredor toma en promedio 9,4 veces en los 15 puestos. En el km 5 para el 74\,\% de los corredores, pero solo alrededor de un cuarto de los de élite, y nadie pasa muchos puestos seguidos sin tomar. La simulación es terminante: empieza vacía con la largada y termina a los 300 minutos, sin período de calentamiento.
+donde $\pi$ es su propensión a hidratarse con clima fresco, $c(T)$ el nivel de calor del día (entre 0 y 1), $\Delta$ los km que corrió desde su última toma, $I$ su intervalo preferido entre tomas, $h$ su nivel de hidratación, $n$ la necesidad de hidratación de su categoría y $\tau$ su tolerancia al calor. El primer término es el hábito: las ganas de tomar vuelven de a poco después de cada toma, se completan al recorrer el intervalo preferido, siguen creciendo hasta el doble si no toma, y con calor el intervalo se acorta hasta la mitad. El segundo término es la sed por deshidratación. El intervalo depende de la categoría. Los corredores de élite toman \emph{ad libitum} y poco: en total, unos 25\,s de tomar por maratón \cite{beis}. La pauta para recreativos es de 150 a 350\,mL cada 15 a 20 minutos \cite{acsm}, que a su ritmo equivale a 2,5 a 5\,km. Con esta regla, en el escenario base cada corredor toma en promedio 9,5 veces en los 15 puestos. En el km 5 para el 74\,\% de los corredores, pero solo alrededor de un cuarto de los de élite, y nadie pasa muchos puestos seguidos sin tomar. La simulación es terminante: empieza vacía con la largada y termina cuando llega el último corredor (unos 400 minutos a 15\,°C), sin período de calentamiento.
 
 \subsection{Datos y distribuciones}
 
@@ -198,7 +198,7 @@ Demanda en la reposición & Poisson & media $=$ varianza $= d \cdot L$ & Stock d
 
 \subsection{Implementación en AnyLogic}
 
-El modelo se construyó en AnyLogic 8.9 (Personal Learning Edition) \cite{grigoryev}. El recorrido de cada corredor por los 15 puestos usa la Process Modeling Library (Source, MoveTo, SelectOutput, Seize, Delay, Release y un ResourcePool de voluntarios por puesto). El mapa, el trazado y el camino de los camiones usan la librería GIS. Una escena 3D de cada puesto, hecha con la Pedestrian Library, muestra a los corredores y a los voluntarios en la calle. Hay 9 tipos de agente: Main, Corredor, Puesto, Camion, OperarioZorra, PuestoDetalle3D, Voluntario, peatonPuesto y Transeunte. La interfaz incluye gráficos en vivo de stock y costos, controles para cambiar voluntarios, stock y precios durante la corrida, y una sección que compara la corrida con la carrera real (Figura~\ref{fig:interfaz}). Las corridas en lote se hacen con experimentos Parameter Variation que exportan cada corrida a CSV.
+El modelo se construyó en AnyLogic 8.9 (Personal Learning Edition) \cite{grigoryev}. El recorrido de cada corredor por los 15 puestos usa la Process Modeling Library (Source, MoveTo, SelectOutput, Seize, Delay, Release y un ResourcePool de voluntarios por puesto). El mapa, el trazado y el camino de los camiones usan la librería GIS. Una escena 3D de cada puesto, hecha con la Pedestrian Library, muestra a los corredores y a los voluntarios en la calle. Hay 9 tipos de agente: Main, Corredor, Puesto, Camion, OperarioZorra, PuestoDetalle3D, Voluntario, peatonPuesto y Transeunte. La interfaz incluye gráficos en vivo de stock y costos, controles para cambiar voluntarios, stock y precios durante la corrida, y una sección que compara la corrida con la carrera real (Figura~\ref{fig:interfaz}). Las corridas en lote se hacen con experimentos Parameter Variation que exportan cada corrida a CSV. La versión gratuita de AnyLogic corta toda corrida a las 5 horas cuando el modelo usa la Pedestrian Library, y con ese corte quedaban afuera los 1.405 corredores más lentos (11\,\%). Por eso hay dos versiones del modelo con la misma lógica: la completa, con las escenas 3D, para la demostración y AnyLogic Cloud (hasta los 300 min), y una sin las escenas 3D ni la Pedestrian Library, con la que se hicieron todos los experimentos y que simula la carrera hasta el último corredor.
 
 \begin{figure}[H]
     \centering
@@ -219,16 +219,17 @@ Para verificar que el modelo hace lo que se pretende se corrieron casos de prueb
 \textbf{Prueba} & \textbf{Configuración} & \textbf{Esperado} & \textbf{Obtenido} \\
 \midrule
 Reproducibilidad & Misma semilla dos veces, una de ellas con la vista 3D abierta & Resultados idénticos & Diferencia 0 en todas las métricas \\
+Dos versiones del modelo & Con y sin escenas 3D, cortadas a los 300 min (4 escenarios, 2 semillas) & Resultados idénticos & Diferencia 0 en las 35 métricas exportadas \\
 Recursos insuficientes & Un cuarto de la dotación y 35\,\% del stock (E2) & Colas, no atendidos y faltantes & 48\,\% de no atendidos y 171 faltantes \\
 Más recursos & Doble de voluntarios y stock & El servicio no empeora & Igual o apenas mejor (0,25 puntos menos de no atendidos) \\
-Calor & 10 a 30\,°C & Más deshidratación donde los recursos son justos & Crece en E0, E1 y E2; E3 queda cerca de 0 \\
+Calor & 10 a 30\,°C & Más deshidratación donde los recursos son justos & Crece en E0 y E2; E1 (planificado con el pronóstico) y E3 quedan por debajo del 0,3\,\% \\
 \bottomrule
 \end{tabular}
 \caption{Casos de prueba de verificación.}
 \label{tab:verificacion}
 \end{table}
 
-Para validar, se comparó la configuración real con lo que pasó en la carrera 2025. El tiempo neto simulado de los mismos corredores coincide con el real (235,6 contra 235,4 min; simulado/real $=$ 1,000), con un factor de ajuste de ritmo de 1,039. El flujo de corredores por puesto también coincide (Tabla~\ref{tab:validacion}): 13 de los 15 puestos quedan dentro del $\pm$10\,\% en el pico (los del km 20 y 22,6 quedan en $-$18 y $-$10,4\,\%), y los picos caen en el mismo minuto o con $\pm$4 min de diferencia. Antes de los 300 min llegan 11.231 corredores, contra 11.385 en la realidad.
+Para validar, se comparó la configuración real con lo que pasó en la carrera 2025. El tiempo neto simulado de los 12.792 corredores coincide con el real (246,2 contra 245,8 min; simulado/real $=$ 1,001), con un factor de ajuste de ritmo de 1,039. El flujo de corredores por puesto también coincide (Tabla~\ref{tab:validacion}): 13 de los 15 puestos quedan dentro del $\pm$10\,\% en el pico (los del km 20 y 22,6 quedan en $-$18 y $-$10,4\,\%), y los picos caen en el mismo minuto o con $\pm$4 min de diferencia. El último corredor llega a los 403,6 min de la largada, contra 401,0 min en la realidad.
 
 \begin{table}[H]
 \centering
@@ -254,7 +255,7 @@ Se definieron cuatro escenarios (Tabla~\ref{tab:escenarios-def}). El escenario b
 \begin{equation}
     d_{\max}(T) = \frac{C}{0{,}025 \cdot 1{,}15 \cdot \left(0{,}6 + 0{,}8\,c(T)\right)},
 \end{equation}
-donde el denominador es la pérdida de hidratación por km del corredor más exigente y $c(T)$ es el nivel de calor a la temperatura pronosticada $T$. El valor teórico $C = 0{,}15$ (poder saltear un puesto) daba 9 puestos, pero el 2,0\,\% de los corredores se deshidrataba, porque a veces se saltean dos o tres seguidos. Por eso $C$ se calibró por simulación con un barrido de $C$ entre 0,090 y 0,150 (55 corridas): el primer plan con menos del 1\,\% de deshidratados es el de 12 puestos (0,27\,\%, con $C = 0{,}114$). El stock de cada puesto e insumo es el retiro observado por corredor más 1,65 desvíos, que cubre el 95\,\% de las carreras.
+donde el denominador es la pérdida de hidratación por km del corredor más exigente y $c(T)$ es el nivel de calor a la temperatura pronosticada $T$. El valor teórico $C = 0{,}15$ (poder saltear un puesto) daba 9 puestos, pero el 1,8\,\% de los corredores se deshidrataba, porque a veces se saltean dos o tres seguidos. Por eso $C$ se calibró por simulación con un barrido de $C$ entre 0,090 y 0,150: a 15\,°C el primer plan con menos del 1\,\% de deshidratados es el de 12 puestos (0,24\,\%, con $C = 0{,}114$). El mismo barrido a 10, 20, 25 y 30\,°C (275 corridas en total) confirma que con $C = 0{,}114$ la regla arma 9 puestos a 10\,°C y los 15 desde 20\,°C, siempre con menos del 1\,\% de deshidratados, salvo a 30\,°C, donde el límite pasa a ser la cantidad de voluntarios. El stock de cada puesto e insumo es la demanda observada por corredor (lo retirado más lo que habrían tomado los que no fueron atendidos) más 1,65 desvíos, que cubre el 95\,\% de las carreras, con una tabla por temperatura. Los voluntarios crecen con el calor pronosticado en la misma proporción que los corredores que paran ($\times$1,2 a 20\,°C y $\times$1,5 a 30\,°C). Los camiones quedan de respaldo: salen solo si, con el retiro medido en la carrera, el stock no va a alcanzar hasta el último corredor, y llevan lo que falta.
 
 \begin{table}[H]
 \centering
@@ -264,7 +265,7 @@ donde el denominador es la pérdida de hidratación por km del corredor más exi
 \textbf{Escenario} & \textbf{Configuración} \\
 \midrule
 E0 — Base 2025 & 15 puestos; 10 a 35 voluntarios según el flujo real; stock según la demanda fisiológica; reposición con camión \\
-E1 — Optimista (óptimo según el clima) & Puestos según $d_{\max}(T)$ con la temperatura pronosticada (12 puestos a 15\,°C); stock $=$ retiro observado $+\,1{,}65\,\sigma$; sin camiones \\
+E1 — Optimista (óptimo según el clima) & Puestos según $d_{\max}(T)$ con la temperatura pronosticada (12 puestos a 15\,°C); stock $=$ demanda observada $+\,1{,}65\,\sigma$; voluntarios según el calor; camiones de respaldo \\
 E2 — Pesimista (escasez) & 15 puestos, un cuarto de los voluntarios y 35\,\% del stock \\
 E3 — Excesivo (exceso de recursos) & 15 puestos, el doble de voluntarios y de stock \\
 \bottomrule
@@ -273,11 +274,11 @@ E3 — Excesivo (exceso de recursos) & 15 puestos, el doble de voluntarios y de 
 \label{tab:escenarios-def}
 \end{table}
 
-Cada escenario se corrió con las semillas 1 a 20. La semilla se fija al inicio de cada corrida, de modo que los cuatro escenarios usan los mismos números aleatorios y se pueden comparar de a pares con la misma semilla. La lógica de la carrera sortea con un generador propio, separado del que usan la animación 3D y la biblioteca de peatones, así que abrir una vista durante la corrida no cambia el resultado. Para cada métrica se calculó el intervalo de confianza del 95\,\%
+Cada escenario se corrió con las semillas 1 a 20, y cada corrida simula la carrera completa. La semilla se fija al inicio de cada corrida, de modo que los cuatro escenarios usan los mismos números aleatorios y se pueden comparar de a pares con la misma semilla. La lógica de la carrera sortea con un generador propio, separado del que usan la animación 3D y la biblioteca de peatones, así que abrir una vista durante la corrida no cambia el resultado. Para cada métrica se calculó el intervalo de confianza del 95\,\%
 \begin{equation}
     \bar{x} \pm t_{0{,}975;\,n-1} \, \frac{s}{\sqrt{n}},
 \end{equation}
-y la diferencia pareada de cada escenario contra E0, que es significativa cuando su intervalo no contiene al cero. La cantidad de réplicas necesaria para un error $e$ se estimó con $n = (t \cdot s / e)^2$. Para el análisis de sensibilidad se varió la temperatura real del día entre 10 y 30\,°C, con el plan de E1 armado para 15\,°C. En total son 4 escenarios $\times$ 20 semillas $\times$ 5 temperaturas $=$ 400 corridas, todas incluidas en la planilla de resultados.
+y la diferencia pareada de cada escenario contra E0, que es significativa cuando su intervalo no contiene al cero. La cantidad de réplicas necesaria para un error $e$ se estimó con $n = (t \cdot s / e)^2$. Para el análisis de sensibilidad se varió la temperatura del día entre 10 y 30\,°C; E1 se planificó con esa temperatura (el pronóstico acierta). Aparte, 60 corridas miden qué pasa si el pronóstico falla: E1 armado para 15\,°C en días de 20, 25 y 30\,°C. En total son 4 escenarios $\times$ 20 semillas $\times$ 5 temperaturas $=$ 400 corridas, todas incluidas en la planilla de resultados.
 
 % ---------------------------------------------------------------------
 \section{Resultados}
@@ -293,17 +294,17 @@ La Tabla~\ref{tab:escenarios} y la Figura~\ref{fig:escenarios} muestran los esce
 \toprule
 \textbf{Métrica} & \textbf{E0 Base 2025} & \textbf{E1 Optimista} & \textbf{E2 Pesimista} & \textbf{E3 Excesivo} \\
 \midrule
-Corredores deshidratados (\%) & 0,09 $\pm$ 0,01 & 0,22 $\pm$ 0,02 & 41,68 $\pm$ 0,20 & 0,10 $\pm$ 0,01 \\
-Deshidratación severa (\%) & 0,00 $\pm$ 0,00 & 0,00 $\pm$ 0,00 & 7,19 $\pm$ 0,09 & 0,00 $\pm$ 0,00 \\
-No atendidos (\%) & 0,25 $\pm$ 0,01 & 0,31 $\pm$ 0,01 & 48,06 $\pm$ 0,06 & 0,00 $\pm$ 0,00 \\
-Espera media en cola (s) & 0,09 $\pm$ 0,00 & 0,11 $\pm$ 0,00 & 1,91 $\pm$ 0,00 & 0,00 $\pm$ 0,00 \\
+Corredores deshidratados (\%) & 0,08 $\pm$ 0,01 & 0,20 $\pm$ 0,01 & 37,54 $\pm$ 0,17 & 0,09 $\pm$ 0,01 \\
+Deshidratación severa (\%) & 0,00 $\pm$ 0,00 & 0,00 $\pm$ 0,00 & 6,74 $\pm$ 0,10 & 0,00 $\pm$ 0,00 \\
+No atendidos (\%) & 0,25 $\pm$ 0,01 & 0,31 $\pm$ 0,01 & 47,64 $\pm$ 0,06 & 0,00 $\pm$ 0,00 \\
+Espera media en cola (s) & 0,09 $\pm$ 0,00 & 0,11 $\pm$ 0,00 & 1,88 $\pm$ 0,00 & 0,00 $\pm$ 0,00 \\
 Espera P95, puesto más exigido (s) & 3,0 $\pm$ 0,0 & 3,0 $\pm$ 0,0 & 5,0 $\pm$ 0,1 & 0,0 $\pm$ 0,0 \\
-Unidades faltantes (u) & 0 $\pm$ 0 & 76 $\pm$ 25 & 171 $\pm$ 9 & 0 $\pm$ 0 \\
-Ocupación de voluntarios (\%) & 15,1 $\pm$ 0,0 & 16,6 $\pm$ 0,0 & 35,7 $\pm$ 0,0 & 7,6 $\pm$ 0,0 \\
-Costo total (M\$) & 115,99 $\pm$ 0,76 & 52,69 $\pm$ 0,00 & 61,33 $\pm$ 0,08 & 143,73 $\pm$ 0,00 \\
-Costo por atención (\$) & 969 $\pm$ 6 & 507 $\pm$ 0 & 824 $\pm$ 1 & 1.199 $\pm$ 1 \\
-Valor del sobrante (M\$) & 60,27 $\pm$ 0,75 & 0,49 $\pm$ 0,05 & 22,80 $\pm$ 0,04 & 86,96 $\pm$ 0,04 \\
-Pérdida por exceso (M\$) & 61,58 $\pm$ 0,75 & 1,53 $\pm$ 0,05 & 23,08 $\pm$ 0,04 & 89,72 $\pm$ 0,04 \\
+Unidades faltantes (u) & 0 $\pm$ 0 & 29 $\pm$ 13 & 171 $\pm$ 9 & 0 $\pm$ 0 \\
+Ocupación de voluntarios (\%) & 14,6 $\pm$ 0,0 & 16,3 $\pm$ 0,0 & 34,7 $\pm$ 0,0 & 7,4 $\pm$ 0,0 \\
+Costo total (M\$) & 119,51 $\pm$ 0,72 & 55,51 $\pm$ 0,03 & 61,35 $\pm$ 0,08 & 143,83 $\pm$ 0,00 \\
+Costo por atención (\$) & 988 $\pm$ 6 & 532 $\pm$ 0 & 811 $\pm$ 1 & 1.187 $\pm$ 1 \\
+Valor del sobrante (M\$) & 63,47 $\pm$ 0,70 & 3,05 $\pm$ 0,05 & 22,59 $\pm$ 0,04 & 86,75 $\pm$ 0,04 \\
+Pérdida por exceso (M\$) & 64,83 $\pm$ 0,70 & 4,11 $\pm$ 0,05 & 22,88 $\pm$ 0,04 & 89,61 $\pm$ 0,04 \\
 \bottomrule
 \end{tabular}
 \caption{Escenarios a 15\,°C: media $\pm$ semiamplitud del intervalo de confianza del 95\,\% (20 réplicas).}
@@ -317,7 +318,7 @@ Pérdida por exceso (M\$) & 61,58 $\pm$ 0,75 & 1,53 $\pm$ 0,05 & 23,08 $\pm$ 0,0
     \label{fig:escenarios}
 \end{figure}
 
-La configuración real (E0) atiende prácticamente a todos (0,25\,\% sin atender, en el pico del km 5) y casi nadie se deshidrata, pero más de la mitad de su costo es sobrante: compra unos \$\,60\,M en insumos que no se consumen. El escenario pesimista (E2) produce la congestión esperada: casi la mitad de los que quieren parar no es atendida, la espera en el puesto más exigido llega a 5,0\,s, faltan 171 unidades y el 42\,\% de los corredores termina deshidratado. El excesivo (E3) apenas atiende mejor que la base, pero cuesta más y pierde \$\,90\,M entre insumos sin usar y horas de voluntarios ociosas.
+La configuración real (E0) atiende prácticamente a todos (0,25\,\% sin atender, en el pico del km 5) y casi nadie se deshidrata, pero más de la mitad de su costo es sobrante: compra unos \$\,63\,M en insumos que no se consumen. El escenario pesimista (E2) produce la congestión esperada: casi la mitad de los que quieren parar no es atendida, la espera en el puesto más exigido llega a 5,0\,s, faltan 171 unidades y el 38\,\% de los corredores termina deshidratado. El excesivo (E3) apenas atiende mejor que la base, pero cuesta más y pierde \$\,90\,M entre insumos sin usar y horas de voluntarios ociosas.
 
 \subsection{Diferencias pareadas contra la configuración real}
 
@@ -328,25 +329,25 @@ La configuración real (E0) atiende prácticamente a todos (0,25\,\% sin atender
 \toprule
 \textbf{Métrica} & \textbf{E1 $-$ E0} & \textbf{E2 $-$ E0} & \textbf{E3 $-$ E0} \\
 \midrule
-Corredores deshidratados (\%) & 0,13 $\pm$ 0,02 $^{*}$ & 41,59 $\pm$ 0,20 $^{*}$ & 0,01 $\pm$ 0,02 (ns) \\
-No atendidos (\%) & 0,07 $\pm$ 0,01 $^{*}$ & 47,81 $\pm$ 0,05 $^{*}$ & $-$0,25 $\pm$ 0,01 $^{*}$ \\
+Corredores deshidratados (\%) & 0,13 $\pm$ 0,01 $^{*}$ & 37,46 $\pm$ 0,17 $^{*}$ & 0,01 $\pm$ 0,01 (ns) \\
+No atendidos (\%) & 0,06 $\pm$ 0,01 $^{*}$ & 47,39 $\pm$ 0,05 $^{*}$ & $-$0,25 $\pm$ 0,01 $^{*}$ \\
 Espera P95, puesto más exigido (s) & 0,0 $\pm$ 0,0 (ns) & 1,9 $\pm$ 0,1 $^{*}$ & $-$3,0 $\pm$ 0,0 $^{*}$ \\
-Unidades faltantes (u) & 76 $\pm$ 25 $^{*}$ & 171 $\pm$ 9 $^{*}$ & 0 $\pm$ 0 (ns) \\
-Costo total (M\$) & $-$63,30 $\pm$ 0,76 $^{*}$ & $-$54,67 $\pm$ 0,75 $^{*}$ & 27,74 $\pm$ 0,76 $^{*}$ \\
-Pérdida por exceso (M\$) & $-$60,05 $\pm$ 0,75 $^{*}$ & $-$38,50 $\pm$ 0,76 $^{*}$ & 28,14 $\pm$ 0,75 $^{*}$ \\
+Unidades faltantes (u) & 29 $\pm$ 13 $^{*}$ & 171 $\pm$ 9 $^{*}$ & 0 $\pm$ 0 (ns) \\
+Costo total (M\$) & $-$63,99 $\pm$ 0,71 $^{*}$ & $-$58,16 $\pm$ 0,71 $^{*}$ & 24,32 $\pm$ 0,72 $^{*}$ \\
+Pérdida por exceso (M\$) & $-$60,72 $\pm$ 0,69 $^{*}$ & $-$41,95 $\pm$ 0,71 $^{*}$ & 24,78 $\pm$ 0,70 $^{*}$ \\
 \bottomrule
 \end{tabular}
 \caption{Diferencia contra E0 con la misma semilla (intervalo de confianza del 95\,\%). $^{*}$ significativa al 5\,\%; (ns) no significativa.}
 \label{tab:diferencias}
 \end{table}
 
-Con la misma semilla, el escenario optimista cuesta \$\,63,3\,M menos que la base ($-$55\,\%) y desperdicia \$\,60\,M menos. A cambio, la deshidratación sube 0,13 puntos (de 0,09 a 0,22\,\%): la diferencia es estadísticamente significativa, pero queda muy por debajo del objetivo de menos del 1\,\% y sin casos severos. E3 atiende a todos (0,25 puntos menos de no atendidos, diferencia significativa), pero no cambia la deshidratación (la diferencia no es significativa) y cuesta \$\,28\,M más.
+Con la misma semilla, el escenario optimista cuesta \$\,64,0\,M menos que la base ($-$54\,\%) y desperdicia \$\,61\,M menos. A cambio, la deshidratación sube 0,13 puntos (de 0,08 a 0,20\,\%): la diferencia es estadísticamente significativa, pero queda muy por debajo del objetivo de menos del 1\,\% y sin casos severos. E3 atiende a todos (0,25 puntos menos de no atendidos, diferencia significativa), pero no cambia la deshidratación (la diferencia no es significativa) y cuesta \$\,24\,M más.
 
-Para fijar la cantidad de réplicas se usó $n = (t \cdot s / e)^2$ con un error aceptado de 0,5 puntos porcentuales en deshidratados y no atendidos y de \$\,1\,M en el costo. Con una primera tanda de 10 réplicas, la deshidratación y los no atendidos pedían como mucho 3 réplicas en las 20 combinaciones de escenario y temperatura, pero el costo de E0 a 15\,°C, que varía más por los viajes de camión, pedía 15. Por eso se llevaron todas las combinaciones a 20 réplicas: con ellas la fórmula pide como máximo 12 (el costo de E0), así que el error queda por debajo del aceptado en todas las métricas. La semiamplitud del costo de E0, de \$\,0,76\,M, es chica frente a las diferencias entre escenarios, de \$\,28\,M o más.
+Para fijar la cantidad de réplicas se usó $n = (t \cdot s / e)^2$ con un error aceptado de 0,5 puntos porcentuales en deshidratados y no atendidos y de \$\,1\,M en el costo. Con una primera tanda de 10 réplicas, la deshidratación y los no atendidos pedían como mucho 3 réplicas en las 20 combinaciones de escenario y temperatura, pero el costo de E0 a 15\,°C, que varía más por los viajes de camión, pedía 15. Por eso se llevaron todas las combinaciones a 20 réplicas: con ellas la fórmula pide como máximo 11 (el costo de E0), así que el error queda por debajo del aceptado en todas las métricas. La semiamplitud del costo de E0, de \$\,0,72\,M, es chica frente a las diferencias entre escenarios, de \$\,24\,M o más.
 
 \subsection{Sensibilidad a la temperatura}
 
-La Figura~\ref{fig:sensibilidad} y la Tabla~\ref{tab:sensibilidad} muestran qué pasa si la temperatura del día no es la prevista. El plan de E1 se mantuvo armado para 15\,°C.
+La Figura~\ref{fig:sensibilidad} y la Tabla~\ref{tab:sensibilidad} muestran cómo cambian los escenarios con la temperatura del día. E1 se planificó en cada caso con esa temperatura.
 
 \begin{figure}[H]
     \centering
@@ -362,38 +363,59 @@ La Figura~\ref{fig:sensibilidad} y la Tabla~\ref{tab:sensibilidad} muestran qué
 \toprule
 \textbf{Métrica} & \textbf{Escenario} & \textbf{10\,°C} & \textbf{15\,°C} & \textbf{20\,°C} & \textbf{25\,°C} & \textbf{30\,°C} \\
 \midrule
-Deshidratados (\%) & E0 Base & 0,11 $\pm$ 0,01 & 0,09 $\pm$ 0,01 & 0,16 $\pm$ 0,02 & 0,31 $\pm$ 0,03 & 2,64 $\pm$ 0,07 \\
- & E1 Optimista & 0,15 $\pm$ 0,02 & 0,22 $\pm$ 0,02 & 0,51 $\pm$ 0,04 & 6,33 $\pm$ 0,16 & 10,22 $\pm$ 0,12 \\
- & E2 Pesimista & 13,39 $\pm$ 0,13 & 41,68 $\pm$ 0,20 & 59,72 $\pm$ 0,18 & 65,00 $\pm$ 0,15 & 75,14 $\pm$ 0,16 \\
- & E3 Excesivo & 0,10 $\pm$ 0,01 & 0,10 $\pm$ 0,01 & 0,16 $\pm$ 0,02 & 0,07 $\pm$ 0,01 & 0,00 $\pm$ 0,00 \\
+Deshidratados (\%) & E0 Base & 0,10 $\pm$ 0,01 & 0,08 $\pm$ 0,01 & 0,14 $\pm$ 0,02 & 0,26 $\pm$ 0,02 & 2,14 $\pm$ 0,06 \\
+ & E1 Optimista & 0,25 $\pm$ 0,01 & 0,20 $\pm$ 0,01 & 0,14 $\pm$ 0,02 & 0,05 $\pm$ 0,01 & 0,00 $\pm$ 0,01 \\
+ & E2 Pesimista & 12,16 $\pm$ 0,12 & 37,54 $\pm$ 0,17 & 55,25 $\pm$ 0,15 & 63,91 $\pm$ 0,12 & 76,86 $\pm$ 0,10 \\
+ & E3 Excesivo & 0,09 $\pm$ 0,01 & 0,09 $\pm$ 0,01 & 0,13 $\pm$ 0,02 & 0,06 $\pm$ 0,01 & 0,00 $\pm$ 0,00 \\
 \midrule
-No atendidos (\%) & E0 Base & 0,00 $\pm$ 0,00 & 0,25 $\pm$ 0,01 & 0,98 $\pm$ 0,02 & 1,31 $\pm$ 0,02 & 1,79 $\pm$ 0,02 \\
- & E1 Optimista & 0,00 $\pm$ 0,00 & 0,31 $\pm$ 0,01 & 13,87 $\pm$ 0,04 & 21,95 $\pm$ 0,02 & 26,90 $\pm$ 0,02 \\
- & E2 Pesimista & 43,25 $\pm$ 0,08 & 48,06 $\pm$ 0,06 & 50,08 $\pm$ 0,06 & 50,60 $\pm$ 0,06 & 50,01 $\pm$ 0,05 \\
+No atendidos (\%) & E0 Base & 0,00 $\pm$ 0,00 & 0,25 $\pm$ 0,01 & 0,97 $\pm$ 0,02 & 1,30 $\pm$ 0,02 & 1,76 $\pm$ 0,02 \\
+ & E1 Optimista & 0,12 $\pm$ 0,02 & 0,31 $\pm$ 0,01 & 0,42 $\pm$ 0,01 & 0,14 $\pm$ 0,00 & 0,01 $\pm$ 0,00 \\
+ & E2 Pesimista & 42,94 $\pm$ 0,08 & 47,64 $\pm$ 0,06 & 49,51 $\pm$ 0,06 & 49,93 $\pm$ 0,06 & 49,27 $\pm$ 0,05 \\
  & E3 Excesivo & 0,00 $\pm$ 0,00 & 0,00 $\pm$ 0,00 & 0,00 $\pm$ 0,00 & 0,00 $\pm$ 0,00 & 0,00 $\pm$ 0,00 \\
 \midrule
-Costo total (M\$) & E0 Base & 106,73 $\pm$ 0,18 & 115,99 $\pm$ 0,76 & 107,49 $\pm$ 0,03 & 112,18 $\pm$ 0,17 & 120,90 $\pm$ 0,14 \\
- & E1 Optimista & 52,69 $\pm$ 0,00 & 52,69 $\pm$ 0,00 & 52,72 $\pm$ 0,00 & 52,74 $\pm$ 0,00 & 52,76 $\pm$ 0,00 \\
- & E2 Pesimista & 57,01 $\pm$ 0,08 & 61,33 $\pm$ 0,08 & 65,73 $\pm$ 0,07 & 69,68 $\pm$ 0,06 & 74,14 $\pm$ 0,06 \\
- & E3 Excesivo & 126,03 $\pm$ 0,00 & 143,73 $\pm$ 0,00 & 161,42 $\pm$ 0,00 & 179,12 $\pm$ 0,00 & 196,82 $\pm$ 0,01 \\
+Costo total (M\$) & E0 Base & 107,20 $\pm$ 0,19 & 119,51 $\pm$ 0,72 & 111,75 $\pm$ 0,07 & 120,52 $\pm$ 0,04 & 130,12 $\pm$ 0,04 \\
+ & E1 Optimista & 52,85 $\pm$ 0,12 & 55,51 $\pm$ 0,03 & 62,61 $\pm$ 0,11 & 65,23 $\pm$ 0,12 & 68,18 $\pm$ 0,12 \\
+ & E2 Pesimista & 57,03 $\pm$ 0,08 & 61,35 $\pm$ 0,08 & 65,79 $\pm$ 0,07 & 69,72 $\pm$ 0,06 & 74,37 $\pm$ 0,06 \\
+ & E3 Excesivo & 126,12 $\pm$ 0,00 & 143,83 $\pm$ 0,00 & 161,54 $\pm$ 0,00 & 179,25 $\pm$ 0,00 & 196,97 $\pm$ 0,01 \\
 \bottomrule
 \end{tabular}
 \caption{Sensibilidad a la temperatura real del día (media $\pm$ intervalo de confianza del 95\,\%, 20 réplicas por celda).}
 \label{tab:sensibilidad}
 \end{table}
 
-El plan óptimo depende del clima. Con el plan de 15\,°C, un día de 20\,°C eleva los no atendidos al 13,9\,\% (contra 0,3\,\% a 15\,°C) y los intervalos no se superponen, por lo que la diferencia es significativa; los deshidratados suben a 0,51\,\%. Desde los 25\,°C la deshidratación se dispara: 6,3\,\% a 25\,°C y 10,2\,\% a 30\,°C. Aplicada con el pronóstico, la regla $d_{\max}(T)$ pide 9 puestos con 10--12\,°C, 12 con 15\,°C y los 15 desde 18\,°C. Desde 25\,°C ni siquiera los 15 puestos reales alcanzan, porque el tramo de la largada al km 5 supera la distancia máxima. La configuración real tolera el calor (2,6\,\% de deshidratados a 30\,°C) a costa de una pérdida por exceso de \$\,52 a 62\,M a cualquier temperatura, y el exceso aumenta su costo con el calor sin mejorar la atención.
+Planificado con el pronóstico, el escenario optimista mantiene la deshidratación por debajo del 0,3\,\% y los no atendidos por debajo del 0,5\,\% a todas las temperaturas, y a 25 y 30\,°C deshidrata menos que la configuración real, que llega al 2,1\,\% a 30\,°C por falta de voluntarios en los primeros puestos. Su costo va de \$\,52,9 a 68,2\,M, entre 44 y 54\,\% menos que la base (Tabla~\ref{tab:plan-clima}). La base paga ese margen con una pérdida por exceso de \$\,56 a 70\,M a cualquier temperatura, y el exceso aumenta su costo con el calor sin mejorar la atención.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+ & \textbf{10\,°C} & \textbf{15\,°C} & \textbf{20\,°C} & \textbf{25\,°C} & \textbf{30\,°C} \\
+\midrule
+Puestos armados & 9 & 12 & 15 & 15 & 15 \\
+Voluntarios (respecto de la base) & $\times$1,00 & $\times$1,00 & $\times$1,17 & $\times$1,34 & $\times$1,52 \\
+Viajes de camión de respaldo & 2,9 & 4,4 & 6,3 & 4,8 & 5,8 \\
+Deshidratados (\%) & 0,25 & 0,20 & 0,14 & 0,05 & 0,00 \\
+Costo total (M\$) & 52,85 & 55,51 & 62,61 & 65,23 & 68,18 \\
+Ahorro contra la base & 51\,\% & 54\,\% & 44\,\% & 46\,\% & 48\,\% \\
+\bottomrule
+\end{tabular}
+\caption{Plan del escenario optimista según la temperatura del día (media de 20 réplicas).}
+\label{tab:plan-clima}
+\end{table}
+
+Si el pronóstico falla, el plan de 15\,°C en un día de 20\,°C deja 0,35\,\% de deshidratados, porque los camiones de respaldo reponen lo que falta (17,8 viajes en promedio). Con un error mayor, los 12 puestos y los voluntarios no alcanzan: 7,6\,\% de deshidratados en un día de 25\,°C y 15,5\,\% en uno de 30\,°C. El plan tolera entonces un error de unos 5\,°C, y con un pronóstico más caluroso hay que rearmarlo.
 
 % ---------------------------------------------------------------------
 \section{Conclusiones}
 
 El modelo, construido con los datos reales de los 12.792 corredores de la Maratón de Buenos Aires 2025, reproduce el flujo por puesto y los tiempos de la carrera, y permite evaluar configuraciones que no se pueden ensayar en la realidad.
 
-La configuración actual atiende prácticamente a todos, pero compra mucho más de lo que se consume: más de la mitad del gasto termina como sobrante. Un plan ajustado al pronóstico, que a 15\,°C arma 12 puestos y dimensiona el stock con el consumo observado, mantiene la deshidratación por debajo del 1\,\% y la atención prácticamente completa con menos de la mitad del costo. La escasez de recursos genera congestión y casi la mitad de los corredores sin atender, y el exceso solo agrega costo.
+La configuración actual atiende prácticamente a todos, pero compra mucho más de lo que se consume: más de la mitad del gasto termina como sobrante. Un plan ajustado al pronóstico, que arma los puestos, el stock y los voluntarios para la temperatura del día y deja los camiones como respaldo, mantiene la deshidratación por debajo del 0,3\,\% y la atención prácticamente completa entre 10 y 30\,°C, con un ahorro de entre 44 y 54\,\%. La escasez de recursos genera congestión y casi la mitad de los corredores sin atender, y el exceso solo agrega costo.
 
-Se recomienda planificar la cantidad de puestos y el stock con el pronóstico del día anterior, mediante la regla de distancia máxima calibrada en este trabajo, y conservar los camiones de reposición como respaldo si la temperatura supera la del plan.
+Se recomienda planificar la cantidad de puestos y el stock con el pronóstico del día anterior, mediante la regla de distancia máxima calibrada en este trabajo, dimensionar el stock y los voluntarios con la demanda medida para esa temperatura, y conservar los camiones de reposición como respaldo: cubren un error de pronóstico de unos 5\,°C.
 
-\textbf{Limitaciones y trabajo futuro.} La versión gratuita de AnyLogic limita la corrida a 5 horas cuando se usa la Pedestrian Library; ese horizonte cubre al 89\,\% de los corredores. Los precios, la tarifa de los voluntarios y el consumo de gel y fruta son valores de ejemplo, configurables en el modelo. No se modelan el abandono de corredores ni la variación de la temperatura durante la carrera. No se encontraron datos publicados de qué porcentaje de corredores para en cada puesto según su nivel, por lo que los intervalos entre tomas se apoyan en la bibliografía citada y quedan como parámetros. Contar con datos de consumo de la organización permitiría reemplazar los supuestos y validar el stock.
+\textbf{Limitaciones y trabajo futuro.} La versión gratuita de AnyLogic limita la corrida a 5 horas cuando se usa la Pedestrian Library, así que la versión con escenas 3D (la publicada en AnyLogic Cloud) llega hasta los 300 min; los resultados de este trabajo salen de la versión sin escenas 3D, que cubre la carrera completa. Los precios, la tarifa de los voluntarios y el consumo de gel y fruta son valores de ejemplo, configurables en el modelo. No se modelan el abandono de corredores ni la variación de la temperatura durante la carrera. No se encontraron datos publicados de qué porcentaje de corredores para en cada puesto según su nivel, por lo que los intervalos entre tomas se apoyan en la bibliografía citada y quedan como parámetros. Contar con datos de consumo de la organización permitiría reemplazar los supuestos y validar el stock.
 
 % ---------------------------------------------------------------------
 \section*{Material complementario}
@@ -401,11 +423,11 @@ Se recomienda planificar la cantidad de puestos y el stock con el pronóstico de
 \begin{itemize}
     \item \textbf{Modelo en AnyLogic Cloud:} \completar{(pegar el link una vez publicado)}. Autores: Ramiro Ceballos (\href{mailto:rceballos.work@gmail.com}{rceballos.work@gmail.com}), Valeria Lupo Piatti (\completar{correo}) y Magali Lentino (\completar{correo}).
     \item \textbf{Video explicativo:} \completar{(pegar el link de YouTube)}.
-    \item \textbf{Modelo AnyLogic:} \texttt{PuestosDeHidratacionDeUnaMaraton.alp}, con los shapefiles del recorrido y de los puestos.
+    \item \textbf{Modelos AnyLogic:} \texttt{PuestosDeHidratacionDeUnaMaraton.alp} (con escenas 3D, para la demostración y la nube) y \texttt{PuestosDeHidratacionDeUnaMaraton\_CarreraCompleta.alp} (sin escenas 3D, con la que se hicieron los experimentos), con los shapefiles del recorrido y de los puestos.
     \item \textbf{Planilla de resultados:} \texttt{Resultados\_Corridas\_TPI.xlsx}, con las 400 corridas, los intervalos de confianza, las diferencias pareadas, la sensibilidad y una hoja por escenario alternativo (Optimista, Pesimista y Excesivo), calculados con fórmulas.
 \end{itemize}
 
-\textbf{Instrucciones de uso del modelo.} Al iniciar, la pantalla principal ofrece cuatro vistas. \emph{Mapa 2D} muestra el recorrido, los puestos y los corredores, y al hacer clic en un puesto se abre su escena 3D. \emph{Puestos 3D} muestra la atención en un puesto, con controles para cambiar voluntarios, stock y demora del camión. \emph{Lógica} muestra el diagrama de flujo. \emph{Métricas} reúne los indicadores, los costos, los precios editables y la comparación con la carrera real. Hay un experimento por escenario, con sus parámetros ya cargados: \texttt{Simulation} (base 2025), \texttt{Optimista}, \texttt{Pesimista} y \texttt{Excesivo}. En cada uno se pueden cambiar \texttt{temperaturaC} (temperatura del día; 15 es la de 2025), \texttt{semilla} (la misma semilla da el mismo resultado) y los recursos del escenario.
+\textbf{Instrucciones de uso del modelo.} Al iniciar, la pantalla principal ofrece cuatro vistas. \emph{Mapa 2D} muestra el recorrido, los puestos y los corredores, y al hacer clic en un puesto se abre su escena 3D. \emph{Puestos 3D} muestra la atención en un puesto, con controles para cambiar voluntarios, stock y demora del camión. \emph{Lógica} muestra el diagrama de flujo. \emph{Métricas} reúne los indicadores, los costos, los precios editables y la comparación con la carrera real. Hay un experimento por escenario, con sus parámetros ya cargados: \texttt{Simulation} (base 2025), \texttt{Optimista}, \texttt{Pesimista} y \texttt{Excesivo}. En cada uno se pueden cambiar \texttt{temperaturaC} (temperatura del día; 15 es la de 2025), \texttt{semilla} (la misma semilla da el mismo resultado) y los recursos del escenario. En la versión sin escenas 3D (\texttt{PuestosDeHidratacionDeUnaMaraton\_CarreraCompleta}), los experimentos \texttt{Sensibilidad} y \texttt{Relevamiento} reproducen las 400 y las 275 corridas de este trabajo (para el pronóstico errado, fijar en Sensibilidad escenario = 1, temperaturaPlanificada = 15 y temperaturaC de 20 a 30); la pestaña \emph{Puestos 3D} lleva al mapa 2D.
 
 % ---------------------------------------------------------------------
 \begin{thebibliography}{9}

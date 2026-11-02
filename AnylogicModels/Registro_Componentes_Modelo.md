@@ -482,3 +482,57 @@ El generador del motor queda para la biblioteca de peatones. Los bloques del flo
 
 **Consecuencia.** Cambió la secuencia de números de cada semilla, así que se volvieron a correr `Sensibilidad` (200 corridas) y `Relevamiento` (55). Las corridas anteriores quedaron en `Datos/experimentos/version_anterior_20261101/`.
 
+## Copia para la carrera completa, sin Pedestrian Library (2026-11-02)
+
+**Por qué.** La versión PLE corta toda corrida a las 5 horas de modelo cuando el modelo usa la Pedestrian Library. Según la página de ediciones de AnyLogic, ese límite rige para todas las librerías salvo la Process Modeling Library. De las que usa este modelo, la única afectada es la Pedestrian, porque el GIS es parte del motor y no una librería. Con el corte en 300 min quedaban afuera los 1.405 corredores más lentos (11 %) y 1.174 pasadas por los puestos del km 33 al 40. Además, `porcentajeDeshidratados()` se calcula sobre los que llegaron, así que dejaba afuera justo al grupo más expuesto.
+
+**Dos modelos en `Model/`:**
+
+| Carpeta | Para qué | Horizonte |
+|---|---|---|
+| `PuestosDeHidratacionDeUnaMaraton/` | Demo en vivo, video y AnyLogic Cloud: tiene las escenas 3D de cada puesto | 300 min (límite de PLE) |
+| `PuestosDeHidratacionDeUnaMaraton_CarreraCompleta/` | Experimentos del informe y la planilla | Hasta que llega el último corredor (unos 400 min), con 600 min de tope |
+
+**Qué cambia en la copia:**
+- No están los agentes `PuestoDetalle3D`, `Voluntario`, `peatonPuesto` ni `Transeunte`, la población `puestosDetalle3D` ni la referencia a `com.anylogic.libraries.pedestrian` en el `.alpx`.
+- Los `SelectOutput` de los puestos ya no llaman a `puestosDetalle3D.get(i).ingresarCorredor(...)`, que solo dibujaba al corredor en la escena.
+- `irA("MAPA3D")` lleva al mapa 2D y `verPuesto3D` no hace nada.
+- `registrarLlegada` termina la corrida cuando llega el último corredor: llama a `exportarResultados()` y a `finishSimulation()`.
+- Los experimentos tienen `FinalTime` = 600 y `FinalDate` = inicio + 600 min. Usan "Stop at specified date", así que hay que cambiar las dos cosas: con solo `FinalTime` seguía cortando en 300.
+- Los gráficos de Métricas tienen una ventana de 480 min y guardan 500 muestras.
+- El modelo se llama `PuestosDeHidratacionDeUnaMaraton_CarreraCompleta` y el paquete Java, `puestosdehidrataciondeunamaratoncompleta`, para que no choque con el original.
+
+**Equivalencia comprobada.** Con el corte en 300 min, 8 corridas de la copia (4 escenarios × semillas 1 y 2 a 15 °C) dan exactamente los mismos valores que el modelo con 3D en las 35 métricas exportadas. Por eso los dos modelos tienen la misma lógica, y la copia solo agrega el tramo final de la carrera.
+
+**Trampas que aparecieron:**
+- Los archivos del `.alpx` usan saltos LF. AnyLogic toma el salto de línea del archivo raíz para separar el código de cada función (`/*ALCODESTART::id*/` + salto). Si un archivo queda con CRLF, las funciones de los demás agentes se cargan vacías ("This method must return a result of type ...").
+- Los cambios en la lógica hay que hacerlos en los dos modelos.
+
+## Óptimo planificado con el pronóstico, con camiones de respaldo (2026-11-02)
+
+**Problema.** Con la carrera completa, el Optimista armado para 15 °C dejaba 12,8 % de deshidratados en un día de 20 °C. No era un error de código. La sensibilidad evaluaba el plan de 15 °C en días más calurosos, sin camiones y con el stock medido a 15 °C, y el stock se agotaba antes de que pasaran los corredores más lentos.
+
+**Cambios (en los dos modelos):**
+
+| Elemento | Qué hace |
+|---|---|
+| `Main.temperaturaPlan()` | Temperatura con la que se arma el plan: `temperaturaPlanificada`, o `temperaturaC` si es negativa (el pronóstico acierta). La usan `calcularPuestosActivos`, `retiroPlanificado`, `factorVoluntariosEfectivo` y la exportación. |
+| `Main.retiroPlanificado(i, k)` | Una tabla por temperatura planificada (10, 15, 20, 25 y 30 °C); usa la más cercana. Cada valor es la demanda por corredor (lo retirado más lo que habrían tomado los que se fueron sin atender por falta de voluntario) + 1,65 desvíos, medida con el Relevamiento a esa temperatura (5 semillas, C = 0,114). Devuelve −1 si la cantidad de puestos no coincide con la del plan medido. |
+| `Main.factorVoluntariosEfectivo()` | En el óptimo: `factorVoluntariosOptimo × max(1, 1 + 0,69 × (nivelCalor − 0,25))`, o sea ×1 hasta 15 °C, ×1,17 a 20 °C, ×1,34 a 25 °C y ×1,52 a 30 °C. Sigue lo que crecen los corredores que paran (relevamiento con 15 puestos: ×1,20, ×1,38 y ×1,52). |
+| `Main.reposicionActiva()` | Ahora es true también en el óptimo; solo el relevamiento va sin camiones. |
+| `Puesto.pasados` | Corredores que ya pasaron por el puesto; se cuenta en `Main.decidirHidratacion`. |
+| `Puesto.demandaRestante(k)` | Retiro por corredor medido hasta ahora × corredores que faltan pasar. |
+| `Puesto.faltaRespaldo(k)` | En el óptimo: lo que hay que traer, `ceil(d + z·√d − stock)`, desde que pasaron 500 corredores. |
+| `Puesto.faltaParaCarga(k)` | Lo que trae cada viaje: hasta la capacidad (otros escenarios) o `faltaRespaldo` (óptimo). La usan `recibirCarga` y `necesitaCarga`. |
+| `Puesto.revisarReposicion()` | En el óptimo pide un camión solo si `demandaRestante > stock`; en los demás, con el punto de reposición de siempre. |
+| Experimentos | `Relevamiento`: temperatura de 10 a 30 °C cada 5 y `temperaturaPlanificada` = −1 (275 corridas). `Sensibilidad`: `temperaturaPlanificada` = −1 (un RANGE de −1 a −1, porque no se encontró cómo serializar un FIXED con valor). |
+
+**Resultados (Sensibilidad, carrera completa):** el óptimo queda debajo del 0,3 % de deshidratados de 10 a 30 °C (0,25 / 0,20 / 0,14 / 0,05 / 0,00 %), con un costo de 52,9 a 68,2 M$, entre 44 y 54 % menos que la base. La base llega al 2,1 % a 30 °C.
+
+**Pronóstico errado** (60 corridas: escenario 1, `temperaturaPlanificada` = 15, `temperaturaC` de 20 a 30): 0,35 % de deshidratados a 20 °C, 7,6 % a 25 °C y 15,5 % a 30 °C. Los camiones cubren unos 5 °C de error. Están en `Datos/experimentos/pronostico_errado_*.csv`.
+
+**Trampas que aparecieron:**
+- En los primeros puestos la ola pasa más rápido de lo que tarda un camión. Por eso el stock inicial tiene que cubrir la demanda completa y no solo lo que se retiró en el relevamiento, donde había corredores que se iban sin atender.
+- Un `%` dentro de un texto armado con `%` en Python rompe el formato.
+- `\"` dentro de un string crudo de Python queda tal cual en el XML.
+

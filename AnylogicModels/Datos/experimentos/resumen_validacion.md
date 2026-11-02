@@ -2,8 +2,8 @@
 
 Base 2025 a 15 °C, media de 20 semillas.
 
-- Tiempo neto simulado: 235,6 min; real: 235,4 min; simulado/real: 1,000
-- Llegados antes de 300 min: 11.231
+- Tiempo neto simulado: 246,2 min; real: 245,8 min; simulado/real: 1,001
+- Llegados: 12.792; última llegada a los 403,6 min (entre 401,7 y 405,4); en la carrera real, a los 401,0 min
 
 ## Pico de corredores por minuto en cada puesto
 
@@ -27,11 +27,21 @@ Base 2025 a 15 °C, media de 20 semillas.
 
 Puestos dentro del ±10 %: 13 de 15. Desfase del minuto del pico: máximo 4 min.
 
-## Barrido de C (experimento Relevamiento)
+## Barrido de C por temperatura (experimento Relevamiento)
 
-| Puestos armados | Corridas | Deshidratados (%) | No atendidos (%) | Costo total (M$) |
+Plan de puestos de la regla de distancia máxima con la temperatura del día, stock de sobra y sin camiones. Varios valores de C dan el mismo plan, así que la tabla agrupa por plan.
+
+| Temperatura (°C) | Puestos armados | Corridas | Deshidratados (%) | No atendidos (%) |
 |---|---|---|---|---|
-| 9 | 30 | 2,00 | 0,76 | 196,18 |
-| 12 | 5 | 0,27 | 0,28 | 219,39 |
-| 14 | 5 | 0,16 | 0,25 | 209,20 |
-| 15 | 15 | 0,12 | 0,24 | 212,67 |
+| 10 | 7 | 20 | 0,46 | 0,20 |
+| 10 | 9 | 35 | 0,22 | 0,08 |
+| 15 | 9 | 30 | 1,76 | 0,75 |
+| 15 | 12 | 5 | 0,24 | 0,28 |
+| 15 | 14 | 5 | 0,14 | 0,25 |
+| 15 | 15 | 15 | 0,10 | 0,24 |
+| 20 | 9 | 10 | 2,90 | 2,17 |
+| 20 | 13 | 5 | 0,16 | 1,06 |
+| 20 | 14 | 5 | 0,15 | 1,01 |
+| 20 | 15 | 35 | 0,15 | 0,95 |
+| 25 | 15 | 55 | 0,27 | 1,27 |
+| 30 | 15 | 55 | 2,13 | 1,74 |

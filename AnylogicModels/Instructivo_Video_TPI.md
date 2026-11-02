@@ -89,7 +89,7 @@ Cada segmento tiene **qué se ve en pantalla**, **qué hacer** y **qué decir**.
 
 ### 7 · Métricas (3:25 – 4:00)
 
-- **Hacer:** clic en **Métricas**. Si hace falta, adelantar la corrida con el botón de tiempo virtual (>>) hasta el final, unos 300 min.
+- **Hacer:** clic en **Métricas**. Si hace falta, adelantar la corrida con el botón de tiempo virtual (>>) hasta el final, a los 300 min. Este modelo, el de las escenas 3D, corta ahí por el límite de la versión gratuita.
 - **Mostrar:**
   1. Las tarjetas de costos: costo total, costo por corredor atendido, % no atendidos, valor del sobrante y lo consumido.
   2. Los gráficos de stock en % de la capacidad de cada puesto.
@@ -105,10 +105,10 @@ Cada escenario tiene su experimento con los parámetros ya cargados. Para no esp
 |---|---|---|
 | `Pesimista` | % no atendidos cerca del 48 % y los faltantes en Inicio. En 3D (P1), la fila de voluntarios desbordada | «Con un cuarto de los voluntarios y 35 % del stock, casi la mitad de los que quieren parar no es atendida» |
 | `Excesivo` | Valor del sobrante alto en las tarjetas de costos | «El doble de recursos no mejora el servicio: solo agrega sobrante y horas ociosas» |
-| `Optimista` | Costo total cerca de la mitad del base, con no atendidos y deshidratados bajos | «Con 12 puestos y el stock según lo que se consume, el servicio se mantiene a menos de la mitad del costo» |
+| `Optimista` | Costo total cerca de la mitad del base, con no atendidos y deshidratados bajos | «Con 12 puestos, el stock según lo que se consume y camiones solo de respaldo, el servicio se mantiene a menos de la mitad del costo» |
 
 - **Hacer después:** abrir la planilla en la hoja `Escenarios` (o en `E1_Optimista`) y mostrar las medias con su intervalo de confianza. Después, la tabla de escenarios del informe.
-- **Decir:** «Corrimos cada escenario con 10 semillas, con números aleatorios comunes, y comparamos con intervalos de confianza del 95 %».
+- **Decir:** «Para los resultados usamos una copia del modelo sin las escenas 3D, que no tiene el límite de 5 horas y simula la carrera hasta el último corredor. Corrimos cada escenario con 20 semillas, con números aleatorios comunes, y comparamos con intervalos de confianza del 95 %».
 
 ### 9 · (Opcional) Prueba de reproducibilidad (agregar 30 s)
 
@@ -121,7 +121,7 @@ Cada escenario tiene su experimento con los parámetros ya cargados. Para no esp
 ### 10 · Sensibilidad y conclusiones (5:00 – 5:45)
 
 - **Pantalla:** la figura de sensibilidad a la temperatura del informe y después las conclusiones.
-- **Decir:** «Si el día es más caluroso de lo previsto, el plan de 15 °C deja de alcanzar desde los 20 °C. Por eso recomendamos armar los puestos y el stock con el pronóstico del día anterior y conservar los camiones como respaldo. El modelo está publicado en AnyLogic Cloud; el link está en la descripción».
+- **Decir:** «Si el día es más caluroso de lo previsto, el plan se arma con el pronóstico: más puestos, más stock y más voluntarios cuanto más calor. Así la deshidratación queda debajo del 0,3 % hasta 30 °C, con un ahorro de entre 44 y 54 %. Si el pronóstico falla por unos 5 °C, los camiones de respaldo cubren la diferencia. El modelo está publicado en AnyLogic Cloud; el link está en la descripción».
 
 ---
 

@@ -5,9 +5,9 @@ Entradas (carpeta experimentos/):
   relevamiento_v3_corridas.csv                         (experimento Relevamiento)
 
 Salida: experimentos/resumen_validacion.md
-  - tiempo neto simulado contra real y llegados (E0 a 15 °C, media de las semillas)
+  - tiempo neto simulado contra real, llegados y ultima llegada (E0 a 15 °C, media de las semillas)
   - pico de corredores por minuto en cada puesto: real contra simulado
-  - deshidratados y no atendidos segun la cantidad de puestos del barrido de C
+  - deshidratados y no atendidos segun la temperatura y la cantidad de puestos del barrido de C
 
 Uso: python resumir_validacion.py
 """
@@ -31,7 +31,8 @@ lin = ["# Validación y calibración\n",
        f"Base 2025 a 15 °C, media de {len(base)} semillas.\n",
        f"- Tiempo neto simulado: {num(base.netoSim.mean(), 1)} min; real: {num(base.netoReal.mean(), 1)} min; "
        f"simulado/real: {num(base.simSobreReal.mean(), 3)}",
-       f"- Llegados antes de 300 min: {num(base.llegados.mean(), 0)}\n",
+       f"- Llegados: {num(base.llegados.mean(), 0)}; última llegada a los {num(base.minuto.mean(), 1)} min "
+       f"(entre {num(base.minuto.min(), 1)} y {num(base.minuto.max(), 1)}); en la carrera real, a los 401,0 min\n",
        "## Pico de corredores por minuto en cada puesto\n",
        "| Puesto | km | Pico real | Minuto real | Pico simulado | Minuto simulado | Diferencia |",
        "|---|---|---|---|---|---|---|"]
@@ -47,12 +48,13 @@ for p, r in g.iterrows():
 lin.append(f"\nPuestos dentro del ±10 %: {dentro} de {len(g)}. "
            f"Desfase del minuto del pico: máximo {int((g.minSim - g.minReal).abs().max())} min.\n")
 
-lin += ["## Barrido de C (experimento Relevamiento)\n",
-        "| Puestos armados | Corridas | Deshidratados (%) | No atendidos (%) | Costo total (M$) |",
+lin += ["## Barrido de C por temperatura (experimento Relevamiento)\n",
+        "Plan de puestos de la regla de distancia máxima con la temperatura del día, stock de sobra y sin camiones. "
+        "Varios valores de C dan el mismo plan, así que la tabla agrupa por plan.\n",
+        "| Temperatura (°C) | Puestos armados | Corridas | Deshidratados (%) | No atendidos (%) |",
         "|---|---|---|---|---|"]
-for n, d in rel.groupby("puestosActivos"):
-    lin.append(f"| {n} | {len(d)} | {num(d.pctDeshidratados.mean(), 2)} | {num(d.pctNoAtendidos.mean(), 2)} | "
-               f"{num(d.costoTotal.mean() / 1e6, 2)} |")
+for (t, n), d in rel.groupby(["temperaturaC", "puestosActivos"]):
+    lin.append(f"| {num(t, 0)} | {n} | {len(d)} | {num(d.pctDeshidratados.mean(), 2)} | {num(d.pctNoAtendidos.mean(), 2)} |")
 
 (EXP / "resumen_validacion.md").write_text("\n".join(lin) + "\n", encoding="utf-8")
 print("\n".join(lin))
