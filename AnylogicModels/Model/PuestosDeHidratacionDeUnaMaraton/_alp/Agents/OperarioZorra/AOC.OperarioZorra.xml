@@ -2,6 +2,7 @@
 <ActiveObjectClass>
 	<Id>1790100000068</Id>
 	<Name><![CDATA[OperarioZorra]]></Name>
+	<AdditionalClassCode/>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1790100000069</Id>

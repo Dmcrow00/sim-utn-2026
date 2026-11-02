@@ -2,6 +2,7 @@
 <ActiveObjectClass>
 	<Id>1790100013030</Id>
 	<Name><![CDATA[Transeunte]]></Name>
+	<AdditionalClassCode/>
 	<StartupCode><![CDATA[iniciar();]]></StartupCode>
 	<Generic>false</Generic>
 	<GenericParameter>

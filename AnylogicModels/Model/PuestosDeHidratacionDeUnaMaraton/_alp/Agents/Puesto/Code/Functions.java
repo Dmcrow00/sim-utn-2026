@@ -14,14 +14,27 @@ double[] lonEst = { -58.462352, -58.451763, -58.438920, -58.418522, -58.401393, 
 int i = getIndex();
 numero = i + 1;
 km = kms[ i ];
-kmDesdeAnterior = i == 0 ? kms[ 0 ] : kms[ i ] - kms[ i - 1 ];
+// Distancia desde el puesto armado anterior (o desde la largada).
+kmDesdeAnterior = kms[ i ];
+for ( int j = i - 1; j >= 0; j-- ) {
+	if ( main.puestoActivo( j ) ) {
+		kmDesdeAnterior = kms[ i ] - kms[ j ];
+		break;
+	}
+}
 ofrece[ AGUA ] = ofertas[ i ].contains( "A" );
 ofrece[ ISOTONICA ] = ofertas[ i ].contains( "I" );
 ofrece[ FRUTA ] = ofertas[ i ].contains( "F" );
 ofrece[ GEL ] = ofertas[ i ].contains( "G" );
-// Voluntarios trabajando en este puesto. Arranca con el valor general y se
+// Puesto que no se arma en este escenario (ver main.calcularPuestosActivos).
+if ( !main.puestoActivo( i ) ) {
+	for ( int k = 0; k < 4; k++ ) {
+		ofrece[ k ] = false;
+	}
+}
+// Voluntarios trabajando en este puesto (ver main.voluntariosIniciales). Se
 // puede cambiar en la corrida con main.cambiarVoluntarios( i, cantidad ).
-voluntarios = main.voluntariosPorPuesto;
+voluntarios = main.voluntariosIniciales( i );
 // Contexto real de cada puesto, sacado de OpenStreetMap (Overpass y
 // Nominatim) con las coordenadas del puesto: calle del recorrido, barrio,
 // carriles, si alrededor hay edificios o parque (edificios y parques en
@@ -61,6 +74,13 @@ void atender(Corredor c)
 // Un voluntario le alcanza al corredor lo que ofrece el puesto. Que toma
 // depende de su categoria y de como viene de hidratacion y energia.
 atendidos++;
+minutosOcupados += main.tiempoAtencion( c );
+// Cuanto espero en la cola: desde que decidio parar hasta que termino la
+// atencion, menos lo que duro la atencion.
+if ( c.minutoEntradaCola >= 0 ) {
+	registrarEspera( time() - c.minutoEntradaCola - main.tiempoAtencion( c ) );
+	c.minutoEntradaCola = -1;
+}
 
 // Bebida: elite y avanzados prefieren isotonica cuando hay; el resto la
 // elige menos seguido. Si lo que prefiere se acabo, toma la otra.
@@ -122,7 +142,7 @@ void revisarReposicion()
 {/*ALCODESTART::1790100000045*/
 // Si algun insumo llego a su punto de reposicion y no hay un camion en
 // camino, se pide uno. El camion trae de todo lo que haga falta.
-if ( pedidoEnCurso ) {
+if ( pedidoEnCurso || !main.reposicionActiva() ) {
 	return;
 }
 for ( int k = 0; k < 4; k++ ) {
@@ -242,39 +262,10 @@ return s;
 
 double demandaPlanificada(int k)
 {/*ALCODESTART::1790100009323*/
-// Demanda esperada de un insumo en este puesto, en unidades por minuto.
-//
-// Flujo de corredores: 60 * tasaLlegada por minuto (el Source genera un
-// corredor cada exponential( tasaLlegada ) segundos).
-//
-// Bebidas: cada corredor repone en el puesto lo que tomaria desde el puesto
-// anterior.
-//   - Ingesta media 466 mL/h (Jimenez-Alfageme et al., 2025, Sports Med Open
-//     11:26, 160 corredores del Maraton de Sevilla 2022).
-//   - Vaso de 116 mL: 31.740 galones de agua en 1.036.003 vasos para 27.222
-//     corredores del Maraton de Boston 2017 (Cheuvront et al., 2019, Med Sci
-//     Sports Exerc 51(5):1040-1046).
-//   - El calor escala la ingesta con el mismo factor que la deshidratacion de
-//     Corredor (vale 1 con nivelCalor = 0.5).
-// Gel y fruta: unidades por corredor que pasa (supuesto: no hay datos
-// publicados de cuanto se retira en cada puesto).
-if ( !ofrece[ k ] ) {
-	return 0;
-}
-double flujo = 60 * main.tasaLlegada;
-if ( k == GEL ) {
-	return flujo * main.gelesPorCorredor;
-}
-if ( k == FRUTA ) {
-	return flujo * main.frutaPorCorredor;
-}
-double horasDesdeAnterior = kmDesdeAnterior * main.horasPorKmPromedio();
-double vasos = main.consumoLiquidoMlHora * ( 0.6 + 0.8 * main.nivelCalor ) * horasDesdeAnterior / main.volumenVasoMl;
-// Si el puesto da agua e isotonica, la bebida se reparte entre las dos.
-if ( ofrece[ AGUA ] && ofrece[ ISOTONICA ] ) {
-	vasos *= 0.5;
-}
-return flujo * vasos;
+// Demanda esperada de un insumo en este puesto, en unidades por minuto:
+// corredores por minuto segun la carrera real (main.flujoPlanificado) por las
+// unidades planificadas por corredor (unidadesPorCorredor).
+return main.flujoPlanificado( getIndex() ) * unidadesPorCorredor( k );
 /*ALCODEEND*/}
 
 double tiempoEntregaEstimado()
@@ -429,8 +420,19 @@ return t;
 
 double capacidadInicial(int insumo)
 {/*ALCODESTART::1790100014027*/
-// Capacidad con la que arranca cada insumo. La fijan los parametros del
-// experimento (en Main) y es la misma para todos los puestos.
+// Stock con el que arranca cada insumo.
+// Con stockSegunDemanda: cantidad de corredores x unidades planificadas por
+// corredor x coberturaStockInicial (1 = todo lo esperado antes de la largada,
+// como Boston 2017, que puso ~1,6 vasos por corredor en cada puesto). Si no,
+// las capacidades fijas de Main, iguales para todos los puestos.
+// Escenario optimo: lo justo segun el relevamiento de consumo.
+double retiro = main.escenario == 1 ? main.retiroPlanificado( getIndex(), insumo ) : -1;
+if ( retiro >= 0 ) {
+	return Math.ceil( main.cantidadCorredores * retiro );
+}
+if ( main.stockSegunDemanda ) {
+	return Math.ceil( main.cantidadCorredores * unidadesPorCorredor( insumo ) * main.coberturaEfectiva() );
+}
 switch ( insumo ) {
 	case AGUA: return main.capacidadAgua;
 	case ISOTONICA: return main.capacidadIsotonica;
@@ -521,7 +523,7 @@ return horasCamion() * main.costoHoraCamion + horasOperario() * main.costoHoraOp
 
 double costoTotalPuesto()
 {/*ALCODESTART::1792000000015*/
-return costoInsumos() + costoEnvases() + costoVoluntarios() + costoTransporte() + main.costoFijoPuesto;
+return costoInsumos() + costoEnvases() + costoVoluntarios() + costoTransporte() + ( main.puestoActivo( getIndex() ) ? main.costoFijoPuesto : 0 );
 /*ALCODEEND*/}
 
 double valorSobrante()
@@ -548,3 +550,71 @@ int noAtendidosTotales()
 return noAtendidosStock + noAtendidosVoluntarios;
 /*ALCODEEND*/}
 
+double unidadesPorCorredor(int k)
+{/*ALCODESTART::1792000000193*/
+// Unidades de un insumo que se planifican por cada corredor que pasa.
+// Bebidas: lo que el corredor tomaria desde el puesto anterior.
+//   - Ingesta media 466 mL/h (Jimenez-Alfageme et al., 2025, Sports Med Open
+//     11:26, 160 corredores del Maraton de Sevilla 2022).
+//   - Vaso de 116 mL (Cheuvront et al., 2019, Med Sci Sports Exerc 51(5),
+//     Maraton de Boston 2017).
+//   - El calor escala la ingesta (vale 1 con nivelCalor = 0.5).
+// Gel y fruta: por corredor que pasa (supuesto: no hay datos publicados).
+if ( !ofrece[ k ] ) {
+	return 0;
+}
+if ( k == GEL ) {
+	return main.gelesPorCorredor;
+}
+if ( k == FRUTA ) {
+	return main.frutaPorCorredor;
+}
+double horasDesdeAnterior = kmDesdeAnterior * main.horasPorKmPromedio();
+double vasos = main.consumoLiquidoMlHora * ( 0.6 + 0.8 * main.nivelCalor ) * horasDesdeAnterior / main.volumenVasoMl;
+// Si el puesto da agua e isotonica, la bebida se reparte entre las dos.
+if ( ofrece[ AGUA ] && ofrece[ ISOTONICA ] ) {
+	vasos *= 0.5;
+}
+return vasos;
+/*ALCODEEND*/}
+
+void registrarEspera(double minutos)
+{/*ALCODESTART::1792000000194*/
+// Guarda cuanto espero en la cola un corredor que fue atendido.
+double e = max( 0, minutos );
+sumaEspera += e;
+cantidadEsperas++;
+maxEspera = max( maxEspera, e );
+histEspera[ min( 600, (int) Math.round( e * 60 ) ) ]++;
+/*ALCODEEND*/}
+
+double esperaMediaSeg()
+{/*ALCODESTART::1792000000195*/
+return cantidadEsperas > 0 ? sumaEspera / cantidadEsperas * 60 : 0;
+/*ALCODEEND*/}
+
+double esperaP95Seg()
+{/*ALCODESTART::1792000000196*/
+// Percentil 95 de la espera en segundos (histograma de 1 s, tope 600 s).
+if ( cantidadEsperas == 0 ) {
+	return 0;
+}
+int objetivo = (int) Math.ceil( 0.95 * cantidadEsperas );
+int acumulado = 0;
+for ( int s = 0; s < histEspera.length; s++ ) {
+	acumulado += histEspera[ s ];
+	if ( acumulado >= objetivo ) {
+		return s;
+	}
+}
+return histEspera.length - 1;
+/*ALCODEEND*/}
+
+double valorConsumido(int k)
+{/*ALCODESTART::1792000000319*/
+// Lo que ya se consumio de un insumo, a precio de compra (insumo y envase).
+// Cada unidad que toma un corredor suma su precio: un vaso de agua de 116 mL
+// a $800/L mas el vaso de $30 son $122,80.
+double envase = ( k == AGUA || k == ISOTONICA ) ? main.precioVaso : 0;
+return consumidos[ k ] * ( precioUnidad( k ) + envase );
+/*ALCODEEND*/}

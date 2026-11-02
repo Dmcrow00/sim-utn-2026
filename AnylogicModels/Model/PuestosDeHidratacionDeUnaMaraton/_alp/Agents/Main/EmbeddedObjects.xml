@@ -36,7 +36,7 @@
 			<Parameter>
 				<Name><![CDATA[interarrivalTime]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[exponential(tasaLlegada)]]></Code>
+					<Code><![CDATA[intervaloLargada()]]></Code>
 					<Unit Class="TimeUnits">SECOND</Unit>
 				</Value>
 			</Parameter>
@@ -82,7 +82,7 @@
 			<Parameter>
 				<Name><![CDATA[maxArrivals]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[15000]]></Code>
+					<Code><![CDATA[cantidadCorredores]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -214,7 +214,10 @@
 				<Name><![CDATA[onAtExit]]></Name>
 				<Value Class="CodeValue">
 					<Code><![CDATA[agent.minutoLargada = time();
-agent.inicializar( sortearCategoria() );
+agent.inicializarReal( siguienteTiempoNeto(), ajusteRitmo );
+// En el mapa se dibuja uno de cada corredoresPorPuntoMapa (la animacion web
+// no aguanta 12.800 puntos a la vez); la simulacion incluye a todos.
+agent.dibujarEnMapa = iCorredor % max( 1, corredoresPorPuntoMapa ) == 0;
 registrarLargada( agent );]]></Code>
 				</Value>
 			</Parameter>

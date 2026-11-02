@@ -470,6 +470,138 @@
 		<QuantityColumn/>
 	</EmbeddedObject>
 	<EmbeddedObject>
+		<Id>1792000000350</Id>
+		<Name><![CDATA[pedHayVoluntario]]></Name>
+		<X>1590</X>
+		<Y>110</Y>
+		<Label>
+			<X>-40</X>
+			<Y>-30</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+			<ClassName>PedSelectOutput</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+				<ClassName>PedSelectOutput</ClassName>
+				<ItemName>1412464601215</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[type]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition1]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decidir( (peatonPuesto) ped ) == 1]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition2]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[decidir( (peatonPuesto) ped ) == 0]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition3]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[true]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[condition4]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[false]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability1]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability2]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability3]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[probability5]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[exitNumber]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit1]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit2]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit3]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit4]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit5]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[choiceIsVolatile]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+		<XCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</XCode>
+		<YCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</YCode>
+		<ZCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ZCode>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LatitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LatitudeCode>
+		<LongitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LongitudeCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>0</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
 		<Id>1790100000122</Id>
 		<Name><![CDATA[pedIrAlVoluntario]]></Name>
 		<X>1550</X>
@@ -505,7 +637,129 @@
 			<Parameter>
 				<Name><![CDATA[reachTolerance]]></Name>
 				<Value Class="CodeUnitValue">
-					<Code><![CDATA[0.5]]></Code>
+					<Code><![CDATA[0.4]]></Code>
+					<Unit Class="LengthUnits">METER</Unit>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).decidido = false;]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onExit]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onCancel]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.LOCATION_POINT]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationX]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).objetivoX]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationY]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[((peatonPuesto) ped).objetivoY]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[walkInReverseDirection]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onRemove]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[locationNode]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialSpeedCode Class="CodeUnitValue">
+			<Code><![CDATA[10]]></Code>
+			<Unit Class="SpeedUnits">MPS</Unit>
+		</InitialSpeedCode>
+		<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+		<XCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</XCode>
+		<YCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</YCode>
+		<ZCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ZCode>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LatitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LatitudeCode>
+		<LongitudeCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</LongitudeCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>0</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1792000000358</Id>
+		<Name><![CDATA[pedCalzadaCentral]]></Name>
+		<X>1550</X>
+		<Y>130</Y>
+		<Label>
+			<X>-10</X>
+			<Y>-22</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+			<ClassName>PedGoTo</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.pedestrian</PackageName>
+				<ClassName>PedGoTo</ClassName>
+				<ItemName>1412464601103</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[locationLine]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[mode]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[route]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[reachTolerance]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[3.0]]></Code>
 					<Unit Class="LengthUnits">METER</Unit>
 				</Value>
 			</Parameter>
@@ -527,13 +781,13 @@
 			<Parameter>
 				<Name><![CDATA[locationX]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[((peatonPuesto) ped).voluntario.xEntrega()]]></Code>
+					<Code><![CDATA[-80]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[locationY]]></Name>
 				<Value Class="CodeValue">
-					<Code><![CDATA[((peatonPuesto) ped).voluntario.yEntrega()]]></Code>
+					<Code><![CDATA[uniform( 308, 396 )]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -762,7 +1016,7 @@
 		<Parameters/>
 		<ReplicationFlag>true</ReplicationFlag>
 		<Replication Class="CodeValue">
-			<Code><![CDATA[8]]></Code>
+			<Code><![CDATA[35]]></Code>
 		</Replication>
 		<CollectionType>ARRAY_LIST_BASED</CollectionType>
 		<InEnvironment>true</InEnvironment>
@@ -811,7 +1065,7 @@
 		<Parameters/>
 		<ReplicationFlag>true</ReplicationFlag>
 		<Replication Class="CodeValue">
-			<Code><![CDATA[8]]></Code>
+			<Code><![CDATA[4]]></Code>
 		</Replication>
 		<CollectionType>ARRAY_LIST_BASED</CollectionType>
 		<InEnvironment>true</InEnvironment>

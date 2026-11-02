@@ -2,6 +2,7 @@
 <ActiveObjectClass>
 	<Id>1790100000086</Id>
 	<Name><![CDATA[Voluntario]]></Name>
+	<AdditionalClassCode/>
 	<StartupCode><![CDATA[ubicar( getIndex() );]]></StartupCode>
 	<Generic>false</Generic>
 	<GenericParameter>
@@ -34,9 +35,9 @@
 			<Unit Class="SpeedUnits">MPS</Unit>
 		</VelocityCode>
 		<OnArrival>if ( fase.equals( "A_MESA" ) ) {
-	// Agarra la siguiente botella de la mesa.
+	// Agarra el siguiente vaso servido de la mesa.
 	fase = "TOMANDO";
-	create_TomarBotella( uniform( 1.5, 3 ), SECOND );
+	create_TomarBotella( uniform( 0.3, 0.8 ) + extraPreparacion, SECOND );
 } else if ( fase.equals( "A_CORDON" ) ) {
 	fase = "ESPERANDO";
 }</OnArrival>

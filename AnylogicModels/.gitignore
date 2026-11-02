@@ -7,3 +7,6 @@
 *.original.alp
 /Model/*/model/
 /Model/*/database/
+
+# Salidas de cada corrida (exportarResultados)
+/Model/*/resultados_*.csv

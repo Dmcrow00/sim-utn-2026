@@ -14,4 +14,18 @@
 		<ShowLabel>true</ShowLabel>
 		<Action xmlns:al="http://anylogic.com"/>
 	</DynamicEventClass>
+	<DynamicEventClass>
+		<Id>1792000000367</Id>
+		<Name><![CDATA[VigilarCorredor]]></Name>
+		<X>400</X>
+		<Y>50</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Action xmlns:al="http://anylogic.com"/>
+	</DynamicEventClass>
 </DynamicEvents>

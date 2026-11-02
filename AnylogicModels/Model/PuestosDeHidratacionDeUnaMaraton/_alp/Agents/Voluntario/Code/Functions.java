@@ -1,12 +1,15 @@
 void ubicar(int i)
 {/*ALCODESTART::1790100000101*/
-// Los voluntarios esperan parados en el borde de la calle, delante de la
-// mesa (no detras), con la botella en la mano extendida hacia los corredores.
+// Los voluntarios esperan parados en el borde de la calle, del lado de la
+// vereda, cada 1,5 m a lo largo de la zona de hidratacion, con el vaso en la
+// mano extendida hacia los corredores. Detras de cada uno, a 1 m, esta la
+// mesa con los vasos ya servidos. Trabajan tantos como en la logica del
+// puesto (ver activo()).
 indice = i;
-xCordon = 215 + 11 * i;
+xCordon = -5 + 15 * i;
 yCordon = 444;
-xMesa = 240 + 4 * i;
-yMesa = 462;
+xMesa = xCordon;
+yMesa = 454;
 jumpTo( xCordon, yCordon );
 setRotation( -PI / 2 );
 vestir();
@@ -19,8 +22,9 @@ return xCordon;
 
 double yEntrega()
 {/*ALCODESTART::1790100000103*/
-// El corredor pasa medio metro adentro de la calle, a la altura de la mano.
-return yCordon - 6;
+// El corredor pasa por adentro de la valla, a la altura de la mano del
+// voluntario (1 m adentro de la calle).
+return yCordon - 10;
 /*ALCODEEND*/}
 
 double segundosHastaEntregar()
@@ -31,13 +35,18 @@ if ( tieneBotella ) {
 return max( 0, tiempoListo - time() ) / second();
 /*ALCODEEND*/}
 
-void entregar()
+void entregar(double extraSeg)
 {/*ALCODESTART::1790100000105*/
-// El corredor se lleva la botella; el voluntario va a la mesa a buscar otra.
-reservas = max( 0, reservas - 1 );
+// El corredor se lleva el vaso; el voluntario se da vuelta y agarra otro
+// de la mesa, que esta a un paso (los vasos ya estan servidos). extraSeg es
+// el tiempo que ademas queda ocupado atendiendo a los corredores que no se
+// dibujan (ver PuestoDetalle3D.segundosOcupado); ese rato lo pasa en la mesa.
+reservas = 0;
+corredorEnCamino = null;
 tieneBotella = false;
 fase = "A_MESA";
-tiempoListo = time() + 6 * second();
+extraPreparacion = extraSeg;
+tiempoListo = time() + ( 2 + extraSeg ) * second();
 moveTo( xMesa, yMesa );
 /*ALCODEEND*/}
 

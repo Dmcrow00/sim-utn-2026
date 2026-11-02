@@ -2,6 +2,7 @@
 <ActiveObjectClass>
 	<Id>1790100000055</Id>
 	<Name><![CDATA[Camion]]></Name>
+	<AdditionalClassCode/>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1790100000056</Id>

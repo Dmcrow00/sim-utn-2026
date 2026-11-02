@@ -2,6 +2,7 @@
 <ActiveObjectClass>
 	<Id>1787285008780</Id>
 	<Name><![CDATA[Corredor]]></Name>
+	<AdditionalClassCode/>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1787285008790</Id>

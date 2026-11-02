@@ -5,6 +5,11 @@ void inicializar(int cat)
 //   velocidad (m/min) = cadencia (pasos/min) * zancada (m)
 // propensionHidratacion: cuanto para con clima fresco (los principiantes
 // paran mas seguido que los elite).
+// intervaloTomaKm: cada cuantos km le dan ganas de volver a tomar. Los elite
+// toman ad libitum y poco: en total unos 25 s de tomar por maraton (Beis et
+// al., 2012, Clin J Sport Med 22(3)), o sea pocas tomas en 42 km. Los
+// recreativos siguen la pauta de 150-350 mL cada 15-20 min (ACSM), que a su
+// ritmo son unos 2,5 a 5 km.
 // Ritmos de referencia: elite ~3:05 min/km, avanzado ~4:15, intermedio ~5:15,
 // principiante ~6:40 (maraton de 2h10 a 4h40 aprox.).
 // Ojo: en AnyLogic normal() recibe (sigma, media).
@@ -19,6 +24,7 @@ switch ( cat ) {
 		factorTiempoPuesto = 0.5;     // agarra al paso, casi sin frenar
 		resistenciaFatiga = 0.3;
 		propensionHidratacion = uniform( 0.15, 0.30 );
+		intervaloTomaKm = uniform( 8, 12 );
 		break;
 	case AVANZADO:
 		cadencia = max( 165, normal( 5, 178 ) );
@@ -28,6 +34,7 @@ switch ( cat ) {
 		factorTiempoPuesto = 0.8;
 		resistenciaFatiga = 0.55;
 		propensionHidratacion = uniform( 0.20, 0.35 );
+		intervaloTomaKm = uniform( 5, 8 );
 		break;
 	case INTERMEDIO:
 		cadencia = max( 155, normal( 6, 170 ) );
@@ -37,6 +44,7 @@ switch ( cat ) {
 		factorTiempoPuesto = 1.0;
 		resistenciaFatiga = 0.8;
 		propensionHidratacion = uniform( 0.25, 0.40 );
+		intervaloTomaKm = uniform( 3.5, 5.5 );
 		break;
 	default:
 		cadencia = max( 145, normal( 7, 160 ) );
@@ -46,6 +54,7 @@ switch ( cat ) {
 		factorTiempoPuesto = 1.4;     // frena y se toma su tiempo
 		resistenciaFatiga = 1.0;
 		propensionHidratacion = uniform( 0.35, 0.55 );
+		intervaloTomaKm = uniform( 2.5, 4 );
 		break;
 }
 // Minutos que tarda en agarrar lo que le dan (3 a 9 s para un corredor
@@ -87,6 +96,8 @@ nivelHidratacion -= tramo * 0.025 * necesidadHidratacion * ( 0.6 + 0.8 * nivelCa
 nivelEnergia -= tramo * 0.022 * ( 0.85 + 0.25 * resistenciaFatiga );
 nivelHidratacion = max( 0, nivelHidratacion );
 nivelEnergia = max( 0, nivelEnergia );
+// Nivel mas bajo de hidratacion en la carrera (justo antes de cada puesto).
+minHidratacion = min( minHidratacion, nivelHidratacion );
 /*ALCODEEND*/}
 
 void hidratar(double aporte)
@@ -107,5 +118,25 @@ switch ( categoria ) {
 	case INTERMEDIO: return mediumPurple;
 	default: return limeGreen;
 }
+/*ALCODEEND*/}
+
+void inicializarReal(double tiempoMin,double ajuste)
+{/*ALCODESTART::1792000000197*/
+// Corredor real de la Maraton de Buenos Aires 2025: tiempoMin es su tiempo
+// neto oficial. La categoria sale de los cortes reales que dejan 3 / 17 / 50 /
+// 30 % de los corredores (175,0 / 210,9 / 264,7 min) y define como se
+// hidrata, cuanto tarda en el puesto y como le pega la fatiga.
+int cat = tiempoMin < 175.0 ? ELITE
+	: tiempoMin < 210.9 ? AVANZADO
+	: tiempoMin < 264.7 ? INTERMEDIO
+	: PRINCIPIANTE;
+inicializar( cat );
+tiempoRealMin = tiempoMin;
+// Ritmo base a partir del tiempo real. ajuste compensa lo que el modelo le
+// resta despues (calor, deshidratacion, fatiga), calibrado para que el tiempo
+// simulado coincida en promedio con el real.
+velocidadBaseKmh = 42.195 / ( tiempoMin / 60 ) * ajuste;
+ritmoBaseMinKm = 60 / velocidadBaseKmh;
+zancada = velocidadBaseKmh * 1000 / 60 / cadencia;
 /*ALCODEEND*/}
 

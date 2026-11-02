@@ -1875,7 +1875,7 @@
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
-		<Text><![CDATA[Stock de agua por puesto (unidades)]]></Text>
+		<Text><![CDATA[Stock de agua por puesto (% de su capacidad)]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -1907,7 +1907,7 @@
 			</OccurrenceTime>
 			<RecurrenceCode Class="CodeUnitValue">
 				<Code><![CDATA[1]]></Code>
-				<Unit Class="TimeUnits">SECOND</Unit>
+				<Unit Class="TimeUnits">MINUTE</Unit>
 			</RecurrenceCode>
 		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
@@ -1939,7 +1939,7 @@
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression>0</VerScaleFromExpression>
-		<VerScaleToExpression>capacidadAgua</VerScaleToExpression>
+		<VerScaleToExpression>100</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
@@ -1948,7 +1948,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP1</Expression>
 			<Color>-16776961</Color>
-			<Expression2>puesto.get( 0 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 0 ) ? 100.0 * puesto.get( 0 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 0 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -1958,7 +1958,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP3</Expression>
 			<Color>-65536</Color>
-			<Expression2>puesto.get( 2 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 2 ) ? 100.0 * puesto.get( 2 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 2 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -1968,7 +1968,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP5</Expression>
 			<Color>-16744448</Color>
-			<Expression2>puesto.get( 4 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 4 ) ? 100.0 * puesto.get( 4 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 4 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -1978,7 +1978,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP7</Expression>
 			<Color>-23296</Color>
-			<Expression2>puesto.get( 6 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 6 ) ? 100.0 * puesto.get( 6 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 6 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -1988,7 +1988,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP9</Expression>
 			<Color>-8388480</Color>
-			<Expression2>puesto.get( 8 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 8 ) ? 100.0 * puesto.get( 8 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 8 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -1998,7 +1998,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP11</Expression>
 			<Color>-16728065</Color>
-			<Expression2>puesto.get( 10 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 10 ) ? 100.0 * puesto.get( 10 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 10 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2008,7 +2008,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP12</Expression>
 			<Color>-6737204</Color>
-			<Expression2>puesto.get( 11 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 11 ) ? 100.0 * puesto.get( 11 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 11 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2018,7 +2018,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP13</Expression>
 			<Color>-16777216</Color>
-			<Expression2>puesto.get( 12 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 12 ) ? 100.0 * puesto.get( 12 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 12 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2028,7 +2028,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP14</Expression>
 			<Color>-7667712</Color>
-			<Expression2>puesto.get( 13 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 13 ) ? 100.0 * puesto.get( 13 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 13 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2038,13 +2038,13 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockAguaP15</Expression>
 			<Color>-2448096</Color>
-			<Expression2>puesto.get( 14 ).stock[ Puesto.AGUA ]</Expression2>
+			<Expression2>puestoActivo( 14 ) ? 100.0 * puesto.get( 14 ).stock[ Puesto.AGUA ] / max( 1, puesto.get( 14 ).capacidad[ Puesto.AGUA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
-		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression>900</TimeWindowExpression>
+		<SamplesToKeep>400</SamplesToKeep>
+		<TimeWindowExpression>300</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -2066,7 +2066,7 @@
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
-		<Text><![CDATA[Stock de isotonica por puesto (unidades)]]></Text>
+		<Text><![CDATA[Stock de isotónica por puesto (% de su capacidad)]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -2098,7 +2098,7 @@
 			</OccurrenceTime>
 			<RecurrenceCode Class="CodeUnitValue">
 				<Code><![CDATA[1]]></Code>
-				<Unit Class="TimeUnits">SECOND</Unit>
+				<Unit Class="TimeUnits">MINUTE</Unit>
 			</RecurrenceCode>
 		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
@@ -2130,7 +2130,7 @@
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression>0</VerScaleFromExpression>
-		<VerScaleToExpression>capacidadIsotonica</VerScaleToExpression>
+		<VerScaleToExpression>100</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
@@ -2139,7 +2139,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP2</Expression>
 			<Color>-16776961</Color>
-			<Expression2>puesto.get( 1 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 1 ) ? 100.0 * puesto.get( 1 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 1 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2149,7 +2149,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP4</Expression>
 			<Color>-65536</Color>
-			<Expression2>puesto.get( 3 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 3 ) ? 100.0 * puesto.get( 3 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 3 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2159,7 +2159,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP6</Expression>
 			<Color>-16744448</Color>
-			<Expression2>puesto.get( 5 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 5 ) ? 100.0 * puesto.get( 5 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 5 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2169,7 +2169,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP8</Expression>
 			<Color>-23296</Color>
-			<Expression2>puesto.get( 7 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 7 ) ? 100.0 * puesto.get( 7 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 7 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2179,7 +2179,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP10</Expression>
 			<Color>-8388480</Color>
-			<Expression2>puesto.get( 9 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 9 ) ? 100.0 * puesto.get( 9 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 9 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2189,7 +2189,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP12</Expression>
 			<Color>-16728065</Color>
-			<Expression2>puesto.get( 11 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 11 ) ? 100.0 * puesto.get( 11 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 11 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2199,13 +2199,13 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockIsotonicaP14</Expression>
 			<Color>-6737204</Color>
-			<Expression2>puesto.get( 13 ).stock[ Puesto.ISOTONICA ]</Expression2>
+			<Expression2>puestoActivo( 13 ) ? 100.0 * puesto.get( 13 ).stock[ Puesto.ISOTONICA ] / max( 1, puesto.get( 13 ).capacidad[ Puesto.ISOTONICA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
-		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression>900</TimeWindowExpression>
+		<SamplesToKeep>400</SamplesToKeep>
+		<TimeWindowExpression>300</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -2227,7 +2227,7 @@
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
-		<Text><![CDATA[Stock de fruta por puesto (unidades)]]></Text>
+		<Text><![CDATA[Stock de fruta por puesto (% de su capacidad)]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -2259,7 +2259,7 @@
 			</OccurrenceTime>
 			<RecurrenceCode Class="CodeUnitValue">
 				<Code><![CDATA[1]]></Code>
-				<Unit Class="TimeUnits">SECOND</Unit>
+				<Unit Class="TimeUnits">MINUTE</Unit>
 			</RecurrenceCode>
 		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
@@ -2291,7 +2291,7 @@
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression>0</VerScaleFromExpression>
-		<VerScaleToExpression>capacidadFruta</VerScaleToExpression>
+		<VerScaleToExpression>100</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
@@ -2300,7 +2300,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockFrutaP7</Expression>
 			<Color>-16776961</Color>
-			<Expression2>puesto.get( 6 ).stock[ Puesto.FRUTA ]</Expression2>
+			<Expression2>puestoActivo( 6 ) ? 100.0 * puesto.get( 6 ).stock[ Puesto.FRUTA ] / max( 1, puesto.get( 6 ).capacidad[ Puesto.FRUTA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2310,13 +2310,13 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockFrutaP12</Expression>
 			<Color>-65536</Color>
-			<Expression2>puesto.get( 11 ).stock[ Puesto.FRUTA ]</Expression2>
+			<Expression2>puestoActivo( 11 ) ? 100.0 * puesto.get( 11 ).stock[ Puesto.FRUTA ] / max( 1, puesto.get( 11 ).capacidad[ Puesto.FRUTA ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
-		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression>900</TimeWindowExpression>
+		<SamplesToKeep>400</SamplesToKeep>
+		<TimeWindowExpression>300</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -2338,7 +2338,7 @@
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
-		<Text><![CDATA[Stock de gel por puesto (unidades)]]></Text>
+		<Text><![CDATA[Stock de gel por puesto (% de su capacidad)]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -2370,7 +2370,7 @@
 			</OccurrenceTime>
 			<RecurrenceCode Class="CodeUnitValue">
 				<Code><![CDATA[1]]></Code>
-				<Unit Class="TimeUnits">SECOND</Unit>
+				<Unit Class="TimeUnits">MINUTE</Unit>
 			</RecurrenceCode>
 		</RecurrenceProperties>
 		<EmbeddedIcon>false</EmbeddedIcon>
@@ -2402,7 +2402,7 @@
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
 		<VerScaleFromExpression>0</VerScaleFromExpression>
-		<VerScaleToExpression>capacidadGel</VerScaleToExpression>
+		<VerScaleToExpression>100</VerScaleToExpression>
 		<VerScaleType>FIXED</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
@@ -2411,7 +2411,7 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockGelP8</Expression>
 			<Color>-16776961</Color>
-			<Expression2>puesto.get( 7 ).stock[ Puesto.GEL ]</Expression2>
+			<Expression2>puestoActivo( 7 ) ? 100.0 * puesto.get( 7 ).stock[ Puesto.GEL ] / max( 1, puesto.get( 7 ).capacidad[ Puesto.GEL ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
@@ -2421,13 +2421,13 @@
 			<Id>0</Id>
 			<Expression>dsgraficoStockGelP11</Expression>
 			<Color>-65536</Color>
-			<Expression2>puesto.get( 10 ).stock[ Puesto.GEL ]</Expression2>
+			<Expression2>puestoActivo( 10 ) ? 100.0 * puesto.get( 10 ).stock[ Puesto.GEL ] / max( 1, puesto.get( 10 ).capacidad[ Puesto.GEL ] ) : -1</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
-		<SamplesToKeep>900</SamplesToKeep>
-		<TimeWindowExpression>900</TimeWindowExpression>
+		<SamplesToKeep>400</SamplesToKeep>
+		<TimeWindowExpression>300</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -2501,7 +2501,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -2582,7 +2582,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -2663,7 +2663,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -2744,7 +2744,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -2825,7 +2825,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -2906,7 +2906,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -2987,7 +2987,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -3068,7 +3068,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -3149,7 +3149,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -3230,7 +3230,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -3311,7 +3311,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -3392,7 +3392,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>170</Width>
@@ -3455,11 +3455,497 @@
 		</Font>
 		<Alignment>LEFT</Alignment>
 	</Text>
+	<RoundedRectangle>
+		<Id>1792000000324</Id>
+		<Name><![CDATA[costosConsumo0Fondo]]></Name>
+		<X>40</X>
+		<Y>3968</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>170</Width>
+		<Height>58</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-920327</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>10</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1792000000325</Id>
+		<Name><![CDATA[costosConsumo0Etiqueta]]></Name>
+		<X>52</X>
+		<Y>3977</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-10853256</Color>
+		<Text><![CDATA[Consumido (a precio de compra)]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000326</Id>
+		<Name><![CDATA[costosConsumo0Valor]]></Name>
+		<X>52</X>
+		<Y>3995</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[0]]></Text>
+		<TextCode>formatoPesos( valorConsumidoEvento( -1 ) )</TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1792000000327</Id>
+		<Name><![CDATA[costosConsumo1Fondo]]></Name>
+		<X>220</X>
+		<Y>3968</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>170</Width>
+		<Height>58</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-920327</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>10</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1792000000328</Id>
+		<Name><![CDATA[costosConsumo1Etiqueta]]></Name>
+		<X>232</X>
+		<Y>3977</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-10853256</Color>
+		<Text><![CDATA[Consumido por corredor atendido]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000329</Id>
+		<Name><![CDATA[costosConsumo1Valor]]></Name>
+		<X>232</X>
+		<Y>3995</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[0]]></Text>
+		<TextCode>formatoPesos( consumidoPorAtendido() )</TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1792000000330</Id>
+		<Name><![CDATA[costosConsumo2Fondo]]></Name>
+		<X>400</X>
+		<Y>3968</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>170</Width>
+		<Height>58</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-920327</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>10</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1792000000331</Id>
+		<Name><![CDATA[costosConsumo2Etiqueta]]></Name>
+		<X>412</X>
+		<Y>3977</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-10853256</Color>
+		<Text><![CDATA[Agua consumida]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000332</Id>
+		<Name><![CDATA[costosConsumo2Valor]]></Name>
+		<X>412</X>
+		<Y>3995</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[0]]></Text>
+		<TextCode>textoConsumo( Puesto.AGUA )</TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1792000000333</Id>
+		<Name><![CDATA[costosConsumo3Fondo]]></Name>
+		<X>580</X>
+		<Y>3968</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>170</Width>
+		<Height>58</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-920327</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>10</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1792000000334</Id>
+		<Name><![CDATA[costosConsumo3Etiqueta]]></Name>
+		<X>592</X>
+		<Y>3977</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-10853256</Color>
+		<Text><![CDATA[Isotónica consumida]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000335</Id>
+		<Name><![CDATA[costosConsumo3Valor]]></Name>
+		<X>592</X>
+		<Y>3995</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[0]]></Text>
+		<TextCode>textoConsumo( Puesto.ISOTONICA )</TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1792000000336</Id>
+		<Name><![CDATA[costosConsumo4Fondo]]></Name>
+		<X>760</X>
+		<Y>3968</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>170</Width>
+		<Height>58</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-920327</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>10</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1792000000337</Id>
+		<Name><![CDATA[costosConsumo4Etiqueta]]></Name>
+		<X>772</X>
+		<Y>3977</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-10853256</Color>
+		<Text><![CDATA[Fruta consumida]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000338</Id>
+		<Name><![CDATA[costosConsumo4Valor]]></Name>
+		<X>772</X>
+		<Y>3995</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[0]]></Text>
+		<TextCode>textoConsumo( Puesto.FRUTA )</TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1792000000339</Id>
+		<Name><![CDATA[costosConsumo5Fondo]]></Name>
+		<X>940</X>
+		<Y>3968</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor/>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>170</Width>
+		<Height>58</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor>-920327</FillColor>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>10</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1792000000340</Id>
+		<Name><![CDATA[costosConsumo5Etiqueta]]></Name>
+		<X>952</X>
+		<Y>3977</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-10853256</Color>
+		<Text><![CDATA[Geles consumidos]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000341</Id>
+		<Name><![CDATA[costosConsumo5Valor]]></Name>
+		<X>952</X>
+		<Y>3995</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[0]]></Text>
+		<TextCode>textoConsumo( Puesto.GEL )</TextCode>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>14</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
 	<Text>
 		<Id>1792000000096</Id>
 		<Name><![CDATA[textTituloGraficoCostos]]></Name>
 		<X>90</X>
-		<Y>3978</Y>
+		<Y>4044</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3473,7 +3959,7 @@
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-16777216</Color>
-		<Text><![CDATA[Costo acumulado por rubro ($)]]></Text>
+		<Text><![CDATA[Lo comprado, lo consumido y el sobrante, minuto a minuto (M$)]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -3485,7 +3971,7 @@
 		<Id>1792000000097</Id>
 		<Name><![CDATA[graficoCostos]]></Name>
 		<X>40</X>
-		<Y>3990</Y>
+		<Y>4056</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3536,60 +4022,63 @@
 		<ShowLegend>true</ShowLegend>
 		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
 		<TimeWindowUnits>MINUTE</TimeWindowUnits>
+		<VerScaleFromExpression>0</VerScaleFromExpression>
+		<VerScaleToExpression>1</VerScaleToExpression>
+		<VerScaleType>AUTO</VerScaleType>
 		<DrawLine>true</DrawLine>
 		<Interpolation>LINEAR</Interpolation>
 		<DatasetExpression>
-			<Title>Insumos</Title>
+			<Title>Comprado (insumos + envases)</Title>
 			<Id>0</Id>
 			<Expression>dsgraficoCostosInsumos</Expression>
 			<Color>-16776961</Color>
-			<Expression2>costoInsumosEvento()</Expression2>
+			<Expression2>( costoInsumosEvento() + costoEnvasesEvento() ) / 1e6</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title>Envases</Title>
+			<Title>Consumido</Title>
 			<Id>0</Id>
 			<Expression>dsgraficoCostosEnvases</Expression>
 			<Color>-23296</Color>
-			<Expression2>costoEnvasesEvento()</Expression2>
+			<Expression2>valorConsumidoEvento( -1 ) / 1e6</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title>Voluntarios</Title>
+			<Title>Sobrante</Title>
 			<Id>0</Id>
 			<Expression>dsgraficoCostosVoluntarios</Expression>
 			<Color>-16744448</Color>
-			<Expression2>costoVoluntariosEvento()</Expression2>
+			<Expression2>valorSobranteEvento() / 1e6</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title>Transporte</Title>
+			<Title>Voluntarios + transporte</Title>
 			<Id>0</Id>
 			<Expression>dsgraficoCostosTransporte</Expression>
 			<Color>-65536</Color>
-			<Expression2>costoTransporteEvento()</Expression2>
+			<Expression2>( costoVoluntariosEvento() + costoTransporteEvento() ) / 1e6</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>1.5</LineWidth>
 		</DatasetExpression>
 		<DatasetExpression>
-			<Title>Total</Title>
+			<Title>Costo total</Title>
 			<Id>0</Id>
 			<Expression>dsgraficoCostosTotal</Expression>
 			<Color>-16777216</Color>
-			<Expression2>costoTotalEvento()</Expression2>
+			<Expression2>costoTotalEvento() / 1e6</Expression2>
 			<Expression2Flag>true</Expression2Flag>
 			<PointStyle>NONE</PointStyle>
 			<LineWidth>2.5</LineWidth>
 		</DatasetExpression>
-		<SamplesToKeep>1000</SamplesToKeep>
-		<TimeWindowExpression>900</TimeWindowExpression>
+		<SamplesToKeep>400</SamplesToKeep>
+		<TimeWindowExpression>300</TimeWindowExpression>
 		<FillAreaUnderLine>false</FillAreaUnderLine>
 		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
 	</TimePlot>
@@ -3597,7 +4086,7 @@
 		<Id>1792000000102</Id>
 		<Name><![CDATA[preciosTitulo]]></Name>
 		<X>40</X>
-		<Y>4262</Y>
+		<Y>4328</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3623,7 +4112,7 @@
 		<Id>1792000000103</Id>
 		<Name><![CDATA[preciosNota]]></Name>
 		<X>200</X>
-		<Y>4265</Y>
+		<Y>4331</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3649,7 +4138,7 @@
 		<Id>1792000000104</Id>
 		<Name><![CDATA[precioPrecioVasoFondo]]></Name>
 		<X>40</X>
-		<Y>4286</Y>
+		<Y>4352</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3663,7 +4152,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -3677,7 +4166,7 @@
 		<Id>1792000000105</Id>
 		<Name><![CDATA[precioPrecioVasoEtiqueta]]></Name>
 		<X>52</X>
-		<Y>4294</Y>
+		<Y>4360</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3704,7 +4193,7 @@
 		<Id>1792000000106</Id>
 		<Name><![CDATA[editPrecioVaso]]></Name>
 		<X>52</X>
-		<Y>4314</Y>
+		<Y>4380</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3717,13 +4206,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_precioVaso( leerNumero( value, precioVaso ) );]]></ActionCode>
+			<ActionCode>set_precioVaso( leerNumero( value, precioVaso ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( precioVaso )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( precioVaso )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -3731,7 +4220,7 @@
 		<Id>1792000000107</Id>
 		<Name><![CDATA[precioPrecioVasoAplicado]]></Name>
 		<X>172</X>
-		<Y>4319</Y>
+		<Y>4385</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3758,7 +4247,7 @@
 		<Id>1792000000108</Id>
 		<Name><![CDATA[precioPrecioLitroAguaFondo]]></Name>
 		<X>315</X>
-		<Y>4286</Y>
+		<Y>4352</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3772,7 +4261,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -3786,7 +4275,7 @@
 		<Id>1792000000109</Id>
 		<Name><![CDATA[precioPrecioLitroAguaEtiqueta]]></Name>
 		<X>327</X>
-		<Y>4294</Y>
+		<Y>4360</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3813,7 +4302,7 @@
 		<Id>1792000000110</Id>
 		<Name><![CDATA[editPrecioLitroAgua]]></Name>
 		<X>327</X>
-		<Y>4314</Y>
+		<Y>4380</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3826,13 +4315,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_precioLitroAgua( leerNumero( value, precioLitroAgua ) );]]></ActionCode>
+			<ActionCode>set_precioLitroAgua( leerNumero( value, precioLitroAgua ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( precioLitroAgua )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( precioLitroAgua )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -3840,7 +4329,7 @@
 		<Id>1792000000111</Id>
 		<Name><![CDATA[precioPrecioLitroAguaAplicado]]></Name>
 		<X>447</X>
-		<Y>4319</Y>
+		<Y>4385</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3867,7 +4356,7 @@
 		<Id>1792000000112</Id>
 		<Name><![CDATA[precioPrecioLitroIsotonicaFondo]]></Name>
 		<X>590</X>
-		<Y>4286</Y>
+		<Y>4352</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3881,7 +4370,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -3895,7 +4384,7 @@
 		<Id>1792000000113</Id>
 		<Name><![CDATA[precioPrecioLitroIsotonicaEtiqueta]]></Name>
 		<X>602</X>
-		<Y>4294</Y>
+		<Y>4360</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3922,7 +4411,7 @@
 		<Id>1792000000114</Id>
 		<Name><![CDATA[editPrecioLitroIsotonica]]></Name>
 		<X>602</X>
-		<Y>4314</Y>
+		<Y>4380</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -3935,13 +4424,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_precioLitroIsotonica( leerNumero( value, precioLitroIsotonica ) );]]></ActionCode>
+			<ActionCode>set_precioLitroIsotonica( leerNumero( value, precioLitroIsotonica ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( precioLitroIsotonica )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( precioLitroIsotonica )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -3949,7 +4438,7 @@
 		<Id>1792000000115</Id>
 		<Name><![CDATA[precioPrecioLitroIsotonicaAplicado]]></Name>
 		<X>722</X>
-		<Y>4319</Y>
+		<Y>4385</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3976,7 +4465,7 @@
 		<Id>1792000000116</Id>
 		<Name><![CDATA[precioPrecioPorcionFrutaFondo]]></Name>
 		<X>865</X>
-		<Y>4286</Y>
+		<Y>4352</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -3990,7 +4479,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4004,7 +4493,7 @@
 		<Id>1792000000117</Id>
 		<Name><![CDATA[precioPrecioPorcionFrutaEtiqueta]]></Name>
 		<X>877</X>
-		<Y>4294</Y>
+		<Y>4360</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4031,7 +4520,7 @@
 		<Id>1792000000118</Id>
 		<Name><![CDATA[editPrecioPorcionFruta]]></Name>
 		<X>877</X>
-		<Y>4314</Y>
+		<Y>4380</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4044,13 +4533,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_precioPorcionFruta( leerNumero( value, precioPorcionFruta ) );]]></ActionCode>
+			<ActionCode>set_precioPorcionFruta( leerNumero( value, precioPorcionFruta ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( precioPorcionFruta )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( precioPorcionFruta )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4058,7 +4547,7 @@
 		<Id>1792000000119</Id>
 		<Name><![CDATA[precioPrecioPorcionFrutaAplicado]]></Name>
 		<X>997</X>
-		<Y>4319</Y>
+		<Y>4385</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4085,7 +4574,7 @@
 		<Id>1792000000120</Id>
 		<Name><![CDATA[precioPrecioGelFondo]]></Name>
 		<X>40</X>
-		<Y>4358</Y>
+		<Y>4424</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4099,7 +4588,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4113,7 +4602,7 @@
 		<Id>1792000000121</Id>
 		<Name><![CDATA[precioPrecioGelEtiqueta]]></Name>
 		<X>52</X>
-		<Y>4366</Y>
+		<Y>4432</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4140,7 +4629,7 @@
 		<Id>1792000000122</Id>
 		<Name><![CDATA[editPrecioGel]]></Name>
 		<X>52</X>
-		<Y>4386</Y>
+		<Y>4452</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4153,13 +4642,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_precioGel( leerNumero( value, precioGel ) );]]></ActionCode>
+			<ActionCode>set_precioGel( leerNumero( value, precioGel ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( precioGel )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( precioGel )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4167,7 +4656,7 @@
 		<Id>1792000000123</Id>
 		<Name><![CDATA[precioPrecioGelAplicado]]></Name>
 		<X>172</X>
-		<Y>4391</Y>
+		<Y>4457</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4194,7 +4683,7 @@
 		<Id>1792000000124</Id>
 		<Name><![CDATA[precioCostoHoraVoluntarioFondo]]></Name>
 		<X>315</X>
-		<Y>4358</Y>
+		<Y>4424</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4208,7 +4697,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4222,7 +4711,7 @@
 		<Id>1792000000125</Id>
 		<Name><![CDATA[precioCostoHoraVoluntarioEtiqueta]]></Name>
 		<X>327</X>
-		<Y>4366</Y>
+		<Y>4432</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4249,7 +4738,7 @@
 		<Id>1792000000126</Id>
 		<Name><![CDATA[editCostoHoraVoluntario]]></Name>
 		<X>327</X>
-		<Y>4386</Y>
+		<Y>4452</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4262,13 +4751,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_costoHoraVoluntario( leerNumero( value, costoHoraVoluntario ) );]]></ActionCode>
+			<ActionCode>set_costoHoraVoluntario( leerNumero( value, costoHoraVoluntario ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( costoHoraVoluntario )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( costoHoraVoluntario )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4276,7 +4765,7 @@
 		<Id>1792000000127</Id>
 		<Name><![CDATA[precioCostoHoraVoluntarioAplicado]]></Name>
 		<X>447</X>
-		<Y>4391</Y>
+		<Y>4457</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4303,7 +4792,7 @@
 		<Id>1792000000128</Id>
 		<Name><![CDATA[precioHorasExtraVoluntarioFondo]]></Name>
 		<X>590</X>
-		<Y>4358</Y>
+		<Y>4424</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4317,7 +4806,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4331,7 +4820,7 @@
 		<Id>1792000000129</Id>
 		<Name><![CDATA[precioHorasExtraVoluntarioEtiqueta]]></Name>
 		<X>602</X>
-		<Y>4366</Y>
+		<Y>4432</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4358,7 +4847,7 @@
 		<Id>1792000000130</Id>
 		<Name><![CDATA[editHorasExtraVoluntario]]></Name>
 		<X>602</X>
-		<Y>4386</Y>
+		<Y>4452</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4371,13 +4860,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_horasExtraVoluntario( leerNumero( value, horasExtraVoluntario ) );]]></ActionCode>
+			<ActionCode>set_horasExtraVoluntario( leerNumero( value, horasExtraVoluntario ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( horasExtraVoluntario )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( horasExtraVoluntario )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4385,7 +4874,7 @@
 		<Id>1792000000131</Id>
 		<Name><![CDATA[precioHorasExtraVoluntarioAplicado]]></Name>
 		<X>722</X>
-		<Y>4391</Y>
+		<Y>4457</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4412,7 +4901,7 @@
 		<Id>1792000000132</Id>
 		<Name><![CDATA[precioCostoHoraCamionFondo]]></Name>
 		<X>865</X>
-		<Y>4358</Y>
+		<Y>4424</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4426,7 +4915,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4440,7 +4929,7 @@
 		<Id>1792000000133</Id>
 		<Name><![CDATA[precioCostoHoraCamionEtiqueta]]></Name>
 		<X>877</X>
-		<Y>4366</Y>
+		<Y>4432</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4467,7 +4956,7 @@
 		<Id>1792000000134</Id>
 		<Name><![CDATA[editCostoHoraCamion]]></Name>
 		<X>877</X>
-		<Y>4386</Y>
+		<Y>4452</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4480,13 +4969,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_costoHoraCamion( leerNumero( value, costoHoraCamion ) );]]></ActionCode>
+			<ActionCode>set_costoHoraCamion( leerNumero( value, costoHoraCamion ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( costoHoraCamion )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( costoHoraCamion )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4494,7 +4983,7 @@
 		<Id>1792000000135</Id>
 		<Name><![CDATA[precioCostoHoraCamionAplicado]]></Name>
 		<X>997</X>
-		<Y>4391</Y>
+		<Y>4457</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4521,7 +5010,7 @@
 		<Id>1792000000136</Id>
 		<Name><![CDATA[precioCostoHoraOperarioFondo]]></Name>
 		<X>40</X>
-		<Y>4430</Y>
+		<Y>4496</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4535,7 +5024,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4549,7 +5038,7 @@
 		<Id>1792000000137</Id>
 		<Name><![CDATA[precioCostoHoraOperarioEtiqueta]]></Name>
 		<X>52</X>
-		<Y>4438</Y>
+		<Y>4504</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4576,7 +5065,7 @@
 		<Id>1792000000138</Id>
 		<Name><![CDATA[editCostoHoraOperario]]></Name>
 		<X>52</X>
-		<Y>4458</Y>
+		<Y>4524</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4589,13 +5078,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_costoHoraOperario( leerNumero( value, costoHoraOperario ) );]]></ActionCode>
+			<ActionCode>set_costoHoraOperario( leerNumero( value, costoHoraOperario ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( costoHoraOperario )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( costoHoraOperario )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4603,7 +5092,7 @@
 		<Id>1792000000139</Id>
 		<Name><![CDATA[precioCostoHoraOperarioAplicado]]></Name>
 		<X>172</X>
-		<Y>4463</Y>
+		<Y>4529</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4630,7 +5119,7 @@
 		<Id>1792000000140</Id>
 		<Name><![CDATA[precioCostoFijoPuestoFondo]]></Name>
 		<X>315</X>
-		<Y>4430</Y>
+		<Y>4496</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4644,7 +5133,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4658,7 +5147,7 @@
 		<Id>1792000000141</Id>
 		<Name><![CDATA[precioCostoFijoPuestoEtiqueta]]></Name>
 		<X>327</X>
-		<Y>4438</Y>
+		<Y>4504</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4685,7 +5174,7 @@
 		<Id>1792000000142</Id>
 		<Name><![CDATA[editCostoFijoPuesto]]></Name>
 		<X>327</X>
-		<Y>4458</Y>
+		<Y>4524</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4698,13 +5187,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_costoFijoPuesto( leerNumero( value, costoFijoPuesto ) );]]></ActionCode>
+			<ActionCode>set_costoFijoPuesto( leerNumero( value, costoFijoPuesto ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( costoFijoPuesto )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( costoFijoPuesto )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4712,7 +5201,7 @@
 		<Id>1792000000143</Id>
 		<Name><![CDATA[precioCostoFijoPuestoAplicado]]></Name>
 		<X>447</X>
-		<Y>4463</Y>
+		<Y>4529</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4739,7 +5228,7 @@
 		<Id>1792000000144</Id>
 		<Name><![CDATA[precioPenalizacionNoAtendidoFondo]]></Name>
 		<X>590</X>
-		<Y>4430</Y>
+		<Y>4496</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4753,7 +5242,7 @@
 		<Z>0</Z>
 		<ZHeight>10</ZHeight>
 		<LineWidth>1</LineWidth>
-		<LineColor></LineColor>
+		<LineColor/>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
 		<Width>260</Width>
@@ -4767,7 +5256,7 @@
 		<Id>1792000000145</Id>
 		<Name><![CDATA[precioPenalizacionNoAtendidoEtiqueta]]></Name>
 		<X>602</X>
-		<Y>4438</Y>
+		<Y>4504</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4794,7 +5283,7 @@
 		<Id>1792000000146</Id>
 		<Name><![CDATA[editPenalizacionNoAtendido]]></Name>
 		<X>602</X>
-		<Y>4458</Y>
+		<Y>4524</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -4807,13 +5296,13 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<FillColor/>
 			<TextColor/>
-			<VisibleCode><![CDATA[pantalla.equals("EJECUCION")]]></VisibleCode>
+			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode><![CDATA[set_penalizacionNoAtendido( leerNumero( value, penalizacionNoAtendido ) );]]></ActionCode>
+			<ActionCode>set_penalizacionNoAtendido( leerNumero( value, penalizacionNoAtendido ) );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
-			<DefaultValueCode><![CDATA[textoNumero( penalizacionNoAtendido )]]></DefaultValueCode>
+			<DefaultValueCode>textoNumero( penalizacionNoAtendido )</DefaultValueCode>
 			<LinkTo>false</LinkTo>
 		</ExtendedProperties>
 	</Control>
@@ -4821,7 +5310,7 @@
 		<Id>1792000000147</Id>
 		<Name><![CDATA[precioPenalizacionNoAtendidoAplicado]]></Name>
 		<X>722</X>
-		<Y>4463</Y>
+		<Y>4529</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -4841,6 +5330,206 @@
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>11</Size>
 			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000200</Id>
+		<Name><![CDATA[validacionTitulo]]></Name>
+		<X>40</X>
+		<Y>4586</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Validación con la carrera real 2025]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>15</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000201</Id>
+		<Name><![CDATA[validacionNota]]></Name>
+		<X>330</X>
+		<Y>4589</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-7695450</Color>
+		<Text><![CDATA[cada corredor simulado es un corredor real: cruza la largada en el segundo en que la cruzó y su ritmo sale de su tiempo oficial]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>11</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1792000000202</Id>
+		<Name><![CDATA[textTituloGraficoFlujo]]></Name>
+		<X>90</X>
+		<Y>4614</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Corredores por minuto que pasan por el puesto]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>12</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<TimePlot>
+		<Id>1792000000198</Id>
+		<Name><![CDATA[graficoFlujo]]></Name>
+		<X>40</X>
+		<Y>4626</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<AutoUpdate>true</AutoUpdate>
+		<RecurrenceProperties>
+			<Id>1792000000199</Id>
+			<OccurrenceAtTime>true</OccurrenceAtTime>
+			<OccurrenceDate>1791878400000</OccurrenceDate>
+			<OccurrenceTime Class="CodeUnitValue">
+				<Code><![CDATA[0]]></Code>
+				<Unit Class="TimeUnits">MINUTE</Unit>
+			</OccurrenceTime>
+			<RecurrenceCode Class="CodeUnitValue">
+				<Code><![CDATA[1]]></Code>
+				<Unit Class="TimeUnits">MINUTE</Unit>
+			</RecurrenceCode>
+		</RecurrenceProperties>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Width>600</Width>
+		<Height>260</Height>
+		<BackgroundColor/>
+		<BorderColor/>
+		<ChartArea>
+			<XOffset>80</XOffset>
+			<YOffset>25</YOffset>
+			<Width>410</Width>
+			<Height>190</Height>
+			<BackgroundColor>-1</BackgroundColor>
+			<BorderColor>-16777216</BorderColor>
+			<GridColor>-12566464</GridColor>
+		</ChartArea>
+		<Legend>
+			<Place>EAST</Place>
+			<TextColor>-16777216</TextColor>
+			<Size>90</Size>
+		</Legend>
+		<Labels>
+			<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+			<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+			<TextColor>-12566464</TextColor>
+		</Labels>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<ShowLegend>true</ShowLegend>
+		<TimeWindowsMovementType>MOVEMENT_WITH_DATA</TimeWindowsMovementType>
+		<TimeWindowUnits>MINUTE</TimeWindowUnits>
+		<VerScaleFromExpression>0</VerScaleFromExpression>
+		<VerScaleToExpression>1</VerScaleToExpression>
+		<VerScaleType>AUTO</VerScaleType>
+		<DrawLine>true</DrawLine>
+		<Interpolation>LINEAR</Interpolation>
+		<DatasetExpression>
+			<Title>km 5</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoFlujoKm5</Expression>
+			<Color>-16776961</Color>
+			<Expression2>puesto.get( 0 ).pasesMinutoAnterior</Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title>km 20</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoFlujoKm20</Expression>
+			<Color>-23296</Color>
+			<Expression2>puesto.get( 6 ).pasesMinutoAnterior</Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<DatasetExpression>
+			<Title>km 40</Title>
+			<Id>0</Id>
+			<Expression>dsgraficoFlujoKm40</Expression>
+			<Color>-16744448</Color>
+			<Expression2>puesto.get( 14 ).pasesMinutoAnterior</Expression2>
+			<Expression2Flag>true</Expression2Flag>
+			<PointStyle>NONE</PointStyle>
+			<LineWidth>1.5</LineWidth>
+		</DatasetExpression>
+		<SamplesToKeep>1000</SamplesToKeep>
+		<TimeWindowExpression>300</TimeWindowExpression>
+		<FillAreaUnderLine>false</FillAreaUnderLine>
+		<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+	</TimePlot>
+	<Text>
+		<Id>1792000000203</Id>
+		<Name><![CDATA[textValidacion]]></Name>
+		<X>660</X>
+		<Y>4626</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[-]]></Text>
+		<TextCode>textoValidacion()</TextCode>
+		<Font>
+			<Name><![CDATA[Courier New]]></Name>
+			<Size>12</Size>
+			<Style>0</Style>
 		</Font>
 		<Alignment>LEFT</Alignment>
 	</Text>
@@ -4867,7 +5556,7 @@
 		<Width>440</Width>
 		<Height>435</Height>
 		<Rotation>0.0</Rotation>
-		<FillColor></FillColor>
+		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
@@ -6292,7 +6981,7 @@
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-7695450</Color>
-		<Text><![CDATA[TPI Simulación UTN 2026  ·  Ceballos  ·  Sedepski  ·  Lupo Piatti  ·  Lentino]]></Text>
+		<Text><![CDATA[TPI Simulación UTN 2026  ·  Ceballos  ·  Lupo Piatti  ·  Lentino]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>12</Size>
@@ -14742,7 +15431,7 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<Text><![CDATA[Stock en tiempo real por insumo (unidades)]]></Text>
+		<Text><![CDATA[Stock que le queda a cada puesto, minuto a minuto]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>15</Size>
