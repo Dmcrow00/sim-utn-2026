@@ -20,6 +20,7 @@ Puesto p = puesto.get( nPuesto );
 c.avanzarHasta( p.km, nivelCalor );
 // Flujo por minuto en el puesto (para comparar con la carrera real).
 p.pasesMinutoActual++;
+p.pasados++;
 // Turno de voluntarios del puesto: se cuenta hasta el ultimo corredor que paso.
 p.minutosVoluntarioCubiertos = p.minutosVoluntario;
 // Puesto que no se arma en este escenario: el corredor sigue de largo sin que
@@ -742,7 +743,7 @@ try {
 			+ "ocupacionVoluntarios;horasVoluntario;horasOciosas;camiones;costoInsumos;costoEnvases;costoVoluntarios;costoTransporte;costoFijo;costoTotal;costoPorAtendido;sobrante;perdidaPorExceso" );
 	}
 	w.println( id + ";" + escenario + ";" + nombreEscenario() + ";" + semilla + ";" + time() + ";" + cantidadCorredores + ";"
-		+ temperaturaC + ";" + temperaturaPlanificada + ";" + puestosActivos() + ";" + coberturaEfectiva() + ";" + factorVoluntariosEfectivo() + ";"
+		+ temperaturaC + ";" + temperaturaPlan() + ";" + puestosActivos() + ";" + coberturaEfectiva() + ";" + factorVoluntariosEfectivo() + ";"
 		+ nComparados + ";" + ( nComparados > 0 ? sumaNetoReal / nComparados : 0 ) + ";" + ( nComparados > 0 ? sumaNetoSim / nComparados : 0 ) + ";"
 		+ ( nComparados > 0 ? sumaRelacionTiempo / nComparados : 0 ) + ";" + atendidosEvento() + ";" + noAtStock + ";" + noAtVol + ";" + porcentajeNoAtendidos() + ";"
 		+ porcentajeDeshidratados() + ";" + porcentajeDeshidratadosSeveros() + ";" + hidratacionMinimaMedia() + ";"
@@ -800,6 +801,14 @@ double[] kmPuestos()
 return new double[] { 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.6, 25, 27.5, 30, 33, 35, 37.7, 40 };
 /*ALCODEEND*/}
 
+double temperaturaPlan()
+{/*ALCODESTART::1793000000001*/
+// Temperatura con la que se arma el plan del escenario optimo: la
+// pronosticada. Si temperaturaPlanificada es negativa, el pronostico acierta
+// y se planifica con la temperatura real del dia (temperaturaC).
+return temperaturaPlanificada < 0 ? temperaturaC : temperaturaPlanificada;
+/*ALCODEEND*/}
+
 double nivelCalorDe(double tempC)
 {/*ALCODESTART::1792000000232*/
 // Misma conversion que ajustarTemperatura: 10 C = 0, 30 C = 1.
@@ -830,7 +839,8 @@ return perdidaMaximaPorTramo / tasaPerdidaKm( tempC, 1.15 );
 boolean[] calcularPuestosActivos()
 {/*ALCODESTART::1792000000235*/
 // Que puestos se arman. En los escenarios 0, 2 y 3, los 15 reales.
-// En el escenario 1 (optimo) se planifica con la temperatura pronosticada:
+// En el escenario 1 (optimo) se planifica con la temperatura pronosticada
+// (temperaturaPlan):
 //   1. se mantienen los que dan gel o fruta (km 20, 22,6, 30 y 33), porque
 //      sin ellos los corredores llegan al "muro" de energia;
 //   2. se recorre el circuito y, si un tramo sin bebida supera la distancia
@@ -846,7 +856,7 @@ if ( escenario != 1 && escenario != 4 ) {
 for ( int i : new int[] { 6, 7, 10, 11 } ) {
 	act[ i ] = true;
 }
-double gmax = distanciaMaximaKm( temperaturaPlanificada );
+double gmax = distanciaMaximaKm( temperaturaPlan() );
 double ultimo = 0;
 while ( true ) {
 	double proximo = 42.195;
@@ -921,7 +931,10 @@ double factorVoluntariosEfectivo()
 {/*ALCODESTART::1792000000239*/
 // Escala de la dotacion de voluntarios (1 = 10 a 35 segun el flujo real).
 switch ( escenario ) {
-	case 1: return factorVoluntariosOptimo;
+	// Optimo: la dotacion crece con el calor pronosticado, en proporcion a
+	// cuantos corredores mas paran (relevamiento con los 15 puestos: x1,20 a
+	// 20 C, x1,38 a 25 C y x1,52 a 30 C, contra 15 C).
+	case 1: return factorVoluntariosOptimo * max( 1, 1 + 0.69 * ( nivelCalorDe( temperaturaPlan() ) - 0.25 ) );
 	case 2: return factorVoluntariosEscasez;
 	case 3: return factorVoluntariosExceso;
 	case 4: return 1.0;
@@ -1000,43 +1013,125 @@ return valorSobranteEvento() + horasVoluntarioOciosas() * costoHoraVoluntario;
 
 boolean reposicionActiva()
 {/*ALCODESTART::1792000000247*/
-// En el optimo y en el relevamiento todo el stock se coloca antes de la
-// largada: no salen camiones (en una maraton la ola de corredores pasa por
-// cada puesto mas rapido de lo que tarda un camion, y recargar al final solo
-// genera sobrante).
-return escenario != 1 && escenario != 4;
+// En el relevamiento todo el stock se coloca antes de la largada y no salen
+// camiones. En el optimo el stock tambien se coloca antes, y los camiones
+// quedan de respaldo: salen solo si el retiro medido indica que el stock no va
+// a alcanzar hasta el ultimo corredor (ver Puesto.revisarReposicion).
+return escenario != 4;
 /*ALCODEEND*/}
 
 double retiroPlanificado(int i,int k)
 {/*ALCODESTART::1792000000248*/
 // Unidades por corredor que se colocan en el puesto i del insumo k en el
 // escenario optimo (agua, isotonica, fruta, gel). Salen del relevamiento de
-// consumo (experimento Relevamiento, plan de 12 puestos a 15 C, 5 semillas):
-// media + 1,65 desvios del retiro observado por corredor, o sea lo justo para
-// cubrir el 95 % de las carreras. Datos en Datos/experimentos/relevamiento_v3_*.csv
-// (decision de hidratarse por sed + intervalo preferido, 2026-11-01).
-// Fuera del plan de 12 puestos (otra perdidaMaximaPorTramo) no hay dato: -1.
-if ( puestosActivos() != 12 ) {
+// consumo (experimento Relevamiento, carrera completa, 5 semillas por
+// temperatura, plan de la regla de distancia maxima con C = 0,114): media +
+// 1,65 desvios de la demanda observada por corredor (lo retirado mas lo que
+// habrian tomado los que se fueron sin atender), o sea lo justo para cubrir el
+// 95 % de las carreras. Hay una tabla por temperatura planificada (10, 15, 20,
+// 25 y 30 C); se usa la mas cercana a temperaturaPlan(). Datos en
+// Datos/experimentos/relevamiento_v3_*.csv (2026-11-02).
+// Si la cantidad de puestos no coincide con la del plan medido (otra
+// perdidaMaximaPorTramo), no hay dato: -1.
+int[] temperaturas = { 10, 15, 20, 25, 30 };
+int[] puestosDelPlan = { 9, 12, 15, 15, 15 };
+double[][][] r = {
+	{
+		{ 0.5659, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.7027, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.6724, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.9069, 0.0000, 0.5774, 0.0000 },
+		{ 0.0000, 0.7195, 0.0000, 0.5075 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.6054, 0.0000, 0.0000 },
+		{ 0.6338, 0.0000, 0.0000, 0.3894 },
+		{ 0.3179, 0.2516, 0.3685, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.3705, 0.2824, 0.0000, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 }
+	},
+	{
+		{ 0.7714, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.6001, 0.0000, 0.0000 },
+		{ 0.6165, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.6096, 0.0000, 0.0000 },
+		{ 0.6166, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.6094, 0.0000, 0.0000 },
+		{ 0.6853, 0.0000, 0.4451, 0.0000 },
+		{ 0.0000, 0.7051, 0.0000, 0.1890 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.8236, 0.0000, 0.0000 },
+		{ 0.7104, 0.0000, 0.0000, 0.5173 },
+		{ 0.3897, 0.3028, 0.3969, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 },
+		{ 0.4631, 0.3665, 0.0000, 0.0000 },
+		{ 0.0000, 0.0000, 0.0000, 0.0000 }
+	},
+	{
+		{ 0.9198, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.7305, 0.0000, 0.0000 },
+		{ 0.7532, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.7455, 0.0000, 0.0000 },
+		{ 0.7483, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.7488, 0.0000, 0.0000 },
+		{ 0.7714, 0.0000, 0.5057, 0.0000 },
+		{ 0.0000, 0.8081, 0.0000, 0.1029 },
+		{ 0.7096, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.7560, 0.0000, 0.0000 },
+		{ 0.8231, 0.0000, 0.0000, 0.5141 },
+		{ 0.4562, 0.3547, 0.4651, 0.0000 },
+		{ 0.6360, 0.0000, 0.0000, 0.0000 },
+		{ 0.4418, 0.3536, 0.0000, 0.0000 },
+		{ 0.7040, 0.0000, 0.0000, 0.0000 }
+	},
+	{
+		{ 0.9773, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.8420, 0.0000, 0.0000 },
+		{ 0.8748, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.8599, 0.0000, 0.0000 },
+		{ 0.8669, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.8602, 0.0000, 0.0000 },
+		{ 0.8708, 0.0000, 0.5608, 0.0000 },
+		{ 0.0000, 0.8967, 0.0000, 0.0602 },
+		{ 0.8346, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.8693, 0.0000, 0.0000 },
+		{ 0.8958, 0.0000, 0.0000, 0.4259 },
+		{ 0.5139, 0.4132, 0.5290, 0.0000 },
+		{ 0.7603, 0.0000, 0.0000, 0.0000 },
+		{ 0.5107, 0.4089, 0.0000, 0.0000 },
+		{ 0.8230, 0.0000, 0.0000, 0.0000 }
+	},
+	{
+		{ 0.9935, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.9392, 0.0000, 0.0000 },
+		{ 0.9529, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.9501, 0.0000, 0.0000 },
+		{ 0.9502, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.9487, 0.0000, 0.0000 },
+		{ 0.9518, 0.0000, 0.6099, 0.0000 },
+		{ 0.0000, 0.9600, 0.0000, 0.0269 },
+		{ 0.9424, 0.0000, 0.0000, 0.0000 },
+		{ 0.0000, 0.9531, 0.0000, 0.0000 },
+		{ 0.9648, 0.0000, 0.0000, 0.3799 },
+		{ 0.5355, 0.4488, 0.5289, 0.0000 },
+		{ 0.8919, 0.0000, 0.0000, 0.0000 },
+		{ 0.5336, 0.4447, 0.0000, 0.0000 },
+		{ 0.9305, 0.0000, 0.0000, 0.0000 }
+	}
+};
+int t = 0;
+for ( int j = 1; j < temperaturas.length; j++ ) {
+	if ( Math.abs( temperaturaPlan() - temperaturas[ j ] ) < Math.abs( temperaturaPlan() - temperaturas[ t ] ) ) {
+		t = j;
+	}
+}
+if ( puestosActivos() != puestosDelPlan[ t ] ) {
 	return -1;
 }
-double[][] r = {
-	{ 0.7398, 0.0000, 0.0000, 0.0000 },
-	{ 0.0000, 0.5955, 0.0000, 0.0000 },
-	{ 0.6167, 0.0000, 0.0000, 0.0000 },
-	{ 0.0000, 0.6172, 0.0000, 0.0000 },
-	{ 0.6149, 0.0000, 0.0000, 0.0000 },
-	{ 0.0000, 0.6175, 0.0000, 0.0000 },
-	{ 0.6871, 0.0000, 0.4461, 0.0000 },
-	{ 0.0000, 0.7004, 0.0000, 0.1841 },
-	{ 0.0000, 0.0000, 0.0000, 0.0000 },
-	{ 0.0000, 0.8246, 0.0000, 0.0000 },
-	{ 0.7077, 0.0000, 0.0000, 0.5130 },
-	{ 0.3860, 0.3063, 0.3921, 0.0000 },
-	{ 0.0000, 0.0000, 0.0000, 0.0000 },
-	{ 0.4401, 0.3514, 0.0000, 0.0000 },
-	{ 0.0000, 0.0000, 0.0000, 0.0000 }
-};
-return r[ i ][ k ];
+return r[ t ][ i ][ k ];
 /*ALCODEEND*/}
 
 int unidadesConsumidasEvento(int k)

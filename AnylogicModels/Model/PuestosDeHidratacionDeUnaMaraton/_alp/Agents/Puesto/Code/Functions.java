@@ -142,11 +142,15 @@ void revisarReposicion()
 {/*ALCODESTART::1790100000045*/
 // Si algun insumo llego a su punto de reposicion y no hay un camion en
 // camino, se pide uno. El camion trae de todo lo que haga falta.
+// En el escenario optimo el camion es de respaldo: sale solo si, con el retiro
+// medido, el stock no va a alcanzar hasta que pase el ultimo corredor, y trae
+// lo que falta mas un stock de seguridad (faltaRespaldo).
 if ( pedidoEnCurso || !main.reposicionActiva() ) {
 	return;
 }
+boolean respaldo = main.escenario == 1;
 for ( int k = 0; k < 4; k++ ) {
-	if ( ofrece[ k ] && stock[ k ] <= puntoReposicion[ k ] ) {
+	if ( ofrece[ k ] && ( respaldo ? pasados >= 500 && demandaRestante( k ) > stock[ k ] : stock[ k ] <= puntoReposicion[ k ] ) ) {
 		pedidoEnCurso = true;
 		minutoPedido = time();
 		estadoReposicion = "camion en camino";
@@ -159,17 +163,18 @@ for ( int k = 0; k < 4; k++ ) {
 double recibirCarga(double unidades)
 {/*ALCODESTART::1790100000046*/
 // Llega un viaje de la zorra: las unidades se reparten entre los insumos en
-// proporcion a lo que le falta a cada uno para volver a su capacidad.
+// proporcion a lo que le falta a cada uno para volver a su capacidad (en el
+// escenario optimo, para cubrir lo que falta de la carrera: faltaRespaldo).
 double faltaTotal = 0;
 for ( int k = 0; k < 4; k++ ) {
-	faltaTotal += capacidad[ k ] - stock[ k ];
+	faltaTotal += faltaParaCarga( k );
 }
 if ( faltaTotal <= 0 ) {
 	return 0;
 }
 double entregado = 0;
 for ( int k = 0; k < 4; k++ ) {
-	double falta = capacidad[ k ] - stock[ k ];
+	double falta = faltaParaCarga( k );
 	if ( falta <= 0 ) {
 		continue;
 	}
@@ -186,7 +191,7 @@ return entregado;
 boolean necesitaCarga()
 {/*ALCODESTART::1790100000047*/
 for ( int k = 0; k < 4; k++ ) {
-	if ( ofrece[ k ] && stock[ k ] < capacidad[ k ] * 0.98 ) {
+	if ( main.escenario == 1 ? faltaRespaldo( k ) >= 1 : ofrece[ k ] && stock[ k ] < capacidad[ k ] * 0.98 ) {
 		return true;
 	}
 }
@@ -407,6 +412,37 @@ boolean hayBebida()
 {/*ALCODESTART::1790100012004*/
 // Hay al menos una bebida (agua o isotonica) para dar en este momento.
 return ( ofrece[ AGUA ] && stock[ AGUA ] >= 1 ) || ( ofrece[ ISOTONICA ] && stock[ ISOTONICA ] >= 1 );
+/*ALCODEEND*/}
+
+double demandaRestante(int k)
+{/*ALCODESTART::1793000000011*/
+// Unidades del insumo k que se espera retirar desde ahora hasta que pase el
+// ultimo corredor: el retiro por corredor medido hasta ahora en este puesto
+// por los corredores que todavia no pasaron.
+if ( pasados <= 0 ) {
+	return 0;
+}
+double porCorredor = ( consumidos[ k ] + faltantes[ k ] ) / (double) pasados;
+return porCorredor * max( 0, main.cantidadCorredores - pasados );
+/*ALCODEEND*/}
+
+double faltaParaCarga(int k)
+{/*ALCODESTART::1793000000013*/
+// Lo que le falta al insumo k: hasta su capacidad o, en el escenario optimo,
+// lo que falta para terminar la carrera.
+return main.escenario == 1 ? faltaRespaldo( k ) : capacidad[ k ] - stock[ k ];
+/*ALCODEEND*/}
+
+double faltaRespaldo(int k)
+{/*ALCODESTART::1793000000012*/
+// Escenario optimo: unidades que hay que traer para cubrir la demanda que
+// falta mas un stock de seguridad (z * raiz de la demanda, como el ROP).
+// Antes de que pasen 500 corredores el retiro medido todavia no es confiable.
+if ( !ofrece[ k ] || pasados < 500 ) {
+	return 0;
+}
+double d = demandaRestante( k );
+return max( 0, Math.ceil( d + main.zNivelServicio * Math.sqrt( d ) - stock[ k ] ) );
 /*ALCODEEND*/}
 
 int faltantesTotales()

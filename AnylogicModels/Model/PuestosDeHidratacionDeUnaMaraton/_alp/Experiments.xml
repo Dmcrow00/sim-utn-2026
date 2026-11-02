@@ -1106,7 +1106,16 @@
 		</RangeVariationParamValue>
 		<RangeVariationParamValue>
 			<Id>1790100012006</Id>
-			<Type><![CDATA[FIXED]]></Type>
+			<Type><![CDATA[RANGE]]></Type>
+			<From Class="CodeValue">
+				<Code><![CDATA[10]]></Code>
+			</From>
+			<To Class="CodeValue">
+				<Code><![CDATA[30]]></Code>
+			</To>
+			<Step Class="CodeValue">
+				<Code><![CDATA[5]]></Code>
+			</Step>
 		</RangeVariationParamValue>
 		<RangeVariationParamValue>
 			<Id>1790100012008</Id>
@@ -1216,7 +1225,16 @@
 		</RangeVariationParamValue>
 		<RangeVariationParamValue>
 			<Id>1792000000216</Id>
-			<Type><![CDATA[FIXED]]></Type>
+			<Type><![CDATA[RANGE]]></Type>
+			<From Class="CodeValue">
+				<Code><![CDATA[-1]]></Code>
+			</From>
+			<To Class="CodeValue">
+				<Code><![CDATA[-1]]></Code>
+			</To>
+			<Step Class="CodeValue">
+				<Code><![CDATA[1]]></Code>
+			</Step>
 		</RangeVariationParamValue>
 		<RangeVariationParamValue>
 			<Id>1792000000218</Id>
@@ -1654,7 +1672,16 @@
 		</RangeVariationParamValue>
 		<RangeVariationParamValue>
 			<Id>1792000000216</Id>
-			<Type><![CDATA[FIXED]]></Type>
+			<Type><![CDATA[RANGE]]></Type>
+			<From Class="CodeValue">
+				<Code><![CDATA[-1]]></Code>
+			</From>
+			<To Class="CodeValue">
+				<Code><![CDATA[-1]]></Code>
+			</To>
+			<Step Class="CodeValue">
+				<Code><![CDATA[1]]></Code>
+			</Step>
 		</RangeVariationParamValue>
 		<RangeVariationParamValue>
 			<Id>1792000000218</Id>
