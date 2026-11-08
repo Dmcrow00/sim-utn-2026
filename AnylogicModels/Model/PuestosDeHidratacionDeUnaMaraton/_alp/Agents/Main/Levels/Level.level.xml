@@ -5533,83 +5533,6 @@
 		</Font>
 		<Alignment>LEFT</Alignment>
 	</Text>
-	<RoundedRectangle>
-		<Id>1792000000099</Id>
-		<Name><![CDATA[grupoMainMarcoCostos]]></Name>
-		<X>-660</X>
-		<Y>80</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<ZHeight>10</ZHeight>
-		<LineWidth>1</LineWidth>
-		<LineColor>-6642248</LineColor>
-		<LineMaterial>null</LineMaterial>
-		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>435</Height>
-		<Rotation>0.0</Rotation>
-		<FillColor/>
-		<FillMaterial>null</FillMaterial>
-		<ArcRadius>8</ArcRadius>
-	</RoundedRectangle>
-	<Text>
-		<Id>1792000000100</Id>
-		<Name><![CDATA[grupoMainTituloCostos]]></Name>
-		<X>-648</X>
-		<Y>90</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-14734780</Color>
-		<Text><![CDATA[Costos del evento]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>13</Size>
-			<Style>1</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<Text>
-		<Id>1792000000101</Id>
-		<Name><![CDATA[grupoMainDetalleCostos]]></Name>
-		<X>-648</X>
-		<Y>110</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-9735291</Color>
-		<Text><![CDATA[Precios (parámetros) y cálculo del costo que muestra Métricas]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>10</Size>
-			<Style>0</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
 	<Rectangle>
 		<Id>1790100009508</Id>
 		<Name><![CDATA[barraInicioFondo]]></Name>
@@ -15440,10 +15363,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014025</Id>
+		<Id>1794200000001</Id>
 		<Name><![CDATA[grupoMainTitulo]]></Name>
-		<X>-2040</X>
-		<Y>18</Y>
+		<X>-2772</X>
+		<Y>10</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15456,19 +15379,19 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<Text><![CDATA[Main: elementos agrupados por lo que afectan en la simulación]]></Text>
+		<Text><![CDATA[Main: parámetros, variables y funciones agrupados por lo que hacen en la simulación]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
-			<Size>16</Size>
+			<Size>15</Size>
 			<Style>1</Style>
 		</Font>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014026</Id>
+		<Id>1794200000002</Id>
 		<Name><![CDATA[grupoMainNota]]></Name>
-		<X>-2040</X>
-		<Y>42</Y>
+		<X>-2772</X>
+		<Y>36</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15481,84 +15404,7 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Los parámetros quedan en Main porque se configuran desde la pantalla del experimento. Todo esto está fuera de las vistas: no aparece en ninguna pantalla.]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>11</Size>
-			<Style>0</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<RoundedRectangle>
-		<Id>1790100014001</Id>
-		<Name><![CDATA[grupoMainMarco0]]></Name>
-		<X>-2040</X>
-		<Y>80</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<ZHeight>10</ZHeight>
-		<LineWidth>1</LineWidth>
-		<LineColor>-6642248</LineColor>
-		<LineMaterial>null</LineMaterial>
-		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>87</Height>
-		<Rotation>0.0</Rotation>
-		<FillColor/>
-		<FillMaterial>null</FillMaterial>
-		<ArcRadius>8</ArcRadius>
-	</RoundedRectangle>
-	<Text>
-		<Id>1790100014002</Id>
-		<Name><![CDATA[grupoMainTitulo0]]></Name>
-		<X>-2028</X>
-		<Y>90</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-14734780</Color>
-		<Text><![CDATA[Llegada de corredores]]></Text>
-		<Font>
-			<Name><![CDATA[SansSerif]]></Name>
-			<Size>13</Size>
-			<Style>1</Style>
-		</Font>
-		<Alignment>LEFT</Alignment>
-	</Text>
-	<Text>
-		<Id>1790100014003</Id>
-		<Name><![CDATA[grupoMainDetalle0]]></Name>
-		<X>-2028</X>
-		<Y>110</Y>
-		<Label>
-			<X>0</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>true</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>false</ShowLabel>
-		<DrawMode>SHAPE_DRAW_2D</DrawMode>
-		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>0</Z>
-		<Rotation>0.0</Rotation>
-		<Color>-9735291</Color>
-		<Text><![CDATA[Cuántos corredores largan y de qué categoría]]></Text>
+		<Text><![CDATA[Cada recuadro reúne los elementos de un mismo tema y el texto de arriba explica qué hace el grupo. Los parámetros quedan en Main porque se configuran desde la pantalla del experimento; los datos fijos (corredores, puestos, categorías, insumos y vehículos) salen de la base de datos del modelo. Todo esto está fuera de las vistas: no aparece en ninguna pantalla.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15567,10 +15413,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014004</Id>
-		<Name><![CDATA[grupoMainMarco1853]]></Name>
-		<X>-2040</X>
-		<Y>187</Y>
+		<Id>1794200000003</Id>
+		<Name><![CDATA[grupoMainMarcoLlegada]]></Name>
+		<X>-2772</X>
+		<Y>71</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15586,18 +15432,97 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>212</Height>
+		<Width>402</Width>
+		<Height>238</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014005</Id>
-		<Name><![CDATA[grupoMainTitulo1853]]></Name>
-		<X>-2028</X>
-		<Y>197</Y>
+		<Id>1794200000004</Id>
+		<Name><![CDATA[grupoMainTituloLlegada]]></Name>
+		<X>-2760</X>
+		<Y>81</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Llegada de corredores (carrera real 2025)]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000005</Id>
+		<Name><![CDATA[grupoMainDetalleLlegada]]></Name>
+		<X>-2760</X>
+		<Y>101</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[El Source larga a los corredores reales de la tabla corredores, con
+los intervalos reales de la alfombra de largada. Cada uno recibe su
+tiempo neto oficial y el perfil de su categoría (tabla categorias).]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000006</Id>
+		<Name><![CDATA[grupoMainMarcoClima]]></Name>
+		<X>-2772</X>
+		<Y>329</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>402</Width>
+		<Height>301</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000007</Id>
+		<Name><![CDATA[grupoMainTituloClima]]></Name>
+		<X>-2760</X>
+		<Y>339</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15619,10 +15544,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014006</Id>
-		<Name><![CDATA[grupoMainDetalle1853]]></Name>
-		<X>-2028</X>
-		<Y>217</Y>
+		<Id>1794200000008</Id>
+		<Name><![CDATA[grupoMainDetalleClima]]></Name>
+		<X>-2760</X>
+		<Y>359</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15635,7 +15560,10 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Cuánto toman y cuándo deciden parar en un puesto]]></Text>
+		<Text><![CDATA[La temperatura del día se traduce en un nivel de calor (10 °C = 0,
+30 °C = 1) que acelera la pérdida de hidratación. El consumo por
+hora y las unidades por corredor fijan cuánto toma cada uno;
+decidirHidratacion define si frena en el puesto.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15644,10 +15572,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014007</Id>
-		<Name><![CDATA[grupoMainMarco3722]]></Name>
-		<X>-2040</X>
-		<Y>419</Y>
+		<Id>1794200000009</Id>
+		<Name><![CDATA[grupoMainMarcoAtencion]]></Name>
+		<X>-2772</X>
+		<Y>650</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15663,18 +15591,18 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>187</Height>
+		<Width>402</Width>
+		<Height>251</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014008</Id>
-		<Name><![CDATA[grupoMainTitulo3722]]></Name>
-		<X>-2028</X>
-		<Y>429</Y>
+		<Id>1794200000010</Id>
+		<Name><![CDATA[grupoMainTituloAtencion]]></Name>
+		<X>-2760</X>
+		<Y>660</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15696,10 +15624,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014009</Id>
-		<Name><![CDATA[grupoMainDetalle3722]]></Name>
-		<X>-2028</X>
-		<Y>449</Y>
+		<Id>1794200000011</Id>
+		<Name><![CDATA[grupoMainDetalleAtencion]]></Name>
+		<X>-2760</X>
+		<Y>680</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15712,7 +15640,10 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Voluntarios, cola y tiempo de atención en cada mesa]]></Text>
+		<Text><![CDATA[Cuántos voluntarios tiene cada puesto (fijo o según el flujo real),
+cuánto tarda cada entrega y cuándo un corredor prefiere no frenar
+por la cola. Cada puesto es un ResourcePool del diagrama de la
+pantalla Lógica.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15721,10 +15652,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014010</Id>
-		<Name><![CDATA[grupoMainMarco5598]]></Name>
-		<X>-1580</X>
-		<Y>80</Y>
+		<Id>1794200000012</Id>
+		<Name><![CDATA[grupoMainMarcoEscenario]]></Name>
+		<X>-2350</X>
+		<Y>71</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15740,18 +15671,18 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>137</Height>
+		<Width>422</Width>
+		<Height>251</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014011</Id>
-		<Name><![CDATA[grupoMainTitulo5598]]></Name>
-		<X>-1568</X>
-		<Y>90</Y>
+		<Id>1794200000013</Id>
+		<Name><![CDATA[grupoMainTituloEscenario]]></Name>
+		<X>-2338</X>
+		<Y>81</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15764,7 +15695,7 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<Text><![CDATA[Stock y política de reposición]]></Text>
+		<Text><![CDATA[Corrida y escenario]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -15773,10 +15704,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014012</Id>
-		<Name><![CDATA[grupoMainDetalle5598]]></Name>
-		<X>-1568</X>
-		<Y>110</Y>
+		<Id>1794200000014</Id>
+		<Name><![CDATA[grupoMainDetalleEscenario]]></Name>
+		<X>-2338</X>
+		<Y>101</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15789,7 +15720,10 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Capacidad de cada insumo y cuándo pedir más]]></Text>
+		<Text><![CDATA[Qué escenario se corre (0 base, 1 optimista, 2 pesimista, 3 excesivo) y
+con qué semilla. Cada escenario fija qué parte de la demanda se coloca
+antes de la largada (cobertura) y cuántos voluntarios hay (factor).
+ejecucionRapida corre sin animación, para los experimentos.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15798,10 +15732,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014013</Id>
-		<Name><![CDATA[grupoMainMarco7466]]></Name>
-		<X>-1580</X>
-		<Y>237</Y>
+		<Id>1794200000015</Id>
+		<Name><![CDATA[grupoMainMarcoPlan]]></Name>
+		<X>-2350</X>
+		<Y>342</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15817,18 +15751,18 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>212</Height>
+		<Width>422</Width>
+		<Height>251</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014014</Id>
-		<Name><![CDATA[grupoMainTitulo7466]]></Name>
-		<X>-1568</X>
-		<Y>247</Y>
+		<Id>1794200000016</Id>
+		<Name><![CDATA[grupoMainTituloPlan]]></Name>
+		<X>-2338</X>
+		<Y>352</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15841,7 +15775,7 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<Text><![CDATA[Logística: camión y zorra]]></Text>
+		<Text><![CDATA[Plan del escenario optimista]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -15850,10 +15784,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014015</Id>
-		<Name><![CDATA[grupoMainDetalle7466]]></Name>
-		<X>-1568</X>
-		<Y>267</Y>
+		<Id>1794200000017</Id>
+		<Name><![CDATA[grupoMainDetallePlan]]></Name>
+		<X>-2338</X>
+		<Y>372</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15866,7 +15800,10 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Depósito, viaje del camión y descarga con la zorra]]></Text>
+		<Text><![CDATA[El escenario 1 se arma con la temperatura pronosticada: qué puestos se
+instalan (distancia máxima entre puestos con bebida según la pérdida de
+hidratación por km) y cuánto stock lleva cada uno (tabla
+retiro_planificado).]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15875,10 +15812,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014016</Id>
-		<Name><![CDATA[grupoMainMarco9340]]></Name>
-		<X>-1580</X>
-		<Y>469</Y>
+		<Id>1794200000018</Id>
+		<Name><![CDATA[grupoMainMarcoAgentes]]></Name>
+		<X>-2350</X>
+		<Y>613</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15894,18 +15831,18 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>162</Height>
+		<Width>422</Width>
+		<Height>188</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014017</Id>
-		<Name><![CDATA[grupoMainTitulo9340]]></Name>
-		<X>-1568</X>
-		<Y>479</Y>
+		<Id>1794200000019</Id>
+		<Name><![CDATA[grupoMainTituloAgentes]]></Name>
+		<X>-2338</X>
+		<Y>623</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15927,10 +15864,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014018</Id>
-		<Name><![CDATA[grupoMainDetalle9340]]></Name>
-		<X>-1568</X>
-		<Y>499</Y>
+		<Id>1794200000020</Id>
+		<Name><![CDATA[grupoMainDetalleAgentes]]></Name>
+		<X>-2338</X>
+		<Y>643</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15943,7 +15880,9 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Poblaciones y ubicación de los puestos en el mapa]]></Text>
+		<Text><![CDATA[Poblaciones: los 15 puestos (cada agente es una fila de la tabla
+puestos), los camiones y operarios con zorra que se crean en cada
+pedido y las 15 escenas 3D (una por puesto).]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15952,10 +15891,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014019</Id>
-		<Name><![CDATA[grupoMainMarco11212]]></Name>
-		<X>-1120</X>
-		<Y>80</Y>
+		<Id>1794200000021</Id>
+		<Name><![CDATA[grupoMainMarcoStock]]></Name>
+		<X>-1908</X>
+		<Y>71</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15971,18 +15910,18 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
-		<Height>237</Height>
+		<Width>362</Width>
+		<Height>289</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
 		<FillMaterial>null</FillMaterial>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014020</Id>
-		<Name><![CDATA[grupoMainTitulo11212]]></Name>
-		<X>-1108</X>
-		<Y>90</Y>
+		<Id>1794200000022</Id>
+		<Name><![CDATA[grupoMainTituloStock]]></Name>
+		<X>-1896</X>
+		<Y>81</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15995,7 +15934,7 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-14734780</Color>
-		<Text><![CDATA[Resultados de la carrera]]></Text>
+		<Text><![CDATA[Stock y política de reposición]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>13</Size>
@@ -16004,10 +15943,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014021</Id>
-		<Name><![CDATA[grupoMainDetalle11212]]></Name>
-		<X>-1108</X>
-		<Y>110</Y>
+		<Id>1794200000023</Id>
+		<Name><![CDATA[grupoMainDetalleStock]]></Name>
+		<X>-1896</X>
+		<Y>101</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16020,7 +15959,11 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Contadores y promedios que muestran Inicio y Métricas]]></Text>
+		<Text><![CDATA[Stock inicial de cada insumo (fijo o según la demanda
+planificada) y punto de reposición: el puesto pide un camión
+cuando su stock llega a la demanda esperada durante la
+entrega más un stock de seguridad (z). El ritmo medio de los
+que largaron estima esa demanda.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -16029,10 +15972,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<RoundedRectangle>
-		<Id>1790100014022</Id>
-		<Name><![CDATA[grupoMainMarco13087]]></Name>
-		<X>-1120</X>
-		<Y>337</Y>
+		<Id>1794200000024</Id>
+		<Name><![CDATA[grupoMainMarcoLogistica]]></Name>
+		<X>-1908</X>
+		<Y>380</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16048,7 +15991,323 @@ categoría de corredor.]]></Text>
 		<LineColor>-6642248</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>440</Width>
+		<Width>362</Width>
+		<Height>226</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000025</Id>
+		<Name><![CDATA[grupoMainTituloLogistica]]></Name>
+		<X>-1896</X>
+		<Y>390</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Logística: camión y zorra]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000026</Id>
+		<Name><![CDATA[grupoMainDetalleLogistica]]></Name>
+		<X>-1896</X>
+		<Y>410</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Depósito, velocidad, capacidad y recorrido por calles (tabla
+vehiculos). Ante un pedido sale un camión que estaciona en
+la calle aledaña al puesto, y un operario lleva la carga con
+la zorra.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000027</Id>
+		<Name><![CDATA[grupoMainMarcoCostos]]></Name>
+		<X>-1526</X>
+		<Y>71</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>562</Width>
+		<Height>263</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000028</Id>
+		<Name><![CDATA[grupoMainTituloCostos]]></Name>
+		<X>-1514</X>
+		<Y>81</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Costos del evento]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000029</Id>
+		<Name><![CDATA[grupoMainDetalleCostos]]></Name>
+		<X>-1514</X>
+		<Y>101</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Precios y tarifas (tablas insumos y vehiculos) y costo total: suma lo comprado por cada puesto
+en insumos, envases, voluntarios, transporte y costos fijos. La pantalla Métricas lo muestra y
+permite cambiar los precios.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000030</Id>
+		<Name><![CDATA[grupoMainMarcoConsumo]]></Name>
+		<X>-1526</X>
+		<Y>354</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>562</Width>
+		<Height>250</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000031</Id>
+		<Name><![CDATA[grupoMainTituloConsumo]]></Name>
+		<X>-1514</X>
+		<Y>364</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Consumo y desperdicio]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000032</Id>
+		<Name><![CDATA[grupoMainDetalleConsumo]]></Name>
+		<X>-1514</X>
+		<Y>384</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Lo consumido a precio de compra frente a lo comprado: valor del sobrante, horas-voluntario
+ociosas y pérdida por exceso de stock o de voluntarios.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000033</Id>
+		<Name><![CDATA[grupoMainMarcoServicio]]></Name>
+		<X>-944</X>
+		<Y>71</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>482</Width>
+		<Height>263</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000034</Id>
+		<Name><![CDATA[grupoMainTituloServicio]]></Name>
+		<X>-932</X>
+		<Y>81</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Indicadores de servicio e hidratación]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000035</Id>
+		<Name><![CDATA[grupoMainDetalleServicio]]></Name>
+		<X>-932</X>
+		<Y>101</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Lo que se compara entre escenarios: % de llegados deshidratados (bajaron del
+umbral en algún tramo), % de no atendidos, espera en la cola y faltantes de
+stock.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000036</Id>
+		<Name><![CDATA[grupoMainMarcoTiempos]]></Name>
+		<X>-944</X>
+		<Y>354</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>482</Width>
 		<Height>237</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor/>
@@ -16056,10 +16315,167 @@ categoría de corredor.]]></Text>
 		<ArcRadius>8</ArcRadius>
 	</RoundedRectangle>
 	<Text>
-		<Id>1790100014023</Id>
-		<Name><![CDATA[grupoMainTitulo13087]]></Name>
-		<X>-1108</X>
-		<Y>347</Y>
+		<Id>1794200000037</Id>
+		<Name><![CDATA[grupoMainTituloTiempos]]></Name>
+		<X>-932</X>
+		<Y>364</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Tiempos de carrera]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000038</Id>
+		<Name><![CDATA[grupoMainDetalleTiempos]]></Name>
+		<X>-932</X>
+		<Y>384</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Llegadas y tiempos por categoría que muestran las pantallas Inicio y Métricas.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000039</Id>
+		<Name><![CDATA[grupoMainMarcoValidacion]]></Name>
+		<X>-442</X>
+		<Y>71</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>382</Width>
+		<Height>226</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000040</Id>
+		<Name><![CDATA[grupoMainTituloValidacion]]></Name>
+		<X>-430</X>
+		<Y>81</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Validación y exportación]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000041</Id>
+		<Name><![CDATA[grupoMainDetalleValidacion]]></Name>
+		<X>-430</X>
+		<Y>101</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Compara con la carrera real 2025 (pico de corredores por minuto
+en cada puesto y tiempo neto simulado contra el real). Al
+terminar la corrida agrega una fila a resultados_corridas.csv y
+una por puesto a resultados_puestos.csv.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000042</Id>
+		<Name><![CDATA[grupoMainMarcoPantallas]]></Name>
+		<X>-442</X>
+		<Y>317</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>382</Width>
+		<Height>301</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000043</Id>
+		<Name><![CDATA[grupoMainTituloPantallas]]></Name>
+		<X>-430</X>
+		<Y>327</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16081,10 +16497,10 @@ categoría de corredor.]]></Text>
 		<Alignment>LEFT</Alignment>
 	</Text>
 	<Text>
-		<Id>1790100014024</Id>
-		<Name><![CDATA[grupoMainDetalle13087]]></Name>
-		<X>-1108</X>
-		<Y>367</Y>
+		<Id>1794200000044</Id>
+		<Name><![CDATA[grupoMainDetallePantallas]]></Name>
+		<X>-430</X>
+		<Y>347</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16097,7 +16513,89 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Cambio de pantalla, velocidad de la vista 3D y tablas]]></Text>
+		<Text><![CDATA[Cambio de pantalla (cada una es una View Area), colores de la
+barra superior, celdas de la tabla de stock y formato de
+precios y costos. En el mapa se dibuja uno de cada
+corredoresPorPuntoMapa corredores.]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>10</Size>
+			<Style>0</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<RoundedRectangle>
+		<Id>1794200000045</Id>
+		<Name><![CDATA[grupoMainMarcoVista3d]]></Name>
+		<X>-442</X>
+		<Y>638</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<ZHeight>10</ZHeight>
+		<LineWidth>1</LineWidth>
+		<LineColor>-6642248</LineColor>
+		<LineMaterial>null</LineMaterial>
+		<LineStyle>SOLID</LineStyle>
+		<Width>382</Width>
+		<Height>238</Height>
+		<Rotation>0.0</Rotation>
+		<FillColor/>
+		<FillMaterial>null</FillMaterial>
+		<ArcRadius>8</ArcRadius>
+	</RoundedRectangle>
+	<Text>
+		<Id>1794200000046</Id>
+		<Name><![CDATA[grupoMainTituloVista3d]]></Name>
+		<X>-430</X>
+		<Y>648</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-14734780</Color>
+		<Text><![CDATA[Vista 3D de los puestos]]></Text>
+		<Font>
+			<Name><![CDATA[SansSerif]]></Name>
+			<Size>13</Size>
+			<Style>1</Style>
+		</Font>
+		<Alignment>LEFT</Alignment>
+	</Text>
+	<Text>
+		<Id>1794200000047</Id>
+		<Name><![CDATA[grupoMainDetalleVista3d]]></Name>
+		<X>-430</X>
+		<Y>668</Y>
+		<Label>
+			<X>0</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Color>-9735291</Color>
+		<Text><![CDATA[Qué puesto muestra la escena 3D, cuántos corredores por minuto
+se dibujan en ella y la velocidad de la animación dentro y
+fuera de la vista 3D.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>

@@ -5,8 +5,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000116</Id>
 		<Name><![CDATA[ingresarCorredor]]></Name>
-		<X>1552</X>
-		<Y>228</Y>
+		<X>1338</X>
+		<Y>367</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -29,8 +29,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100000117</Id>
 		<Name><![CDATA[velocidadDe]]></Name>
-		<X>1552</X>
-		<Y>253</Y>
+		<X>1488</X>
+		<Y>267</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -49,8 +49,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1790100009001</Id>
 		<Name><![CDATA[vaAHidratarse]]></Name>
-		<X>1552</X>
-		<Y>278</Y>
+		<X>1488</X>
+		<Y>292</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -69,8 +69,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000118</Id>
 		<Name><![CDATA[asignarCorredor]]></Name>
-		<X>1552</X>
-		<Y>303</Y>
+		<X>1488</X>
+		<Y>317</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -89,8 +89,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000119</Id>
 		<Name><![CDATA[elegirVoluntario]]></Name>
-		<X>1552</X>
-		<Y>435</Y>
+		<X>1680</X>
+		<Y>279</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -109,8 +109,8 @@
 		<ReturnType>Puesto</ReturnType>
 		<Id>1790100009623</Id>
 		<Name><![CDATA[miPuesto]]></Name>
-		<X>1798</X>
-		<Y>253</Y>
+		<X>2022</X>
+		<Y>279</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -125,8 +125,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100009624</Id>
 		<Name><![CDATA[fraccion]]></Name>
-		<X>1798</X>
-		<Y>278</Y>
+		<X>2022</X>
+		<Y>304</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -145,8 +145,8 @@
 		<ReturnType>Color</ReturnType>
 		<Id>1790100009625</Id>
 		<Name><![CDATA[colorBarra]]></Name>
-		<X>1798</X>
-		<Y>303</Y>
+		<X>2022</X>
+		<Y>329</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -165,8 +165,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100009626</Id>
 		<Name><![CDATA[textoReposicion]]></Name>
-		<X>1798</X>
-		<Y>328</Y>
+		<X>2022</X>
+		<Y>354</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -181,8 +181,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100010278</Id>
 		<Name><![CDATA[verCamara]]></Name>
-		<X>2012</X>
-		<Y>435</Y>
+		<X>2022</X>
+		<Y>549</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -201,8 +201,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100010279</Id>
 		<Name><![CDATA[dejarDeSeguir]]></Name>
-		<X>2012</X>
-		<Y>460</Y>
+		<X>2022</X>
+		<Y>574</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -221,8 +221,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100011014</Id>
 		<Name><![CDATA[sincronizarControles]]></Name>
-		<X>2012</X>
-		<Y>278</Y>
+		<X>2192</X>
+		<Y>304</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -237,8 +237,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100011015</Id>
 		<Name><![CDATA[elegirInsumo]]></Name>
-		<X>2012</X>
-		<Y>303</Y>
+		<X>2192</X>
+		<Y>329</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -257,8 +257,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100011016</Id>
 		<Name><![CDATA[textoAgotamiento]]></Name>
-		<X>2012</X>
-		<Y>228</Y>
+		<X>2192</X>
+		<Y>254</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -277,8 +277,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100011017</Id>
 		<Name><![CDATA[textoEstadoAjustes]]></Name>
-		<X>2012</X>
-		<Y>253</Y>
+		<X>2192</X>
+		<Y>279</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -293,8 +293,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100012274</Id>
 		<Name><![CDATA[terminarEntrega]]></Name>
-		<X>1552</X>
-		<Y>328</Y>
+		<X>1488</X>
+		<Y>342</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -313,8 +313,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100013048</Id>
 		<Name><![CDATA[velocidadActual]]></Name>
-		<X>2012</X>
-		<Y>328</Y>
+		<X>2192</X>
+		<Y>354</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -329,8 +329,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100013049</Id>
 		<Name><![CDATA[poseEspectador]]></Name>
-		<X>1552</X>
-		<Y>460</Y>
+		<X>1338</X>
+		<Y>662</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -353,8 +353,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000347</Id>
 		<Name><![CDATA[decidir]]></Name>
-		<X>1552</X>
-		<Y>460</Y>
+		<X>1680</X>
+		<Y>354</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -373,8 +373,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1792000000348</Id>
 		<Name><![CDATA[reservar]]></Name>
-		<X>1552</X>
-		<Y>485</Y>
+		<X>1680</X>
+		<Y>379</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -397,8 +397,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000349</Id>
 		<Name><![CDATA[segundosOcupado]]></Name>
-		<X>1552</X>
-		<Y>510</Y>
+		<X>1830</X>
+		<Y>254</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -417,8 +417,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000361</Id>
 		<Name><![CDATA[desaceleracionDe]]></Name>
-		<X>1552</X>
-		<Y>535</Y>
+		<X>1830</X>
+		<Y>279</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -437,8 +437,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000362</Id>
 		<Name><![CDATA[distanciaFrenadoPx]]></Name>
-		<X>1552</X>
-		<Y>560</Y>
+		<X>1830</X>
+		<Y>304</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -457,8 +457,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1792000000363</Id>
 		<Name><![CDATA[ajustarFrenado]]></Name>
-		<X>1552</X>
-		<Y>585</Y>
+		<X>1830</X>
+		<Y>329</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -477,8 +477,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1792000000364</Id>
 		<Name><![CDATA[velocidadDeMarcha]]></Name>
-		<X>1552</X>
-		<Y>610</Y>
+		<X>1830</X>
+		<Y>354</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -501,8 +501,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000369</Id>
 		<Name><![CDATA[costoVoluntario]]></Name>
-		<X>1552</X>
-		<Y>635</Y>
+		<X>1680</X>
+		<Y>304</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -529,8 +529,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000370</Id>
 		<Name><![CDATA[vecinoOcupado]]></Name>
-		<X>1552</X>
-		<Y>660</Y>
+		<X>1680</X>
+		<Y>329</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

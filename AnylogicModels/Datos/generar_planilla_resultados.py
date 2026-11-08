@@ -2,7 +2,7 @@
 
 Hojas:
   Leame                 que hay en cada hoja y como se usa
-  Corridas              una fila por corrida (400: 4 escenarios x 20 semillas x 5 temperaturas)
+  Corridas              una fila por corrida (4 escenarios x semillas x 5 temperaturas)
   Escenarios            media, desvio e IC por escenario a la temperatura elegida (formulas)
   Diferencias_pareadas  diferencia contra E0 con la misma semilla (formulas)
   Sensibilidad          media e IC por escenario y temperatura (formulas)
@@ -18,6 +18,7 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+from scipy import stats
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
@@ -176,6 +177,19 @@ corr = pd.read_csv(EXP / "escenarios_sensibilidad_corridas.csv", sep=None, engin
 corr = corr.sort_values(["temperaturaC", "escenario", "semilla"]).reset_index(drop=True)
 N = len(corr)
 R_ESC, R_TEMP, R_SEM = rango("escenario", N), rango("temperaturaC", N), rango("semilla", N)
+SEMILLAS = sorted(corr.semilla.unique())
+S = len(SEMILLAS)
+N_TEMPS = corr.temperaturaC.nunique()
+
+
+def semiancho_relativo(x):
+    return stats.t.ppf(0.975, len(x) - 1) * x.std(ddof=1) / len(x) ** 0.5 / x.mean()
+
+
+# Precision del indicador principal (% de deshidratados, alrededor de 0,1 %)
+# en las combinaciones donde no es practicamente 0.
+_con_deshidratados = corr[corr.groupby(["escenario", "temperaturaC"]).pctDeshidratados.transform("mean") >= 0.05]
+PRECISION = _con_deshidratados.groupby(["escenario", "temperaturaC"]).pctDeshidratados.apply(semiancho_relativo)
 
 wb = Workbook()
 
@@ -187,7 +201,8 @@ lineas = [
     ("UTN FRRO · Ceballos (46860) · Lupo Piatti (52868) · Lentino (52109)", F_NORMAL),
     ("", None),
     ("Origen de los datos", F_SUB),
-    ("Experimento «Sensibilidad» del modelo AnyLogic: 4 escenarios × 20 semillas (1 a 20) × 5 temperaturas (10 a 30 °C) = 400 corridas de la carrera completa (cada una termina cuando llega el último corredor, entre 396 y 545 min), hechas con el modelo sin escenas 3D (PuestosDeHidratacionDeUnaMaraton_CarreraCompleta), que no tiene el límite de 5 horas de la versión gratuita. Con 20 réplicas por combinación, n = (t·s/e)² pide como máximo 11 para un error de 0,5 puntos en deshidratados y no atendidos y de $1 M en el costo.", F_NORMAL),
+    (f"Experimento «Sensibilidad» del modelo AnyLogic: 4 escenarios × {S} semillas ({SEMILLAS[0]} a {SEMILLAS[-1]}) × {N_TEMPS} temperaturas (10 a 30 °C) = {N:,} corridas de la carrera completa".replace(",", ".") + f" (cada una termina cuando llega el último corredor, entre {corr.minuto.min():.0f} y {corr.minuto.max():.0f} min), hechas con el modelo sin escenas 3D (PuestosDeHidratacionDeUnaMaraton_CarreraCompleta), que no tiene el límite de 5 horas de la versión gratuita. "
+     f"Con {S} réplicas por combinación, el semiancho del intervalo de confianza del 95 % del porcentaje de deshidratados (el indicador principal, de alrededor de 0,1 %) es en la mediana el {100 * PRECISION.median():.0f} % de la media y como mucho el {100 * PRECISION.max():.0f} % (sin contar las combinaciones donde casi no hay deshidratados). En el costo es menor al 1 %.", F_NORMAL),
     ("Cada corrida se exportó a resultados_corridas.csv y resultados_puestos.csv (carpeta Datos/experimentos). Con la misma semilla, el modelo da exactamente los mismos resultados.", F_NORMAL),
     ("Escenarios: E0 Base 2025 (configuración real) · E1 Optimista (puestos, stock y voluntarios según el pronóstico del día, con camiones de respaldo, al menor costo) · E2 Pesimista (¼ de voluntarios y 35 % del stock) · E3 Excesivo (doble de voluntarios y de stock). Cada escenario tiene su experimento en el modelo (Simulation, Optimista, Pesimista y Excesivo).", F_NORMAL),
     ("", None),
@@ -196,7 +211,7 @@ lineas = [
     ("Escenarios — media, desvío estándar e intervalo de confianza de cada métrica por escenario, a la temperatura elegida (por defecto 15 °C, la de la carrera 2025).", F_NORMAL),
     ("Diferencias_pareadas — diferencia de cada escenario contra E0 con la misma semilla (números aleatorios comunes) y su intervalo de confianza; es significativa si el intervalo no contiene al 0.", F_NORMAL),
     ("Sensibilidad — media e intervalo de confianza por escenario y temperatura real del día.", F_NORMAL),
-    ("E1_Optimista, E2_Pesimista, E3_Excesivo — una hoja por escenario alternativo: cómo se arma, su comparación con la base a la temperatura elegida y todas sus corridas (100: 20 semillas × 5 temperaturas).", F_NORMAL),
+    ("E1_Optimista, E2_Pesimista, E3_Excesivo — una hoja por escenario alternativo: cómo se arma, su comparación con la base a la temperatura elegida y todas sus corridas ({S * N_TEMPS}: {S} semillas × {N_TEMPS} temperaturas).", F_NORMAL),
     ("Puestos — una fila por puesto y corrida: flujo pico real y simulado, atenciones, esperas, faltantes, comprado y consumido por insumo.", F_NORMAL),
     ("Calibracion — corridas del experimento Relevamiento (275: C entre 0,090 y 0,150 × 5 semillas × 5 temperaturas), con las que se verificó la regla de distancia máxima y se midió la demanda por puesto para el stock del óptimo a cada temperatura.", F_NORMAL),
     ("", None),
@@ -299,8 +314,8 @@ for c in "BCDEFGH":
 
 # ------------------------------------------------------------------ Sensibilidad
 ws = wb.create_sheet("Sensibilidad")
-celda(ws, 1, 1, "Sensibilidad a la temperatura real del día (plan de E1 armado para 15 °C)", fuente=F_TITULO, borde=False)
-entrada(ws, 3, "Nivel de confianza", 0.95, "0%", "Cada celda: 20 réplicas con las semillas 1 a 20.")
+celda(ws, 1, 1, "Sensibilidad a la temperatura real del día (E1 arma su plan con esa temperatura)", fuente=F_TITULO, borde=False)
+entrada(ws, 3, "Nivel de confianza", 0.95, "0%", f"Cada celda: {S} réplicas con las semillas {SEMILLAS[0]} a {SEMILLAS[-1]}.")
 temps = sorted(corr.temperaturaC.unique())
 f = 5
 for col, nombre, div, fmt in [METRICAS[0], METRICAS[1], METRICAS[2], METRICAS[8], METRICAS[11]]:
@@ -331,7 +346,7 @@ COL_ALT = [c for c in COLUMNAS if c[0] not in ("escenario", "nombreEscenario")]
 for k, hoja, titulo, experimento, armado in ALTERNATIVOS:
     ws = wb.create_sheet(hoja)
     celda(ws, 1, 1, titulo, fuente=F_TITULO, borde=False)
-    celda(ws, 2, 1, experimento + ". Las corridas salen del experimento «Sensibilidad» (20 semillas × 5 temperaturas).", fuente=F_NOTA, borde=False)
+    celda(ws, 2, 1, experimento + f". Las corridas salen del experimento «Sensibilidad» ({S} semillas × {N_TEMPS} temperaturas).", fuente=F_NOTA, borde=False)
     f = 4
     celda(ws, f, 1, "Cómo se arma", fuente=F_SUB, borde=False)
     f += 1

@@ -992,8 +992,8 @@
 	<EmbeddedObject>
 		<Id>1790100000124</Id>
 		<Name><![CDATA[voluntarios]]></Name>
-		<X>1338</X>
-		<Y>435</Y>
+		<X>1680</X>
+		<Y>254</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1042,7 +1042,7 @@
 		<Id>1790100013046</Id>
 		<Name><![CDATA[transeuntes]]></Name>
 		<X>1338</X>
-		<Y>460</Y>
+		<Y>487</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

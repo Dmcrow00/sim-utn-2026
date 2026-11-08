@@ -2,13 +2,20 @@
 
 Entrada: splits_maraton_ba_2025.csv (resultados oficiales, raceresult 361890).
 Salida (en la carpeta indicada):
-  - datos_modelo_largadas.txt : los 12.792 corredores que llegaron, como pares
-    (segundo en que cruzaron la largada, tiempo neto en segundos), ordenados por
-    largada y codificados en base 64 (2 + 3 caracteres por corredor). Es el
-    texto que va en Main.datosCarreraReal().
+  - corredores.xlsx : los 12.792 corredores que llegaron, con su dorsal, el
+    segundo en que cruzaron la largada despues del disparo, su tiempo neto y
+    el tiempo neto al pasar por cada control (paso_5k_seg ... paso_40k_seg,
+    vacio si el chip no lo registro), en segundos y ordenados por largada. Es
+    el contenido de la tabla corredores de la base de datos de los dos
+    modelos. Solo hace falta si cambian los datos: en AnyLogic, clic derecho en
+    Database > Import Database Tables, elegir este archivo y reemplazar la
+    tabla corredores. Todas las columnas tienen que quedar de tipo int.
   - datos_modelo_puestos.txt : por puesto, flujo real de corredores (pico por
-    minuto, minuto del pico, flujo medio en la ventana del 90 %), interpolando
-    el paso de cada corredor por el km del puesto entre sus splits.
+    minuto, minuto del pico, flujo medio en la ventana del 90 % y minuto en que
+    paso el 95 %), interpolando el paso de cada corredor por el km del puesto
+    entre sus splits. pico_por_min, minuto_pico, flujo_medio_por_min y p95_min
+    son las columnas pico_real_por_min, minuto_pico_real, flujo_medio_real y
+    fin_ventana_real de la tabla puestos; si cambian, se editan ahi.
 
 Uso: python preparar_datos_modelo.py splits_maraton_ba_2025.csv salida/
 """
@@ -17,7 +24,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ALFA = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/"
 KM_PUESTOS = [5, 7.5, 10, 12.5, 15, 17.5, 20, 22.6, 25, 27.5, 30, 33, 35, 37.7, 40]
 SPLITS = [("Salida", 0), ("5K", 5), ("10K", 10), ("15K", 15), ("20K", 20), ("MM", 21.0975),
           ("25K", 25), ("30K", 30), ("35K", 35), ("40K", 40), ("Llegada", 42.195)]
@@ -38,26 +44,22 @@ for c in df.columns:
     if c.endswith(("_chip", "_gun")):
         df[c] = df[c].map(seg)
 
-# 1) Pares (largada, neto) de los que llegaron.
+# 1) Tabla corredores: los que llegaron. El cruce de la largada es el tiempo
+#    desde el disparo menos el tiempo neto (chip).
 fin = df.dropna(subset=["Llegada_chip", "Llegada_gun"]).copy()
-fin["largada"] = (fin["Llegada_gun"] - fin["Llegada_chip"]).round().astype(int)
-fin["neto"] = fin["Llegada_chip"].round().astype(int)
-fin = fin[(fin["largada"] >= 0) & (fin["largada"] < 64 * 64)]
-fin = fin.sort_values(["largada", "neto"])
-
-
-def b64(v, n):
-    s = ""
-    for _ in range(n):
-        s = ALFA[v % 64] + s
-        v //= 64
-    assert v == 0
-    return s
-
-
-cod = "".join(b64(o, 2) + b64(t, 3) for o, t in zip(fin["largada"], fin["neto"]))
-(out / "datos_modelo_largadas.txt").write_text(cod, encoding="ascii")
-print(f"corredores codificados: {len(fin)}  caracteres: {len(cod)}")
+fin["dorsal"] = fin["dorsal"].astype(int)
+fin["largada_seg"] = (fin["Llegada_gun"] - fin["Llegada_chip"]).round().astype(int)
+fin["tiempo_neto_seg"] = fin["Llegada_chip"].round().astype(int)
+fin = fin[fin["largada_seg"] >= 0]
+fin = fin.sort_values(["largada_seg", "tiempo_neto_seg", "dorsal"])
+columnas = ["dorsal", "largada_seg", "tiempo_neto_seg"]
+for nombre, columna in [("5K", "paso_5k_seg"), ("10K", "paso_10k_seg"), ("15K", "paso_15k_seg"),
+                        ("20K", "paso_20k_seg"), ("MM", "paso_media_seg"), ("25K", "paso_25k_seg"),
+                        ("30K", "paso_30k_seg"), ("35K", "paso_35k_seg"), ("40K", "paso_40k_seg")]:
+    fin[columna] = fin[f"{nombre}_chip"].round().astype("Int64")
+    columnas.append(columna)
+fin[columnas].to_excel(out / "corredores.xlsx", sheet_name="corredores", index=False)
+print(f"corredores: {len(fin)}")
 
 # 2) Flujo real por puesto.
 kms = np.array([k for _, k in SPLITS])

@@ -1,7 +1,8 @@
-void inicializar(int cat)
+void inicializar(int cat,Tuple perfil)
 {/*ALCODESTART::1790100000017*/
-// Perfil de cada categoria. La velocidad sale de pasos por minuto x zancada,
-// asi que el ritmo (min/km) queda consistente con ambas:
+// Perfil de cada categoria: una fila de la tabla categorias de la base de
+// datos (Main.categoriasDeCorredor). La velocidad sale de pasos por minuto x
+// zancada, asi que el ritmo (min/km) queda consistente con ambas:
 //   velocidad (m/min) = cadencia (pasos/min) * zancada (m)
 // propensionHidratacion: cuanto para con clima fresco (los principiantes
 // paran mas seguido que los elite).
@@ -13,56 +14,22 @@ void inicializar(int cat)
 // Ritmos de referencia: elite ~3:05 min/km, avanzado ~4:15, intermedio ~5:15,
 // principiante ~6:40 (maraton de 2h10 a 4h40 aprox.).
 // Ojo: en AnyLogic normal() recibe (sigma, media).
+// El orden de los sorteos (cadencia, zancada, tolerancia al calor,
+// propension, intervalo y tiempo de hidratacion) no se puede cambiar: con
+// otro orden cada semilla da otros corredores.
 categoria = cat;
-nombreCategoria = NOMBRES_CATEGORIA[ cat ];
-switch ( cat ) {
-	case ELITE:
-		cadencia = max( 175, normal( 4, 185 ) );
-		zancada = max( 1.55, normal( 0.06, 1.72 ) );
-		necesidadHidratacion = 0.8;   // pierde menos y toma lo justo
-		toleranciaCalor = uniform( 1.1, 1.4 );
-		factorTiempoPuesto = 0.5;     // agarra al paso, casi sin frenar
-		resistenciaFatiga = 0.3;
-		propensionHidratacion = uniform( 0.15, 0.30 );
-		intervaloTomaKm = uniform( 8, 12 );
-		break;
-	case AVANZADO:
-		cadencia = max( 165, normal( 5, 178 ) );
-		zancada = max( 1.15, normal( 0.07, 1.32 ) );
-		necesidadHidratacion = 0.9;
-		toleranciaCalor = uniform( 0.95, 1.25 );
-		factorTiempoPuesto = 0.8;
-		resistenciaFatiga = 0.55;
-		propensionHidratacion = uniform( 0.20, 0.35 );
-		intervaloTomaKm = uniform( 5, 8 );
-		break;
-	case INTERMEDIO:
-		cadencia = max( 155, normal( 6, 170 ) );
-		zancada = max( 0.95, normal( 0.07, 1.12 ) );
-		necesidadHidratacion = 1.0;
-		toleranciaCalor = uniform( 0.8, 1.2 );
-		factorTiempoPuesto = 1.0;
-		resistenciaFatiga = 0.8;
-		propensionHidratacion = uniform( 0.25, 0.40 );
-		intervaloTomaKm = uniform( 3.5, 5.5 );
-		break;
-	default:
-		cadencia = max( 145, normal( 7, 160 ) );
-		zancada = max( 0.78, normal( 0.07, 0.95 ) );
-		necesidadHidratacion = 1.15;  // se deshidrata mas y para mas seguido
-		toleranciaCalor = uniform( 0.7, 1.1 );
-		factorTiempoPuesto = 1.4;     // frena y se toma su tiempo
-		resistenciaFatiga = 1.0;
-		propensionHidratacion = uniform( 0.35, 0.55 );
-		intervaloTomaKm = uniform( 2.5, 4 );
-		break;
-}
+cadencia = max( perfil.get( categorias.cadencia_minima ), normal( perfil.get( categorias.cadencia_desvio ), perfil.get( categorias.cadencia_media ) ) );
+zancada = max( perfil.get( categorias.zancada_minima ), normal( perfil.get( categorias.zancada_desvio ), perfil.get( categorias.zancada_media ) ) );
+necesidadHidratacion = perfil.get( categorias.necesidad_hidratacion );
+toleranciaCalor = uniform( perfil.get( categorias.tolerancia_calor_min ), perfil.get( categorias.tolerancia_calor_max ) );
+factorTiempoPuesto = perfil.get( categorias.factor_tiempo_puesto );
+resistenciaFatiga = perfil.get( categorias.resistencia_fatiga );
+propensionHidratacion = uniform( perfil.get( categorias.propension_min ), perfil.get( categorias.propension_max ) );
+intervaloTomaKm = uniform( perfil.get( categorias.intervalo_toma_min_km ), perfil.get( categorias.intervalo_toma_max_km ) );
 // Minutos que tarda en agarrar lo que le dan (3 a 9 s para un corredor
 // promedio), escalado por su categoria. Es fijo para cada corredor.
 tiempoHidratacion = uniform( 0.05, 0.15 ) * factorTiempoPuesto;
 velocidadBaseKmh = cadencia * zancada * 60 / 1000;
-ritmoBaseMinKm = 60 / velocidadBaseKmh;
-estado = "corriendo";
 /*ALCODEEND*/}
 
 double velocidadKmh(double nivelCalor)
@@ -120,23 +87,26 @@ switch ( categoria ) {
 }
 /*ALCODEEND*/}
 
-void inicializarReal(double tiempoMin,double ajuste)
+void inicializarReal(double tiempoMin,double ajuste,List<Tuple> perfiles)
 {/*ALCODESTART::1792000000197*/
 // Corredor real de la Maraton de Buenos Aires 2025: tiempoMin es su tiempo
-// neto oficial. La categoria sale de los cortes reales que dejan 3 / 17 / 50 /
-// 30 % de los corredores (175,0 / 210,9 / 264,7 min) y define como se
-// hidrata, cuanto tarda en el puesto y como le pega la fatiga.
-int cat = tiempoMin < 175.0 ? ELITE
-	: tiempoMin < 210.9 ? AVANZADO
-	: tiempoMin < 264.7 ? INTERMEDIO
-	: PRINCIPIANTE;
-inicializar( cat );
+// neto oficial. La categoria sale de los cortes reales de la tabla categorias
+// (tiempo_neto_max_min: 175,0 / 210,9 / 264,7 min, que dejan 3 / 17 / 50 /
+// 30 % de los corredores) y define como se hidrata, cuanto tarda en el puesto
+// y como le pega la fatiga. perfiles son las filas de esa tabla.
+int cat = PRINCIPIANTE;
+for ( int c = ELITE; c < PRINCIPIANTE; c++ ) {
+	if ( tiempoMin < perfiles.get( c ).get( categorias.tiempo_neto_max_min ) ) {
+		cat = c;
+		break;
+	}
+}
+inicializar( cat, perfiles.get( cat ) );
 tiempoRealMin = tiempoMin;
 // Ritmo base a partir del tiempo real. ajuste compensa lo que el modelo le
 // resta despues (calor, deshidratacion, fatiga), calibrado para que el tiempo
 // simulado coincida en promedio con el real.
 velocidadBaseKmh = 42.195 / ( tiempoMin / 60 ) * ajuste;
-ritmoBaseMinKm = 60 / velocidadBaseKmh;
 zancada = velocidadBaseKmh * 1000 / 60 / cadencia;
 /*ALCODEEND*/}
 

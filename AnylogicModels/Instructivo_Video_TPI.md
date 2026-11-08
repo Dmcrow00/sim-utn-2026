@@ -108,7 +108,7 @@ Cada escenario tiene su experimento con los parámetros ya cargados. Para no esp
 | `Optimista` | Costo total cerca de la mitad del base, con no atendidos y deshidratados bajos | «Con 12 puestos, el stock según lo que se consume y camiones solo de respaldo, el servicio se mantiene a menos de la mitad del costo» |
 
 - **Hacer después:** abrir la planilla en la hoja `Escenarios` (o en `E1_Optimista`) y mostrar las medias con su intervalo de confianza. Después, la tabla de escenarios del informe.
-- **Decir:** «Para los resultados usamos una copia del modelo sin las escenas 3D, que no tiene el límite de 5 horas y simula la carrera hasta el último corredor. Corrimos cada escenario con 20 semillas, con números aleatorios comunes, y comparamos con intervalos de confianza del 95 %».
+- **Decir:** «Para los resultados usamos una copia del modelo sin las escenas 3D, que no tiene el límite de 5 horas y simula la carrera hasta el último corredor. Corrimos cada escenario con 100 semillas, con números aleatorios comunes, y comparamos con intervalos de confianza del 95 %».
 
 ### 9 · (Opcional) Prueba de reproducibilidad (agregar 30 s)
 

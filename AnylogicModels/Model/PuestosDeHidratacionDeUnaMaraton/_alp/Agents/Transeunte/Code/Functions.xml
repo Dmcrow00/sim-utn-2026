@@ -5,8 +5,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100013038</Id>
 		<Name><![CDATA[iniciar]]></Name>
-		<X>220</X>
-		<Y>20</Y>
+		<X>98</X>
+		<Y>241</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -21,8 +21,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100013039</Id>
 		<Name><![CDATA[nuevoRecorrido]]></Name>
-		<X>220</X>
-		<Y>50</Y>
+		<X>98</X>
+		<Y>266</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -41,8 +41,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100013040</Id>
 		<Name><![CDATA[pose]]></Name>
-		<X>220</X>
-		<Y>80</Y>
+		<X>98</X>
+		<Y>291</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

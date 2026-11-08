@@ -213,7 +213,7 @@ La unidad de bebida pasó a ser un **vaso de ~116 mL**, así que las capacidades
 - Navegación: barra superior en todas las pantallas (`Main.irA(seccion)`), inicio con indicadores en vivo y tarjetas, leyenda en el mapa 2D. Clic en un puesto del mapa: `verPuesto3D(i)`.
 - `puestosDetalle3D` es una población de 15 escenas, una por puesto, cada una con su View Area `areaPuesto3D`, el selector P1–P15 y un panel de estado. Solo la escena que se está mirando genera peatones.
 - Escena: avenida de 140 m × 14 m (asfalto con carriles, veredas con cordón de 15 cm, árboles, faroles, público, cielo `SKYBOX_1`). Edificios y arboleda según el entorno real del puesto.
-- Entorno real por puesto: en `Puesto.configurar()` (`calle`, `barrio`, `entorno` edificios/parque/mixto, `cercaDelAgua`, `carriles`). Los datos se sacaron de OpenStreetMap (Overpass + Nominatim) con las coordenadas de cada `GISPoint`. Criterio de entorno: ≤ 6 edificios en 120 m y ≥ 2 parques → parque; ≥ 15 edificios y parques < edificios/2 → edificios; si no, mixto.
+- Entorno real por puesto: columnas de la tabla `puestos` que llegan como parámetros de `Puesto` (`calle`, `barrio`, `entorno` 0 = edificios / 1 = parque / 2 = mixto, `cerca_del_agua`). El modelo de carrera completa solo tiene `calle`, que se muestra en el panel del puesto. Los datos se sacaron de OpenStreetMap (Overpass + Nominatim) con las coordenadas de cada `GISPoint`. Criterio de entorno: ≤ 6 edificios en 120 m y ≥ 2 parques → parque; ≥ 15 edificios y parques < edificios/2 → edificios; si no, mixto.
 - Cámaras (`verCamara(c)`): desde la mesa (`camera`), corredores llegando (`camaraLlegada`), vista aérea (`camaraAerea`) y seguir a un corredor (`peatonPuesto.camaraCorredor`). En AnyLogic `RotationZ = 0` mira al este (+X) y los ángulos positivos giran hacia el sur.
 - Objetos 3D nuevos, copiados de la biblioteca de AnyLogic a `3d/`: `building_1/2/3`, `house_2`, `lamp`, `bench`, `bus_stop`, `tree_1`.
 - Ajustes por puesto (barra debajo de la ventana 3D): chips de insumo y sliders `sliderMaximo` (capacidad, `Puesto.ajustarCapacidad`), `sliderMinimo` (punto de reposición manual, `Puesto.minimoManual[k]`; "Auto" vuelve a la fórmula), `sliderDemora` (minutos del camión hasta estacionar, `Puesto.demoraCamionMin`; el camión usa `moveToInTime` y llega exactamente en ese tiempo; "Auto" vuelve a la estimación por distancia) y `sliderVoluntarios`. Se muestra "se agota en ~X min" (stock / consumo medido) y cuánto le falta al camión (`timeToArrival`).
@@ -256,7 +256,7 @@ Los criterios de cálculo y los pasos del experimento de comparación están en 
 - Fila 3, `costosConsumo0..5` (y = 3968): lo consumido a precio de compra, lo consumido por atendido y agua, isotónica, fruta y geles consumidos (pesos y unidades). Usa `Puesto.valorConsumido(k)` y, en Main, `unidadesConsumidasEvento(k)`, `valorConsumidoEvento(k)` (con k = −1 suma todo), `consumidoPorAtendido()` y `textoConsumo(k)`. Para que entre, todo lo que estaba debajo bajó 66 px y `areaEjecucion` pasó a 2426 de alto.
 - `textTituloGraficoCostos` y el Time Plot `graficoCostos`, con las series Insumos, Envases, Voluntarios, Transporte y Total; muestra por minuto y ventana de 900 min.
 
-En el editor (fuera de la pantalla) están `grupoMainMarcoCostos`, `grupoMainTituloCostos` y `grupoMainDetalleCostos`.
+En el editor (fuera de la pantalla) están `grupoMainMarcoCostos`, `grupoMainTituloCostos` y `grupoMainDetalleCostos` (ver "Lienzo de cada agente ordenado por grupos").
 
 **Panel "Precios y tarifas"** (debajo de `graficoCostos`; `areaEjecucion` pasó a 2020 de alto):
 
@@ -272,10 +272,10 @@ Los datos y los scripts están en [Datos/](Datos/). Los criterios y la validaci�
 **Largada real.** El `Source` ya no usa `exponential(tasaLlegada)`:
 
 - *Interarrival time* = `intervaloLargada()` (segundos), *Max arrivals* = `cantidadCorredores`.
-- *On at exit*: `inicializarReal( siguienteTiempoNeto(), ajusteRitmo )` y `dibujarEnMapa`.
+- *On at exit*: `inicializarReal( siguienteTiempoNeto(), ajusteRitmo, categoriasDeCorredor() )` y `dibujarEnMapa`.
 - Cada corredor simulado es un corredor real de 2025: cruza la alfombra en el segundo en que la cruzó y su ritmo sale de su tiempo neto oficial.
-- `Main.datosCarreraReal()` guarda los 12.792 pares (largada, tiempo neto) codificados en base 64. Se generan con `Datos/preparar_datos_modelo.py`.
-- `prepararLargada()` los decodifica. Con otra cantidad de corredores, o con `repetirCarreraReal = false`, hace bootstrap: sortea corredores reales con reposición.
+- Los 12.792 corredores que llegaron están en la tabla `corredores` de la base de datos integrada de cada modelo (carpeta `database/`): `dorsal`, `largada_seg` (segundo en que cruzó la largada después del disparo), `tiempo_neto_seg` y los tiempos de paso por cada control (`paso_5k_seg` … `paso_40k_seg`). Si cambian los datos, `Datos/preparar_datos_modelo.py` arma `corredores.xlsx` para reimportarla en los dos modelos (todas las columnas de tipo int).
+- `prepararLargada()` los lee ordenados por largada. Con otra cantidad de corredores, o con `repetirCarreraReal = false`, hace bootstrap: sortea corredores reales con reposición.
 
 **Parámetros nuevos de `Main`:**
 
@@ -294,7 +294,7 @@ Los datos y los scripts están en [Datos/](Datos/). Los criterios y la validaci�
 
 **Funciones nuevas:**
 
-- **`Main`:** `datosCarreraReal`, `prepararLargada`, `intervaloLargada`, `siguienteTiempoNeto`, `picosRealesPorMinuto`, `minutosPicoReal`, `flujoMedioReal`, `finVentanaReal`, `flujoPlanificado(i)` (flujo medio real mientras pasa el pelotón, después 0), `voluntariosIniciales(i)`, `esperaMediaEvento`, `puestoPeorEspera`, `textoValidacion` y `exportarResultados`. Se eliminó `sortearCategoria`.
+- **`Main`:** `prepararLargada`, `intervaloLargada`, `siguienteTiempoNeto`, `picosRealesPorMinuto`, `minutosPicoReal`, `flujoMedioReal`, `finVentanaReal`, `flujoPlanificado(i)` (flujo medio real mientras pasa el pelotón, después 0), `voluntariosIniciales(i)`, `esperaMediaEvento`, `puestoPeorEspera`, `textoValidacion` y `exportarResultados`. Se eliminó `sortearCategoria`.
 - **`Corredor`:** `inicializarReal(tiempoMin, ajuste)`. La categoría sale de los cortes reales 175,0 / 210,9 / 264,7 min (3 / 17 / 50 / 30 %).
 - **`Puesto`:** `unidadesPorCorredor(k)`, `registrarEspera(min)`, `esperaMediaSeg`, `esperaP95Seg`. `capacidadInicial` y `demandaPlanificada` usan las anteriores.
 
@@ -536,3 +536,74 @@ El generador del motor queda para la biblioteca de peatones. Los bloques del flo
 - Un `%` dentro de un texto armado con `%` en Python rompe el formato.
 - `\"` dentro de un string crudo de Python queda tal cual en el XML.
 
+## Base de datos integrada y limpieza de variables sin uso (2026-11-07)
+
+**Corredores en la base de datos.** Los dos modelos leen los corredores reales de la tabla `corredores` de su base de datos integrada (carpeta `database/` de cada modelo, versionada en git). Cada fila es un corredor que llegó: `dorsal`, `largada_seg` y `tiempo_neto_seg`. Se puede ver desde *Projects → Database → corredores*. `Main.prepararLargada()` la consulta ordenada por largada, tiempo neto y dorsal.
+
+Se verificó que la tabla tiene los mismos 12.792 pares (largada, tiempo neto), en el mismo orden, que se usaron en todas las corridas del informe.
+
+**Variables y parámetros borrados** porque nadie los leía (solo se escribían):
+
+| Agente | Borrado | Modelos |
+|---|---|---|
+| `Corredor` | `estado`, `puestosSinHidratar`, `vecesHidratado`, `nombreCategoria`, `NOMBRES_CATEGORIA`, `ritmoBaseMinKm` | Los dos |
+| `Corredor` | `motivoNoAtendido` (lo usa solo la escena 3D) | Carrera completa |
+| `Puesto` | `reposicionesRecibidas`, `carriles` | Los dos |
+| `Puesto` | `barrio`, `entorno`, `cercaDelAgua`, `ENTORNO_EDIFICIOS`, `ENTORNO_PARQUE`, `ENTORNO_MIXTO` (los usa solo la escena 3D) | Carrera completa |
+| `Main` | `corredores3DPorMinuto`, `puesto3DActual` (solo escena 3D) y el valor de `corredores3DPorMinuto` en los experimentos | Carrera completa |
+| `Main` | `velocidad3D`, `escalaFuera3D`, `tiempoRealFuera3D` y la función `aplicarVelocidad3D`: `irA()` manda la pestaña 3D al mapa 2D, así que nunca se usaban | Carrera completa |
+
+Ninguno participaba en un sorteo ni en un cálculo, así que los resultados no cambian. `Main.iIntervalo` aparece como escrita y no leída en una búsqueda automática, pero se lee en `int i = iIntervalo++`.
+
+## Datos de entrada en la base de datos y 100 semillas (2026-11-08)
+
+**Qué pasó a la base.** Todo dato fijo que el modelo tenía escrito en el código está ahora en siete tablas de la base de datos integrada de cada modelo (carpeta `database/`, *Projects → Database*). `Datos/base_de_datos_modelo.xlsx` es una copia para leer, con una hoja por tabla y la descripción de cada una.
+
+| Tabla | Filas | Qué tiene | Quién la usa |
+|---|---|---|---|
+| `corredores` | 12.792 | Dorsal, largada, tiempo neto y tiempo neto en cada control (5 a 40 km y media maratón) | `Main.prepararLargada()` (largada y tiempo neto). Los pasos son la base de los flujos reales de `puestos` |
+| `puestos` | 15 | Número, km, calle, latitud y longitud (el nodo del recorrido), qué ofrece, estacionamiento del camión y pico, minuto del pico, flujo medio y fin de ventana reales. En el modelo con 3D, también barrio, entorno y cerca del agua | La población `puesto` se carga desde la tabla: una fila por agente y cada columna a un parámetro de `Puesto` |
+| `categorias` | 4 | Corte por tiempo neto, cadencia y zancada (media, desvío y mínimo), necesidad de hidratación, tolerancia al calor, factor de tiempo en el puesto, resistencia a la fatiga, propensión e intervalo entre tomas | `Main.categoriasDeCorredor()` la lee una vez por corrida; el `Source` se la pasa a `Corredor.inicializarReal()` |
+| `insumos` | 5 | Agua, isotónica, fruta, gel y vaso: precio, capacidad fija, unidades por corredor y contenido del vaso | Valor por defecto de `capacidad*`, `precio*`, `volumenVasoMl`, `gelesPorCorredor` y `frutaPorCorredor` |
+| `vehiculos` | 2 | Camión (velocidad, costo por hora, depósito, factor de recorrido) y zorra (velocidad, capacidad, costo por hora del operario) | Valor por defecto de `velocidadCamionKmh`, `costoHoraCamion`, `latDeposito`, `lonDeposito`, `factorRecorridoCalles`, `velocidadZorraKmh`, `capacidadZorra` y `costoHoraOperario` |
+| `planes_relevamiento` | 5 | Temperatura planificada y cantidad de puestos del plan medido | `Main.retiroPlanificado()` |
+| `retiro_planificado` | 75 | Unidades por corredor de cada insumo, por temperatura y puesto | `Main.retiroPlanificado()` |
+
+**Qué no pasó a la base:** el estado de la corrida (stock, colas, contadores), las fórmulas (pérdida de hidratación, decisión de parar, ROP, distancia máxima) y los parámetros de escenario y de política que barren los experimentos. Los 20 parámetros de `Main` que ahora toman su valor de la base siguen siendo parámetros: los experimentos los dejan en su valor por defecto (FIXED), así que leen la base, y se pueden variar como antes.
+
+**Cambios de código (los dos modelos):**
+- `Puesto`: `numero`, `km`, `calle`, `latEstacionamiento` y `lonEstacionamiento` (y en el modelo con 3D `barrio`, `entorno` y `cercaDelAgua`) pasaron de variables a parámetros. Nuevos parámetros: `latitud`, `longitud`, `daAgua`, `daIsotonica`, `daFruta`, `daGel`, `picoRealPorMinuto`, `minutoPicoReal`, `flujoMedioReal` y `finVentanaReal`. `configurar()` ya no tiene listas: usa los parámetros, avisa con `error()` si la tabla no está en el orden del recorrido (`numero` = índice + 1) y ubica el agente con `setLatLon(latitud, longitud)`, el mismo punto que el `GISPoint` del recorrido.
+- `Main`: `picosRealesPorMinuto`, `minutosPicoReal` y `kmPuestos` arman sus listas con los parámetros de los puestos; `flujoPlanificado` los lee directo. Se borraron `flujoMedioReal`, `finVentanaReal` y `puntoPuesto`. `calcularPuestosActivos` mantiene los puestos que dan gel o fruta leyendo `daGel` y `daFruta` (antes, los índices 6, 7, 10 y 11). `retiroPlanificado` consulta las tablas. Nueva función `categoriasDeCorredor()` con la variable `filasCategorias`.
+- `Corredor`: `inicializar(cat, perfil)` e `inicializarReal(tiempoMin, ajuste, perfiles)` toman los valores de la fila de su categoría. El orden de los sorteos no cambió.
+
+**Código muerto de `Puesto`.** La búsqueda anterior contaba las menciones en comentarios como llamadas. Con un grafo de llamadas sin comentarios:
+- Carrera completa: se borraron `resumen`, `tipoTexto`, `fraccionStock`, `hayBebida`, `minutosParaAgotar` y los controles del panel 3D (`ajustarCapacidad`, `ajustarMinimo`, `minimoAutomatico`, `ajustarDemoraCamion`, `demoraAutomatica`). Con ellos se fueron `NOMBRES_INSUMO`, `ropTopeado`, `minimoManual` y `demoraCamionMin` (valían siempre −1), `demoraCamionEfectiva` y la rama de `moveToInTime` de `Camion.despachar`.
+- Modelo con 3D: se borraron `resumen` y `tipoTexto`. El resto lo usa el panel de detalle del puesto.
+
+**Experimentos.** `Sensibilidad` pasó a semillas 1 a 100 (2.000 corridas). Con 20, el semiancho del IC del % de deshidratados llegaba al 14 % de la media; con 100 queda en 4 % en la mediana y 7,5 % como máximo. Nuevo experimento `PronosticoErrado`: E1 armado para 15 °C con temperatura del día de 20 a 30 °C y semillas 1 a 100 (300 corridas); antes se hacía cambiando `Sensibilidad` a mano. Las corridas de 20 semillas quedaron en `Datos/experimentos/version_20_semillas_20261102/`.
+
+**Verificación.** Las 400 corridas de las semillas 1 a 20 del `Sensibilidad` nuevo dan exactamente lo mismo que las del informe en todas las métricas simuladas, y también las 6.000 filas por puesto. `netoReal`, el promedio de los tiempos reales, varía en el último dígito según el orden de la suma, también entre corridas viejas.
+
+**Trampas que aparecieron:**
+- `Corredor` no tiene acceso a `main` porque lo crea el `Source`; solo lo tienen los agentes de poblaciones de Main. Por eso Main le pasa las filas de `categorias`.
+- Mientras el modelo está abierto, AnyLogic sirve la base con un servidor HSQLDB propio (localhost:9001). Para reemplazar los archivos de `database/` hay que cerrar el modelo.
+- Si hay una copia automática (`.alp.autosave`) más nueva que los archivos, AnyLogic ofrece reemplazarlos al abrir. Después de editar los archivos a mano hay que elegir "Discard autosave".
+- Las ventanas de los experimentos quedan en blanco mientras corren; el estado está en la barra de abajo. El primer intento de `Sensibilidad` terminó después de una corrida sin mostrar error; relanzado, corrió completo.
+- Leer `resultados_corridas.csv` con `[IO.File]::ReadAllLines` de .NET mientras corre un experimento bloquea la escritura. Una corrida (E3, semilla 40, 20 °C) no se pudo exportar y se repitió sola con el experimento `Excesivo` (semilla 40, 20 °C, `temperaturaPlanificada` −1, `ejecucionRapida`). Para seguir el avance hay que mirar solo el tamaño del archivo.
+
+## Lienzo de cada agente ordenado por grupos (2026-11-08)
+
+En el editor, los parámetros, variables, funciones, eventos y poblaciones de cada agente quedaron en recuadros por tema, sin superposiciones. Cada recuadro tiene un título y un comentario que explica qué hace el grupo, y arriba de todo hay un título y una nota del agente. Dentro de cada recuadro van primero los parámetros y después las poblaciones, las variables, las funciones y los eventos.
+
+| Agente | Recuadros |
+|---|---|
+| `Main` | Llegada de corredores · Clima e hidratación · Atención en los puestos · Corrida y escenario · Plan del escenario optimista · Agentes de la simulación · Stock y política de reposición · Logística: camión y zorra · Costos del evento · Consumo y desperdicio · Indicadores de servicio e hidratación · Tiempos de carrera · Validación y exportación · Pantallas y navegación · Vista 3D de los puestos (solo en el modelo con 3D) |
+| `Corredor` | Categoría y perfil · Avance por el recorrido · Decisión de hidratarse · Dibujo en el mapa |
+| `Puesto` | Datos del puesto (tabla puestos) · Flujo real 2025 · Insumos y stock · Atención a los corredores · Demanda y punto de reposición · Pedido y reposición · Costos del puesto · Ajustes desde la vista 3D (solo en el modelo con 3D) |
+| `Camion` · `OperarioZorra` | Viaje del camión · Descarga con la zorra |
+| `PuestoDetalle3D` (modelo con 3D) | Flujo de peatones · Corredores que entran a la escena · Voluntarios y frenado · Personas de la escena · Panel del puesto y ajustes · Cámaras |
+| `Voluntario` · `peatonPuesto` · `Transeunte` (modelo con 3D) | Ubicación y entrega · Animación · Corredor que representa · Movimiento en la calle · Paseo por la vereda |
+
+- En `Main` los recuadros siguen a la izquierda de las pantallas (x < 0), fuera de toda View Area. Reemplazan a los anteriores, que no incluían unos 70 elementos agregados después. Los nombres son `grupoMainMarco<Grupo>`, `grupoMainTitulo<Grupo>` y `grupoMainDetalle<Grupo>`, más `grupoMainTitulo` y `grupoMainNota` para la cabecera. En `PuestoDetalle3D` se usa el prefijo `grupoEscena`, a la derecha de la escena; el diagrama de peatones no se movió.
+- En los agentes con muchas instancias (`Corredor`, `Puesto`, `Camion`, `OperarioZorra`, `Voluntario`, `peatonPuesto` y `Transeunte`), los recuadros y textos tienen tildado *Ignore* (`ExcludeFromBuild` en el XML). AnyLogic no los genera al compilar: no se crean en cada uno de los 12.792 corredores ni se dibujan junto al agente en el mapa o en la escena 3D. Un recuadro de comentario que se agregue a mano en esos agentes también tiene que llevar *Ignore*.
+- Solo cambiaron posiciones (`<X>` y `<Y>`) y figuras de comentario. El código, los parámetros y los resultados son los mismos.

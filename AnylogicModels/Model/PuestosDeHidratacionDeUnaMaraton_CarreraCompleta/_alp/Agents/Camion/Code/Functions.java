@@ -9,13 +9,7 @@ minutoSalida = time();
 fase = "YENDO";
 p.camionAsignado = this;
 jumpTo( main.latDeposito, main.lonDeposito );
-// Si el puesto tiene una demora fijada a mano, el camion ajusta su velocidad
-// para llegar exactamente en ese tiempo.
-if ( p.demoraCamionMin >= 0 ) {
-	moveToInTime( p.latEstacionamiento, p.lonEstacionamiento, p.demoraCamionMin, MINUTE );
-} else {
-	moveTo( p.latEstacionamiento, p.lonEstacionamiento );
-}
+moveTo( p.latEstacionamiento, p.lonEstacionamiento );
 /*ALCODEEND*/}
 
 void terminarDescarga()

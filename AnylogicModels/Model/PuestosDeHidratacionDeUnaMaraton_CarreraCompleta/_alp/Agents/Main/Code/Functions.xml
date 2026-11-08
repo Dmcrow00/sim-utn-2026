@@ -5,8 +5,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1788900000012</Id>
 		<Name><![CDATA[decidirHidratacion]]></Name>
-		<X>-1808</X>
-		<Y>270</Y>
+		<X>-2754</X>
+		<Y>601</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -29,8 +29,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100000161</Id>
 		<Name><![CDATA[tiempoAtencion]]></Name>
-		<X>-1808</X>
-		<Y>477</Y>
+		<X>-2754</X>
+		<Y>872</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -45,32 +45,12 @@
 		<Body xmlns:al="http://anylogic.com"/>
 	</Function>
 	<Function AccessType="default" StaticFunction="false">
-		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-		<ReturnType>GISPoint</ReturnType>
-		<Id>1790100000162</Id>
-		<Name><![CDATA[puntoPuesto]]></Name>
-		<X>-1348</X>
-		<Y>527</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Parameter>
-			<Name><![CDATA[i]]></Name>
-			<Type><![CDATA[int]]></Type>
-		</Parameter>
-		<Body xmlns:al="http://anylogic.com"/>
-	</Function>
-	<Function AccessType="default" StaticFunction="false">
 		<ReturnModificator>VOID</ReturnModificator>
 		<ReturnType>void</ReturnType>
 		<Id>1790100000164</Id>
 		<Name><![CDATA[despacharCamion]]></Name>
-		<X>-1348</X>
-		<Y>295</Y>
+		<X>-1720</X>
+		<Y>527</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -89,8 +69,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000165</Id>
 		<Name><![CDATA[iniciarDescarga]]></Name>
-		<X>-1348</X>
-		<Y>320</Y>
+		<X>-1720</X>
+		<Y>552</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -109,8 +89,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100000166</Id>
 		<Name><![CDATA[registrarLlegada]]></Name>
-		<X>-888</X>
-		<Y>163</Y>
+		<X>-926</X>
+		<Y>462</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -129,8 +109,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100000167</Id>
 		<Name><![CDATA[formatoHoras]]></Name>
-		<X>-888</X>
-		<Y>288</Y>
+		<X>-926</X>
+		<Y>562</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -149,8 +129,8 @@
 		<ReturnType>ResourcePool</ReturnType>
 		<Id>1790100009004</Id>
 		<Name><![CDATA[poolDePuesto]]></Name>
-		<X>-1808</X>
-		<Y>552</Y>
+		<X>-2564</X>
+		<Y>822</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -169,8 +149,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009005</Id>
 		<Name><![CDATA[cambiarVoluntarios]]></Name>
-		<X>-1808</X>
-		<Y>527</Y>
+		<X>-2564</X>
+		<Y>797</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -193,8 +173,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009317</Id>
 		<Name><![CDATA[registrarLargada]]></Name>
-		<X>-888</X>
-		<Y>138</Y>
+		<X>-1720</X>
+		<Y>256</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -213,8 +193,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1790100009318</Id>
 		<Name><![CDATA[horasPorKmPromedio]]></Name>
-		<X>-888</X>
-		<Y>188</Y>
+		<X>-1720</X>
+		<Y>281</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -229,8 +209,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009504</Id>
 		<Name><![CDATA[irA]]></Name>
-		<X>-888</X>
-		<Y>395</Y>
+		<X>-424</X>
+		<Y>514</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -249,8 +229,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100009505</Id>
 		<Name><![CDATA[verPuesto3D]]></Name>
-		<X>-888</X>
-		<Y>420</Y>
+		<X>-424</X>
+		<Y>564</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -269,8 +249,8 @@
 		<ReturnType>Color</ReturnType>
 		<Id>1790100009506</Id>
 		<Name><![CDATA[colorTab]]></Name>
-		<X>-888</X>
-		<Y>445</Y>
+		<X>-424</X>
+		<Y>539</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -289,8 +269,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1790100009507</Id>
 		<Name><![CDATA[corredoresEnRuta]]></Name>
-		<X>-888</X>
-		<Y>213</Y>
+		<X>-926</X>
+		<Y>487</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -305,8 +285,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1790100012013</Id>
 		<Name><![CDATA[ajustarTemperatura]]></Name>
-		<X>-1808</X>
-		<Y>245</Y>
+		<X>-2754</X>
+		<Y>576</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -325,8 +305,8 @@
 		<ReturnType>Seize</ReturnType>
 		<Id>1790100012014</Id>
 		<Name><![CDATA[seizeDePuesto]]></Name>
-		<X>-1808</X>
-		<Y>577</Y>
+		<X>-2564</X>
+		<Y>847</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -345,8 +325,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1790100012015</Id>
 		<Name><![CDATA[hayDemasiadaCola]]></Name>
-		<X>-1808</X>
-		<Y>502</Y>
+		<X>-2564</X>
+		<Y>747</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -365,8 +345,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012016</Id>
 		<Name><![CDATA[tiempoPromedioCategoria]]></Name>
-		<X>-888</X>
-		<Y>238</Y>
+		<X>-926</X>
+		<Y>512</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -385,8 +365,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012017</Id>
 		<Name><![CDATA[ritmoPromedioCategoria]]></Name>
-		<X>-888</X>
-		<Y>263</Y>
+		<X>-926</X>
+		<Y>537</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -405,8 +385,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012018</Id>
 		<Name><![CDATA[celdaStock]]></Name>
-		<X>-888</X>
-		<Y>495</Y>
+		<X>-424</X>
+		<Y>589</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -429,8 +409,8 @@
 		<ReturnType>Color</ReturnType>
 		<Id>1790100012019</Id>
 		<Name><![CDATA[colorCeldaStock]]></Name>
-		<X>-888</X>
-		<Y>520</Y>
+		<X>-244</X>
+		<Y>414</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -453,8 +433,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1790100012020</Id>
 		<Name><![CDATA[textoReposicionCorto]]></Name>
-		<X>-888</X>
-		<Y>545</Y>
+		<X>-244</X>
+		<Y>439</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -469,32 +449,12 @@
 		<Body xmlns:al="http://anylogic.com"/>
 	</Function>
 	<Function AccessType="default" StaticFunction="false">
-		<ReturnModificator>VOID</ReturnModificator>
-		<ReturnType>void</ReturnType>
-		<Id>1790100013018</Id>
-		<Name><![CDATA[aplicarVelocidad3D]]></Name>
-		<X>-888</X>
-		<Y>470</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Parameter>
-			<Name><![CDATA[m]]></Name>
-			<Type><![CDATA[double]]></Type>
-		</Parameter>
-		<Body xmlns:al="http://anylogic.com"/>
-	</Function>
-	<Function AccessType="default" StaticFunction="false">
 		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 		<ReturnType>double</ReturnType>
 		<Id>1792000000043</Id>
 		<Name><![CDATA[costoInsumosEvento]]></Name>
-		<X>-428</X>
-		<Y>138</Y>
+		<X>-1328</X>
+		<Y>255</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -509,8 +469,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000044</Id>
 		<Name><![CDATA[costoEnvasesEvento]]></Name>
-		<X>-428</X>
-		<Y>163</Y>
+		<X>-1328</X>
+		<Y>280</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -525,8 +485,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000045</Id>
 		<Name><![CDATA[costoVoluntariosEvento]]></Name>
-		<X>-428</X>
-		<Y>188</Y>
+		<X>-1328</X>
+		<Y>305</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -541,8 +501,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000046</Id>
 		<Name><![CDATA[costoTransporteEvento]]></Name>
-		<X>-428</X>
-		<Y>213</Y>
+		<X>-1148</X>
+		<Y>155</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -557,8 +517,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000047</Id>
 		<Name><![CDATA[costoFijoEvento]]></Name>
-		<X>-428</X>
-		<Y>238</Y>
+		<X>-1148</X>
+		<Y>180</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -573,8 +533,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000048</Id>
 		<Name><![CDATA[costoTotalEvento]]></Name>
-		<X>-428</X>
-		<Y>263</Y>
+		<X>-1148</X>
+		<Y>205</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -589,8 +549,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000049</Id>
 		<Name><![CDATA[valorSobranteEvento]]></Name>
-		<X>-428</X>
-		<Y>288</Y>
+		<X>-1508</X>
+		<Y>500</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -605,8 +565,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000050</Id>
 		<Name><![CDATA[horasVoluntarioEvento]]></Name>
-		<X>-428</X>
-		<Y>313</Y>
+		<X>-1148</X>
+		<Y>280</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -621,8 +581,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000051</Id>
 		<Name><![CDATA[atendidosEvento]]></Name>
-		<X>-428</X>
-		<Y>338</Y>
+		<X>-696</X>
+		<Y>155</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -637,8 +597,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000052</Id>
 		<Name><![CDATA[noAtendidosEvento]]></Name>
-		<X>-428</X>
-		<Y>363</Y>
+		<X>-696</X>
+		<Y>180</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -653,8 +613,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000053</Id>
 		<Name><![CDATA[porcentajeNoAtendidos]]></Name>
-		<X>-428</X>
-		<Y>388</Y>
+		<X>-696</X>
+		<Y>205</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -669,8 +629,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000054</Id>
 		<Name><![CDATA[costoPorAtendido]]></Name>
-		<X>-428</X>
-		<Y>413</Y>
+		<X>-1148</X>
+		<Y>230</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -685,8 +645,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000055</Id>
 		<Name><![CDATA[costoAjustadoEvento]]></Name>
-		<X>-428</X>
-		<Y>438</Y>
+		<X>-1148</X>
+		<Y>255</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -701,8 +661,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1792000000056</Id>
 		<Name><![CDATA[formatoPesos]]></Name>
-		<X>-428</X>
-		<Y>463</Y>
+		<X>-244</X>
+		<Y>464</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -721,8 +681,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1792000000057</Id>
 		<Name><![CDATA[formatoRubro]]></Name>
-		<X>-428</X>
-		<Y>488</Y>
+		<X>-244</X>
+		<Y>489</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -741,8 +701,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000148</Id>
 		<Name><![CDATA[leerNumero]]></Name>
-		<X>-428</X>
-		<Y>513</Y>
+		<X>-244</X>
+		<Y>539</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -765,8 +725,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1792000000149</Id>
 		<Name><![CDATA[textoNumero]]></Name>
-		<X>-428</X>
-		<Y>538</Y>
+		<X>-244</X>
+		<Y>564</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -781,28 +741,12 @@
 		<Body xmlns:al="http://anylogic.com"/>
 	</Function>
 	<Function AccessType="default" StaticFunction="false">
-		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-		<ReturnType>String[]</ReturnType>
-		<Id>1792000000180</Id>
-		<Name><![CDATA[datosCarreraReal]]></Name>
-		<X>-428</X>
-		<Y>563</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Body xmlns:al="http://anylogic.com"/>
-	</Function>
-	<Function AccessType="default" StaticFunction="false">
 		<ReturnModificator>VOID</ReturnModificator>
 		<ReturnType>void</ReturnType>
 		<Id>1792000000181</Id>
 		<Name><![CDATA[prepararLargada]]></Name>
-		<X>-428</X>
-		<Y>588</Y>
+		<X>-2584</X>
+		<Y>205</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -817,8 +761,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000182</Id>
 		<Name><![CDATA[intervaloLargada]]></Name>
-		<X>-428</X>
-		<Y>613</Y>
+		<X>-2584</X>
+		<Y>230</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -833,8 +777,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000183</Id>
 		<Name><![CDATA[siguienteTiempoNeto]]></Name>
-		<X>-428</X>
-		<Y>638</Y>
+		<X>-2584</X>
+		<Y>255</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -849,8 +793,8 @@
 		<ReturnType>double[]</ReturnType>
 		<Id>1792000000184</Id>
 		<Name><![CDATA[picosRealesPorMinuto]]></Name>
-		<X>-428</X>
-		<Y>663</Y>
+		<X>-254</X>
+		<Y>168</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -865,40 +809,8 @@
 		<ReturnType>double[]</ReturnType>
 		<Id>1792000000185</Id>
 		<Name><![CDATA[minutosPicoReal]]></Name>
-		<X>-428</X>
-		<Y>688</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Body xmlns:al="http://anylogic.com"/>
-	</Function>
-	<Function AccessType="default" StaticFunction="false">
-		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-		<ReturnType>double[]</ReturnType>
-		<Id>1792000000186</Id>
-		<Name><![CDATA[flujoMedioReal]]></Name>
-		<X>-428</X>
-		<Y>713</Y>
-		<Label>
-			<X>10</X>
-			<Y>0</Y>
-		</Label>
-		<PublicFlag>false</PublicFlag>
-		<PresentationFlag>true</PresentationFlag>
-		<ShowLabel>true</ShowLabel>
-		<Body xmlns:al="http://anylogic.com"/>
-	</Function>
-	<Function AccessType="default" StaticFunction="false">
-		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-		<ReturnType>double[]</ReturnType>
-		<Id>1792000000187</Id>
-		<Name><![CDATA[finVentanaReal]]></Name>
-		<X>-428</X>
-		<Y>738</Y>
+		<X>-254</X>
+		<Y>193</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -913,8 +825,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000188</Id>
 		<Name><![CDATA[flujoPlanificado]]></Name>
-		<X>-428</X>
-		<Y>763</Y>
+		<X>-1720</X>
+		<Y>306</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -933,8 +845,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000189</Id>
 		<Name><![CDATA[voluntariosIniciales]]></Name>
-		<X>-428</X>
-		<Y>788</Y>
+		<X>-2564</X>
+		<Y>772</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -953,8 +865,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000190</Id>
 		<Name><![CDATA[esperaMediaEvento]]></Name>
-		<X>-428</X>
-		<Y>813</Y>
+		<X>-696</X>
+		<Y>230</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -969,8 +881,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000191</Id>
 		<Name><![CDATA[puestoPeorEspera]]></Name>
-		<X>-428</X>
-		<Y>838</Y>
+		<X>-696</X>
+		<Y>255</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -985,8 +897,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1792000000192</Id>
 		<Name><![CDATA[textoValidacion]]></Name>
-		<X>-428</X>
-		<Y>863</Y>
+		<X>-254</X>
+		<Y>243</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1001,8 +913,8 @@
 		<ReturnType>void</ReturnType>
 		<Id>1792000000207</Id>
 		<Name><![CDATA[exportarResultados]]></Name>
-		<X>-428</X>
-		<Y>888</Y>
+		<X>-254</X>
+		<Y>268</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1017,8 +929,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1792000000230</Id>
 		<Name><![CDATA[nombreEscenario]]></Name>
-		<X>-428</X>
-		<Y>913</Y>
+		<X>-2132</X>
+		<Y>243</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1033,8 +945,8 @@
 		<ReturnType>double[]</ReturnType>
 		<Id>1792000000231</Id>
 		<Name><![CDATA[kmPuestos]]></Name>
-		<X>-428</X>
-		<Y>938</Y>
+		<X>-254</X>
+		<Y>218</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1049,8 +961,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1793000000001</Id>
 		<Name><![CDATA[temperaturaPlan]]></Name>
-		<X>-428</X>
-		<Y>1003</Y>
+		<X>-2332</X>
+		<Y>514</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1065,8 +977,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000232</Id>
 		<Name><![CDATA[nivelCalorDe]]></Name>
-		<X>-428</X>
-		<Y>963</Y>
+		<X>-2332</X>
+		<Y>539</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1085,8 +997,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000233</Id>
 		<Name><![CDATA[tasaPerdidaKm]]></Name>
-		<X>-428</X>
-		<Y>988</Y>
+		<X>-2332</X>
+		<Y>564</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1109,8 +1021,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000234</Id>
 		<Name><![CDATA[distanciaMaximaKm]]></Name>
-		<X>-428</X>
-		<Y>1013</Y>
+		<X>-2152</X>
+		<Y>439</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1129,8 +1041,8 @@
 		<ReturnType>boolean[]</ReturnType>
 		<Id>1792000000235</Id>
 		<Name><![CDATA[calcularPuestosActivos]]></Name>
-		<X>-428</X>
-		<Y>1038</Y>
+		<X>-2152</X>
+		<Y>464</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1145,8 +1057,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1792000000236</Id>
 		<Name><![CDATA[puestoActivo]]></Name>
-		<X>-428</X>
-		<Y>1063</Y>
+		<X>-2152</X>
+		<Y>489</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1165,8 +1077,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000237</Id>
 		<Name><![CDATA[puestosActivos]]></Name>
-		<X>-428</X>
-		<Y>1088</Y>
+		<X>-2152</X>
+		<Y>514</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1181,8 +1093,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000238</Id>
 		<Name><![CDATA[coberturaEfectiva]]></Name>
-		<X>-428</X>
-		<Y>1113</Y>
+		<X>-2132</X>
+		<Y>268</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1197,8 +1109,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000239</Id>
 		<Name><![CDATA[factorVoluntariosEfectivo]]></Name>
-		<X>-428</X>
-		<Y>1138</Y>
+		<X>-2132</X>
+		<Y>293</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1213,8 +1125,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000240</Id>
 		<Name><![CDATA[porcentajeDeshidratados]]></Name>
-		<X>-428</X>
-		<Y>1163</Y>
+		<X>-926</X>
+		<Y>255</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1229,8 +1141,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000241</Id>
 		<Name><![CDATA[porcentajeDeshidratadosSeveros]]></Name>
-		<X>-428</X>
-		<Y>1188</Y>
+		<X>-926</X>
+		<Y>280</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1245,8 +1157,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000242</Id>
 		<Name><![CDATA[hidratacionMinimaMedia]]></Name>
-		<X>-428</X>
-		<Y>1213</Y>
+		<X>-926</X>
+		<Y>305</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1261,8 +1173,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000243</Id>
 		<Name><![CDATA[faltantesEvento]]></Name>
-		<X>-428</X>
-		<Y>1238</Y>
+		<X>-696</X>
+		<Y>280</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1277,8 +1189,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000244</Id>
 		<Name><![CDATA[ocupacionVoluntarios]]></Name>
-		<X>-428</X>
-		<Y>1263</Y>
+		<X>-1508</X>
+		<Y>525</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1293,8 +1205,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000245</Id>
 		<Name><![CDATA[horasVoluntarioOciosas]]></Name>
-		<X>-428</X>
-		<Y>1288</Y>
+		<X>-1508</X>
+		<Y>550</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1309,8 +1221,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000246</Id>
 		<Name><![CDATA[perdidaPorExceso]]></Name>
-		<X>-428</X>
-		<Y>1313</Y>
+		<X>-1508</X>
+		<Y>575</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1325,8 +1237,8 @@
 		<ReturnType>boolean</ReturnType>
 		<Id>1792000000247</Id>
 		<Name><![CDATA[reposicionActiva]]></Name>
-		<X>-428</X>
-		<Y>1338</Y>
+		<X>-1720</X>
+		<Y>331</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1341,8 +1253,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000248</Id>
 		<Name><![CDATA[retiroPlanificado]]></Name>
-		<X>-428</X>
-		<Y>1363</Y>
+		<X>-2152</X>
+		<Y>539</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1365,8 +1277,8 @@
 		<ReturnType>int</ReturnType>
 		<Id>1792000000320</Id>
 		<Name><![CDATA[unidadesConsumidasEvento]]></Name>
-		<X>-428</X>
-		<Y>1388</Y>
+		<X>-1508</X>
+		<Y>425</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1385,8 +1297,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000321</Id>
 		<Name><![CDATA[valorConsumidoEvento]]></Name>
-		<X>-428</X>
-		<Y>1413</Y>
+		<X>-1508</X>
+		<Y>450</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1405,8 +1317,8 @@
 		<ReturnType>double</ReturnType>
 		<Id>1792000000322</Id>
 		<Name><![CDATA[consumidoPorAtendido]]></Name>
-		<X>-428</X>
-		<Y>1438</Y>
+		<X>-1508</X>
+		<Y>475</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1421,8 +1333,8 @@
 		<ReturnType>String</ReturnType>
 		<Id>1792000000323</Id>
 		<Name><![CDATA[textoConsumo]]></Name>
-		<X>-428</X>
-		<Y>1463</Y>
+		<X>-244</X>
+		<Y>514</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1434,6 +1346,22 @@
 			<Name><![CDATA[k]]></Name>
 			<Type><![CDATA[int]]></Type>
 		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>List&lt;Tuple&gt;</ReturnType>
+		<Id>1794100000057</Id>
+		<Name><![CDATA[categoriasDeCorredor]]></Name>
+		<X>-2584</X>
+		<Y>280</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
 		<Body xmlns:al="http://anylogic.com"/>
 	</Function>
 </Functions>

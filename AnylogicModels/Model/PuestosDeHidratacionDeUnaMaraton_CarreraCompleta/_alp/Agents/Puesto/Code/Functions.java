@@ -1,31 +1,25 @@
 void configurar()
 {/*ALCODESTART::1790100000041*/
-// Datos reales del shapefile puestos_hidratacion3 (km y que ofrece cada
-// puesto), en el orden de los GISPoint puesto1..puesto15 del mapa.
-//   A = agua, I = isotonica, F = fruta, G = gel
-// Los geles no figuran en el shapefile: se agregan en km 22.6 y km 30.
-double[] kms = { 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.6, 25, 27.5, 30, 33, 35, 37.7, 40 };
-String[] ofertas = { "A", "I", "A", "I", "A", "I", "AF", "IG", "A", "I", "AG", "AIF", "A", "AI", "A" };
-// Punto sobre una calle aledaña (~130 m del circuito) donde estaciona el
-// camion de reposicion. Precalculado a partir del trazado del recorrido.
-double[] latEst = { -34.540628, -34.541872, -34.551052, -34.567854, -34.583304, -34.591494, -34.604231, -34.607892, -34.616513, -34.634680, -34.625321, -34.603519, -34.591705, -34.575511, -34.565969 };
-double[] lonEst = { -58.462352, -58.451763, -58.438920, -58.418522, -58.401393, -58.383256, -58.370337, -58.380843, -58.370828, -58.366120, -58.359063, -58.362617, -58.370427, -58.388350, -58.404791 };
-
+// Los datos fijos del puesto son parametros que se cargan desde su fila de
+// la tabla puestos de la base de datos (la poblacion puesto tiene una fila
+// por agente, en el orden del recorrido): km, que ofrece, calle, ubicacion en
+// el mapa, donde estaciona el camion y el flujo real de 2025.
 int i = getIndex();
-numero = i + 1;
-km = kms[ i ];
+if ( numero != i + 1 ) {
+	error( "La tabla puestos tiene que estar ordenada por numero de puesto" );
+}
 // Distancia desde el puesto armado anterior (o desde la largada).
-kmDesdeAnterior = kms[ i ];
+kmDesdeAnterior = km;
 for ( int j = i - 1; j >= 0; j-- ) {
 	if ( main.puestoActivo( j ) ) {
-		kmDesdeAnterior = kms[ i ] - kms[ j ];
+		kmDesdeAnterior = km - main.puesto.get( j ).km;
 		break;
 	}
 }
-ofrece[ AGUA ] = ofertas[ i ].contains( "A" );
-ofrece[ ISOTONICA ] = ofertas[ i ].contains( "I" );
-ofrece[ FRUTA ] = ofertas[ i ].contains( "F" );
-ofrece[ GEL ] = ofertas[ i ].contains( "G" );
+ofrece[ AGUA ] = daAgua;
+ofrece[ ISOTONICA ] = daIsotonica;
+ofrece[ FRUTA ] = daFruta;
+ofrece[ GEL ] = daGel;
 // Puesto que no se arma en este escenario (ver main.calcularPuestosActivos).
 if ( !main.puestoActivo( i ) ) {
 	for ( int k = 0; k < 4; k++ ) {
@@ -35,22 +29,6 @@ if ( !main.puestoActivo( i ) ) {
 // Voluntarios trabajando en este puesto (ver main.voluntariosIniciales). Se
 // puede cambiar en la corrida con main.cambiarVoluntarios( i, cantidad ).
 voluntarios = main.voluntariosIniciales( i );
-// Contexto real de cada puesto, sacado de OpenStreetMap (Overpass y
-// Nominatim) con las coordenadas del puesto: calle del recorrido, barrio,
-// carriles, si alrededor hay edificios o parque (edificios y parques en
-// 120 m) y si hay agua cerca. Lo usa la vista 3D para decorar la escena.
-String[] calles = { "Av. Del Libertador", "Av. Int. Cantilo", "Av. Pte. Figueroa Alcorta", "Av. Pte. Figueroa Alcorta", "Av. Del Libertador", "Av. 9 de Julio", "Av. Leandro N. Alem", "Av. 9 de Julio", "Av. Paseo Col\u00f3n", "Arist\u00f3bulo Del Valle", "Av. Don Pedro de Mendoza", "Macacha G\u00fcemes", "Av. Ant\u00e1rtida Argentina", "Av. Pte. Ram\u00f3n S. Castillo", "Av. Pte. Sarmiento" };
-String[] barrios = { "N\u00fa\u00f1ez", "Belgrano", "Belgrano", "Palermo", "Palermo", "Retiro", "San Nicol\u00e1s", "Monserrat", "San Telmo", "La Boca", "La Boca", "Puerto Madero", "Retiro", "Recoleta", "Palermo" };
-int[] entornos = { 0, 1, 1, 1, 1, 2, 0, 2, 0, 0, 1, 2, 2, 2, 1 };
-boolean[] agua = { false, true, false, false, false, false, false, false, true, false, false, false, true, false, false };
-int[] carrilesOsm = { 6, 4, 5, 2, 10, 5, 2, 5, 3, 0, 2, 3, 2, 2, 5 };
-calle = calles[ i ];
-barrio = barrios[ i ];
-entorno = entornos[ i ];
-cercaDelAgua = agua[ i ];
-carriles = carrilesOsm[ i ];
-latEstacionamiento = latEst[ i ];
-lonEstacionamiento = lonEst[ i ];
 
 // Cada insumo que ofrece el puesto tiene su propio stock y capacidad. Los
 // que no ofrece quedan en 0.
@@ -60,7 +38,9 @@ for ( int k = 0; k < 4; k++ ) {
 	// Lo que arranca en el puesto se compra antes de la carrera.
 	comprados[ k ] = stock[ k ];
 }
-jumpTo( main.puntoPuesto( i ) );
+// Ubicacion en el mapa GIS: el mismo punto que el nodo del recorrido
+// (puesto1..puesto15) al que llegan los corredores.
+setLatLon( latitud, longitud );
 
 // Punto de reposicion inicial (despues se recalcula cada minuto).
 for ( int k = 0; k < 4; k++ ) {
@@ -95,7 +75,6 @@ if ( consumir( primera ) ) {
 } else if ( ofrece[ AGUA ] || ofrece[ ISOTONICA ] ) {
 	// Paro pero no habia bebida: corredor no atendido por falta de stock.
 	noAtendidosStock++;
-	c.motivoNoAtendido = 1;
 }
 
 // Comida: gel si le esta faltando energia; fruta sobre todo los mas lentos.
@@ -204,33 +183,9 @@ void finReposicion()
 pedidoEnCurso = false;
 estadoReposicion = "";
 camionAsignado = null;
-reposicionesRecibidas++;
 // Si mientras descargaban se volvio a consumir por debajo del punto de
 // reposicion, sale otro camion.
 revisarReposicion();
-/*ALCODEEND*/}
-
-double fraccionStock()
-{/*ALCODESTART::1790100000049*/
-// Fraccion de stock del insumo mas comprometido (para la animacion).
-double f = 1;
-for ( int k = 0; k < 4; k++ ) {
-	if ( ofrece[ k ] && capacidad[ k ] > 0 ) {
-		f = min( f, stock[ k ] / capacidad[ k ] );
-	}
-}
-return f;
-/*ALCODEEND*/}
-
-String tipoTexto()
-{/*ALCODESTART::1790100000050*/
-String s = "";
-for ( int k = 0; k < 4; k++ ) {
-	if ( ofrece[ k ] ) {
-		s += ( s.isEmpty() ? "" : " + " ) + NOMBRES_INSUMO[ k ];
-	}
-}
-return s;
 /*ALCODEEND*/}
 
 Color colorTipo()
@@ -240,29 +195,6 @@ if ( ofrece[ GEL ] ) return saddleBrown;
 if ( ofrece[ FRUTA ] ) return magenta;
 if ( ofrece[ ISOTONICA ] ) return turquoise;
 return royalBlue;
-/*ALCODEEND*/}
-
-String resumen()
-{/*ALCODESTART::1790100000052*/
-String s = "P" + numero + " km " + km + " (" + tipoTexto() + ", " + voluntarios + " vol.):";
-for ( int k = 0; k < 4; k++ ) {
-	if ( !ofrece[ k ] ) {
-		continue;
-	}
-	s += "  " + NOMBRES_INSUMO[ k ] + " " + (int) stock[ k ] + "/" + (int) capacidad[ k ]
-	   + " (repone en " + (int) puntoReposicion[ k ] + ( ropTopeado[ k ] ? ", capacidad corta" : "" ) + ")";
-	if ( faltantes[ k ] > 0 ) {
-		s += " (faltaron " + faltantes[ k ] + ")";
-	}
-}
-// Seguimiento de la reposicion: en que etapa esta y hace cuanto se pidio.
-if ( pedidoEnCurso ) {
-	s += "  [" + estadoReposicion + ", pedido hace " + (int) ( time() - minutoPedido ) + " min]";
-}
-if ( demoraUltimaReposicion >= 0 ) {
-	s += "  (el ultimo pedido tardo " + (int) demoraUltimaReposicion + " min en llegar)";
-}
-return s;
 /*ALCODEEND*/}
 
 double demandaPlanificada(int k)
@@ -279,13 +211,8 @@ double tiempoEntregaEstimado()
 // llega a la mesa: camion por calles (distancia en linea recta por
 // factorRecorridoCalles), caminata de la zorra y 1 minuto de descarga.
 // Despues de la primera reposicion, si la demora medida fue mayor, se usa esa.
-// Si la demora del camion se fijo a mano (slider de la vista 3D), se usa
-// esa en lugar de la estimada y de la medida.
 double kmZorra = distanciaKm( latEstacionamiento, lonEstacionamiento, getLatitude(), getLongitude() );
-double minutos = demoraCamionEfectiva() + kmZorra / main.velocidadZorraKmh * 60 + 1;
-if ( demoraCamionMin >= 0 ) {
-	return minutos;
-}
+double minutos = demoraCamionEstimada() + kmZorra / main.velocidadZorraKmh * 60 + 1;
 return max( minutos, demoraUltimaReposicion );
 /*ALCODEEND*/}
 
@@ -299,22 +226,14 @@ void actualizarPuntoReposicion(int k)
 // medida en la corrida, para no quedarse corto si viene mas gente.
 if ( !ofrece[ k ] ) {
 	puntoReposicion[ k ] = 0;
-	ropTopeado[ k ] = false;
-	return;
-}
-// Stock minimo fijado a mano desde el slider de la vista 3D.
-if ( minimoManual[ k ] >= 0 ) {
-	puntoReposicion[ k ] = min( minimoManual[ k ], capacidad[ k ] );
-	ropTopeado[ k ] = false;
 	return;
 }
 double d = max( demandaPlanificada( k ), demandaObservada[ k ] );
 double demandaEnEntrega = d * tiempoEntregaEstimado();
 double rop = demandaEnEntrega + main.zNivelServicio * Math.sqrt( demandaEnEntrega );
 // Si el punto supera esta fraccion de la capacidad, el stock del puesto no
-// alcanza a cubrir el tiempo de entrega: se topea y se avisa en el resumen.
+// alcanza a cubrir el tiempo de entrega: se topea.
 double tope = main.topePuntoReposicion * capacidad[ k ];
-ropTopeado[ k ] = rop > tope;
 puntoReposicion[ k ] = Math.round( min( rop, tope ) );
 /*ALCODEEND*/}
 
@@ -338,21 +257,6 @@ double km = distanciaKm( main.latDeposito, main.lonDeposito, latEstacionamiento,
 return km / main.velocidadCamionKmh * 60;
 /*ALCODEEND*/}
 
-double demoraCamionEfectiva()
-{/*ALCODESTART::1790100011005*/
-return demoraCamionMin >= 0 ? demoraCamionMin : demoraCamionEstimada();
-/*ALCODEEND*/}
-
-double minutosParaAgotar(int k)
-{/*ALCODESTART::1790100011006*/
-// Minutos hasta quedarse sin el insumo al ritmo de consumo actual (demanda
-// medida en la corrida). Devuelve -1 si todavia no hay consumo.
-if ( !ofrece[ k ] || demandaObservada[ k ] < 0.05 ) {
-	return -1;
-}
-return stock[ k ] / demandaObservada[ k ];
-/*ALCODEEND*/}
-
 double minutosParaLlegarCamion()
 {/*ALCODESTART::1790100011007*/
 // Minutos que le faltan al camion para estacionar (-1 si no viene en camino).
@@ -360,58 +264,6 @@ if ( camionAsignado == null || !camionAsignado.fase.equals( "YENDO" ) ) {
 	return -1;
 }
 return camionAsignado.timeToArrival( MINUTE );
-/*ALCODEEND*/}
-
-void ajustarCapacidad(int k,double valor)
-{/*ALCODESTART::1790100011008*/
-capacidad[ k ] = max( 1, valor );
-stock[ k ] = min( stock[ k ], capacidad[ k ] );
-if ( minimoManual[ k ] > capacidad[ k ] ) {
-	minimoManual[ k ] = capacidad[ k ];
-}
-actualizarPuntoReposicion( k );
-revisarReposicion();
-/*ALCODEEND*/}
-
-void ajustarMinimo(int k,double valor)
-{/*ALCODESTART::1790100011009*/
-minimoManual[ k ] = max( 0, min( valor, capacidad[ k ] ) );
-actualizarPuntoReposicion( k );
-revisarReposicion();
-/*ALCODEEND*/}
-
-void minimoAutomatico(int k)
-{/*ALCODESTART::1790100011010*/
-// Vuelve a calcular el stock minimo con la formula (d * L + stock de seguridad).
-minimoManual[ k ] = -1;
-actualizarPuntoReposicion( k );
-revisarReposicion();
-/*ALCODEEND*/}
-
-void ajustarDemoraCamion(double minutos)
-{/*ALCODESTART::1790100011011*/
-// Demora del camion fijada a mano. Rige desde el proximo pedido (un camion que
-// ya salio llega con la demora con la que salio).
-demoraCamionMin = max( 1, minutos );
-for ( int k = 0; k < 4; k++ ) {
-	actualizarPuntoReposicion( k );
-}
-revisarReposicion();
-/*ALCODEEND*/}
-
-void demoraAutomatica()
-{/*ALCODESTART::1790100011012*/
-demoraCamionMin = -1;
-for ( int k = 0; k < 4; k++ ) {
-	actualizarPuntoReposicion( k );
-}
-revisarReposicion();
-/*ALCODEEND*/}
-
-boolean hayBebida()
-{/*ALCODESTART::1790100012004*/
-// Hay al menos una bebida (agua o isotonica) para dar en este momento.
-return ( ofrece[ AGUA ] && stock[ AGUA ] >= 1 ) || ( ofrece[ ISOTONICA ] && stock[ ISOTONICA ] >= 1 );
 /*ALCODEEND*/}
 
 double demandaRestante(int k)
