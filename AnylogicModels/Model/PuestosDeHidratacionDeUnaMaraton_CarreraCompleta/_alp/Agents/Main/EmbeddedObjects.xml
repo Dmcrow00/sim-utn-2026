@@ -13512,7 +13512,7 @@ registrarLargada( agent );]]></Code>
 		<Id>1789509282523</Id>
 		<Name><![CDATA[puesto]]></Name>
 		<X>-2332</X>
-		<Y>697</Y>
+		<Y>710</Y>
 		<Label>
 			<X>20</X>
 			<Y>0</Y>
@@ -13946,7 +13946,7 @@ registrarLargada( agent );]]></Code>
 		<Id>1790100000175</Id>
 		<Name><![CDATA[camiones]]></Name>
 		<X>-2332</X>
-		<Y>722</Y>
+		<Y>735</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -13995,7 +13995,7 @@ registrarLargada( agent );]]></Code>
 		<Id>1790100000177</Id>
 		<Name><![CDATA[operarios]]></Name>
 		<X>-2332</X>
-		<Y>747</Y>
+		<Y>760</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

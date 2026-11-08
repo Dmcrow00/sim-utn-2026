@@ -39,6 +39,8 @@ Están en el recuadro **"Costos del evento"** del editor de `Main`, a la izquier
 | `costoFijoPuesto` | $ por puesto | 0 |
 | `penalizacionNoAtendido` | $ por corredor no atendido (0 = sin penalización) | 0 |
 
+Desde el 8/11, `precioVaso`, `precioLitroAgua`, `precioLitroIsotonica`, `precioPorcionFruta`, `precioGel`, `costoHoraCamion` y `costoHoraOperario` son variables que leen su valor de las tablas `insumos` y `vehiculos` de la base de datos del modelo; los otros cuatro siguen siendo parámetros. Ver "Datos de la base como variables, para AnyLogic Cloud" en `Registro_Componentes_Modelo.md`.
+
 ### Indicadores en la pantalla de Métricas
 
 Debajo de los gráficos de stock aparece la sección **"Costos del evento"** (`areaEjecucion` se agrandó a 1800 de alto para que entre):
@@ -109,7 +111,7 @@ Este es el paso que responde **cuál es la mejor combinación**. Cada configurac
    | `coberturaStockInicial` | 0,5 | 1 | 0,25 |
    | `entregaEnMano` | false / true (Freeform) | | |
 
-   Desde la calibración del 27/10, los voluntarios y el stock se dimensionan con los datos reales (`dotacionSegunFlujo` y `stockSegunDemanda` en true). Por eso se varían sus factores y no `voluntariosPorPuesto` ni `capacidadAgua`, que solo se usan si esos modos se apagan. Se pueden sumar `capacidadZorra`, `velocidadCamionKmh` o `temperaturaC` (escenario de calor), pero cada parámetro multiplica la cantidad de corridas.
+   Desde la calibración del 27/10, los voluntarios y el stock se dimensionan con los datos reales (`dotacionSegunFlujo` y `stockSegunDemanda` en true). Por eso se varían sus factores y no `voluntariosPorPuesto` ni `capacidadAgua`, que solo se usan si esos modos se apagan. Se puede sumar `temperaturaC` (escenario de calor), pero cada parámetro multiplica la cantidad de corridas. `capacidadZorra` y `velocidadCamionKmh` ahora son variables leídas de la base: para variarlas en un experimento habría que cambiar la tabla `vehiculos` o volver a hacerlas parámetros con un valor fijo.
 
    Poner `ejecucionRapida` en true en el experimento para que cada corrida vaya sin animación. Cada réplica deja además una fila en `resultados_corridas.csv` (ver `Main.exportarResultados`), que se puede analizar directamente en una planilla.
 4. **Replications:** marcar *Use replications* con un número fijo de 5 a 10 por configuración. Usar *Random seed* (no fija) para que las réplicas difieran.

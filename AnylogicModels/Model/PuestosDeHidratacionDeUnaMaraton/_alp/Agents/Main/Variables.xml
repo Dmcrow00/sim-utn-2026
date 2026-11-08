@@ -4,7 +4,7 @@
 		<Id>1787528412616</Id>
 		<Name><![CDATA[pantalla]]></Name>
 		<X>-424</X>
-		<Y>439</Y>
+		<Y>452</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -26,7 +26,7 @@
 		<Id>1790100000156</Id>
 		<Name><![CDATA[llegadosPorCategoria]]></Name>
 		<X>-926</X>
-		<Y>412</Y>
+		<Y>425</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -48,7 +48,7 @@
 		<Id>1790100000157</Id>
 		<Name><![CDATA[sumaMinutosPorCategoria]]></Name>
 		<X>-926</X>
-		<Y>437</Y>
+		<Y>450</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -70,7 +70,7 @@
 		<Id>1790100000159</Id>
 		<Name><![CDATA[camionesDespachados]]></Name>
 		<X>-1720</X>
-		<Y>502</Y>
+		<Y>515</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -92,7 +92,7 @@
 		<Id>1790100009315</Id>
 		<Name><![CDATA[corredoresLargados]]></Name>
 		<X>-1720</X>
-		<Y>206</Y>
+		<Y>219</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -114,7 +114,7 @@
 		<Id>1790100009316</Id>
 		<Name><![CDATA[sumaHorasPorKm]]></Name>
 		<X>-1720</X>
-		<Y>231</Y>
+		<Y>244</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -136,7 +136,7 @@
 		<Id>1790100009501</Id>
 		<Name><![CDATA[puesto3DActual]]></Name>
 		<X>-424</X>
-		<Y>747</Y>
+		<Y>760</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -158,7 +158,7 @@
 		<Id>1790100009502</Id>
 		<Name><![CDATA[COLOR_TAB]]></Name>
 		<X>-424</X>
-		<Y>464</Y>
+		<Y>477</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -180,7 +180,7 @@
 		<Id>1790100009503</Id>
 		<Name><![CDATA[COLOR_TAB_ACTIVA]]></Name>
 		<X>-424</X>
-		<Y>489</Y>
+		<Y>502</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -202,7 +202,7 @@
 		<Id>1790100012010</Id>
 		<Name><![CDATA[nivelCalor]]></Name>
 		<X>-2754</X>
-		<Y>551</Y>
+		<Y>564</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -224,7 +224,7 @@
 		<Id>1790100013009</Id>
 		<Name><![CDATA[velocidad3D]]></Name>
 		<X>-424</X>
-		<Y>772</Y>
+		<Y>785</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -246,7 +246,7 @@
 		<Id>1790100013010</Id>
 		<Name><![CDATA[escalaFuera3D]]></Name>
 		<X>-424</X>
-		<Y>797</Y>
+		<Y>810</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -268,7 +268,7 @@
 		<Id>1790100013011</Id>
 		<Name><![CDATA[tiempoRealFuera3D]]></Name>
 		<X>-424</X>
-		<Y>822</Y>
+		<Y>835</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -290,7 +290,7 @@
 		<Id>1792000000162</Id>
 		<Name><![CDATA[largadaSeg]]></Name>
 		<X>-2754</X>
-		<Y>230</Y>
+		<Y>243</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -312,7 +312,7 @@
 		<Id>1792000000163</Id>
 		<Name><![CDATA[tiempoNetoMin]]></Name>
 		<X>-2754</X>
-		<Y>255</Y>
+		<Y>268</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -334,7 +334,7 @@
 		<Id>1792000000164</Id>
 		<Name><![CDATA[iIntervalo]]></Name>
 		<X>-2754</X>
-		<Y>280</Y>
+		<Y>293</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -356,7 +356,7 @@
 		<Id>1792000000165</Id>
 		<Name><![CDATA[iCorredor]]></Name>
 		<X>-2584</X>
-		<Y>155</Y>
+		<Y>168</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -378,7 +378,7 @@
 		<Id>1792000000166</Id>
 		<Name><![CDATA[nComparados]]></Name>
 		<X>-424</X>
-		<Y>168</Y>
+		<Y>181</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -400,7 +400,7 @@
 		<Id>1792000000167</Id>
 		<Name><![CDATA[sumaNetoSim]]></Name>
 		<X>-424</X>
-		<Y>193</Y>
+		<Y>206</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -422,7 +422,7 @@
 		<Id>1792000000168</Id>
 		<Name><![CDATA[sumaNetoReal]]></Name>
 		<X>-424</X>
-		<Y>218</Y>
+		<Y>231</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -444,7 +444,7 @@
 		<Id>1792000000169</Id>
 		<Name><![CDATA[sumaRelacionTiempo]]></Name>
 		<X>-424</X>
-		<Y>243</Y>
+		<Y>256</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -466,7 +466,7 @@
 		<Id>1792000000206</Id>
 		<Name><![CDATA[resultadosExportados]]></Name>
 		<X>-424</X>
-		<Y>268</Y>
+		<Y>281</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -488,7 +488,7 @@
 		<Id>1792000000224</Id>
 		<Name><![CDATA[llegadosDeshidratados]]></Name>
 		<X>-926</X>
-		<Y>180</Y>
+		<Y>193</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -510,7 +510,7 @@
 		<Id>1792000000225</Id>
 		<Name><![CDATA[llegadosDeshidratadosSeveros]]></Name>
 		<X>-926</X>
-		<Y>205</Y>
+		<Y>218</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -532,7 +532,7 @@
 		<Id>1792000000226</Id>
 		<Name><![CDATA[sumaHidratacionMinima]]></Name>
 		<X>-926</X>
-		<Y>230</Y>
+		<Y>243</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -554,7 +554,7 @@
 		<Id>1792000000227</Id>
 		<Name><![CDATA[activos]]></Name>
 		<X>-2332</X>
-		<Y>489</Y>
+		<Y>502</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -576,7 +576,7 @@
 		<Id>1787698089084</Id>
 		<Name><![CDATA[cantidadCorredores]]></Name>
 		<X>-2754</X>
-		<Y>155</Y>
+		<Y>168</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -604,7 +604,7 @@
 		<Id>1790100000132</Id>
 		<Name><![CDATA[voluntariosPorPuesto]]></Name>
 		<X>-2754</X>
-		<Y>747</Y>
+		<Y>760</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -632,7 +632,7 @@
 		<Id>1790100000134</Id>
 		<Name><![CDATA[entregaEnMano]]></Name>
 		<X>-2754</X>
-		<Y>772</Y>
+		<Y>785</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -656,11 +656,11 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000136</Id>
 		<Name><![CDATA[capacidadAgua]]></Name>
 		<X>-1890</X>
-		<Y>181</Y>
+		<Y>294</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -668,27 +668,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "agua" ) ).uniqueResult( insumos.capacidad_fija )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000137</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000138</Id>
 		<Name><![CDATA[capacidadIsotonica]]></Name>
 		<X>-1890</X>
-		<Y>206</Y>
+		<Y>319</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -696,27 +690,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "isotonica" ) ).uniqueResult( insumos.capacidad_fija )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000139</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000140</Id>
 		<Name><![CDATA[capacidadFruta]]></Name>
 		<X>-1890</X>
-		<Y>231</Y>
+		<Y>344</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -724,27 +712,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "fruta" ) ).uniqueResult( insumos.capacidad_fija )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000141</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000142</Id>
 		<Name><![CDATA[capacidadGel]]></Name>
-		<X>-1890</X>
-		<Y>256</Y>
+		<X>-1720</X>
+		<Y>194</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -752,27 +734,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "gel" ) ).uniqueResult( insumos.capacidad_fija )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000143</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000146</Id>
 		<Name><![CDATA[latDeposito]]></Name>
 		<X>-1890</X>
-		<Y>477</Y>
+		<Y>490</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -780,27 +756,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "camion" ) ).uniqueResult( vehiculos.latitud_salida )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000147</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000148</Id>
 		<Name><![CDATA[lonDeposito]]></Name>
 		<X>-1890</X>
-		<Y>502</Y>
+		<Y>515</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -808,27 +778,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "camion" ) ).uniqueResult( vehiculos.longitud_salida )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000149</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000150</Id>
 		<Name><![CDATA[velocidadCamionKmh]]></Name>
 		<X>-1890</X>
-		<Y>527</Y>
+		<Y>540</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -836,27 +800,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "camion" ) ).uniqueResult( vehiculos.velocidad_kmh )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000151</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000152</Id>
 		<Name><![CDATA[capacidadZorra]]></Name>
 		<X>-1890</X>
-		<Y>577</Y>
+		<Y>590</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -864,27 +822,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "zorra" ) ).uniqueResult( vehiculos.capacidad_unidades )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000153</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100000154</Id>
 		<Name><![CDATA[velocidadZorraKmh]]></Name>
 		<X>-1720</X>
-		<Y>477</Y>
+		<Y>490</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -892,27 +844,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "zorra" ) ).uniqueResult( vehiculos.velocidad_kmh )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100000155</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
 	<Variable Class="Parameter">
 		<Id>1790100009301</Id>
 		<Name><![CDATA[consumoLiquidoMlHora]]></Name>
 		<X>-2754</X>
-		<Y>451</Y>
+		<Y>464</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -936,11 +882,11 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100009303</Id>
 		<Name><![CDATA[volumenVasoMl]]></Name>
 		<X>-2754</X>
-		<Y>476</Y>
+		<Y>489</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -948,27 +894,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "vaso" ) ).uniqueResult( insumos.contenido_ml )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100009304</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100009305</Id>
 		<Name><![CDATA[gelesPorCorredor]]></Name>
 		<X>-2754</X>
-		<Y>501</Y>
+		<Y>514</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -976,27 +916,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "gel" ) ).uniqueResult( insumos.unidades_por_corredor )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100009306</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100009307</Id>
 		<Name><![CDATA[frutaPorCorredor]]></Name>
 		<X>-2754</X>
-		<Y>526</Y>
+		<Y>539</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1004,27 +938,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "fruta" ) ).uniqueResult( insumos.unidades_por_corredor )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100009308</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
 	<Variable Class="Parameter">
 		<Id>1790100009309</Id>
 		<Name><![CDATA[zNivelServicio]]></Name>
 		<X>-1890</X>
-		<Y>331</Y>
+		<Y>244</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1051,8 +979,8 @@
 	<Variable Class="Parameter">
 		<Id>1790100009311</Id>
 		<Name><![CDATA[topePuntoReposicion]]></Name>
-		<X>-1720</X>
-		<Y>181</Y>
+		<X>-1890</X>
+		<Y>269</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1076,11 +1004,11 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1790100009313</Id>
 		<Name><![CDATA[factorRecorridoCalles]]></Name>
 		<X>-1890</X>
-		<Y>552</Y>
+		<Y>565</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1088,27 +1016,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "camion" ) ).uniqueResult( vehiculos.factor_recorrido )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1790100009314</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
 	<Variable Class="Parameter">
 		<Id>1790100012006</Id>
 		<Name><![CDATA[temperaturaC]]></Name>
 		<X>-2754</X>
-		<Y>426</Y>
+		<Y>439</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1136,7 +1058,7 @@
 		<Id>1790100012008</Id>
 		<Name><![CDATA[colaMaximaPorVoluntario]]></Name>
 		<X>-2754</X>
-		<Y>797</Y>
+		<Y>810</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1160,11 +1082,11 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000021</Id>
 		<Name><![CDATA[precioVaso]]></Name>
 		<X>-1508</X>
-		<Y>155</Y>
+		<Y>268</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1172,27 +1094,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "vaso" ) ).uniqueResult( insumos.precio )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000022</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000023</Id>
 		<Name><![CDATA[precioLitroAgua]]></Name>
 		<X>-1508</X>
-		<Y>180</Y>
+		<Y>293</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1200,27 +1116,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "agua" ) ).uniqueResult( insumos.precio )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000024</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000025</Id>
 		<Name><![CDATA[precioLitroIsotonica]]></Name>
 		<X>-1508</X>
-		<Y>205</Y>
+		<Y>318</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1228,27 +1138,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "isotonica" ) ).uniqueResult( insumos.precio )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000026</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000027</Id>
 		<Name><![CDATA[precioPorcionFruta]]></Name>
-		<X>-1508</X>
-		<Y>230</Y>
+		<X>-1328</X>
+		<Y>168</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1256,27 +1160,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "fruta" ) ).uniqueResult( insumos.precio )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000028</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000029</Id>
 		<Name><![CDATA[precioGel]]></Name>
-		<X>-1508</X>
-		<Y>255</Y>
+		<X>-1328</X>
+		<Y>193</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1284,27 +1182,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( insumos ).where( insumos.insumo.eq( "gel" ) ).uniqueResult( insumos.precio )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000030</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
 	<Variable Class="Parameter">
 		<Id>1792000000031</Id>
 		<Name><![CDATA[costoHoraVoluntario]]></Name>
 		<X>-1508</X>
-		<Y>280</Y>
+		<Y>168</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1332,7 +1224,7 @@
 		<Id>1792000000033</Id>
 		<Name><![CDATA[horasExtraVoluntario]]></Name>
 		<X>-1508</X>
-		<Y>305</Y>
+		<Y>193</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1356,11 +1248,11 @@
 			</ParameterEditor>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000035</Id>
 		<Name><![CDATA[costoHoraCamion]]></Name>
 		<X>-1328</X>
-		<Y>155</Y>
+		<Y>218</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1368,27 +1260,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "camion" ) ).uniqueResult( vehiculos.costo_hora )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000036</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
-	<Variable Class="Parameter">
+	<Variable Class="PlainVariable">
 		<Id>1792000000037</Id>
 		<Name><![CDATA[costoHoraOperario]]></Name>
 		<X>-1328</X>
-		<Y>180</Y>
+		<Y>243</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1396,27 +1282,21 @@
 		<PublicFlag>false</PublicFlag>
 		<PresentationFlag>false</PresentationFlag>
 		<ShowLabel>true</ShowLabel>
-		<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
 			<Type><![CDATA[double]]></Type>
-			<UnitType>NONE</UnitType>
-			<SdArray>false</SdArray>
-			<DefaultValue Class="CodeValue">
+			<InitialValue Class="CodeValue">
 				<Code><![CDATA[selectFrom( vehiculos ).where( vehiculos.vehiculo.eq( "zorra" ) ).uniqueResult( vehiculos.costo_hora )]]></Code>
-			</DefaultValue>
-			<ParameterEditor>
-				<Id>1792000000038</Id>
-				<EditorContolType>TEXT_BOX</EditorContolType>
-				<MinSliderValue>0</MinSliderValue>
-				<MaxSliderValue>100</MaxSliderValue>
-				<DelimeterType>NO_DELIMETER</DelimeterType>
-			</ParameterEditor>
+			</InitialValue>
 		</Properties>
 	</Variable>
 	<Variable Class="Parameter">
 		<Id>1792000000039</Id>
 		<Name><![CDATA[costoFijoPuesto]]></Name>
-		<X>-1328</X>
-		<Y>205</Y>
+		<X>-1508</X>
+		<Y>218</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1443,8 +1323,8 @@
 	<Variable Class="Parameter">
 		<Id>1792000000041</Id>
 		<Name><![CDATA[penalizacionNoAtendido]]></Name>
-		<X>-1328</X>
-		<Y>230</Y>
+		<X>-1508</X>
+		<Y>243</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1472,7 +1352,7 @@
 		<Id>1792000000150</Id>
 		<Name><![CDATA[repetirCarreraReal]]></Name>
 		<X>-2754</X>
-		<Y>180</Y>
+		<Y>193</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1500,7 +1380,7 @@
 		<Id>1792000000152</Id>
 		<Name><![CDATA[ajusteRitmo]]></Name>
 		<X>-2754</X>
-		<Y>205</Y>
+		<Y>218</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1528,7 +1408,7 @@
 		<Id>1792000000154</Id>
 		<Name><![CDATA[dotacionSegunFlujo]]></Name>
 		<X>-2754</X>
-		<Y>822</Y>
+		<Y>835</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1556,7 +1436,7 @@
 		<Id>1792000000156</Id>
 		<Name><![CDATA[factorVoluntarios]]></Name>
 		<X>-2754</X>
-		<Y>847</Y>
+		<Y>860</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1584,7 +1464,7 @@
 		<Id>1792000000158</Id>
 		<Name><![CDATA[stockSegunDemanda]]></Name>
 		<X>-1890</X>
-		<Y>281</Y>
+		<Y>194</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1612,7 +1492,7 @@
 		<Id>1792000000160</Id>
 		<Name><![CDATA[coberturaStockInicial]]></Name>
 		<X>-1890</X>
-		<Y>306</Y>
+		<Y>219</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1640,7 +1520,7 @@
 		<Id>1792000000204</Id>
 		<Name><![CDATA[ejecucionRapida]]></Name>
 		<X>-2332</X>
-		<Y>218</Y>
+		<Y>231</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1668,7 +1548,7 @@
 		<Id>1792000000209</Id>
 		<Name><![CDATA[corredoresPorPuntoMapa]]></Name>
 		<X>-424</X>
-		<Y>414</Y>
+		<Y>427</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1696,7 +1576,7 @@
 		<Id>1792000000212</Id>
 		<Name><![CDATA[escenario]]></Name>
 		<X>-2332</X>
-		<Y>168</Y>
+		<Y>181</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1724,7 +1604,7 @@
 		<Id>1792000000214</Id>
 		<Name><![CDATA[semilla]]></Name>
 		<X>-2332</X>
-		<Y>193</Y>
+		<Y>206</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1752,7 +1632,7 @@
 		<Id>1792000000216</Id>
 		<Name><![CDATA[temperaturaPlanificada]]></Name>
 		<X>-2332</X>
-		<Y>439</Y>
+		<Y>452</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1780,7 +1660,7 @@
 		<Id>1792000000218</Id>
 		<Name><![CDATA[coberturaOptima]]></Name>
 		<X>-2332</X>
-		<Y>243</Y>
+		<Y>256</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1808,7 +1688,7 @@
 		<Id>1792000000220</Id>
 		<Name><![CDATA[factorVoluntariosOptimo]]></Name>
 		<X>-2332</X>
-		<Y>268</Y>
+		<Y>281</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1836,7 +1716,7 @@
 		<Id>1792000000222</Id>
 		<Name><![CDATA[umbralDeshidratacion]]></Name>
 		<X>-926</X>
-		<Y>155</Y>
+		<Y>168</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1864,7 +1744,7 @@
 		<Id>1792000000249</Id>
 		<Name><![CDATA[perdidaMaximaPorTramo]]></Name>
 		<X>-2332</X>
-		<Y>464</Y>
+		<Y>477</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1892,7 +1772,7 @@
 		<Id>1792000000373</Id>
 		<Name><![CDATA[coberturaEscasez]]></Name>
 		<X>-2332</X>
-		<Y>293</Y>
+		<Y>306</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1920,7 +1800,7 @@
 		<Id>1792000000375</Id>
 		<Name><![CDATA[factorVoluntariosEscasez]]></Name>
 		<X>-2132</X>
-		<Y>168</Y>
+		<Y>181</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1948,7 +1828,7 @@
 		<Id>1792000000377</Id>
 		<Name><![CDATA[coberturaExceso]]></Name>
 		<X>-2132</X>
-		<Y>193</Y>
+		<Y>206</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -1976,7 +1856,7 @@
 		<Id>1792000000379</Id>
 		<Name><![CDATA[factorVoluntariosExceso]]></Name>
 		<X>-2132</X>
-		<Y>218</Y>
+		<Y>231</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -2004,7 +1884,7 @@
 		<Id>1792000000387</Id>
 		<Name><![CDATA[corredores3DPorMinuto]]></Name>
 		<X>-424</X>
-		<Y>722</Y>
+		<Y>735</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -2032,7 +1912,7 @@
 		<Id>1794100000031</Id>
 		<Name><![CDATA[filasCategorias]]></Name>
 		<X>-2584</X>
-		<Y>180</Y>
+		<Y>193</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>

@@ -4208,7 +4208,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_precioVaso( leerNumero( value, precioVaso ) );</ActionCode>
+			<ActionCode>precioVaso = leerNumero( value, precioVaso );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -4317,7 +4317,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_precioLitroAgua( leerNumero( value, precioLitroAgua ) );</ActionCode>
+			<ActionCode>precioLitroAgua = leerNumero( value, precioLitroAgua );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -4426,7 +4426,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_precioLitroIsotonica( leerNumero( value, precioLitroIsotonica ) );</ActionCode>
+			<ActionCode>precioLitroIsotonica = leerNumero( value, precioLitroIsotonica );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -4535,7 +4535,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_precioPorcionFruta( leerNumero( value, precioPorcionFruta ) );</ActionCode>
+			<ActionCode>precioPorcionFruta = leerNumero( value, precioPorcionFruta );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -4644,7 +4644,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_precioGel( leerNumero( value, precioGel ) );</ActionCode>
+			<ActionCode>precioGel = leerNumero( value, precioGel );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -4971,7 +4971,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_costoHoraCamion( leerNumero( value, costoHoraCamion ) );</ActionCode>
+			<ActionCode>costoHoraCamion = leerNumero( value, costoHoraCamion );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -5080,7 +5080,7 @@
 			<TextColor/>
 			<VisibleCode>pantalla.equals("EJECUCION")</VisibleCode>
 			<Enabled>true</Enabled>
-			<ActionCode>set_costoHoraOperario( leerNumero( value, costoHoraOperario ) );</ActionCode>
+			<ActionCode>costoHoraOperario = leerNumero( value, costoHoraOperario );</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="13" Style="0"/>
@@ -15404,7 +15404,8 @@ categoría de corredor.]]></Text>
 		<Z>0</Z>
 		<Rotation>0.0</Rotation>
 		<Color>-9735291</Color>
-		<Text><![CDATA[Cada recuadro reúne los elementos de un mismo tema y el texto de arriba explica qué hace el grupo. Los parámetros quedan en Main porque se configuran desde la pantalla del experimento; los datos fijos (corredores, puestos, categorías, insumos y vehículos) salen de la base de datos del modelo. Todo esto está fuera de las vistas: no aparece en ninguna pantalla.]]></Text>
+		<Text><![CDATA[Cada recuadro reúne los elementos de un mismo tema y el texto de arriba explica qué hace el grupo. Los parámetros quedan en Main porque se configuran desde la pantalla del experimento; los datos fijos (corredores, puestos, categorías, insumos y vehículos) salen de la base de datos del modelo. Los de insumos y vehículos son variables que se leen al empezar cada corrida: si fueran parámetros, AnyLogic Cloud los calcularía al exportar, sin base, y llegarían como NaN. Todo esto
+está fuera de las vistas: no aparece en ninguna pantalla.]]></Text>
 		<Font>
 			<Name><![CDATA[SansSerif]]></Name>
 			<Size>10</Size>
@@ -15416,7 +15417,7 @@ categoría de corredor.]]></Text>
 		<Id>1794200000003</Id>
 		<Name><![CDATA[grupoMainMarcoLlegada]]></Name>
 		<X>-2772</X>
-		<Y>71</Y>
+		<Y>84</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15443,7 +15444,7 @@ categoría de corredor.]]></Text>
 		<Id>1794200000004</Id>
 		<Name><![CDATA[grupoMainTituloLlegada]]></Name>
 		<X>-2760</X>
-		<Y>81</Y>
+		<Y>94</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15468,7 +15469,7 @@ categoría de corredor.]]></Text>
 		<Id>1794200000005</Id>
 		<Name><![CDATA[grupoMainDetalleLlegada]]></Name>
 		<X>-2760</X>
-		<Y>101</Y>
+		<Y>114</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15495,7 +15496,7 @@ tiempo neto oficial y el perfil de su categoría (tabla categorias).]]></Text>
 		<Id>1794200000006</Id>
 		<Name><![CDATA[grupoMainMarcoClima]]></Name>
 		<X>-2772</X>
-		<Y>329</Y>
+		<Y>342</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15522,7 +15523,7 @@ tiempo neto oficial y el perfil de su categoría (tabla categorias).]]></Text>
 		<Id>1794200000007</Id>
 		<Name><![CDATA[grupoMainTituloClima]]></Name>
 		<X>-2760</X>
-		<Y>339</Y>
+		<Y>352</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15547,7 +15548,7 @@ tiempo neto oficial y el perfil de su categoría (tabla categorias).]]></Text>
 		<Id>1794200000008</Id>
 		<Name><![CDATA[grupoMainDetalleClima]]></Name>
 		<X>-2760</X>
-		<Y>359</Y>
+		<Y>372</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15575,7 +15576,7 @@ decidirHidratacion define si frena en el puesto.]]></Text>
 		<Id>1794200000009</Id>
 		<Name><![CDATA[grupoMainMarcoAtencion]]></Name>
 		<X>-2772</X>
-		<Y>650</Y>
+		<Y>663</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15602,7 +15603,7 @@ decidirHidratacion define si frena en el puesto.]]></Text>
 		<Id>1794200000010</Id>
 		<Name><![CDATA[grupoMainTituloAtencion]]></Name>
 		<X>-2760</X>
-		<Y>660</Y>
+		<Y>673</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15627,7 +15628,7 @@ decidirHidratacion define si frena en el puesto.]]></Text>
 		<Id>1794200000011</Id>
 		<Name><![CDATA[grupoMainDetalleAtencion]]></Name>
 		<X>-2760</X>
-		<Y>680</Y>
+		<Y>693</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15655,7 +15656,7 @@ pantalla Lógica.]]></Text>
 		<Id>1794200000012</Id>
 		<Name><![CDATA[grupoMainMarcoEscenario]]></Name>
 		<X>-2350</X>
-		<Y>71</Y>
+		<Y>84</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15682,7 +15683,7 @@ pantalla Lógica.]]></Text>
 		<Id>1794200000013</Id>
 		<Name><![CDATA[grupoMainTituloEscenario]]></Name>
 		<X>-2338</X>
-		<Y>81</Y>
+		<Y>94</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15707,7 +15708,7 @@ pantalla Lógica.]]></Text>
 		<Id>1794200000014</Id>
 		<Name><![CDATA[grupoMainDetalleEscenario]]></Name>
 		<X>-2338</X>
-		<Y>101</Y>
+		<Y>114</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15735,7 +15736,7 @@ ejecucionRapida corre sin animación, para los experimentos.]]></Text>
 		<Id>1794200000015</Id>
 		<Name><![CDATA[grupoMainMarcoPlan]]></Name>
 		<X>-2350</X>
-		<Y>342</Y>
+		<Y>355</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15762,7 +15763,7 @@ ejecucionRapida corre sin animación, para los experimentos.]]></Text>
 		<Id>1794200000016</Id>
 		<Name><![CDATA[grupoMainTituloPlan]]></Name>
 		<X>-2338</X>
-		<Y>352</Y>
+		<Y>365</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15787,7 +15788,7 @@ ejecucionRapida corre sin animación, para los experimentos.]]></Text>
 		<Id>1794200000017</Id>
 		<Name><![CDATA[grupoMainDetallePlan]]></Name>
 		<X>-2338</X>
-		<Y>372</Y>
+		<Y>385</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15815,7 +15816,7 @@ retiro_planificado).]]></Text>
 		<Id>1794200000018</Id>
 		<Name><![CDATA[grupoMainMarcoAgentes]]></Name>
 		<X>-2350</X>
-		<Y>613</Y>
+		<Y>626</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15842,7 +15843,7 @@ retiro_planificado).]]></Text>
 		<Id>1794200000019</Id>
 		<Name><![CDATA[grupoMainTituloAgentes]]></Name>
 		<X>-2338</X>
-		<Y>623</Y>
+		<Y>636</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15867,7 +15868,7 @@ retiro_planificado).]]></Text>
 		<Id>1794200000020</Id>
 		<Name><![CDATA[grupoMainDetalleAgentes]]></Name>
 		<X>-2338</X>
-		<Y>643</Y>
+		<Y>656</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15894,7 +15895,7 @@ pedido de reposición.]]></Text>
 		<Id>1794200000021</Id>
 		<Name><![CDATA[grupoMainMarcoStock]]></Name>
 		<X>-1908</X>
-		<Y>71</Y>
+		<Y>84</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15921,7 +15922,7 @@ pedido de reposición.]]></Text>
 		<Id>1794200000022</Id>
 		<Name><![CDATA[grupoMainTituloStock]]></Name>
 		<X>-1896</X>
-		<Y>81</Y>
+		<Y>94</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15946,7 +15947,7 @@ pedido de reposición.]]></Text>
 		<Id>1794200000023</Id>
 		<Name><![CDATA[grupoMainDetalleStock]]></Name>
 		<X>-1896</X>
-		<Y>101</Y>
+		<Y>114</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -15975,7 +15976,7 @@ que largaron estima esa demanda.]]></Text>
 		<Id>1794200000024</Id>
 		<Name><![CDATA[grupoMainMarcoLogistica]]></Name>
 		<X>-1908</X>
-		<Y>380</Y>
+		<Y>393</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16002,7 +16003,7 @@ que largaron estima esa demanda.]]></Text>
 		<Id>1794200000025</Id>
 		<Name><![CDATA[grupoMainTituloLogistica]]></Name>
 		<X>-1896</X>
-		<Y>390</Y>
+		<Y>403</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16027,7 +16028,7 @@ que largaron estima esa demanda.]]></Text>
 		<Id>1794200000026</Id>
 		<Name><![CDATA[grupoMainDetalleLogistica]]></Name>
 		<X>-1896</X>
-		<Y>410</Y>
+		<Y>423</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16055,7 +16056,7 @@ la zorra.]]></Text>
 		<Id>1794200000027</Id>
 		<Name><![CDATA[grupoMainMarcoCostos]]></Name>
 		<X>-1526</X>
-		<Y>71</Y>
+		<Y>84</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16082,7 +16083,7 @@ la zorra.]]></Text>
 		<Id>1794200000028</Id>
 		<Name><![CDATA[grupoMainTituloCostos]]></Name>
 		<X>-1514</X>
-		<Y>81</Y>
+		<Y>94</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16107,7 +16108,7 @@ la zorra.]]></Text>
 		<Id>1794200000029</Id>
 		<Name><![CDATA[grupoMainDetalleCostos]]></Name>
 		<X>-1514</X>
-		<Y>101</Y>
+		<Y>114</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16134,7 +16135,7 @@ permite cambiar los precios.]]></Text>
 		<Id>1794200000030</Id>
 		<Name><![CDATA[grupoMainMarcoConsumo]]></Name>
 		<X>-1526</X>
-		<Y>354</Y>
+		<Y>367</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16161,7 +16162,7 @@ permite cambiar los precios.]]></Text>
 		<Id>1794200000031</Id>
 		<Name><![CDATA[grupoMainTituloConsumo]]></Name>
 		<X>-1514</X>
-		<Y>364</Y>
+		<Y>377</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16186,7 +16187,7 @@ permite cambiar los precios.]]></Text>
 		<Id>1794200000032</Id>
 		<Name><![CDATA[grupoMainDetalleConsumo]]></Name>
 		<X>-1514</X>
-		<Y>384</Y>
+		<Y>397</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16212,7 +16213,7 @@ ociosas y pérdida por exceso de stock o de voluntarios.]]></Text>
 		<Id>1794200000033</Id>
 		<Name><![CDATA[grupoMainMarcoServicio]]></Name>
 		<X>-944</X>
-		<Y>71</Y>
+		<Y>84</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16239,7 +16240,7 @@ ociosas y pérdida por exceso de stock o de voluntarios.]]></Text>
 		<Id>1794200000034</Id>
 		<Name><![CDATA[grupoMainTituloServicio]]></Name>
 		<X>-932</X>
-		<Y>81</Y>
+		<Y>94</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16264,7 +16265,7 @@ ociosas y pérdida por exceso de stock o de voluntarios.]]></Text>
 		<Id>1794200000035</Id>
 		<Name><![CDATA[grupoMainDetalleServicio]]></Name>
 		<X>-932</X>
-		<Y>101</Y>
+		<Y>114</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16291,7 +16292,7 @@ stock.]]></Text>
 		<Id>1794200000036</Id>
 		<Name><![CDATA[grupoMainMarcoTiempos]]></Name>
 		<X>-944</X>
-		<Y>354</Y>
+		<Y>367</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16318,7 +16319,7 @@ stock.]]></Text>
 		<Id>1794200000037</Id>
 		<Name><![CDATA[grupoMainTituloTiempos]]></Name>
 		<X>-932</X>
-		<Y>364</Y>
+		<Y>377</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16343,7 +16344,7 @@ stock.]]></Text>
 		<Id>1794200000038</Id>
 		<Name><![CDATA[grupoMainDetalleTiempos]]></Name>
 		<X>-932</X>
-		<Y>384</Y>
+		<Y>397</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16368,7 +16369,7 @@ stock.]]></Text>
 		<Id>1794200000039</Id>
 		<Name><![CDATA[grupoMainMarcoValidacion]]></Name>
 		<X>-442</X>
-		<Y>71</Y>
+		<Y>84</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16395,7 +16396,7 @@ stock.]]></Text>
 		<Id>1794200000040</Id>
 		<Name><![CDATA[grupoMainTituloValidacion]]></Name>
 		<X>-430</X>
-		<Y>81</Y>
+		<Y>94</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16420,7 +16421,7 @@ stock.]]></Text>
 		<Id>1794200000041</Id>
 		<Name><![CDATA[grupoMainDetalleValidacion]]></Name>
 		<X>-430</X>
-		<Y>101</Y>
+		<Y>114</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16448,7 +16449,7 @@ una por puesto a resultados_puestos.csv.]]></Text>
 		<Id>1794200000042</Id>
 		<Name><![CDATA[grupoMainMarcoPantallas]]></Name>
 		<X>-442</X>
-		<Y>317</Y>
+		<Y>330</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16475,7 +16476,7 @@ una por puesto a resultados_puestos.csv.]]></Text>
 		<Id>1794200000043</Id>
 		<Name><![CDATA[grupoMainTituloPantallas]]></Name>
 		<X>-430</X>
-		<Y>327</Y>
+		<Y>340</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>
@@ -16500,7 +16501,7 @@ una por puesto a resultados_puestos.csv.]]></Text>
 		<Id>1794200000044</Id>
 		<Name><![CDATA[grupoMainDetallePantallas]]></Name>
 		<X>-430</X>
-		<Y>347</Y>
+		<Y>360</Y>
 		<Label>
 			<X>0</X>
 			<Y>0</Y>

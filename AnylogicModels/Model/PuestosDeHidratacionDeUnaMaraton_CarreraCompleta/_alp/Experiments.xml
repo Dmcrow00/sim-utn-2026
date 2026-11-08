@@ -2230,43 +2230,7 @@
 				<ParameterName>entregaEnMano</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>capacidadAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadGel</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>latDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>lonDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadCamionKmh</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadZorra</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadZorraKmh</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>consumoLiquidoMlHora</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>volumenVasoMl</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>gelesPorCorredor</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>frutaPorCorredor</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>zNivelServicio</ParameterName>
@@ -2275,40 +2239,16 @@
 				<ParameterName>topePuntoReposicion</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>factorRecorridoCalles</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>temperaturaC</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>colaMaximaPorVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>precioVaso</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioPorcionFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioGel</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>costoHoraVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>horasExtraVoluntario</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraCamion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraOperario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>costoFijoPuesto</ParameterName>
@@ -2440,52 +2380,13 @@
 				<ParameterName>entregaEnMano</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>capacidadAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadGel</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>latDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>lonDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadCamionKmh</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadZorra</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadZorraKmh</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>consumoLiquidoMlHora</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>volumenVasoMl</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>gelesPorCorredor</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>frutaPorCorredor</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>zNivelServicio</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>topePuntoReposicion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>factorRecorridoCalles</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>temperaturaC</ParameterName>
@@ -2497,31 +2398,10 @@
 				<ParameterName>colaMaximaPorVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>precioVaso</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioPorcionFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioGel</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>costoHoraVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>horasExtraVoluntario</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraCamion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraOperario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>costoFijoPuesto</ParameterName>
@@ -2665,52 +2545,13 @@
 				<ParameterName>entregaEnMano</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>capacidadAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadGel</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>latDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>lonDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadCamionKmh</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadZorra</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadZorraKmh</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>consumoLiquidoMlHora</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>volumenVasoMl</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>gelesPorCorredor</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>frutaPorCorredor</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>zNivelServicio</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>topePuntoReposicion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>factorRecorridoCalles</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>temperaturaC</ParameterName>
@@ -2722,31 +2563,10 @@
 				<ParameterName>colaMaximaPorVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>precioVaso</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioPorcionFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioGel</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>costoHoraVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>horasExtraVoluntario</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraCamion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraOperario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>costoFijoPuesto</ParameterName>
@@ -2893,52 +2713,13 @@
 				<ParameterName>entregaEnMano</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>capacidadAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadGel</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>latDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>lonDeposito</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadCamionKmh</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>capacidadZorra</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>velocidadZorraKmh</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>consumoLiquidoMlHora</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>volumenVasoMl</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>gelesPorCorredor</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>frutaPorCorredor</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>zNivelServicio</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>topePuntoReposicion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>factorRecorridoCalles</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>temperaturaC</ParameterName>
@@ -2950,31 +2731,10 @@
 				<ParameterName>colaMaximaPorVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
-				<ParameterName>precioVaso</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroAgua</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioLitroIsotonica</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioPorcionFruta</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>precioGel</ParameterName>
-			</Parameter>
-			<Parameter>
 				<ParameterName>costoHoraVoluntario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>horasExtraVoluntario</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraCamion</ParameterName>
-			</Parameter>
-			<Parameter>
-				<ParameterName>costoHoraOperario</ParameterName>
 			</Parameter>
 			<Parameter>
 				<ParameterName>costoFijoPuesto</ParameterName>
