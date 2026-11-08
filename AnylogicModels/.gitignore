@@ -6,4 +6,11 @@
 *.alp.autosave
 *.original.alp
 /Model/*/model/
-/Model/*/database/
+# La base de datos integrada de cada modelo (las siete tablas de datos de entrada) se versiona; solo
+# se ignoran los archivos que HSQLDB crea mientras el modelo esta abierto.
+/Model/*/database/*.lck
+/Model/*/database/*.log
+/Model/*/database/*.tmp/
+
+# Salidas de cada corrida (exportarResultados)
+/Model/*/resultados_*.csv

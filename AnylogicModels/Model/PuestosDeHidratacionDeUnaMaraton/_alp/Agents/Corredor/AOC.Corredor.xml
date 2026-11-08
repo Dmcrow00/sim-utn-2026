@@ -2,6 +2,7 @@
 <ActiveObjectClass>
 	<Id>1787285008780</Id>
 	<Name><![CDATA[Corredor]]></Name>
+	<AdditionalClassCode/>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1787285008790</Id>
@@ -99,6 +100,7 @@
 	<CurrentLevel>1787285008830</CurrentLevel>
 	<ConnectionsId>1787285008820</ConnectionsId>
 	<Variables xmlns:al="http://anylogic.com"/>
+	<Functions xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
 			<Id>1787285008820</Id>
@@ -140,6 +142,7 @@
 			<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 			<Z>0</Z>
 			<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+			<Presentation xmlns:al="http://anylogic.com"/>
 		</Level>
 	</Presentation>
 </ActiveObjectClass>

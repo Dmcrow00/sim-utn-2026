@@ -20,8 +20,8 @@
 		<TimeAccuracy>1.0E-5</TimeAccuracy>
 		<Frame>
 			<Id>1787284345513</Id>
-			<Width>1000</Width>
-			<Height>600</Height>
+			<Width>1080</Width>
+			<Height>1240</Height>
 		</Frame>
 		<Database>
 			<Id>1787284345512</Id>
@@ -61,6 +61,12 @@
 		</RequiredLibraryReference>
 		<RequiredLibraryReference>
 			<LibraryName>com.anylogic.libraries.processmodeling</LibraryName>
+			<VersionMajor>8</VersionMajor>
+			<VersionMinor>0</VersionMinor>
+			<VersionBuild>5</VersionBuild>
+		</RequiredLibraryReference>
+		<RequiredLibraryReference>
+			<LibraryName>com.anylogic.libraries.pedestrian</LibraryName>
 			<VersionMajor>8</VersionMajor>
 			<VersionMinor>0</VersionMinor>
 			<VersionBuild>5</VersionBuild>

@@ -1,0 +1,4 @@
+Corridas hechas con la decision de hidratarse anterior (hasta el 2026-11-01),
+con un termino de base que no dependia de lo recorrido y decidia con los datos
+del puesto anterior. Quedan solo como registro: los resultados vigentes son los
+de la carpeta superior (escenarios_sensibilidad_*, relevamiento_v3_*).
